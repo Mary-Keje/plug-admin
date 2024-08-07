@@ -1,0 +1,13 @@
+{
+	"version": 3,
+	"file": "style.css",
+	"sources": [
+		"../sass/main.scss",
+		"../sass/base/_base.scss",
+		"../sass/base/_typography.scss",
+		"../sass/base/_utilities.scss",
+		"../sass/pages/style.scss"
+	],
+	"names": [],
+	"mappings": "AEAA,AAAA,CAAC,CAAC;EACC,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;EACV,UAAU,EAAE,UAAU,GACxB"
+}
