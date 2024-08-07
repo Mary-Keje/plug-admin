@@ -1,0 +1,25 @@
+.button {
+  font-weight: 600;
+  background-image: url(../imgs/btn-bg.png);
+  background-color: #2dcb30;
+  color: #ffffff;
+  border-radius: 0.8rem;
+  border: none;
+  cursor: pointer;
+
+  &--create {
+    padding: 1.2rem 2.4rem;
+    width: 31rem;
+    height: 4.8rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+
+    & svg {
+      display: flex;
+      width: 2.4rem;
+    }
+  }
+}
