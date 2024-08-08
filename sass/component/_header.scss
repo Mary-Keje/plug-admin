@@ -1,0 +1,137 @@
+.header {
+  &__logo-pl {
+    display: block;
+    width: 9.8rem;
+  }
+
+  &__main {
+    //  padding: 0rem 4.8rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+  }
+
+  &__details {
+    background-color: #1e1e1e;
+    border-radius: 0.8rem;
+
+    padding: 3.2rem 9.8rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__info {
+    display: flex;
+    align-items: center;
+    gap: 2.4rem;
+
+    & svg {
+      display: block;
+      width: 2.4rem;
+    }
+  }
+
+  &__details-menu {
+    border: 1px solid #4d4d4d;
+    padding: 0.8rem 1.2rem;
+
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+
+    & svg {
+      width: 2.4rem;
+    }
+  }
+
+  &__face-logo {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+
+    & img {
+      display: block;
+      width: 3.2rem;
+    }
+
+    & p {
+      color: #ffffff;
+    }
+  }
+}
+
+.header-details {
+  padding: 0rem 4.8rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__text {
+    font-size: 2.4rem;
+    font-family: "Tango Sans";
+  }
+
+  &__body {
+    display: flex;
+    align-items: center;
+    gap: 2.4rem;
+  }
+
+  &__search-input {
+    width: 40rem;
+    height: 4.8rem;
+
+    background-color: #ffffff;
+    border: 1.5px solid #e6e6e6;
+    border-radius: 0.8rem;
+    padding: 1.2rem 1.6rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__search {
+    width: 30rem;
+    background-color: transparent;
+    border: none;
+    padding: 1.2rem 1.6rem;
+    font-size: 1.6rem;
+
+    &:focus {
+      outline: transparent;
+    }
+
+    ::placeholder {
+      color: #bdbdbd;
+    }
+  }
+
+  &__sort {
+    background-color: #ffffff;
+    border-radius: 4px;
+    padding: 1.2rem 2.4rem;
+    height: 4.8rem;
+
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+
+    & svg {
+      display: block;
+      width: 2.4rem;
+    }
+  }
+
+  &__sort-text {
+    font-weight: 600;
+    color: #2dcb30;
+  }
+
+  &__month-text {
+    color: #4d4d4d;
+  }
+}

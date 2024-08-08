@@ -1,0 +1,302 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@font-face {
+  font-family: "Tango Sans";
+  src: url("../fonts/tangosans/TangoSans.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: "Tango Sans";
+  src: url("../fonts/tangosans/TangoSans_Italic.ttf") format("truetype");
+  font-style: italic;
+  font-weight: normal; }
+
+@font-face {
+  font-family: "Tango Sans";
+  src: url("../fonts/tangosans/TangoSans_Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: bold; }
+
+@font-face {
+  font-family: "Tango Sans";
+  src: url("../fonts/tangosans/TangoSans_BoldItalic.ttf") format("truetype");
+  font-style: italic;
+  font-weight: bold; }
+
+/* Lato Font Import */
+/* Inter */
+/* poppins */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 50%; }
+
+body {
+  font-size: 1.6rem;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  color: #1f1f1f;
+  background-color: #f7f8f8; }
+
+.user-details {
+  padding: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem; }
+  .user-details__details-main {
+    padding: 0rem 4.8rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem; }
+  .user-details__info-menus {
+    width: 100%; }
+  .user-details__details-type {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1.6rem; }
+  .user-details__details-menus {
+    background-color: #ffffff;
+    border-radius: 0.8rem;
+    padding: 1.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+    .user-details__details-menus svg {
+      display: block;
+      width: 4rem; }
+  .user-details__details-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px; }
+    .user-details__details-info p {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: #808080; }
+    .user-details__details-info span {
+      font-size: 1.8rem;
+      font-weight: 600;
+      color: #1f1f1f; }
+  .user-details__details-body {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem; }
+  .user-details__details-btns {
+    display: flex;
+    justify-content: space-between; }
+  .user-details__user-infos {
+    background-color: #ffffff;
+    border-radius: 0.8rem;
+    padding: 2.4rem;
+    display: flex;
+    gap: 5.6rem; }
+  .user-details__user-login {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem; }
+  .user-details__login-details {
+    background-color: #fff6e4;
+    border-radius: 4px;
+    padding: 1.2rem 1.6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    color: #808080; }
+  .user-details__login-text {
+    font-size: 1.2rem; }
+  .user-details__login-time {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    font-weight: 600; }
+  .user-details__login-divider {
+    border: 1px solid #1f1f1f;
+    height: 2rem;
+    width: 0; }
+  .user-details__infos-details {
+    display: flex;
+    justify-content: space-between; }
+  .user-details__user-form-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr; }
+  .user-details__user-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem; }
+  .user-details__user-name {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem; }
+  .user-details__user-input {
+    background-color: #f2f2f2;
+    border-radius: 1px solid #e6e6e6;
+    padding: 1.2rem 1.6rem;
+    width: 40rem; }
+
+.header__logo-pl {
+  display: block;
+  width: 9.8rem; }
+
+.header__main {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem; }
+
+.header__details {
+  background-color: #1e1e1e;
+  border-radius: 0.8rem;
+  padding: 3.2rem 9.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+
+.header__info {
+  display: flex;
+  align-items: center;
+  gap: 2.4rem; }
+  .header__info svg {
+    display: block;
+    width: 2.4rem; }
+
+.header__details-menu {
+  border: 1px solid #4d4d4d;
+  padding: 0.8rem 1.2rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem; }
+  .header__details-menu svg {
+    width: 2.4rem; }
+
+.header__face-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem; }
+  .header__face-logo img {
+    display: block;
+    width: 3.2rem; }
+  .header__face-logo p {
+    color: #ffffff; }
+
+.header-details {
+  padding: 0rem 4.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+  .header-details__text {
+    font-size: 2.4rem;
+    font-family: "Tango Sans"; }
+  .header-details__body {
+    display: flex;
+    align-items: center;
+    gap: 2.4rem; }
+  .header-details__search-input {
+    width: 40rem;
+    height: 4.8rem;
+    background-color: #ffffff;
+    border: 1.5px solid #e6e6e6;
+    border-radius: 0.8rem;
+    padding: 1.2rem 1.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+  .header-details__search {
+    width: 30rem;
+    background-color: transparent;
+    border: none;
+    padding: 1.2rem 1.6rem;
+    font-size: 1.6rem; }
+    .header-details__search:focus {
+      outline: transparent; }
+    .header-details__search ::placeholder {
+      color: #bdbdbd; }
+  .header-details__sort {
+    background-color: #ffffff;
+    border-radius: 4px;
+    padding: 1.2rem 2.4rem;
+    height: 4.8rem;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem; }
+    .header-details__sort svg {
+      display: block;
+      width: 2.4rem; }
+  .header-details__sort-text {
+    font-weight: 600;
+    color: #2dcb30; }
+  .header-details__month-text {
+    color: #4d4d4d; }
+
+.button {
+  font-weight: 600;
+  background-image: url(../imgs/btn-bg.png);
+  background-color: #2dcb30;
+  color: #ffffff;
+  border-radius: 0.8rem;
+  border: none;
+  cursor: pointer; }
+  .button--create {
+    padding: 1.2rem 2.4rem;
+    width: 31rem;
+    height: 4.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem; }
+    .button--create svg {
+      display: block;
+      width: 2.4rem; }
+
+.user-btns {
+  font-weight: 600;
+  border: none;
+  border-radius: 4px;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem; }
+  .user-btns--block-btn {
+    background-color: #dd3c3c;
+    padding: 0.8rem 2.4rem;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem; }
+  .user-btns--flag-btn {
+    background-color: #ffa800;
+    padding: 0.8rem 2.4rem;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem; }
+  .user-btns--unverify-btn {
+    background-color: #2080df;
+    padding: 0.8rem 2.4rem;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem; }
+
+.btn-menus {
+  border-radius: 0.8rem;
+  background-color: #ffffff;
+  padding: 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.8rem; }
+  .btn-menus__btn-type {
+    color: #4d4d4d;
+    background: none;
+    border-radius: 4px;
+    border: none;
+    padding: 0.8rem 2.4rem; }
+    .btn-menus__btn-type--active {
+      font-weight: 600;
+      color: #ffffff;
+      background-color: #2dcb30; }
+  .btn-menus__divider {
+    border: 1px solid #e6e6e6;
+    height: 3rem; }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,93 @@
+.button {
+  font-weight: 600;
+  background-image: url(../imgs/btn-bg.png);
+  background-color: #2dcb30;
+  color: #ffffff;
+  border-radius: 0.8rem;
+  border: none;
+  cursor: pointer;
+
+  &--create {
+    padding: 1.2rem 2.4rem;
+    width: 31rem;
+    height: 4.8rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+
+    & svg {
+      display: block;
+      width: 2.4rem;
+    }
+  }
+}
+
+.user-btns {
+  font-weight: 600;
+  border: none;
+  border-radius: 4px;
+  color: #ffffff;
+
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+
+  &--block-btn {
+    background-color: #dd3c3c;
+    padding: 0.8rem 2.4rem;
+
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+  }
+
+  &--flag-btn {
+    background-color: #ffa800;
+    padding: 0.8rem 2.4rem;
+
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+  }
+
+  &--unverify-btn {
+    background-color: #2080df;
+    padding: 0.8rem 2.4rem;
+
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+  }
+}
+
+.btn-menus {
+  border-radius: 0.8rem;
+  background-color: #ffffff;
+  padding: 0.8rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.8rem;
+
+  &__btn-type {
+    color: #4d4d4d;
+    background: none;
+    border-radius: 4px;
+    border: none;
+    padding: 0.8rem 2.4rem;
+
+    &--active {
+      font-weight: 600;
+      color: #ffffff;
+      background-color: #2dcb30;
+    }
+  }
+
+  &__divider {
+    border: 1px solid #e6e6e6;
+    height: 3rem;
+  }
+}
