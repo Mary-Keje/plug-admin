@@ -40,7 +40,7 @@ body {
   font-size: 1.6rem;
   font-family: "Lato", sans-serif;
   font-weight: 400;
-  color: #1e1e1e;
+  color: #1f1f1f;
   background-color: #f7f8f8; }
 
 .user-details {
@@ -49,11 +49,13 @@ body {
   flex-direction: column;
   gap: 2.4rem; }
   .user-details__details-main {
+    padding: 0rem 4.8rem;
     display: flex;
     flex-direction: column;
     gap: 2.4rem; }
+  .user-details__info-menus {
+    width: 100%; }
   .user-details__details-type {
-    padding: 0rem 4.8rem;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 1.6rem; }
@@ -80,13 +82,60 @@ body {
       font-weight: 600;
       color: #1f1f1f; }
   .user-details__details-body {
-    padding: 0rem 4.8rem;
     display: flex;
     flex-direction: column;
     gap: 1.6rem; }
   .user-details__details-btns {
     display: flex;
     justify-content: space-between; }
+  .user-details__user-infos {
+    background-color: #ffffff;
+    border-radius: 0.8rem;
+    padding: 2.4rem;
+    display: flex;
+    gap: 5.6rem; }
+  .user-details__user-login {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem; }
+  .user-details__login-details {
+    background-color: #fff6e4;
+    border-radius: 4px;
+    padding: 1.2rem 1.6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    color: #808080; }
+  .user-details__login-text {
+    font-size: 1.2rem; }
+  .user-details__login-time {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    font-weight: 600; }
+  .user-details__login-divider {
+    border: 1px solid #1f1f1f;
+    height: 2rem;
+    width: 0; }
+  .user-details__infos-details {
+    display: flex;
+    justify-content: space-between; }
+  .user-details__user-form-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr; }
+  .user-details__user-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem; }
+  .user-details__user-name {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem; }
+  .user-details__user-input {
+    background-color: #f2f2f2;
+    border-radius: 1px solid #e6e6e6;
+    padding: 1.2rem 1.6rem;
+    width: 40rem; }
 
 .header__logo-pl {
   display: block;
@@ -234,6 +283,7 @@ body {
   padding: 0.8rem;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   gap: 0.8rem; }
   .btn-menus__btn-type {
     color: #4d4d4d;
