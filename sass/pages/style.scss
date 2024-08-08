@@ -59,4 +59,10 @@
     flex-direction: column;
     gap: 1.6rem;
   }
+
+  &__details-btns {
+    display: flex;
+    // align-items: center;
+    justify-content: space-between;
+  }
 }
