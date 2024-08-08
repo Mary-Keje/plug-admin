@@ -94,6 +94,9 @@ body {
     padding: 2.4rem;
     display: flex;
     gap: 5.6rem; }
+  .user-details__user-img {
+    display: block;
+    width: 24rem; }
   .user-details__user-login {
     display: flex;
     flex-direction: column;
@@ -104,6 +107,7 @@ body {
     padding: 1.2rem 1.6rem;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: 0.8rem;
     color: #808080; }
   .user-details__login-text {
@@ -122,7 +126,8 @@ body {
     justify-content: space-between; }
   .user-details__user-form-details {
     display: grid;
-    grid-template-columns: 1fr 1fr; }
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem; }
   .user-details__user-form {
     display: flex;
     flex-direction: column;
@@ -131,11 +136,27 @@ body {
     display: flex;
     flex-direction: column;
     gap: 0.8rem; }
-  .user-details__user-input {
-    background-color: #f2f2f2;
-    border-radius: 1px solid #e6e6e6;
+  .user-details__user-name-text {
+    font-size: 1.2rem;
+    color: #808080; }
+  .user-details__user-name-search {
+    width: 56rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 2.4rem; }
+  .user-details__user-search {
+    background-color: #ffffff;
+    border: 1px solid #e6e6e6;
+    border-radius: 0.8rem;
     padding: 1.2rem 1.6rem;
-    width: 40rem; }
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 48rem;
+    height: 4.8rem; }
+  .user-details__user-search-type {
+    display: flex;
+    gap: 2.4rem; }
 
 .header__logo-pl {
   display: block;
@@ -298,5 +319,18 @@ body {
   .btn-menus__divider {
     border: 1px solid #e6e6e6;
     height: 3rem; }
+
+.form__default-input {
+  color: #4d4d4d;
+  background-color: #f2f2f2;
+  border: 1px solid #e6e6e6;
+  border-radius: 0.8rem;
+  padding: 1.2rem 1.6rem;
+  width: 56rem;
+  height: 4.8rem;
+  display: flex;
+  gap: .8rem; }
+  .form__default-input--md {
+    width: 18rem; }
 
 /*# sourceMappingURL=style.css.map */
