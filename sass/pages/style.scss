@@ -1,8 +1,62 @@
 .user-details {
   padding: 1.6rem;
 
-  &__details-menu {
-   display: flex
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+
+  &__details-main {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+  }
+
+  &__details-type {
+    padding: 0rem 4.8rem;
+
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1.6rem;
+  }
+
+  &__details-menus {
+    background-color: #ffffff;
+    border-radius: 0.8rem;
+    padding: 1.4rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    & svg {
+      display: block;
+      width: 4rem;
+    }
+  }
+
+  &__details-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+
+    & p {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: #808080;
+    }
+
+    & span {
+      font-size: 1.8rem;
+      font-weight: 600;
+      color: #1f1f1f;
+    }
+  }
+
+  &__details-body {
+    padding: 0rem 4.8rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
   }
 }
-

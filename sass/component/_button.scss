@@ -23,3 +23,41 @@
     }
   }
 }
+
+.user-btns {
+  font-weight: 600;
+  border: none;
+  border-radius: 4px;
+  color: #ffffff;
+
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+
+  &--block-btn {
+    background-color: #dd3c3c;
+    padding: 0.8rem 2.4rem;
+
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+  }
+
+  &--flag-btn {
+    background-color: #ffa800;
+    padding: 0.8rem 2.4rem;
+
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+  }
+
+  &--unverify-btn {
+    background-color: #2080df;
+    padding: 0.8rem 2.4rem;
+
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+  }
+}
