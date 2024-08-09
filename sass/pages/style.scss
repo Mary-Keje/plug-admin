@@ -157,9 +157,9 @@
   &__user-name-search {
     width: 56rem;
 
-    display: flex;
-    justify-content: space-between;
-    gap: 2.4rem;
+    // display: flex;
+    // justify-content: space-between;
+    // gap: 2.4rem;
   }
 
   &__user-search {
@@ -172,12 +172,14 @@
     align-items: center;
     justify-content: space-between;
 
-    width: 48rem;
+    // width: 48rem;
     height: 4.8rem;
   }
 
   &__user-search-type {
-    display: flex;
+    // display: flex;
+    display: grid;
+    grid-template-columns: 1fr 40rem;
     gap: 2.4rem;
   }
 
@@ -236,6 +238,86 @@
       border-radius: 4px;
       background-color: #ffffff;
       padding: 0.8rem 1.2rem;
+    }
+  }
+}
+
+.user-services {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.6rem;
+
+  &__services-info {
+    background-color: #ffffff;
+    padding: 2.4rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+  }
+
+  &__service-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    & svg {
+      display: block;
+      width: 3rem;
+    }
+  }
+
+  &__heading-text {
+    font-size: 2rem;
+    font-family: "Tango Sans";
+    color: #176819;
+  }
+
+  &__service-type {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  &__service-name {
+    // display: flex;
+    // justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    padding-bottom: 0.8rem;
+    border-bottom: 1px solid #f2f2f2;
+  }
+
+  &__service-text {
+    font-weight: 600;
+    color: #808080;
+  }
+
+  &__service-amount {
+    background-color: #eafaea;
+    padding: 1.2rem;
+
+    display: flex;
+    justify-content: space-between;
+
+    
+  }
+
+  &__service-span {
+    font-size: 1.4rem;
+    background-color: #1f1f1f;
+    color: #ffffff;
+    border-radius: 4px;
+
+    padding: 6px 10px;
+
+    &--green {
+      background-color: #0ac243;
+    }
+
+    &--orange {
+      background-color: #ef761e;
     }
   }
 }

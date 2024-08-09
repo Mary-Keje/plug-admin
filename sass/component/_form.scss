@@ -1,5 +1,7 @@
 .form {
   //   width: 100%;
+  width: 56rem;
+  height: 4.8rem;
 
   &__default-input {
     color: #4d4d4d;
@@ -8,14 +10,22 @@
     border-radius: 0.8rem;
     padding: 1.2rem 1.6rem;
 
-    width: 56rem;
-    height: 4.8rem;
-
     display: flex;
     gap: 0.8rem;
 
     &--md {
-      width: 18rem;
+      // width: 18rem;
     }
+  }
+
+  &__ranking-input {
+    color: #4d4d4d;
+    border: 1px solid #e6e6e6;
+    border-radius: 0.8rem;
+    padding: 1.2rem 1.6rem;
+
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
   }
 }
