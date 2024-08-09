@@ -1,22 +1,24 @@
 .user-details {
-  &__details-type-txn {
-    //   padding: 0rem 4.8rem;
+  // &__details-type-txn {
+  //   // padding: 0rem 4.8rem;
 
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1.6rem;
-  }
-  .user-btns {
-    &--success-btn {
-      background-color: #2dcb30;
-      padding: 0.8rem 2.4rem;
+  //   display: grid;
+  //   grid-template-columns: repeat(4, 1fr);
+  //   gap: 1.6rem;
+  // }
 
-      display: flex;
-      align-items: center;
-      gap: 0.8rem;
-    }
-  }
+  // .user-btns {
+  //   &--success-btn {
+  //     background-color: #2dcb30;
+  //     padding: 0.8rem 2.4rem;
+
+  //     display: flex;
+  //     align-items: center;
+  //     gap: 0.8rem;
+  //   }
+  // }
 }
+
 .table-row {
   border-radius: 0.8rem;
   background-color: #ffffff;
@@ -121,6 +123,14 @@
     border-radius: 0.8rem;
     padding: 1.4rem;
     margin-bottom: 0.8rem;
+    background: none;
+  }
+
+  th {
+    color: #4d4d4d;
+    border-radius: 0.8rem;
+    padding: 1.4rem;
+    margin-bottom: 0.8rem;
   }
 
   th {
@@ -146,10 +156,10 @@
   margin: 0rem 0rem 3rem 0rem;
 }
 
-table {
-  width: 100%;
-  border-collapse: collapse;
-}
+// table {
+//   width: 100%;
+//   border-collapse: collapse;
+// }
 
 td {
   background-color: #fff;
@@ -194,4 +204,13 @@ form label {
   font-size: 1.5rem;
   font-weight: 600;
   color: #1f1f1f;
+}
+.user-btn__failed {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #dd3c3c;
+  border-radius: 2px;
+  border: none;
+  padding: 0.8rem 1rem;
 }
