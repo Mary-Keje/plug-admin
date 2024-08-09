@@ -9,7 +9,7 @@
 
   &--create {
     padding: 1.2rem 2.4rem;
-    width: 31rem;
+    width: 30rem;
     height: 4.8rem;
 
     display: flex;
@@ -89,5 +89,27 @@
   &__divider {
     border: 1px solid #e6e6e6;
     height: 3rem;
+  }
+}
+
+.user-btn {
+  &__unverified {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #ffffff;
+    background-color: #ffa800;
+    border-radius: 2px;
+    border: none;
+    padding: 0.8rem 1rem;
+  }
+
+  &__verified {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #ffffff;
+    background-color: #2dcb30;
+    border-radius: 2px;
+    border: none;
+    padding: 0.8rem 1.5rem;
   }
 }

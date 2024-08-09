@@ -295,16 +295,782 @@
                   <th>Status</th>
                   <th>Virtual Card</th>
                   <th>Registration date</th>
+                  <th>Verification</th>
+                  <th>Referred</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
+                  <td class="td-user-info">
+                    <div class="td-user-info__user-details">
+                      <input type="checkbox" name="" id="" />
+                      <div class="td-user-info__user-img">
+                        <img src="./imgs/icons/user.icon.svg" alt="" />
+                        <div class="td-user-info__name-mail">
+                          <p>Mrjayy</p>
+                          <span>mikejayjay@gmail.com</span>
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                  <td><p>₦34,6740,200</p></td>
+                  <td><p>245/260</p></td>
                   <td>
-                    <input type="checkbox" name="" id="" />
+                    <div class="td-user-info__user-status">
+                      <svg
+                        width="12"
+                        height="12"
+                        viewBox="0 0 12 12"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <circle cx="6" cy="6" r="6" fill="#0AC243" />
+                      </svg>
+                      <p>Active</p>
+                    </div>
+                  </td>
+                  <td><p>No</p></td>
+                  <td>
+                    <div class="td-user-info__reg-date">
+                      <p>Jul 24, 2024</p>
+                      <div class="td-user-info__date-divider"></div>
+                      <p>12:45pm</p>
+                    </div>
+                  </td>
+                  <td>
+                    <button class="user-btn__unverified">Unverified</button>
+                  </td>
+                  <td><p>6</p></td>
+                  <td>
+                    <div class="td-user-info__action-icons">
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M12 9C11.2044 9 10.4413 9.31607 9.87868 9.87868C9.31607 10.4413 9 11.2044 9 12C9 12.7956 9.31607 13.5587 9.87868 14.1213C10.4413 14.6839 11.2044 15 12 15C12.7956 15 13.5587 14.6839 14.1213 14.1213C14.6839 13.5587 15 12.7956 15 12C15 11.2044 14.6839 10.4413 14.1213 9.87868C13.5587 9.31607 12.7956 9 12 9ZM12 17C10.6739 17 9.40215 16.4732 8.46447 15.5355C7.52678 14.5979 7 13.3261 7 12C7 10.6739 7.52678 9.40215 8.46447 8.46447C9.40215 7.52678 10.6739 7 12 7C13.3261 7 14.5979 7.52678 15.5355 8.46447C16.4732 9.40215 17 10.6739 17 12C17 13.3261 16.4732 14.5979 15.5355 15.5355C14.5979 16.4732 13.3261 17 12 17ZM12 4.5C7 4.5 2.73 7.61 1 12C2.73 16.39 7 19.5 12 19.5C17 19.5 21.27 16.39 23 12C21.27 7.61 17 4.5 12 4.5Z"
+                          fill="#1F1F1F"
+                        />
+                      </svg>
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M7 21C6.45 21 5.97933 20.8043 5.588 20.413C5.19667 20.0217 5.00067 19.5507 5 19V6H4V4H9V3H15V4H20V6H19V19C19 19.55 18.8043 20.021 18.413 20.413C18.0217 20.805 17.5507 21.0007 17 21H7ZM9 17H11V8H9V17ZM13 17H15V8H13V17Z"
+                          fill="#1F1F1F"
+                        />
+                      </svg>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="td-user-info">
+                    <div class="td-user-info__user-details">
+                      <input type="checkbox" name="" id="" />
+                      <div class="td-user-info__user-img">
+                        <img src="./imgs/icons/user.icon.svg" alt="" />
+                        <div class="td-user-info__name-mail">
+                          <p>Mrjayy</p>
+                          <span>mikejayjay@gmail.com</span>
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                  <td><p>₦34,6740,200</p></td>
+                  <td><p>245/260</p></td>
+                  <td>
+                    <div class="td-user-info__user-status">
+                      <svg
+                        width="12"
+                        height="12"
+                        viewBox="0 0 12 12"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <circle cx="6" cy="6" r="6" fill="#0AC243" />
+                      </svg>
+                      <p>Active</p>
+                    </div>
+                  </td>
+                  <td><p>No</p></td>
+                  <td>
+                    <div class="td-user-info__reg-date">
+                      <p>Jul 24, 2024</p>
+                      <div class="td-user-info__date-divider"></div>
+                      <p>12:45pm</p>
+                    </div>
+                  </td>
+                  <td>
+                    <button class="user-btn__unverified">Unverified</button>
+                  </td>
+                  <td><p>6</p></td>
+                  <td>
+                    <div class="td-user-info__action-icons">
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M12 9C11.2044 9 10.4413 9.31607 9.87868 9.87868C9.31607 10.4413 9 11.2044 9 12C9 12.7956 9.31607 13.5587 9.87868 14.1213C10.4413 14.6839 11.2044 15 12 15C12.7956 15 13.5587 14.6839 14.1213 14.1213C14.6839 13.5587 15 12.7956 15 12C15 11.2044 14.6839 10.4413 14.1213 9.87868C13.5587 9.31607 12.7956 9 12 9ZM12 17C10.6739 17 9.40215 16.4732 8.46447 15.5355C7.52678 14.5979 7 13.3261 7 12C7 10.6739 7.52678 9.40215 8.46447 8.46447C9.40215 7.52678 10.6739 7 12 7C13.3261 7 14.5979 7.52678 15.5355 8.46447C16.4732 9.40215 17 10.6739 17 12C17 13.3261 16.4732 14.5979 15.5355 15.5355C14.5979 16.4732 13.3261 17 12 17ZM12 4.5C7 4.5 2.73 7.61 1 12C2.73 16.39 7 19.5 12 19.5C17 19.5 21.27 16.39 23 12C21.27 7.61 17 4.5 12 4.5Z"
+                          fill="#1F1F1F"
+                        />
+                      </svg>
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M7 21C6.45 21 5.97933 20.8043 5.588 20.413C5.19667 20.0217 5.00067 19.5507 5 19V6H4V4H9V3H15V4H20V6H19V19C19 19.55 18.8043 20.021 18.413 20.413C18.0217 20.805 17.5507 21.0007 17 21H7ZM9 17H11V8H9V17ZM13 17H15V8H13V17Z"
+                          fill="#1F1F1F"
+                        />
+                      </svg>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="td-user-info">
+                    <div class="td-user-info__user-details">
+                      <input type="checkbox" name="" id="" />
+                      <div class="td-user-info__user-img">
+                        <img src="./imgs/icons/user.icon.svg" alt="" />
+                        <div class="td-user-info__name-mail">
+                          <p>Mrjayy</p>
+                          <span>mikejayjay@gmail.com</span>
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                  <td><p>₦34,6740,200</p></td>
+                  <td><p>245/260</p></td>
+                  <td>
+                    <div class="td-user-info__user-status">
+                      <svg
+                        width="12"
+                        height="12"
+                        viewBox="0 0 12 12"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <circle cx="6" cy="6" r="6" fill="#BDBDBD" />
+                      </svg>
+                      <p>Inactive</p>
+                    </div>
+                  </td>
+                  <td><p>No</p></td>
+                  <td>
+                    <div class="td-user-info__reg-date">
+                      <p>Jul 24, 2024</p>
+                      <div class="td-user-info__date-divider"></div>
+                      <p>12:45pm</p>
+                    </div>
+                  </td>
+                  <td>
+                    <button class="user-btn__unverified">Unverified</button>
+                  </td>
+                  <td><p>6</p></td>
+                  <td>
+                    <div class="td-user-info__action-icons">
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M12 9C11.2044 9 10.4413 9.31607 9.87868 9.87868C9.31607 10.4413 9 11.2044 9 12C9 12.7956 9.31607 13.5587 9.87868 14.1213C10.4413 14.6839 11.2044 15 12 15C12.7956 15 13.5587 14.6839 14.1213 14.1213C14.6839 13.5587 15 12.7956 15 12C15 11.2044 14.6839 10.4413 14.1213 9.87868C13.5587 9.31607 12.7956 9 12 9ZM12 17C10.6739 17 9.40215 16.4732 8.46447 15.5355C7.52678 14.5979 7 13.3261 7 12C7 10.6739 7.52678 9.40215 8.46447 8.46447C9.40215 7.52678 10.6739 7 12 7C13.3261 7 14.5979 7.52678 15.5355 8.46447C16.4732 9.40215 17 10.6739 17 12C17 13.3261 16.4732 14.5979 15.5355 15.5355C14.5979 16.4732 13.3261 17 12 17ZM12 4.5C7 4.5 2.73 7.61 1 12C2.73 16.39 7 19.5 12 19.5C17 19.5 21.27 16.39 23 12C21.27 7.61 17 4.5 12 4.5Z"
+                          fill="#1F1F1F"
+                        />
+                      </svg>
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M7 21C6.45 21 5.97933 20.8043 5.588 20.413C5.19667 20.0217 5.00067 19.5507 5 19V6H4V4H9V3H15V4H20V6H19V19C19 19.55 18.8043 20.021 18.413 20.413C18.0217 20.805 17.5507 21.0007 17 21H7ZM9 17H11V8H9V17ZM13 17H15V8H13V17Z"
+                          fill="#1F1F1F"
+                        />
+                      </svg>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="td-user-info">
+                    <div class="td-user-info__user-details">
+                      <input type="checkbox" name="" id="" />
+                      <div class="td-user-info__user-img">
+                        <img src="./imgs/icons/user.icon.svg" alt="" />
+                        <div class="td-user-info__name-mail">
+                          <p>Mrjayy</p>
+                          <span>mikejayjay@gmail.com</span>
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                  <td><p>₦34,6740,200</p></td>
+                  <td><p>245/260</p></td>
+                  <td>
+                    <div class="td-user-info__user-status">
+                      <svg
+                        width="12"
+                        height="12"
+                        viewBox="0 0 12 12"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <circle cx="6" cy="6" r="6" fill="#0AC243" />
+                      </svg>
+                      <p>Active</p>
+                    </div>
+                  </td>
+                  <td><p>Yes</p></td>
+                  <td>
+                    <div class="td-user-info__reg-date">
+                      <p>Jul 24, 2024</p>
+                      <div class="td-user-info__date-divider"></div>
+                      <p>12:45pm</p>
+                    </div>
+                  </td>
+                  <td>
+                    <button class="user-btn__verified">Verified</button>
+                  </td>
+                  <td><p>6</p></td>
+                  <td>
+                    <div class="td-user-info__action-icons">
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M12 9C11.2044 9 10.4413 9.31607 9.87868 9.87868C9.31607 10.4413 9 11.2044 9 12C9 12.7956 9.31607 13.5587 9.87868 14.1213C10.4413 14.6839 11.2044 15 12 15C12.7956 15 13.5587 14.6839 14.1213 14.1213C14.6839 13.5587 15 12.7956 15 12C15 11.2044 14.6839 10.4413 14.1213 9.87868C13.5587 9.31607 12.7956 9 12 9ZM12 17C10.6739 17 9.40215 16.4732 8.46447 15.5355C7.52678 14.5979 7 13.3261 7 12C7 10.6739 7.52678 9.40215 8.46447 8.46447C9.40215 7.52678 10.6739 7 12 7C13.3261 7 14.5979 7.52678 15.5355 8.46447C16.4732 9.40215 17 10.6739 17 12C17 13.3261 16.4732 14.5979 15.5355 15.5355C14.5979 16.4732 13.3261 17 12 17ZM12 4.5C7 4.5 2.73 7.61 1 12C2.73 16.39 7 19.5 12 19.5C17 19.5 21.27 16.39 23 12C21.27 7.61 17 4.5 12 4.5Z"
+                          fill="#1F1F1F"
+                        />
+                      </svg>
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M7 21C6.45 21 5.97933 20.8043 5.588 20.413C5.19667 20.0217 5.00067 19.5507 5 19V6H4V4H9V3H15V4H20V6H19V19C19 19.55 18.8043 20.021 18.413 20.413C18.0217 20.805 17.5507 21.0007 17 21H7ZM9 17H11V8H9V17ZM13 17H15V8H13V17Z"
+                          fill="#1F1F1F"
+                        />
+                      </svg>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="td-user-info">
+                    <div class="td-user-info__user-details">
+                      <input type="checkbox" name="" id="" />
+                      <div class="td-user-info__user-img">
+                        <img src="./imgs/icons/user.icon.svg" alt="" />
+                        <div class="td-user-info__name-mail">
+                          <p>Mrjayy</p>
+                          <span>mikejayjay@gmail.com</span>
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                  <td><p>₦34,6740,200</p></td>
+                  <td><p>245/260</p></td>
+                  <td>
+                    <div class="td-user-info__user-status">
+                      <svg
+                        width="12"
+                        height="12"
+                        viewBox="0 0 12 12"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <circle cx="6" cy="6" r="6" fill="#0AC243" />
+                      </svg>
+                      <p>Active</p>
+                    </div>
+                  </td>
+                  <td><p>No</p></td>
+                  <td>
+                    <div class="td-user-info__reg-date">
+                      <p>Jul 24, 2024</p>
+                      <div class="td-user-info__date-divider"></div>
+                      <p>12:45pm</p>
+                    </div>
+                  </td>
+                  <td>
+                    <button class="user-btn__unverified">Unverified</button>
+                  </td>
+                  <td><p>6</p></td>
+                  <td>
+                    <div class="td-user-info__action-icons">
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M12 9C11.2044 9 10.4413 9.31607 9.87868 9.87868C9.31607 10.4413 9 11.2044 9 12C9 12.7956 9.31607 13.5587 9.87868 14.1213C10.4413 14.6839 11.2044 15 12 15C12.7956 15 13.5587 14.6839 14.1213 14.1213C14.6839 13.5587 15 12.7956 15 12C15 11.2044 14.6839 10.4413 14.1213 9.87868C13.5587 9.31607 12.7956 9 12 9ZM12 17C10.6739 17 9.40215 16.4732 8.46447 15.5355C7.52678 14.5979 7 13.3261 7 12C7 10.6739 7.52678 9.40215 8.46447 8.46447C9.40215 7.52678 10.6739 7 12 7C13.3261 7 14.5979 7.52678 15.5355 8.46447C16.4732 9.40215 17 10.6739 17 12C17 13.3261 16.4732 14.5979 15.5355 15.5355C14.5979 16.4732 13.3261 17 12 17ZM12 4.5C7 4.5 2.73 7.61 1 12C2.73 16.39 7 19.5 12 19.5C17 19.5 21.27 16.39 23 12C21.27 7.61 17 4.5 12 4.5Z"
+                          fill="#1F1F1F"
+                        />
+                      </svg>
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M7 21C6.45 21 5.97933 20.8043 5.588 20.413C5.19667 20.0217 5.00067 19.5507 5 19V6H4V4H9V3H15V4H20V6H19V19C19 19.55 18.8043 20.021 18.413 20.413C18.0217 20.805 17.5507 21.0007 17 21H7ZM9 17H11V8H9V17ZM13 17H15V8H13V17Z"
+                          fill="#1F1F1F"
+                        />
+                      </svg>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="td-user-info">
+                    <div class="td-user-info__user-details">
+                      <input type="checkbox" name="" id="" />
+                      <div class="td-user-info__user-img">
+                        <img src="./imgs/icons/user.icon.svg" alt="" />
+                        <div class="td-user-info__name-mail">
+                          <p>Mrjayy</p>
+                          <span>mikejayjay@gmail.com</span>
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                  <td><p>₦34,6740,200</p></td>
+                  <td><p>245/260</p></td>
+                  <td>
+                    <div class="td-user-info__user-status">
+                      <svg
+                        width="12"
+                        height="12"
+                        viewBox="0 0 12 12"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <circle cx="6" cy="6" r="6" fill="#BDBDBD" />
+                      </svg>
+                      <p>Inactive</p>
+                    </div>
+                  </td>
+                  <td><p>No</p></td>
+                  <td>
+                    <div class="td-user-info__reg-date">
+                      <p>Jul 24, 2024</p>
+                      <div class="td-user-info__date-divider"></div>
+                      <p>12:45pm</p>
+                    </div>
+                  </td>
+                  <td>
+                    <button class="user-btn__unverified">Unverified</button>
+                  </td>
+                  <td><p>6</p></td>
+                  <td>
+                    <div class="td-user-info__action-icons">
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M12 9C11.2044 9 10.4413 9.31607 9.87868 9.87868C9.31607 10.4413 9 11.2044 9 12C9 12.7956 9.31607 13.5587 9.87868 14.1213C10.4413 14.6839 11.2044 15 12 15C12.7956 15 13.5587 14.6839 14.1213 14.1213C14.6839 13.5587 15 12.7956 15 12C15 11.2044 14.6839 10.4413 14.1213 9.87868C13.5587 9.31607 12.7956 9 12 9ZM12 17C10.6739 17 9.40215 16.4732 8.46447 15.5355C7.52678 14.5979 7 13.3261 7 12C7 10.6739 7.52678 9.40215 8.46447 8.46447C9.40215 7.52678 10.6739 7 12 7C13.3261 7 14.5979 7.52678 15.5355 8.46447C16.4732 9.40215 17 10.6739 17 12C17 13.3261 16.4732 14.5979 15.5355 15.5355C14.5979 16.4732 13.3261 17 12 17ZM12 4.5C7 4.5 2.73 7.61 1 12C2.73 16.39 7 19.5 12 19.5C17 19.5 21.27 16.39 23 12C21.27 7.61 17 4.5 12 4.5Z"
+                          fill="#1F1F1F"
+                        />
+                      </svg>
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M7 21C6.45 21 5.97933 20.8043 5.588 20.413C5.19667 20.0217 5.00067 19.5507 5 19V6H4V4H9V3H15V4H20V6H19V19C19 19.55 18.8043 20.021 18.413 20.413C18.0217 20.805 17.5507 21.0007 17 21H7ZM9 17H11V8H9V17ZM13 17H15V8H13V17Z"
+                          fill="#1F1F1F"
+                        />
+                      </svg>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="td-user-info">
+                    <div class="td-user-info__user-details">
+                      <input type="checkbox" name="" id="" />
+                      <div class="td-user-info__user-img">
+                        <img src="./imgs/icons/user.icon.svg" alt="" />
+                        <div class="td-user-info__name-mail">
+                          <p>Mrjayy</p>
+                          <span>mikejayjay@gmail.com</span>
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                  <td><p>₦34,6740,200</p></td>
+                  <td><p>245/260</p></td>
+                  <td>
+                    <div class="td-user-info__user-status">
+                      <svg
+                        width="12"
+                        height="12"
+                        viewBox="0 0 12 12"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <circle cx="6" cy="6" r="6" fill="#0AC243" />
+                      </svg>
+                      <p>Active</p>
+                    </div>
+                  </td>
+                  <td><p>Yes</p></td>
+                  <td>
+                    <div class="td-user-info__reg-date">
+                      <p>Jul 24, 2024</p>
+                      <div class="td-user-info__date-divider"></div>
+                      <p>12:45pm</p>
+                    </div>
+                  </td>
+                  <td>
+                    <button class="user-btn__unverified">Unverified</button>
+                  </td>
+                  <td><p>6</p></td>
+                  <td>
+                    <div class="td-user-info__action-icons">
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M12 9C11.2044 9 10.4413 9.31607 9.87868 9.87868C9.31607 10.4413 9 11.2044 9 12C9 12.7956 9.31607 13.5587 9.87868 14.1213C10.4413 14.6839 11.2044 15 12 15C12.7956 15 13.5587 14.6839 14.1213 14.1213C14.6839 13.5587 15 12.7956 15 12C15 11.2044 14.6839 10.4413 14.1213 9.87868C13.5587 9.31607 12.7956 9 12 9ZM12 17C10.6739 17 9.40215 16.4732 8.46447 15.5355C7.52678 14.5979 7 13.3261 7 12C7 10.6739 7.52678 9.40215 8.46447 8.46447C9.40215 7.52678 10.6739 7 12 7C13.3261 7 14.5979 7.52678 15.5355 8.46447C16.4732 9.40215 17 10.6739 17 12C17 13.3261 16.4732 14.5979 15.5355 15.5355C14.5979 16.4732 13.3261 17 12 17ZM12 4.5C7 4.5 2.73 7.61 1 12C2.73 16.39 7 19.5 12 19.5C17 19.5 21.27 16.39 23 12C21.27 7.61 17 4.5 12 4.5Z"
+                          fill="#1F1F1F"
+                        />
+                      </svg>
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M7 21C6.45 21 5.97933 20.8043 5.588 20.413C5.19667 20.0217 5.00067 19.5507 5 19V6H4V4H9V3H15V4H20V6H19V19C19 19.55 18.8043 20.021 18.413 20.413C18.0217 20.805 17.5507 21.0007 17 21H7ZM9 17H11V8H9V17ZM13 17H15V8H13V17Z"
+                          fill="#1F1F1F"
+                        />
+                      </svg>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="td-user-info">
+                    <div class="td-user-info__user-details">
+                      <input type="checkbox" name="" id="" />
+                      <div class="td-user-info__user-img">
+                        <img src="./imgs/icons/user.icon.svg" alt="" />
+                        <div class="td-user-info__name-mail">
+                          <p>Mrjayy</p>
+                          <span>mikejayjay@gmail.com</span>
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                  <td><p>₦34,6740,200</p></td>
+                  <td><p>245/260</p></td>
+                  <td>
+                    <div class="td-user-info__user-status">
+                      <svg
+                        width="12"
+                        height="12"
+                        viewBox="0 0 12 12"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <circle cx="6" cy="6" r="6" fill="#0AC243" />
+                      </svg>
+                      <p>Active</p>
+                    </div>
+                  </td>
+                  <td><p>No</p></td>
+                  <td>
+                    <div class="td-user-info__reg-date">
+                      <p>Jul 24, 2024</p>
+                      <div class="td-user-info__date-divider"></div>
+                      <p>12:45pm</p>
+                    </div>
+                  </td>
+                  <td>
+                    <button class="user-btn__unverified">Unverified</button>
+                  </td>
+                  <td><p>6</p></td>
+                  <td>
+                    <div class="td-user-info__action-icons">
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M12 9C11.2044 9 10.4413 9.31607 9.87868 9.87868C9.31607 10.4413 9 11.2044 9 12C9 12.7956 9.31607 13.5587 9.87868 14.1213C10.4413 14.6839 11.2044 15 12 15C12.7956 15 13.5587 14.6839 14.1213 14.1213C14.6839 13.5587 15 12.7956 15 12C15 11.2044 14.6839 10.4413 14.1213 9.87868C13.5587 9.31607 12.7956 9 12 9ZM12 17C10.6739 17 9.40215 16.4732 8.46447 15.5355C7.52678 14.5979 7 13.3261 7 12C7 10.6739 7.52678 9.40215 8.46447 8.46447C9.40215 7.52678 10.6739 7 12 7C13.3261 7 14.5979 7.52678 15.5355 8.46447C16.4732 9.40215 17 10.6739 17 12C17 13.3261 16.4732 14.5979 15.5355 15.5355C14.5979 16.4732 13.3261 17 12 17ZM12 4.5C7 4.5 2.73 7.61 1 12C2.73 16.39 7 19.5 12 19.5C17 19.5 21.27 16.39 23 12C21.27 7.61 17 4.5 12 4.5Z"
+                          fill="#1F1F1F"
+                        />
+                      </svg>
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M7 21C6.45 21 5.97933 20.8043 5.588 20.413C5.19667 20.0217 5.00067 19.5507 5 19V6H4V4H9V3H15V4H20V6H19V19C19 19.55 18.8043 20.021 18.413 20.413C18.0217 20.805 17.5507 21.0007 17 21H7ZM9 17H11V8H9V17ZM13 17H15V8H13V17Z"
+                          fill="#1F1F1F"
+                        />
+                      </svg>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="td-user-info">
+                    <div class="td-user-info__user-details">
+                      <input type="checkbox" name="" id="" />
+                      <div class="td-user-info__user-img">
+                        <img src="./imgs/icons/user.icon.svg" alt="" />
+                        <div class="td-user-info__name-mail">
+                          <p>Mrjayy</p>
+                          <span>mikejayjay@gmail.com</span>
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                  <td><p>₦34,6740,200</p></td>
+                  <td><p>245/260</p></td>
+                  <td>
+                    <div class="td-user-info__user-status">
+                      <svg
+                        width="12"
+                        height="12"
+                        viewBox="0 0 12 12"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <circle cx="6" cy="6" r="6" fill="#0AC243" />
+                      </svg>
+                      <p>Active</p>
+                    </div>
+                  </td>
+                  <td><p>No</p></td>
+                  <td>
+                    <div class="td-user-info__reg-date">
+                      <p>Jul 24, 2024</p>
+                      <div class="td-user-info__date-divider"></div>
+                      <p>12:45pm</p>
+                    </div>
+                  </td>
+                  <td>
+                    <button class="user-btn__unverified">Unverified</button>
+                  </td>
+                  <td><p>6</p></td>
+                  <td>
+                    <div class="td-user-info__action-icons">
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M12 9C11.2044 9 10.4413 9.31607 9.87868 9.87868C9.31607 10.4413 9 11.2044 9 12C9 12.7956 9.31607 13.5587 9.87868 14.1213C10.4413 14.6839 11.2044 15 12 15C12.7956 15 13.5587 14.6839 14.1213 14.1213C14.6839 13.5587 15 12.7956 15 12C15 11.2044 14.6839 10.4413 14.1213 9.87868C13.5587 9.31607 12.7956 9 12 9ZM12 17C10.6739 17 9.40215 16.4732 8.46447 15.5355C7.52678 14.5979 7 13.3261 7 12C7 10.6739 7.52678 9.40215 8.46447 8.46447C9.40215 7.52678 10.6739 7 12 7C13.3261 7 14.5979 7.52678 15.5355 8.46447C16.4732 9.40215 17 10.6739 17 12C17 13.3261 16.4732 14.5979 15.5355 15.5355C14.5979 16.4732 13.3261 17 12 17ZM12 4.5C7 4.5 2.73 7.61 1 12C2.73 16.39 7 19.5 12 19.5C17 19.5 21.27 16.39 23 12C21.27 7.61 17 4.5 12 4.5Z"
+                          fill="#1F1F1F"
+                        />
+                      </svg>
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M7 21C6.45 21 5.97933 20.8043 5.588 20.413C5.19667 20.0217 5.00067 19.5507 5 19V6H4V4H9V3H15V4H20V6H19V19C19 19.55 18.8043 20.021 18.413 20.413C18.0217 20.805 17.5507 21.0007 17 21H7ZM9 17H11V8H9V17ZM13 17H15V8H13V17Z"
+                          fill="#1F1F1F"
+                        />
+                      </svg>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="td-user-info">
+                    <div class="td-user-info__user-details">
+                      <input type="checkbox" name="" id="" />
+                      <div class="td-user-info__user-img">
+                        <img src="./imgs/icons/user.icon.svg" alt="" />
+                        <div class="td-user-info__name-mail">
+                          <p>Mrjayy</p>
+                          <span>mikejayjay@gmail.com</span>
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                  <td><p>₦34,6740,200</p></td>
+                  <td><p>245/260</p></td>
+                  <td>
+                    <div class="td-user-info__user-status">
+                      <svg
+                        width="12"
+                        height="12"
+                        viewBox="0 0 12 12"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <circle cx="6" cy="6" r="6" fill="#0AC243" />
+                      </svg>
+                      <p>Active</p>
+                    </div>
+                  </td>
+                  <td><p>No</p></td>
+                  <td>
+                    <div class="td-user-info__reg-date">
+                      <p>Jul 24, 2024</p>
+                      <div class="td-user-info__date-divider"></div>
+                      <p>12:45pm</p>
+                    </div>
+                  </td>
+                  <td>
+                    <button class="user-btn__unverified">Unverified</button>
+                  </td>
+                  <td><p>6</p></td>
+                  <td>
+                    <div class="td-user-info__action-icons">
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M12 9C11.2044 9 10.4413 9.31607 9.87868 9.87868C9.31607 10.4413 9 11.2044 9 12C9 12.7956 9.31607 13.5587 9.87868 14.1213C10.4413 14.6839 11.2044 15 12 15C12.7956 15 13.5587 14.6839 14.1213 14.1213C14.6839 13.5587 15 12.7956 15 12C15 11.2044 14.6839 10.4413 14.1213 9.87868C13.5587 9.31607 12.7956 9 12 9ZM12 17C10.6739 17 9.40215 16.4732 8.46447 15.5355C7.52678 14.5979 7 13.3261 7 12C7 10.6739 7.52678 9.40215 8.46447 8.46447C9.40215 7.52678 10.6739 7 12 7C13.3261 7 14.5979 7.52678 15.5355 8.46447C16.4732 9.40215 17 10.6739 17 12C17 13.3261 16.4732 14.5979 15.5355 15.5355C14.5979 16.4732 13.3261 17 12 17ZM12 4.5C7 4.5 2.73 7.61 1 12C2.73 16.39 7 19.5 12 19.5C17 19.5 21.27 16.39 23 12C21.27 7.61 17 4.5 12 4.5Z"
+                          fill="#1F1F1F"
+                        />
+                      </svg>
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M7 21C6.45 21 5.97933 20.8043 5.588 20.413C5.19667 20.0217 5.00067 19.5507 5 19V6H4V4H9V3H15V4H20V6H19V19C19 19.55 18.8043 20.021 18.413 20.413C18.0217 20.805 17.5507 21.0007 17 21H7ZM9 17H11V8H9V17ZM13 17H15V8H13V17Z"
+                          fill="#1F1F1F"
+                        />
+                      </svg>
+                    </div>
                   </td>
                 </tr>
               </tbody>
             </table>
+          </div>
+        </div>
+        <div class="user-details__entries-page">
+          <div class="user-details__show-entries">
+            <p>Show</p>
+            <div class="user-details__show-num">
+              10
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M7.41 8.58008L12 13.1701L16.59 8.58008L18 10.0001L12 16.0001L6 10.0001L7.41 8.58008Z"
+                  fill="#2DCB30"
+                />
+              </svg>
+            </div>
+            <p>Entries</p>
+          </div>
+          <div class="user-details__show-pages">
+            <div class="user-details__prev-page">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M15.41 16.58L10.83 12L15.41 7.41L14 6L8 12L14 18L15.41 16.58Z"
+                  fill="#2DCB30"
+                />
+              </svg>
+              <p>Previous</p>
+            </div>
+            <div class="user-details__page-num">
+              <p>234</p>
+              <svg
+                width="6"
+                height="10"
+                viewBox="0 0 6 10"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1.72111 9.126C1.66911 9.266 1.58711 9.37 1.47511 9.438C1.36711 9.506 1.25511 9.54 1.13911 9.54H0.689109L4.29511 0.558C4.34311 0.43 4.41511 0.332 4.51111 0.263999C4.61111 0.196 4.72511 0.162 4.85311 0.162H5.30911L1.72111 9.126Z"
+                  fill="#808080"
+                />
+              </svg>
+              <span>450</span>
+            </div>
+            <div class="user-details__prev-page">
+              <p>Next</p>
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M8.58984 16.58L13.1698 12L8.58984 7.41L9.99984 6L15.9998 12L9.99984 18L8.58984 16.58Z"
+                  fill="#2DCB30"
+                />
+              </svg>
+            </div>
           </div>
         </div>
       </div>
