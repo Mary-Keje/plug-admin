@@ -123,6 +123,7 @@
       border-radius: 0.8rem;
       padding: 1.4rem;
       margin-bottom:0.8rem;
+      background: none;
   }
   
   th {
@@ -149,32 +150,32 @@
   margin:0rem 0rem 3rem 0rem;
 }
 
-table {
-  width: 100%;
-  border-collapse: collapse;
-}
+// table {
+//   width: 100%;
+//   border-collapse: collapse;
+// }
 
-td {
-  background-color: #FFF;
-  padding: 8px;
-  margin-bottom:5em;
-}
+// td {
+//   background-color: #FFF;
+//   padding: 8px;
+//   margin-bottom:5em;
+// }
 
-th, td {
-  text-align: left;
-}
+// th, td {
+//   text-align: left;
+// }
 
-tr{
-    border-radius: 0.8rem;
-    padding: 1.4rem;
-    margin-bottom:0.8rem;
-}
+// tr{
+//     border-radius: 0.8rem;
+//     padding: 1.4rem;
+//     margin-bottom:0.8rem;
+// }
 
-th {
-  color: #4D4D4D;
-  border-radius: 0.8rem;
-  padding: 8px;
-}
+// th {
+//   color: #4D4D4D;
+//   border-radius: 0.8rem;
+//   padding: 8px;
+// }
 
 form select {
   width:10rem;
@@ -197,4 +198,13 @@ form label{
   font-size: 1.5rem;
       font-weight: 600;
       color: #1f1f1f;
+}
+.user-btn__failed {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #DD3C3C;
+  border-radius: 2px;
+  border: none;
+  padding: 0.8rem 1rem;
 }
