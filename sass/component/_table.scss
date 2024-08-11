@@ -12,7 +12,7 @@ table {
   }
 
   & tbody td {
-    padding: 0.8rem 1.2rem 0.8rem 0rem;
+    padding: 1.2rem 1.8rem 1.2rem 0rem;
   }
 
   & tbody td:first-child {
@@ -27,7 +27,7 @@ th {
   color: #808080;
   text-align: left;
 
-  padding-bottom: 1rem;
+  padding-bottom: 1.6rem;
 }
 
 .td-user-info {
@@ -45,6 +45,10 @@ th {
     & img {
       display: block;
       width: 4rem;
+    }
+
+    &__user-navigate {
+      color: #4d4d4d;
     }
   }
 

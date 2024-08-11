@@ -12,7 +12,7 @@
       <div class="header__main">
         <div class="header__details">
           <img
-            src="../imgs/logo/plug.logoo.svg"
+            src="./imgs/logo/plug.logoo.svg"
             alt=""
             class="header__logo-pl"
           />
@@ -31,7 +31,7 @@
             </svg>
             <div class="header__details-menu">
               <div class="header__face-logo">
-                <img src="../imgs/logo/face-icon-header.svg" alt="" class="" />
+                <img src="./imgs/logo/face-icon-header.svg" alt="" class="" />
                 <p class="header__text">Admin</p>
               </div>
               <svg
@@ -59,24 +59,24 @@
             <button class="btn-menus__btn-type">Personal information</button>
           </a>
           <div class="btn-menus__divider"></div>
-          <button class="btn-menus__btn-type btn-menus__btn-type--active">
-            User transactions
-          </button>
+          <a href="./user-transaction.html">
+            <button class="btn-menus__btn-type">User transactions</button>
+          </a>
           <div class="btn-menus__divider"></div>
           <a href="./bank-information.html">
             <button class="btn-menus__btn-type">Bank information</button>
           </a>
           <div class="btn-menus__divider"></div>
-          <a href="./navigation.html">
-            <button class="btn-menus__btn-type">Navigation</button>
-          </a>
+          <button class="btn-menus__btn-type btn-menus__btn-type--active">
+            Navigation
+          </button>
           <div class="btn-menus__divider"></div>
           <a href="./user-virtual-cards.html">
             <button class="btn-menus__btn-type">Virtual card</button>
           </a>
           <div class="btn-menus__divider"></div>
           <a href="./order-history.html">
-            <button class="btn-menus__btn-type">Order history</button>
+            <button class="btn-menus__btn-type">Order-history</button>
           </a>
           <div class="btn-menus__divider"></div>
           <a href="./cash-inout.html">
@@ -146,28 +146,16 @@
             <table class="table">
               <thead>
                 <tr>
-                  <th>Transaction ID</th>
-                  <th>Service</th>
-                  <th>Amount</th>
-                  <th>Status</th>
-                  <th>Previous balance</th>
-                  <th>New balance</th>
+                  <th>Activity</th>
                   <th>Date</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
                   <td class="td-user-info">
-                    <p class="td-user-info__user-detail">PNG1234567890</p>
-                  </td>
-                  <td><p>Airtime</p></td>
-                  <td><p>₦8,500.00</p></td>
-                  <td>
-                    <button class="user-btn__successful">Successful</button>
-                  </td>
-                  <td><p>₦34,6740,200</p></td>
-                  <td>
-                    <p>₦34,6740,200</p>
+                    <p class="td-user-info__user-navigate">
+                      Navigated to Dashboard page
+                    </p>
                   </td>
                   <td>
                     <div class="td-user-info__reg-date">
@@ -179,16 +167,9 @@
                 </tr>
                 <tr>
                   <td class="td-user-info">
-                    <p class="td-user-info__user-detail">PNG1234567890</p>
-                  </td>
-                  <td><p>Airtime</p></td>
-                  <td><p>₦8,500.00</p></td>
-                  <td>
-                    <button class="user-btn__successful">Successful</button>
-                  </td>
-                  <td><p>₦34,6740,200</p></td>
-                  <td>
-                    <p>₦34,6740,200</p>
+                    <p class="td-user-info__user-navigate">
+                      Navigated to successful page
+                    </p>
                   </td>
                   <td>
                     <div class="td-user-info__reg-date">
@@ -200,16 +181,9 @@
                 </tr>
                 <tr>
                   <td class="td-user-info">
-                    <p class="td-user-info__user-detail">PNG1234567890</p>
-                  </td>
-                  <td><p>Airtime</p></td>
-                  <td><p>₦8,500.00</p></td>
-                  <td>
-                    <button class="user-btn__successful">Successful</button>
-                  </td>
-                  <td><p>₦34,6740,200</p></td>
-                  <td>
-                    <p>₦34,6740,200</p>
+                    <p class="td-user-info__user-navigate">
+                      Navigated to review page
+                    </p>
                   </td>
                   <td>
                     <div class="td-user-info__reg-date">
@@ -221,16 +195,9 @@
                 </tr>
                 <tr>
                   <td class="td-user-info">
-                    <p class="td-user-info__user-detail">PNG1234567890</p>
-                  </td>
-                  <td><p>Data</p></td>
-                  <td><p>₦11,500.00</p></td>
-                  <td>
-                    <button class="user-btn__successful">Successful</button>
-                  </td>
-                  <td><p>₦34,6740,200</p></td>
-                  <td>
-                    <p>₦34,6740,200</p>
+                    <p class="td-user-info__user-navigate">
+                      Navigated to select provider page
+                    </p>
                   </td>
                   <td>
                     <div class="td-user-info__reg-date">
@@ -242,16 +209,9 @@
                 </tr>
                 <tr>
                   <td class="td-user-info">
-                    <p class="td-user-info__user-detail">PNG1234567890</p>
-                  </td>
-                  <td><p>Data</p></td>
-                  <td><p>₦11,500.00</p></td>
-                  <td>
-                    <button class="user-btn__successful">Successful</button>
-                  </td>
-                  <td><p>₦34,6740,200</p></td>
-                  <td>
-                    <p>₦34,6740,200</p>
+                    <p class="td-user-info__user-navigate">
+                      Navigated to Bills page
+                    </p>
                   </td>
                   <td>
                     <div class="td-user-info__reg-date">
@@ -263,16 +223,9 @@
                 </tr>
                 <tr>
                   <td class="td-user-info">
-                    <p class="td-user-info__user-detail">PNG1234567890</p>
-                  </td>
-                  <td><p>Data</p></td>
-                  <td><p>₦11,500.00</p></td>
-                  <td>
-                    <button class="user-btn__successful">Successful</button>
-                  </td>
-                  <td><p>₦34,6740,200</p></td>
-                  <td>
-                    <p>₦34,6740,200</p>
+                    <p class="td-user-info__user-navigate">
+                      Navigated to Bills page
+                    </p>
                   </td>
                   <td>
                     <div class="td-user-info__reg-date">
@@ -284,16 +237,9 @@
                 </tr>
                 <tr>
                   <td class="td-user-info">
-                    <p class="td-user-info__user-detail">PNG1234567890</p>
-                  </td>
-                  <td><p>CableTV</p></td>
-                  <td><p>₦35,000.00</p></td>
-                  <td>
-                    <button class="user-btn__successful">Successful</button>
-                  </td>
-                  <td><p>₦34,6740,200</p></td>
-                  <td>
-                    <p>₦34,6740,200</p>
+                    <p class="td-user-info__user-navigate">
+                      Navigated to account page
+                    </p>
                   </td>
                   <td>
                     <div class="td-user-info__reg-date">
@@ -305,16 +251,9 @@
                 </tr>
                 <tr>
                   <td class="td-user-info">
-                    <p class="td-user-info__user-detail">PNG1234567890</p>
-                  </td>
-                  <td><p>Cable TV</p></td>
-                  <td><p>₦35,000.00</p></td>
-                  <td>
-                    <button class="user-btn__successful">Successful</button>
-                  </td>
-                  <td><p>₦34,6740,200</p></td>
-                  <td>
-                    <p>₦34,6740,200</p>
+                    <p class="td-user-info__user-navigate">
+                      Navigated to account page
+                    </p>
                   </td>
                   <td>
                     <div class="td-user-info__reg-date">
@@ -326,16 +265,9 @@
                 </tr>
                 <tr>
                   <td class="td-user-info">
-                    <p class="td-user-info__user-detail">PNG1234567890</p>
-                  </td>
-                  <td><p>Cable TV</p></td>
-                  <td><p>₦35,000.00</p></td>
-                  <td>
-                    <button class="user-btn__successful">Successful</button>
-                  </td>
-                  <td><p>₦34,6740,200</p></td>
-                  <td>
-                    <p>₦34,6740,200</p>
+                    <p class="td-user-info__user-navigate">
+                      Navigated to Dashboard page
+                    </p>
                   </td>
                   <td>
                     <div class="td-user-info__reg-date">
@@ -347,16 +279,9 @@
                 </tr>
                 <tr>
                   <td class="td-user-info">
-                    <p class="td-user-info__user-detail">PNG1234567890</p>
-                  </td>
-                  <td><p>Cable TV</p></td>
-                  <td><p>₦35,000.00</p></td>
-                  <td>
-                    <button class="user-btn__successful">Successful</button>
-                  </td>
-                  <td><p>₦34,6740,200</p></td>
-                  <td>
-                    <p>₦34,6740,200</p>
+                    <p class="td-user-info__user-navigate">
+                      Navigated to Dashboard page
+                    </p>
                   </td>
                   <td>
                     <div class="td-user-info__reg-date">
