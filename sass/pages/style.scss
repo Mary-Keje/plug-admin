@@ -26,6 +26,12 @@
     gap: 1.6rem;
   }
 
+  // &__details-cashin {
+    // display: grid;
+    // grid-template-columns: repeat(2, 1fr);
+    // gap: 1.6rem;
+  // }
+
   &__details-type-txn {
     display: grid;
     grid-template-columns: repeat(4, 1fr);

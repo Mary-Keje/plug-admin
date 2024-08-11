@@ -12,7 +12,7 @@
       <div class="header__main">
         <div class="header__details">
           <img
-            src="./imgs/logo/plug.logoo.svg"
+            src="../imgs/logo/plug.logoo.svg"
             alt=""
             class="header__logo-pl"
           />
@@ -31,7 +31,7 @@
             </svg>
             <div class="header__details-menu">
               <div class="header__face-logo">
-                <img src="./imgs/logo/face-icon-header.svg" alt="" class="" />
+                <img src="../imgs/logo/face-icon-header.svg" alt="" class="" />
                 <p class="header__text">Admin</p>
               </div>
               <svg
@@ -144,7 +144,613 @@
               </button>
             </div>
           </div>
-          <div class="user-details__"></div>
+          <div class="user-details__details-btns">
+            <div class="btn-menus">
+              <button class="btn-menus__btn-type btn-menus__btn-type--active">
+                All (220)
+              </button>
+              <div class="btn-menus__divider"></div>
+              <button class="btn-menus__btn-type">New</button>
+              <div class="btn-menus__divider"></div>
+              <button class="btn-menus__btn-type">Processing</button>
+              <div class="btn-menus__divider"></div>
+              <button class="btn-menus__btn-type">Successful</button>
+              <div class="btn-menus__divider"></div>
+              <button class="btn-menus__btn-type">Cancelled</button>
+              <div class="btn-menus__divider"></div>
+              <button class="btn-menus__btn-type">Invalid</button>
+            </div>
+            <div class="user-btns">
+              <div class="header-details__sort">
+                <p class="header-details__month-text">All services</p>
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M7.41 8.57996L12 13.17L16.59 8.57996L18 9.99996L12 16L6 9.99996L7.41 8.57996Z"
+                    fill="#2DCB30"
+                  />
+                </svg>
+              </div>
+              <div class="header-details__sort">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M13.9999 12V19.88C14.0399 20.18 13.9399 20.5 13.7099 20.71C13.6174 20.8027 13.5075 20.8762 13.3865 20.9264C13.2655 20.9766 13.1359 21.0024 13.0049 21.0024C12.8739 21.0024 12.7442 20.9766 12.6233 20.9264C12.5023 20.8762 12.3924 20.8027 12.2999 20.71L10.2899 18.7C10.1809 18.5933 10.098 18.4629 10.0477 18.319C9.99739 18.175 9.98103 18.0213 9.99989 17.87V12H9.96989L4.20989 4.62C4.0475 4.41153 3.97422 4.14726 4.00607 3.88493C4.03793 3.6226 4.17232 3.38355 4.37989 3.22C4.56989 3.08 4.77989 3 4.99989 3H18.9999C19.2199 3 19.4299 3.08 19.6199 3.22C19.8275 3.38355 19.9618 3.6226 19.9937 3.88493C20.0256 4.14726 19.9523 4.41153 19.7899 4.62L14.0299 12H13.9999Z"
+                    fill="#2DCB30"
+                  />
+                </svg>
+                <p class="header-details__sort-text">Filters</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Transaction ID</th>
+                  <th>Service</th>
+                  <th>Amount</th>
+                  <th>Status</th>
+                  <th>Previous balance</th>
+                  <th>New balance</th>
+                  <th>Date</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="td-user-info">
+                    <p class="td-user-info__user-detail">PNG1234567890</p>
+                  </td>
+                  <td><p>Airtime</p></td>
+                  <td><p>₦8,500.00</p></td>
+                  <td>
+                    <button class="user-btn__successful">Successful</button>
+                  </td>
+                  <td><p>₦34,6740,200</p></td>
+                  <td>
+                    <p>₦34,6740,200</p>
+                  </td>
+                  <td>
+                    <div class="td-user-info__reg-date">
+                      <p>Jul 24, 2024</p>
+                      <div class="td-user-info__date-divider"></div>
+                      <p>12:45pm</p>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="td-user-info__action-icons">
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M12 9C11.2044 9 10.4413 9.31607 9.87868 9.87868C9.31607 10.4413 9 11.2044 9 12C9 12.7956 9.31607 13.5587 9.87868 14.1213C10.4413 14.6839 11.2044 15 12 15C12.7956 15 13.5587 14.6839 14.1213 14.1213C14.6839 13.5587 15 12.7956 15 12C15 11.2044 14.6839 10.4413 14.1213 9.87868C13.5587 9.31607 12.7956 9 12 9ZM12 17C10.6739 17 9.40215 16.4732 8.46447 15.5355C7.52678 14.5979 7 13.3261 7 12C7 10.6739 7.52678 9.40215 8.46447 8.46447C9.40215 7.52678 10.6739 7 12 7C13.3261 7 14.5979 7.52678 15.5355 8.46447C16.4732 9.40215 17 10.6739 17 12C17 13.3261 16.4732 14.5979 15.5355 15.5355C14.5979 16.4732 13.3261 17 12 17ZM12 4.5C7 4.5 2.73 7.61 1 12C2.73 16.39 7 19.5 12 19.5C17 19.5 21.27 16.39 23 12C21.27 7.61 17 4.5 12 4.5Z"
+                          fill="#1F1F1F"
+                        />
+                      </svg>
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M7 21C6.45 21 5.97933 20.8043 5.588 20.413C5.19667 20.0217 5.00067 19.5507 5 19V6H4V4H9V3H15V4H20V6H19V19C19 19.55 18.8043 20.021 18.413 20.413C18.0217 20.805 17.5507 21.0007 17 21H7ZM9 17H11V8H9V17ZM13 17H15V8H13V17Z"
+                          fill="#1F1F1F"
+                        />
+                      </svg>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="td-user-info">
+                    <p class="td-user-info__user-detail">PNG1234567890</p>
+                  </td>
+                  <td><p>Airtime</p></td>
+                  <td><p>₦8,500.00</p></td>
+                  <td>
+                    <button class="user-btn__successful">Successful</button>
+                  </td>
+                  <td><p>₦34,6740,200</p></td>
+                  <td>
+                    <p>₦34,6740,200</p>
+                  </td>
+                  <td>
+                    <div class="td-user-info__reg-date">
+                      <p>Jul 24, 2024</p>
+                      <div class="td-user-info__date-divider"></div>
+                      <p>12:45pm</p>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="td-user-info__action-icons">
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M12 9C11.2044 9 10.4413 9.31607 9.87868 9.87868C9.31607 10.4413 9 11.2044 9 12C9 12.7956 9.31607 13.5587 9.87868 14.1213C10.4413 14.6839 11.2044 15 12 15C12.7956 15 13.5587 14.6839 14.1213 14.1213C14.6839 13.5587 15 12.7956 15 12C15 11.2044 14.6839 10.4413 14.1213 9.87868C13.5587 9.31607 12.7956 9 12 9ZM12 17C10.6739 17 9.40215 16.4732 8.46447 15.5355C7.52678 14.5979 7 13.3261 7 12C7 10.6739 7.52678 9.40215 8.46447 8.46447C9.40215 7.52678 10.6739 7 12 7C13.3261 7 14.5979 7.52678 15.5355 8.46447C16.4732 9.40215 17 10.6739 17 12C17 13.3261 16.4732 14.5979 15.5355 15.5355C14.5979 16.4732 13.3261 17 12 17ZM12 4.5C7 4.5 2.73 7.61 1 12C2.73 16.39 7 19.5 12 19.5C17 19.5 21.27 16.39 23 12C21.27 7.61 17 4.5 12 4.5Z"
+                          fill="#1F1F1F"
+                        />
+                      </svg>
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M7 21C6.45 21 5.97933 20.8043 5.588 20.413C5.19667 20.0217 5.00067 19.5507 5 19V6H4V4H9V3H15V4H20V6H19V19C19 19.55 18.8043 20.021 18.413 20.413C18.0217 20.805 17.5507 21.0007 17 21H7ZM9 17H11V8H9V17ZM13 17H15V8H13V17Z"
+                          fill="#1F1F1F"
+                        />
+                      </svg>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="td-user-info">
+                    <p class="td-user-info__user-detail">PNG1234567890</p>
+                  </td>
+                  <td><p>Airtime</p></td>
+                  <td><p>₦8,500.00</p></td>
+                  <td>
+                    <button class="user-btn__successful">Successful</button>
+                  </td>
+                  <td><p>₦34,6740,200</p></td>
+                  <td>
+                    <p>₦34,6740,200</p>
+                  </td>
+                  <td>
+                    <div class="td-user-info__reg-date">
+                      <p>Jul 24, 2024</p>
+                      <div class="td-user-info__date-divider"></div>
+                      <p>12:45pm</p>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="td-user-info__action-icons">
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M12 9C11.2044 9 10.4413 9.31607 9.87868 9.87868C9.31607 10.4413 9 11.2044 9 12C9 12.7956 9.31607 13.5587 9.87868 14.1213C10.4413 14.6839 11.2044 15 12 15C12.7956 15 13.5587 14.6839 14.1213 14.1213C14.6839 13.5587 15 12.7956 15 12C15 11.2044 14.6839 10.4413 14.1213 9.87868C13.5587 9.31607 12.7956 9 12 9ZM12 17C10.6739 17 9.40215 16.4732 8.46447 15.5355C7.52678 14.5979 7 13.3261 7 12C7 10.6739 7.52678 9.40215 8.46447 8.46447C9.40215 7.52678 10.6739 7 12 7C13.3261 7 14.5979 7.52678 15.5355 8.46447C16.4732 9.40215 17 10.6739 17 12C17 13.3261 16.4732 14.5979 15.5355 15.5355C14.5979 16.4732 13.3261 17 12 17ZM12 4.5C7 4.5 2.73 7.61 1 12C2.73 16.39 7 19.5 12 19.5C17 19.5 21.27 16.39 23 12C21.27 7.61 17 4.5 12 4.5Z"
+                          fill="#1F1F1F"
+                        />
+                      </svg>
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M7 21C6.45 21 5.97933 20.8043 5.588 20.413C5.19667 20.0217 5.00067 19.5507 5 19V6H4V4H9V3H15V4H20V6H19V19C19 19.55 18.8043 20.021 18.413 20.413C18.0217 20.805 17.5507 21.0007 17 21H7ZM9 17H11V8H9V17ZM13 17H15V8H13V17Z"
+                          fill="#1F1F1F"
+                        />
+                      </svg>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="td-user-info">
+                    <p class="td-user-info__user-detail">PNG1234567890</p>
+                  </td>
+                  <td><p>Data</p></td>
+                  <td><p>₦11,500.00</p></td>
+                  <td>
+                    <button class="user-btn__successful">Successful</button>
+                  </td>
+                  <td><p>₦34,6740,200</p></td>
+                  <td>
+                    <p>₦34,6740,200</p>
+                  </td>
+                  <td>
+                    <div class="td-user-info__reg-date">
+                      <p>Jul 24, 2024</p>
+                      <div class="td-user-info__date-divider"></div>
+                      <p>12:45pm</p>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="td-user-info__action-icons">
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M12 9C11.2044 9 10.4413 9.31607 9.87868 9.87868C9.31607 10.4413 9 11.2044 9 12C9 12.7956 9.31607 13.5587 9.87868 14.1213C10.4413 14.6839 11.2044 15 12 15C12.7956 15 13.5587 14.6839 14.1213 14.1213C14.6839 13.5587 15 12.7956 15 12C15 11.2044 14.6839 10.4413 14.1213 9.87868C13.5587 9.31607 12.7956 9 12 9ZM12 17C10.6739 17 9.40215 16.4732 8.46447 15.5355C7.52678 14.5979 7 13.3261 7 12C7 10.6739 7.52678 9.40215 8.46447 8.46447C9.40215 7.52678 10.6739 7 12 7C13.3261 7 14.5979 7.52678 15.5355 8.46447C16.4732 9.40215 17 10.6739 17 12C17 13.3261 16.4732 14.5979 15.5355 15.5355C14.5979 16.4732 13.3261 17 12 17ZM12 4.5C7 4.5 2.73 7.61 1 12C2.73 16.39 7 19.5 12 19.5C17 19.5 21.27 16.39 23 12C21.27 7.61 17 4.5 12 4.5Z"
+                          fill="#1F1F1F"
+                        />
+                      </svg>
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M7 21C6.45 21 5.97933 20.8043 5.588 20.413C5.19667 20.0217 5.00067 19.5507 5 19V6H4V4H9V3H15V4H20V6H19V19C19 19.55 18.8043 20.021 18.413 20.413C18.0217 20.805 17.5507 21.0007 17 21H7ZM9 17H11V8H9V17ZM13 17H15V8H13V17Z"
+                          fill="#1F1F1F"
+                        />
+                      </svg>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="td-user-info">
+                    <p class="td-user-info__user-detail">PNG1234567890</p>
+                  </td>
+                  <td><p>Data</p></td>
+                  <td><p>₦11,500.00</p></td>
+                  <td>
+                    <button class="user-btn__successful">Successful</button>
+                  </td>
+                  <td><p>₦34,6740,200</p></td>
+                  <td>
+                    <p>₦34,6740,200</p>
+                  </td>
+                  <td>
+                    <div class="td-user-info__reg-date">
+                      <p>Jul 24, 2024</p>
+                      <div class="td-user-info__date-divider"></div>
+                      <p>12:45pm</p>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="td-user-info__action-icons">
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M12 9C11.2044 9 10.4413 9.31607 9.87868 9.87868C9.31607 10.4413 9 11.2044 9 12C9 12.7956 9.31607 13.5587 9.87868 14.1213C10.4413 14.6839 11.2044 15 12 15C12.7956 15 13.5587 14.6839 14.1213 14.1213C14.6839 13.5587 15 12.7956 15 12C15 11.2044 14.6839 10.4413 14.1213 9.87868C13.5587 9.31607 12.7956 9 12 9ZM12 17C10.6739 17 9.40215 16.4732 8.46447 15.5355C7.52678 14.5979 7 13.3261 7 12C7 10.6739 7.52678 9.40215 8.46447 8.46447C9.40215 7.52678 10.6739 7 12 7C13.3261 7 14.5979 7.52678 15.5355 8.46447C16.4732 9.40215 17 10.6739 17 12C17 13.3261 16.4732 14.5979 15.5355 15.5355C14.5979 16.4732 13.3261 17 12 17ZM12 4.5C7 4.5 2.73 7.61 1 12C2.73 16.39 7 19.5 12 19.5C17 19.5 21.27 16.39 23 12C21.27 7.61 17 4.5 12 4.5Z"
+                          fill="#1F1F1F"
+                        />
+                      </svg>
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M7 21C6.45 21 5.97933 20.8043 5.588 20.413C5.19667 20.0217 5.00067 19.5507 5 19V6H4V4H9V3H15V4H20V6H19V19C19 19.55 18.8043 20.021 18.413 20.413C18.0217 20.805 17.5507 21.0007 17 21H7ZM9 17H11V8H9V17ZM13 17H15V8H13V17Z"
+                          fill="#1F1F1F"
+                        />
+                      </svg>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="td-user-info">
+                    <p class="td-user-info__user-detail">PNG1234567890</p>
+                  </td>
+                  <td><p>Data</p></td>
+                  <td><p>₦11,500.00</p></td>
+                  <td>
+                    <button class="user-btn__successful">Successful</button>
+                  </td>
+                  <td><p>₦34,6740,200</p></td>
+                  <td>
+                    <p>₦34,6740,200</p>
+                  </td>
+                  <td>
+                    <div class="td-user-info__reg-date">
+                      <p>Jul 24, 2024</p>
+                      <div class="td-user-info__date-divider"></div>
+                      <p>12:45pm</p>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="td-user-info__action-icons">
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M12 9C11.2044 9 10.4413 9.31607 9.87868 9.87868C9.31607 10.4413 9 11.2044 9 12C9 12.7956 9.31607 13.5587 9.87868 14.1213C10.4413 14.6839 11.2044 15 12 15C12.7956 15 13.5587 14.6839 14.1213 14.1213C14.6839 13.5587 15 12.7956 15 12C15 11.2044 14.6839 10.4413 14.1213 9.87868C13.5587 9.31607 12.7956 9 12 9ZM12 17C10.6739 17 9.40215 16.4732 8.46447 15.5355C7.52678 14.5979 7 13.3261 7 12C7 10.6739 7.52678 9.40215 8.46447 8.46447C9.40215 7.52678 10.6739 7 12 7C13.3261 7 14.5979 7.52678 15.5355 8.46447C16.4732 9.40215 17 10.6739 17 12C17 13.3261 16.4732 14.5979 15.5355 15.5355C14.5979 16.4732 13.3261 17 12 17ZM12 4.5C7 4.5 2.73 7.61 1 12C2.73 16.39 7 19.5 12 19.5C17 19.5 21.27 16.39 23 12C21.27 7.61 17 4.5 12 4.5Z"
+                          fill="#1F1F1F"
+                        />
+                      </svg>
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M7 21C6.45 21 5.97933 20.8043 5.588 20.413C5.19667 20.0217 5.00067 19.5507 5 19V6H4V4H9V3H15V4H20V6H19V19C19 19.55 18.8043 20.021 18.413 20.413C18.0217 20.805 17.5507 21.0007 17 21H7ZM9 17H11V8H9V17ZM13 17H15V8H13V17Z"
+                          fill="#1F1F1F"
+                        />
+                      </svg>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="td-user-info">
+                    <p class="td-user-info__user-detail">PNG1234567890</p>
+                  </td>
+                  <td><p>CableTV</p></td>
+                  <td><p>₦35,000.00</p></td>
+                  <td>
+                    <button class="user-btn__successful">Successful</button>
+                  </td>
+                  <td><p>₦34,6740,200</p></td>
+                  <td>
+                    <p>₦34,6740,200</p>
+                  </td>
+                  <td>
+                    <div class="td-user-info__reg-date">
+                      <p>Jul 24, 2024</p>
+                      <div class="td-user-info__date-divider"></div>
+                      <p>12:45pm</p>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="td-user-info__action-icons">
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M12 9C11.2044 9 10.4413 9.31607 9.87868 9.87868C9.31607 10.4413 9 11.2044 9 12C9 12.7956 9.31607 13.5587 9.87868 14.1213C10.4413 14.6839 11.2044 15 12 15C12.7956 15 13.5587 14.6839 14.1213 14.1213C14.6839 13.5587 15 12.7956 15 12C15 11.2044 14.6839 10.4413 14.1213 9.87868C13.5587 9.31607 12.7956 9 12 9ZM12 17C10.6739 17 9.40215 16.4732 8.46447 15.5355C7.52678 14.5979 7 13.3261 7 12C7 10.6739 7.52678 9.40215 8.46447 8.46447C9.40215 7.52678 10.6739 7 12 7C13.3261 7 14.5979 7.52678 15.5355 8.46447C16.4732 9.40215 17 10.6739 17 12C17 13.3261 16.4732 14.5979 15.5355 15.5355C14.5979 16.4732 13.3261 17 12 17ZM12 4.5C7 4.5 2.73 7.61 1 12C2.73 16.39 7 19.5 12 19.5C17 19.5 21.27 16.39 23 12C21.27 7.61 17 4.5 12 4.5Z"
+                          fill="#1F1F1F"
+                        />
+                      </svg>
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M7 21C6.45 21 5.97933 20.8043 5.588 20.413C5.19667 20.0217 5.00067 19.5507 5 19V6H4V4H9V3H15V4H20V6H19V19C19 19.55 18.8043 20.021 18.413 20.413C18.0217 20.805 17.5507 21.0007 17 21H7ZM9 17H11V8H9V17ZM13 17H15V8H13V17Z"
+                          fill="#1F1F1F"
+                        />
+                      </svg>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="td-user-info">
+                    <p class="td-user-info__user-detail">PNG1234567890</p>
+                  </td>
+                  <td><p>Cable TV</p></td>
+                  <td><p>₦35,000.00</p></td>
+                  <td>
+                    <button class="user-btn__successful">Successful</button>
+                  </td>
+                  <td><p>₦34,6740,200</p></td>
+                  <td>
+                    <p>₦34,6740,200</p>
+                  </td>
+                  <td>
+                    <div class="td-user-info__reg-date">
+                      <p>Jul 24, 2024</p>
+                      <div class="td-user-info__date-divider"></div>
+                      <p>12:45pm</p>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="td-user-info__action-icons">
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M12 9C11.2044 9 10.4413 9.31607 9.87868 9.87868C9.31607 10.4413 9 11.2044 9 12C9 12.7956 9.31607 13.5587 9.87868 14.1213C10.4413 14.6839 11.2044 15 12 15C12.7956 15 13.5587 14.6839 14.1213 14.1213C14.6839 13.5587 15 12.7956 15 12C15 11.2044 14.6839 10.4413 14.1213 9.87868C13.5587 9.31607 12.7956 9 12 9ZM12 17C10.6739 17 9.40215 16.4732 8.46447 15.5355C7.52678 14.5979 7 13.3261 7 12C7 10.6739 7.52678 9.40215 8.46447 8.46447C9.40215 7.52678 10.6739 7 12 7C13.3261 7 14.5979 7.52678 15.5355 8.46447C16.4732 9.40215 17 10.6739 17 12C17 13.3261 16.4732 14.5979 15.5355 15.5355C14.5979 16.4732 13.3261 17 12 17ZM12 4.5C7 4.5 2.73 7.61 1 12C2.73 16.39 7 19.5 12 19.5C17 19.5 21.27 16.39 23 12C21.27 7.61 17 4.5 12 4.5Z"
+                          fill="#1F1F1F"
+                        />
+                      </svg>
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M7 21C6.45 21 5.97933 20.8043 5.588 20.413C5.19667 20.0217 5.00067 19.5507 5 19V6H4V4H9V3H15V4H20V6H19V19C19 19.55 18.8043 20.021 18.413 20.413C18.0217 20.805 17.5507 21.0007 17 21H7ZM9 17H11V8H9V17ZM13 17H15V8H13V17Z"
+                          fill="#1F1F1F"
+                        />
+                      </svg>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="td-user-info">
+                    <p class="td-user-info__user-detail">PNG1234567890</p>
+                  </td>
+                  <td><p>Cable TV</p></td>
+                  <td><p>₦35,000.00</p></td>
+                  <td>
+                    <button class="user-btn__successful">Successful</button>
+                  </td>
+                  <td><p>₦34,6740,200</p></td>
+                  <td>
+                    <p>₦34,6740,200</p>
+                  </td>
+                  <td>
+                    <div class="td-user-info__reg-date">
+                      <p>Jul 24, 2024</p>
+                      <div class="td-user-info__date-divider"></div>
+                      <p>12:45pm</p>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="td-user-info__action-icons">
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M12 9C11.2044 9 10.4413 9.31607 9.87868 9.87868C9.31607 10.4413 9 11.2044 9 12C9 12.7956 9.31607 13.5587 9.87868 14.1213C10.4413 14.6839 11.2044 15 12 15C12.7956 15 13.5587 14.6839 14.1213 14.1213C14.6839 13.5587 15 12.7956 15 12C15 11.2044 14.6839 10.4413 14.1213 9.87868C13.5587 9.31607 12.7956 9 12 9ZM12 17C10.6739 17 9.40215 16.4732 8.46447 15.5355C7.52678 14.5979 7 13.3261 7 12C7 10.6739 7.52678 9.40215 8.46447 8.46447C9.40215 7.52678 10.6739 7 12 7C13.3261 7 14.5979 7.52678 15.5355 8.46447C16.4732 9.40215 17 10.6739 17 12C17 13.3261 16.4732 14.5979 15.5355 15.5355C14.5979 16.4732 13.3261 17 12 17ZM12 4.5C7 4.5 2.73 7.61 1 12C2.73 16.39 7 19.5 12 19.5C17 19.5 21.27 16.39 23 12C21.27 7.61 17 4.5 12 4.5Z"
+                          fill="#1F1F1F"
+                        />
+                      </svg>
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M7 21C6.45 21 5.97933 20.8043 5.588 20.413C5.19667 20.0217 5.00067 19.5507 5 19V6H4V4H9V3H15V4H20V6H19V19C19 19.55 18.8043 20.021 18.413 20.413C18.0217 20.805 17.5507 21.0007 17 21H7ZM9 17H11V8H9V17ZM13 17H15V8H13V17Z"
+                          fill="#1F1F1F"
+                        />
+                      </svg>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="td-user-info">
+                    <p class="td-user-info__user-detail">PNG1234567890</p>
+                  </td>
+                  <td><p>Cable TV</p></td>
+                  <td><p>₦35,000.00</p></td>
+                  <td>
+                    <button class="user-btn__successful">Successful</button>
+                  </td>
+                  <td><p>₦34,6740,200</p></td>
+                  <td>
+                    <p>₦34,6740,200</p>
+                  </td>
+                  <td>
+                    <div class="td-user-info__reg-date">
+                      <p>Jul 24, 2024</p>
+                      <div class="td-user-info__date-divider"></div>
+                      <p>12:45pm</p>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="td-user-info__action-icons">
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M12 9C11.2044 9 10.4413 9.31607 9.87868 9.87868C9.31607 10.4413 9 11.2044 9 12C9 12.7956 9.31607 13.5587 9.87868 14.1213C10.4413 14.6839 11.2044 15 12 15C12.7956 15 13.5587 14.6839 14.1213 14.1213C14.6839 13.5587 15 12.7956 15 12C15 11.2044 14.6839 10.4413 14.1213 9.87868C13.5587 9.31607 12.7956 9 12 9ZM12 17C10.6739 17 9.40215 16.4732 8.46447 15.5355C7.52678 14.5979 7 13.3261 7 12C7 10.6739 7.52678 9.40215 8.46447 8.46447C9.40215 7.52678 10.6739 7 12 7C13.3261 7 14.5979 7.52678 15.5355 8.46447C16.4732 9.40215 17 10.6739 17 12C17 13.3261 16.4732 14.5979 15.5355 15.5355C14.5979 16.4732 13.3261 17 12 17ZM12 4.5C7 4.5 2.73 7.61 1 12C2.73 16.39 7 19.5 12 19.5C17 19.5 21.27 16.39 23 12C21.27 7.61 17 4.5 12 4.5Z"
+                          fill="#1F1F1F"
+                        />
+                      </svg>
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M7 21C6.45 21 5.97933 20.8043 5.588 20.413C5.19667 20.0217 5.00067 19.5507 5 19V6H4V4H9V3H15V4H20V6H19V19C19 19.55 18.8043 20.021 18.413 20.413C18.0217 20.805 17.5507 21.0007 17 21H7ZM9 17H11V8H9V17ZM13 17H15V8H13V17Z"
+                          fill="#1F1F1F"
+                        />
+                      </svg>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="user-details__entries-page">
+          <div class="user-details__show-entries"></div>
+          <div class="user-details__show-pages">
+            <div class="user-details__prev-page">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M15.41 16.58L10.83 12L15.41 7.41L14 6L8 12L14 18L15.41 16.58Z"
+                  fill="#2DCB30"
+                />
+              </svg>
+              <p>Previous</p>
+            </div>
+            <div class="user-details__page-num">
+              <p>234</p>
+              <svg
+                width="6"
+                height="10"
+                viewBox="0 0 6 10"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1.72111 9.126C1.66911 9.266 1.58711 9.37 1.47511 9.438C1.36711 9.506 1.25511 9.54 1.13911 9.54H0.689109L4.29511 0.558C4.34311 0.43 4.41511 0.332 4.51111 0.263999C4.61111 0.196 4.72511 0.162 4.85311 0.162H5.30911L1.72111 9.126Z"
+                  fill="#808080"
+                />
+              </svg>
+              <span>450</span>
+            </div>
+            <div class="user-details__prev-page">
+              <p>Next</p>
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M8.58984 16.58L13.1698 12L8.58984 7.41L9.99984 6L15.9998 12L9.99984 18L8.58984 16.58Z"
+                  fill="#2DCB30"
+                />
+              </svg>
+            </div>
+          </div>
         </div>
       </div>
     </div>
