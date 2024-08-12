@@ -423,6 +423,27 @@ body {
     font-weight: 600;
     color: #25a727; }
 
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(26, 26, 26, 0.5);
+  z-index: 9999;
+  cursor: pointer;
+  backdrop-filter: blur(3px); }
+
+.modal-create {
+  background-color: #ffffff;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 62rem;
+  max-width: calc(100% - 4.8rem);
+  z-index: 99999; }
+
 .header__logo-pl {
   display: block;
   width: 9.8rem; }
