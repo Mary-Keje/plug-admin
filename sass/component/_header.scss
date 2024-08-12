@@ -52,14 +52,19 @@
     align-items: center;
     gap: 0.8rem;
 
+    & p {
+      color: #ffffff;
+    }
+
     & img {
       display: block;
       width: 3.2rem;
     }
+  }
 
-    & p {
-      color: #ffffff;
-    }
+  &__face-img {
+    display: block;
+    width: 3.2rem;
   }
 }
 
@@ -79,6 +84,10 @@
     display: flex;
     align-items: center;
     gap: 2.4rem;
+
+    & a {
+      text-decoration: none;
+    }
   }
 
   &__search-input {
