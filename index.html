@@ -1100,9 +1100,8 @@
 
     <!-- for create user pop-up -->
 
-    <!-- <div class="open"></div>
     <div class="modal-create">
-      <button class="modal-close-btn">
+      <button class="modal-create__close-btn">
         <svg
           width="24"
           height="24"
@@ -1116,38 +1115,132 @@
           />
         </svg>
       </button>
-      <p>Create User</p>
-      <div class="">
-        <div class="user-details__user-form">
-          <div class="user-details__user-name">
-            <p class="user-details__user-name-text">Date registered</p>
-            <div class="form">
-              <div class="form__default-input">
-                <span>29 July, 2024</span>
-                <span>12:30pm</span>
-              </div>
+      <div class="modal-create__modal-body">
+        <div class="modal-create__modal-details">
+          <p class="modal-create__header">Create User</p>
+          <div class="modal-create__user-form">
+            <div class="form__user-input">
+              <input type="text" placeholder="Username" />
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M21 6.99984L9 18.9998L3.5 13.4998L4.91 12.0898L9 16.1698L19.59 5.58984L21 6.99984Z"
+                  fill="#1F1F1F"
+                />
+              </svg>
             </div>
-          </div>
-          <div class="user-details__user-name">
-            <p class="user-details__user-name-text">User ranking</p>
-            <div class="form">
-              <div class="form__ranking-input">
-                <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <rect width="24" height="24" rx="2" fill="#1F1F1F" />
-                </svg>
-                <p>4/230,450</p>
-              </div>
+            <div class="form__user-input">
+              <input type="text" placeholder="Email" />
+            </div>
+            <div class="form__user-input">
+              <p>User</p>
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M7.41 8.58008L12 13.1701L16.59 8.58008L18 10.0001L12 16.0001L6 10.0001L7.41 8.58008Z"
+                  fill="#1F1F1F"
+                />
+              </svg>
             </div>
           </div>
         </div>
+        <div class="modal-create__create-btn">
+          <button class="button button--create-default">Create user</button>
+        </div>
       </div>
     </div>
-    <div class="overlay hidden"></div> -->
+    <div class="overlay hidden"></div>
+
+    <!-- for sort pop up -->
+
+    <div class="modal-create modal-create__sort">
+      <button class="modal-create__close-btn">
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z"
+            fill="black"
+          />
+        </svg>
+      </button>
+      <div class="modal-create__modal-body">
+        <div class="modal-create__modal-details">
+          <p class="modal-create__header">Sort</p>
+          <div class="modal-create__user-sort-form">
+            <div class="form__sort-input">
+              <input type="radio" />
+              <p>Balance</p>
+            </div>
+            <div class="form__sort-input">
+              <input type="radio" />
+              <p>Registration date</p>
+            </div>
+            <div class="form__sort-input">
+              <input type="radio" />
+              <p>Status</p>
+            </div>
+            <div class="form__sort-input">
+              <input type="radio" />
+              <p>Active</p>
+            </div>
+            <div class="form__sort-input">
+              <input type="radio" />
+              <p>Inactive</p>
+            </div>
+          </div>
+        </div>
+        <div class="modal-create__create-btn">
+          <button class="button button--apply">Apply</button>
+        </div>
+      </div>
+    </div>
+    <div class="overlay hidden"></div>
+
+    <!-- for the confirm action -->
+
+    <div class="modal-create modal-create__sort">
+      <button class="modal-create__close-btn">
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z"
+            fill="black"
+          />
+        </svg>
+      </button>
+      <div class="modal-create__modal-body">
+        <div class="modal-create__modal-details">
+          <p class="modal-create__header">Confirm action</p>
+          <p class="modal-create__sub-header">
+            Are you sure you want flag <span>6</span> accounts
+          </p>
+        </div>
+        <div class="modal-create__confirm-btn">
+          <button class="button button--apply">Comfirm</button>
+          <button class="button button--cancel">Cancel</button>
+        </div>
+      </div>
+    </div>
+    <div class="overlay hidden"></div>
   </body>
 </html>

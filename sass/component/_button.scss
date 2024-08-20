@@ -1,11 +1,12 @@
 .button {
   font-weight: 600;
-  // background-image: url(../imgs/btn-bg.png);
   background-color: #2dcb30;
   color: #ffffff;
   border-radius: 0.8rem;
   border: none;
   cursor: pointer;
+
+  height: 4.8rem;
 
   &--create {
     padding: 1.2rem 2.4rem;
@@ -32,6 +33,27 @@
     gap: 0.8rem;
 
     width: 16rem;
+  }
+
+  &--create-default {
+    font-weight: 600;
+    color: #a3a3a3;
+    background-color: #e6e6e6;
+    padding: 0.8rem 1.2rem;
+
+    width: 30rem;
+  }
+
+  &--apply {
+    padding: 0.8rem 1.2rem;
+    width: 18rem;
+  }
+
+  &--cancel {
+    padding: 0.8rem 1.2rem;
+    color: #1f1f1f;
+    background-color: #ffffff;
+    width: 18rem;
   }
 }
 
@@ -80,7 +102,6 @@
 
   display: flex;
   align-items: center;
-  // justify-content: space-between;
   gap: 0.8rem;
 
   &__btn-type {
@@ -105,7 +126,7 @@
 }
 
 .user-btn {
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: 700;
   border-radius: 2px;
   color: #ffffff;

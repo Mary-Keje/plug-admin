@@ -433,16 +433,80 @@ body {
   z-index: 9999;
   cursor: pointer;
   backdrop-filter: blur(3px); }
+  .overlay.hidden {
+    display: none; }
 
 .modal-create {
-  background-color: #ffffff;
+  background-color: #f7f8f8;
+  border-radius: 0.8rem;
+  padding: 3rem 3rem 6.6rem;
   position: fixed;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) scale(0);
+  pointer-events: none;
+  display: flex;
+  flex-direction: column;
   width: 62rem;
   max-width: calc(100% - 4.8rem);
   z-index: 99999; }
+  .modal-create.open {
+    transform: translate(-50%, -50%);
+    pointer-events: all; }
+  .modal-create__sort {
+    width: 50rem; }
+  .modal-create__close-btn {
+    background: none;
+    border: none;
+    display: flex;
+    justify-content: flex-end; }
+    .modal-create__close-btn svg {
+      display: block;
+      width: 2.4rem;
+      height: 2.4rem;
+      cursor: pointer; }
+  .modal-create__modal-body {
+    padding: 0rem 4.8rem;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem; }
+  .modal-create__modal-details {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem; }
+  .modal-create__header {
+    font-size: 2.4rem;
+    font-family: "Tango Sans";
+    text-align: center; }
+  .modal-create__sub-header {
+    color: #808080;
+    text-align: center; }
+    .modal-create__sub-header span {
+      color: #dd3c3c; }
+  .modal-create__user-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem; }
+  .modal-create__user-sort-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px; }
+  .modal-create__create-btn {
+    display: flex;
+    justify-content: center; }
+  .modal-create__confirm-btn {
+    display: flex;
+    align-items: center;
+    gap: 2.4rem; }
+  .modal-create__user-link {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem; }
+  .modal-create__reset-link {
+    font-weight: 600;
+    color: #dd3c3c; }
 
 .header__logo-pl {
   display: block;
@@ -551,7 +615,8 @@ body {
   color: #ffffff;
   border-radius: 0.8rem;
   border: none;
-  cursor: pointer; }
+  cursor: pointer;
+  height: 4.8rem; }
   .button--create {
     padding: 1.2rem 2.4rem;
     width: 30rem;
@@ -570,6 +635,20 @@ body {
     justify-content: center;
     gap: 0.8rem;
     width: 16rem; }
+  .button--create-default {
+    font-weight: 600;
+    color: #a3a3a3;
+    background-color: #e6e6e6;
+    padding: 0.8rem 1.2rem;
+    width: 30rem; }
+  .button--apply {
+    padding: 0.8rem 1.2rem;
+    width: 18rem; }
+  .button--cancel {
+    padding: 0.8rem 1.2rem;
+    color: #1f1f1f;
+    background-color: #ffffff;
+    width: 18rem; }
 
 .user-btns {
   font-weight: 600;
@@ -621,7 +700,7 @@ body {
     height: 3rem; }
 
 .user-btn {
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: 700;
   border-radius: 2px;
   color: #ffffff;
@@ -902,7 +981,8 @@ th {
   gap: 1.6rem; }
   .td-user-info__action-icons svg {
     display: block;
-    width: 2.4rem; }
+    width: 2.4rem;
+    cursor: pointer; }
 
 .form {
   width: 56rem;
@@ -928,5 +1008,37 @@ th {
     display: flex;
     align-items: center;
     gap: 1.6rem; }
+  .form__user-input {
+    height: 4.8rem;
+    background-color: #ffffff;
+    border: 1.5px solid #e6e6e6;
+    border-radius: 0.8rem;
+    padding: 1.2rem 1.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+    .form__user-input svg {
+      display: block;
+      width: 2.4rem; }
+    .form__user-input input {
+      width: 30rem;
+      background-color: transparent;
+      border: none;
+      padding: 1.2rem 1.6rem 1.2rem 0rem;
+      font-weight: 300; }
+      .form__user-input input:focus {
+        outline: transparent; }
+      .form__user-input input ::placeholder {
+        color: #a3a3a3; }
+    .form__user-input--user-default {
+      color: #a3a3a3;
+      background-color: #e6e6e6; }
+  .form__sort-input {
+    background-color: #ffffff;
+    border-radius: 4px;
+    padding: 1.2rem 0.8rem;
+    width: 31rem;
+    display: flex;
+    gap: 0.8rem; }
 
 /*# sourceMappingURL=style.css.map */
