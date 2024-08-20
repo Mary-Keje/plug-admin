@@ -431,7 +431,40 @@ body {
   gap: 2.4rem; }
 
 .services-section__transactions-part {
-  background-color: #F7F8F8; }
+  background-color: #f7f8f8;
+  border-radius: 0.8rem;
+  padding: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem; }
+
+.services-section__transactions-details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.6rem; }
+
+.services-section__details-menus {
+  background-color: #ffffff;
+  border-radius: 0.8rem;
+  padding: 2.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+  .services-section__details-menus svg {
+    display: block;
+    width: 4rem; }
+
+.services-section__details-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem; }
+  .services-section__details-info p {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #808080; }
+  .services-section__details-info span {
+    font-size: 1.8rem;
+    font-weight: 600; }
 
 .overlay {
   position: fixed;

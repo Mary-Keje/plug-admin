@@ -616,6 +616,50 @@
 
   &__transactions-part {
     background-color: #f7f8f8;
+    border-radius: 0.8rem;
+    padding: 1.6rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  &__transactions-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.6rem;
+  }
+
+  &__details-menus {
+    background-color: #ffffff;
+    border-radius: 0.8rem;
+    padding: 2.4rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    & svg {
+      display: block;
+      width: 4rem;
+    }
+  }
+
+  &__details-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+
+    & p {
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: #808080;
+    }
+
+    & span {
+      font-size: 1.8rem;
+      font-weight: 600;
+    }
   }
 }
 
