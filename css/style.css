@@ -760,15 +760,6 @@ body {
   .event-btn--closed {
     background-color: #a6a6a6; }
 
-.table-row {
-  border-radius: 0.8rem;
-  background-color: #ffffff;
-  padding: 0.8rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 0.8rem; }
-
 .modal {
   display: none;
   position: fixed;
@@ -805,8 +796,6 @@ body {
   .modal-content .mt-1 {
     margin: 5rem 0rem 1rem 0rem; }
   .modal-content table {
-    width: 100%;
-    border-collapse: collapse;
     color: #808080;
     line-height: 4rem;
     white-space: nowrap; }
@@ -833,22 +822,13 @@ body {
     padding: 8px; }
   .modal-content td span {
     color: #25a727; }
-  .modal-content th,
-  .modal-content td {
-    text-align: left; }
   .modal-content tr {
-    border-radius: 0.8rem;
-    padding: 1.4rem;
-    margin-bottom: 0.8rem;
     background: none; }
   .modal-content th {
     color: #4d4d4d;
     border-radius: 0.8rem;
     padding: 1.4rem;
     margin-bottom: 0.8rem; }
-  .modal-content th {
-    color: #4d4d4d;
-    border-radius: 0.8rem; }
 
 .close {
   color: #aaa;
@@ -865,51 +845,6 @@ body {
 .divider {
   border-bottom: 1px solid #e6e6e6;
   margin: 0rem 0rem 3rem 0rem; }
-
-td {
-  background-color: #fff;
-  margin-bottom: 5em; }
-
-th,
-td {
-  text-align: left; }
-
-tr {
-  border-radius: 0.8rem;
-  margin-bottom: 0.8rem; }
-
-th {
-  color: #4d4d4d;
-  border-radius: 0.8rem; }
-
-form select {
-  width: 10rem;
-  padding: 1rem;
-  border-radius: 4px;
-  border: 1px solid #e6e6e6;
-  padding: 8px 12px;
-  gap: 16px;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2212%22%20height%3D%2212%22%20viewBox%3D%220%200%2012%2012%22%3E%3Ctitle%3Edown-arrow%3C%2Ftitle%3E%3Cg%20fill%3D%22%23000000%22%3E%3Cpath%20d%3D%22M10.293%2C3.293%2C6%2C7.586%2C1.707%2C3.293A1%2C1%2C0%2C0%2C0%2C.293%2C4.707l5%2C5a1%2C1%2C0%2C0%2C0%2C1.414%2C0l5-5a1%2C1%2C0%2C1%2C0-1.414-1.414Z%22%20fill%3D%22%232DCB30%22%3E%3C%2Fpath%3E%3C%2Fg%3E%3C%2Fsvg%3E");
-  background-size: 0.6em;
-  background-position: calc(100% - 1.3em) center;
-  background-repeat: no-repeat; }
-
-form label {
-  font-size: 1.5rem;
-  font-weight: 600;
-  color: #1f1f1f; }
-
-.user-btn__failed {
-  font-size: 1rem;
-  font-weight: 700;
-  color: #ffffff;
-  background-color: #dd3c3c;
-  border-radius: 2px;
-  border: none;
-  padding: 0.8rem 1rem; }
 
 table {
   width: 100%;
