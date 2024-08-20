@@ -423,6 +423,16 @@ body {
     font-weight: 600;
     color: #25a727; }
 
+.services-section__transactions {
+  background-color: #ffffff;
+  padding: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem; }
+
+.services-section__transactions-part {
+  background-color: #F7F8F8; }
+
 .overlay {
   position: fixed;
   top: 0;
@@ -649,6 +659,15 @@ body {
     color: #1f1f1f;
     background-color: #ffffff;
     width: 18rem; }
+  .button--add-service {
+    padding: 1.2rem 2.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem; }
+    .button--add-service svg {
+      display: block;
+      width: 2.4rem; }
 
 .user-btns {
   font-weight: 600;

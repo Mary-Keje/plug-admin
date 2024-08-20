@@ -604,6 +604,21 @@
   }
 }
 
+.services-section {
+  &__transactions {
+    background-color: #ffffff;
+    padding: 1.6rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+  }
+
+  &__transactions-part {
+    background-color: #f7f8f8;
+  }
+}
+
 // style for modal
 
 .overlay {
