@@ -24,6 +24,10 @@
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 1.6rem;
+
+    @media (max-width: 1040px) {
+      grid-template-columns: repeat(3, 1fr);      
+    }
   }
 
   &__details-type-cashin {
@@ -48,6 +52,10 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @media (max-width: 1040px) {
+      width: 100%;
+    }
 
     & svg {
       display: block;
@@ -94,8 +102,7 @@
   &__details-btn-cashin {
     display: flex;
     justify-content: space-between;
-    // display: grid;
-    // grid-template-columns: 40rem 20rem;
+
   }
 
   &__user-infos {

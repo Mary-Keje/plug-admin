@@ -19,6 +19,10 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @media (max-width: 1040px) {
+      padding: 2.4rem 4.8rem;
+    }
   }
 
   &__info {
@@ -84,9 +88,19 @@
     align-items: center;
     gap: 2.4rem;
 
+    @media (max-width: 1040px) {
+      // display: block;
+    }
+
     & a {
       text-decoration: none;
     }
+  }
+
+  &__search-sort {
+    display: flex;
+    align-items: center;
+    gap: 2.4rem;
   }
 
   &__search-input {
