@@ -637,6 +637,9 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between; }
+    .header-details__search-input svg {
+      display: block;
+      width: 2.4rem; }
   .header-details__search {
     width: 30rem;
     background-color: transparent;
@@ -716,6 +719,7 @@ body {
       width: 2.4rem; }
   .button--log {
     background-color: #d8d8d8;
+    color: #a3a3a3;
     width: 40rem;
     height: 5.6rem; }
 
@@ -1084,17 +1088,17 @@ th {
     left: 50%;
     transform: translate(-50%, -50%); }
   .auth__body {
-    padding: 9.8rem 2.4rem;
+    padding: 12rem 2.4rem 0rem;
     max-width: 80rem;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 8rem; }
+    gap: 12rem; }
   .auth__content {
     display: flex;
     flex-direction: column;
-    gap: 4.8rem; }
+    gap: 6.4rem; }
   .auth__header {
     display: flex;
     flex-direction: column;
