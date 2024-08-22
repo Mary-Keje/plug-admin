@@ -116,3 +116,41 @@
     }
   }
 }
+
+.switch {
+  appearance: none;
+
+  display: block;
+  width: 26px;
+  padding: 3px;
+
+  border-radius: 10rem;
+  background-color: #a3a3a3;
+  cursor: pointer;
+
+  position: relative;
+
+  &:focus {
+    outline: 2px solid #2dcb30;
+    outline-offset: 2px;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+
+    transition: all 0.3s;
+  }
+
+  &:checked {
+    background-color: #448c04;
+
+    &::after {
+      transform: translate(100%);
+    }
+  }
+}

@@ -26,7 +26,7 @@
     gap: 1.6rem;
 
     @media (max-width: 1040px) {
-      grid-template-columns: repeat(3, 1fr);      
+      grid-template-columns: repeat(3, 1fr);
     }
   }
 
@@ -82,8 +82,6 @@
   }
 
   &__details-body {
-    // padding: 0rem 4.8rem;
-
     display: flex;
     flex-direction: column;
     gap: 1.6rem;
@@ -95,14 +93,12 @@
 
   &__details-btns {
     display: flex;
-    // align-items: center;
     justify-content: space-between;
   }
 
   &__details-btn-cashin {
     display: flex;
     justify-content: space-between;
-
   }
 
   &__user-infos {
@@ -190,10 +186,6 @@
 
   &__user-name-search {
     width: 56rem;
-
-    // display: flex;
-    // justify-content: space-between;
-    // gap: 2.4rem;
   }
 
   &__user-search {
@@ -612,13 +604,25 @@
 }
 
 .services-section {
+  &__service-heading {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #e6e6e6;
+  }
+
+  &__overview-btns {
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+  }
+
   &__transactions {
     background-color: #ffffff;
-    padding: 1.6rem;
+    padding: 4rem;
 
-    display: flex;
-    flex-direction: column;
-    gap: 2.4rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
   }
 
   &__transactions-part {
@@ -628,12 +632,18 @@
 
     display: flex;
     flex-direction: column;
-    gap: 0.8rem;
+    gap: 1.6rem;
+  }
+
+  &__transactions-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 
   &__transactions-details {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-direction: column;
     gap: 1.6rem;
   }
 
@@ -667,6 +677,37 @@
       font-size: 1.8rem;
       font-weight: 600;
     }
+  }
+
+  &__auto-renew {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+  }
+
+  &__auto-renew-details {
+    background-color: #f7f8f8;
+    border-radius: 0.8rem;
+    padding: 1.6rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+  }
+
+  &__service-status {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+
+    & svg {
+      display: block;
+      width: 1.2rem;
+    }
+  }
+
+  &__status-text {
+    font-weight: 400;
   }
 }
 

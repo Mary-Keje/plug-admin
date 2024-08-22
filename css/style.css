@@ -429,12 +429,22 @@ body {
     font-weight: 600;
     color: #25a727; }
 
+.services-section__service-heading {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #e6e6e6; }
+
+.services-section__overview-btns {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem; }
+
 .services-section__transactions {
   background-color: #ffffff;
-  padding: 1.6rem;
-  display: flex;
-  flex-direction: column;
-  gap: 2.4rem; }
+  padding: 4rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem; }
 
 .services-section__transactions-part {
   background-color: #f7f8f8;
@@ -442,11 +452,16 @@ body {
   padding: 1.6rem;
   display: flex;
   flex-direction: column;
-  gap: 0.8rem; }
+  gap: 1.6rem; }
+
+.services-section__transactions-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
 
 .services-section__transactions-details {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-direction: column;
   gap: 1.6rem; }
 
 .services-section__details-menus {
@@ -471,6 +486,30 @@ body {
   .services-section__details-info span {
     font-size: 1.8rem;
     font-weight: 600; }
+
+.services-section__auto-renew {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem; }
+
+.services-section__auto-renew-details {
+  background-color: #f7f8f8;
+  border-radius: 0.8rem;
+  padding: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem; }
+
+.services-section__service-status {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem; }
+  .services-section__service-status svg {
+    display: block;
+    width: 1.2rem; }
+
+.services-section__status-text {
+  font-weight: 400; }
 
 .overlay {
   position: fixed;
@@ -722,6 +761,54 @@ body {
     color: #a3a3a3;
     width: 40rem;
     height: 5.6rem; }
+  .button--setting-btn {
+    font-weight: 600;
+    color: #1f1f1f;
+    background-color: #e6e6e6;
+    border-radius: 4px;
+    padding: 4px 0.8rem;
+    width: 12rem;
+    height: 3.2rem;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem; }
+    .button--setting-btn svg {
+      display: block;
+      width: 2.4rem; }
+  .button--overview {
+    background: none;
+    color: #808080;
+    padding: 0rem 0.8rem;
+    border-radius: 0rem;
+    height: 2.4rem; }
+    .button--overview--active {
+      border-bottom: 2px solid #2dcb30;
+      color: #1f1f1f; }
+  .button--view-transaction {
+    background-color: #ffa800;
+    border-radius: 4px;
+    padding: 0.8rem 2.4rem;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem; }
+  .button--view-renew-btn {
+    background-color: #ffffff;
+    color: #2dcb30;
+    border-radius: 4px;
+    padding: 0.8rem 2.4rem;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem; }
+  .button--set-price-btn {
+    color: #25a727;
+    background: none;
+    padding: 1.2rem 1.6rem;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem; }
+    .button--set-price-btn svg {
+      display: block;
+      width: 2.4rem; }
 
 .user-btns {
   font-weight: 600;
@@ -1070,6 +1157,31 @@ th {
         outline: transparent; }
       .form__auth-mail input ::placeholder {
         color: #a3a3a3; }
+
+.switch {
+  appearance: none;
+  display: block;
+  width: 26px;
+  padding: 3px;
+  border-radius: 10rem;
+  background-color: #a3a3a3;
+  cursor: pointer;
+  position: relative; }
+  .switch:focus {
+    outline: 2px solid #2dcb30;
+    outline-offset: 2px; }
+  .switch::after {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+    transition: all 0.3s; }
+  .switch:checked {
+    background-color: #448c04; }
+    .switch:checked::after {
+      transform: translate(100%); }
 
 .auth {
   display: grid;
