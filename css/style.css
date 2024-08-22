@@ -511,6 +511,26 @@ body {
 .services-section__status-text {
   font-weight: 400; }
 
+.services-section__transactions-view {
+  background-color: #ffffff;
+  padding: 1.6rem; }
+
+.services-section__view-details {
+  background-color: #f7f8f8;
+  border-radius: 0.8rem;
+  padding: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem; }
+
+.services-section__view-heading {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem; }
+  .services-section__view-heading p {
+    font-size: 1.8rem;
+    font-weight: 600; }
+
 .overlay {
   position: fixed;
   top: 0;
@@ -1015,7 +1035,7 @@ table {
     table tbody tr:not(:last-child) {
       border-bottom: 4px solid #f7f8f8; }
   table tbody td {
-    padding: 1.2rem 1.8rem 1.2rem 0rem; }
+    padding: 1.4rem 1.8rem 1.4rem 0rem; }
   table tbody td:first-child {
     padding-left: 1.8rem; }
 
@@ -1078,6 +1098,11 @@ th {
     display: block;
     width: 2.4rem;
     cursor: pointer; }
+
+.td-user-info__cancel {
+  font-weight: 600;
+  color: #dd3c3c;
+  cursor: pointer; }
 
 .form {
   width: 56rem;

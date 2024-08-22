@@ -12,7 +12,7 @@ table {
   }
 
   & tbody td {
-    padding: 1.2rem 1.8rem 1.2rem 0rem;
+    padding: 1.4rem 1.8rem 1.4rem 0rem;
   }
 
   & tbody td:first-child {
@@ -99,5 +99,11 @@ th {
       width: 2.4rem;
       cursor: pointer;
     }
+  }
+
+  &__cancel {
+    font-weight: 600;
+    color: #dd3c3c;
+    cursor: pointer;
   }
 }

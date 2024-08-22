@@ -282,7 +282,6 @@
   }
 
   &__user-table {
-    // display: flex;
     display: grid;
     grid-template-columns: 40rem 1fr;
 
@@ -708,6 +707,32 @@
 
   &__status-text {
     font-weight: 400;
+  }
+
+  &__transactions-view {
+    background-color: #ffffff;
+    padding: 1.6rem;
+  }
+
+  &__view-details {
+    background-color: #f7f8f8;
+    border-radius: 0.8rem;
+    padding: 1.6rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+  }
+
+  &__view-heading {
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+
+    & p {
+      font-size: 1.8rem;
+      font-weight: 600;
+    }
   }
 }
 
