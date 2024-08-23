@@ -465,8 +465,8 @@
     </div>
 
     <!-- popup for deactivate service -->
-    <div class="modal-create open">
-      <button class="modal-create__close-btn">
+    <div class="modal-deactivate">
+      <button class="modal-deactivate__close-btn">
         <svg
           width="24"
           height="24"
@@ -480,36 +480,22 @@
           />
         </svg>
       </button>
-      <div class="modal-create__modal-body">
+      <div class="modal-deactivate__deactivate-body">
         <div class="modal-create__modal-details">
-          <p class="modal-create__header">Create User</p>
-          <div class="modal-create__user-form">
-            <div class="form__user-input">
-              <input type="text" placeholder="Username" />
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M21 6.99984L9 18.9998L3.5 13.4998L4.91 12.0898L9 16.1698L19.59 5.58984L21 6.99984Z"
-                  fill="#1F1F1F"
-                />
-              </svg>
+          <p class="modal-create__header-text">Deactivate Airtime Service</p>
+          <div class="modal-deactivate__user-form">
+            <p class="modal-deactivate__text">Enter note for deactivation</p>
+            <div class="form__user-textnote">
+              <textarea name="" id="" placeholder="Enter note"></textarea>
             </div>
-            <div class="form__user-input">
-              <input type="text" placeholder="Email" />
-            </div>
-           
           </div>
         </div>
-        <div class="modal-create__create-btn">
-          <button class="button button--create-default">Create user</button>
+        <div class="modal-deactivate__create-btn">
+          <button class="button button--cancel-deactivate">Cancel</button>
+          <button class="button button--deactivate">Deactivate</button>
         </div>
       </div>
     </div>
-    <div class="overlay"></div>
+    <div class="overlayb hidden"></div>
   </body>
 </html>
