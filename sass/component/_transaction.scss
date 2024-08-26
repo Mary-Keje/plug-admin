@@ -113,7 +113,7 @@
   background-color: #ffffff;
 }
 
-@media screen and (max-width: 50em) {
+@media screen and (max-width: 52em) {
   html,body{
     overflow-x: hidden;
   }
@@ -126,8 +126,9 @@
     &__body {
       display: grid;
       grid-template-columns: 24rem 1fr 1fr;
-      gap: 1.4rem;
+      gap: 0.8rem;
       margin-top: 4rem;
+      order: 1;
     }
    
     &__search-input {
@@ -141,7 +142,7 @@
       }
     }
     &__sort {
-      padding: 0.8rem;
+      padding: 0.4rem;
       display:flex;
       justify-content: center;
     }
@@ -185,6 +186,17 @@
     & table .header {
       line-height: 2rem;
     }
+  }
+
+  #modal-btn{
+    // position: fixed;
+    // width: 25rem;
+    // height: 42px;
+    // right: 2.2rem;
+    // top: 13rem;
+    // padding: 1.2rem 1rem;
+
+  
   }
 
  
