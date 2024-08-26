@@ -735,6 +735,9 @@ body {
     display: flex;
     align-items: center;
     gap: 2.4rem; }
+    @media (max-width: 1110px) {
+      .header-details__search-sort {
+        order: 1; } }
   .header-details__search-input {
     width: 40rem;
     height: 4.8rem;
