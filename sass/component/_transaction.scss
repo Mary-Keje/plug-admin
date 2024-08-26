@@ -43,12 +43,12 @@
     margin: 5rem 0rem 1rem 0rem;
   }
 
-  table {
+  & table {
     color: #808080;
     line-height: 4rem;
     white-space: nowrap;
   }
-  table .header {
+  & table .header {
     color: #1f1f1f;
     background: #fff;
     height: 80px;
@@ -57,7 +57,7 @@
     border-radius: 1rem;
     padding: 80px;
   }
-  table .header img {
+  & table .header img {
     margin-right: 15px;
   }
   .top {
@@ -65,23 +65,23 @@
     justify-content: start;
     align-items: center;
   }
-  table .header p span {
+  & table .header p span {
     display: block;
     font-size: 1.2rem;
     color: #808080;
   }
-  td {
+  & td {
     background: none;
     padding: 8px;
   }
-  td span {
+  & td span {
     color: #25a727;
   }
 
-  tr {
+  & tr {
     background: none;
   }
-  th {
+  & th {
     color: #4d4d4d;
     border-radius: 0.8rem;
     padding: 1.4rem;
@@ -103,4 +103,89 @@
 .divider {
   border-bottom: 1px solid #e6e6e6;
   margin: 0rem 0rem 3rem 0rem;
+}
+.sort{
+  display: none;
+}
+.user-details__details-btns{
+  overflow: auto;
+  white-space: nowrap;
+  background-color: #ffffff;
+}
+
+@media screen and (max-width: 50em) {
+  html,body{
+    overflow-x: hidden;
+  }
+
+  .header-details {
+    padding: 0rem 0.5rem;
+    flex-wrap: wrap;
+   
+
+    &__body {
+      display: grid;
+      grid-template-columns: 24rem 1fr 1fr;
+      gap: 1.4rem;
+      margin-top: 4rem;
+    }
+   
+    &__search-input {
+      width: 24rem;
+      padding: 1.2rem 5rem 1.2rem 0rem;
+      grid-auto-flow: column;
+      grid-auto-columns: 1fr;
+      & svg {
+        position: absolute;
+        margin-left: 20rem;
+      }
+    }
+    &__sort {
+      padding: 0.8rem;
+      display:flex;
+      justify-content: center;
+    }
+    
+  }
+  
+  .sort{
+    display: flex;
+  }
+  .user-details__details-type-txn{
+    grid-template-columns: 1fr;
+  }
+  .user-details__details-main {
+    padding: 0rem 0.5rem;
+  }
+ 
+  .txn-table{
+    overflow:scroll;
+  }
+  p{
+    white-space: nowrap;
+  }
+  .user-details__entries-page{
+    display: block;
+    margin: auto;
+  }
+  .user-details__show-entries{
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+   
+  .modal-content {
+    width: 380px;
+    height: 550px;
+    padding: 12px;
+    
+    & table {
+      line-height: 2.3rem;
+      white-space: nowrap;
+    }
+    & table .header {
+      line-height: 2rem;
+    }
+  }
+
+ 
 }
