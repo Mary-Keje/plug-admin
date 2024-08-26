@@ -188,28 +188,13 @@
   }
 
   #modal-btn{
-    position: fixed;
+    position: absolute;
     width: 25rem;
     height: 42px;
     right: 2.2rem;
     top: 13rem;
     padding: 1.2rem 1rem;
-
   
   }
-
-  // #modal-btn{
-  //   top:13rem;
-  //   left:53%;
-  //   position: absolute;
-  //   border-radius: 4px;
-  //   width: 178px;
-  //   height: 42px;
-  //   & p{
-  //     padding: 0 5px 0 0;
-  //   }
-  
-  // }
-
  
 }
