@@ -128,7 +128,6 @@
       grid-template-columns: 24rem 1fr 1fr;
       gap: 0.8rem;
       margin-top: 4rem;
-      order: 1;
     }
    
     &__search-input {
@@ -189,15 +188,28 @@
   }
 
   #modal-btn{
-    // position: fixed;
-    // width: 25rem;
-    // height: 42px;
-    // right: 2.2rem;
-    // top: 13rem;
-    // padding: 1.2rem 1rem;
+    position: fixed;
+    width: 25rem;
+    height: 42px;
+    right: 2.2rem;
+    top: 13rem;
+    padding: 1.2rem 1rem;
 
   
   }
+
+  // #modal-btn{
+  //   top:13rem;
+  //   left:53%;
+  //   position: absolute;
+  //   border-radius: 4px;
+  //   width: 178px;
+  //   height: 42px;
+  //   & p{
+  //     padding: 0 5px 0 0;
+  //   }
+  
+  // }
 
  
 }
