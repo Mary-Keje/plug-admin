@@ -26,7 +26,7 @@
     gap: 1.6rem;
 
     @media (max-width: 1040px) {
-      grid-template-columns: repeat(3, 1fr);      
+      grid-template-columns: repeat(3, 1fr);
     }
   }
 
@@ -82,8 +82,6 @@
   }
 
   &__details-body {
-    // padding: 0rem 4.8rem;
-
     display: flex;
     flex-direction: column;
     gap: 1.6rem;
@@ -95,14 +93,12 @@
 
   &__details-btns {
     display: flex;
-    // align-items: center;
     justify-content: space-between;
   }
 
   &__details-btn-cashin {
     display: flex;
     justify-content: space-between;
-
   }
 
   &__user-infos {
@@ -190,10 +186,6 @@
 
   &__user-name-search {
     width: 56rem;
-
-    // display: flex;
-    // justify-content: space-between;
-    // gap: 2.4rem;
   }
 
   &__user-search {
@@ -290,7 +282,6 @@
   }
 
   &__user-table {
-    // display: flex;
     display: grid;
     grid-template-columns: 40rem 1fr;
 
@@ -612,13 +603,25 @@
 }
 
 .services-section {
+  &__service-heading {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #e6e6e6;
+  }
+
+  &__overview-btns {
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+  }
+
   &__transactions {
     background-color: #ffffff;
-    padding: 1.6rem;
+    padding: 4rem;
 
-    display: flex;
-    flex-direction: column;
-    gap: 2.4rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
   }
 
   &__transactions-part {
@@ -628,12 +631,18 @@
 
     display: flex;
     flex-direction: column;
-    gap: 0.8rem;
+    gap: 1.6rem;
+  }
+
+  &__transactions-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 
   &__transactions-details {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-direction: column;
     gap: 1.6rem;
   }
 
@@ -668,6 +677,63 @@
       font-weight: 600;
     }
   }
+
+  &__auto-renew {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+  }
+
+  &__auto-renew-details {
+    background-color: #f7f8f8;
+    border-radius: 0.8rem;
+    padding: 1.6rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+  }
+
+  &__service-status {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+
+    & svg {
+      display: block;
+      width: 1.2rem;
+    }
+  }
+
+  &__status-text {
+    font-weight: 400;
+  }
+
+  &__transactions-view {
+    background-color: #ffffff;
+    padding: 1.6rem;
+  }
+
+  &__view-details {
+    background-color: #f7f8f8;
+    border-radius: 0.8rem;
+    padding: 1.6rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+  }
+
+  &__view-heading {
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+
+    & p {
+      font-size: 1.8rem;
+      font-weight: 600;
+    }
+  }
 }
 
 // style for modal
@@ -694,7 +760,7 @@
   padding: 3rem 3rem 6.6rem;
 
   position: fixed;
-  top: 50%;
+  top: 30%;
   left: 50%;
   transform: translate(-50%, -50%) scale(0);
 
@@ -753,6 +819,13 @@
     text-align: center;
   }
 
+  &__header-text {
+    font-size: 2.4rem;
+    font-family: "Tango Sans";
+    border-bottom: 1px solid #e6e6e6;
+    padding: 0.8rem 2.4rem;
+  }
+
   &__sub-header {
     color: #808080;
     text-align: center;
@@ -795,5 +868,70 @@
   &__reset-link {
     font-weight: 600;
     color: #dd3c3c;
+  }
+}
+
+.modal-deactivate {
+  background-color: #f7f8f8;
+  border-radius: 0.8rem;
+  padding: 3rem 0rem 6.6rem;
+
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+
+  pointer-events: none;
+
+  display: flex;
+  flex-direction: column;
+
+  width: 66rem;
+  max-width: calc(100% - 4.8rem);
+
+  z-index: 99999;
+
+  &.open {
+    transform: translate(-50%, -50%);
+    pointer-events: all;
+  }
+
+  &__sort {
+    width: 50rem;
+  }
+
+  &__close-btn {
+    background: none;
+    border: none;
+    padding: 0rem 2.4rem;
+
+    display: flex;
+    justify-content: flex-end;
+
+    & svg {
+      display: block;
+      width: 2.4rem;
+      height: 2.4rem;
+      cursor: pointer;
+    }
+  }
+
+  &__deactivate-body {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+  }
+
+  &__user-form {
+    padding: 1.2rem 2.4rem 0rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+  }
+
+  &__create-btn {
+    display: flex;
+    justify-content: center;
+    gap: 2.4rem;
   }
 }

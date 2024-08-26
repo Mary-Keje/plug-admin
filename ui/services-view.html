@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Plug :: Admin</title>
+
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <div class="user-details">
+      <div class="header__main">
+        <div class="header__details">
+          <a href="../index.html">
+            <img
+              src="../imgs/logo/plug.logoo.svg"
+              alt=""
+              class="header__logo-pl"
+            />
+          </a>
+          <div class="header__info">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M19 17V11.8C18.5 11.9 18 12 17.5 12H17V18H7V11C7 8.2 9.2 6 12 6C12.1 4.7 12.7 3.6 13.5 2.7C13.2 2.3 12.6 2 12 2C10.9 2 10 2.9 10 4V4.3C7 5.2 5 7.9 5 11V17L3 19V20H21V19L19 17ZM10 21C10 22.1 10.9 23 12 23C13.1 23 14 22.1 14 21H10ZM21 6.5C21 8.4 19.4 10 17.5 10C15.6 10 14 8.4 14 6.5C14 4.6 15.6 3 17.5 3C19.4 3 21 4.6 21 6.5Z"
+                fill="white"
+              />
+            </svg>
+            <div class="header__details-menu">
+              <div class="header__face-logo">
+                <img src="../imgs/logo/face-icon-header.svg" alt="" class="" />
+                <p class="header__text">Admin</p>
+              </div>
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M7.41 8.58008L12 13.1701L16.59 8.58008L18 10.0001L12 16.0001L6 10.0001L7.41 8.58008Z"
+                  fill="white"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="header-details">
+          <p class="header-details__text">Services</p>
+          <div class="header-details__body">
+            <div class="header-details__search-input">
+              <div>
+                <input
+                  type="text"
+                  placeholder="Search"
+                  class="header-details__search"
+                />
+              </div>
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M21 21L15 15M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10Z"
+                  stroke="#1F1F1F"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <a href="">
+              <button class="button button--add-service">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M19 13H13V19H11V13H5V11H11V5H13V11H19V13Z"
+                    fill="white"
+                  />
+                </svg>
+                <p>Add Service</p>
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="user-details__details-main">
+        <div class="btn-menus user-details__info-menus">
+          <a href="../index.html">
+            <button class="btn-menus__btn-type">All</button>
+          </a>
+          <div class="btn-menus__divider"></div>
+          <a href="">
+            <button class="btn-menus__btn-type btn-menus__btn-type--active">
+              Airtime
+            </button>
+          </a>
+          <div class="btn-menus__divider"></div>
+          <a href="">
+            <button class="btn-menus__btn-type">Betting</button>
+          </a>
+          <div class="btn-menus__divider"></div>
+          <a href="">
+            <button class="btn-menus__btn-type">Bulk SMS</button>
+          </a>
+          <div class="btn-menus__divider"></div>
+          <a href="">
+            <button class="btn-menus__btn-type">Cable TV</button>
+          </a>
+          <div class="btn-menus__divider"></div>
+          <a href="">
+            <button class="btn-menus__btn-type">Electricity</button>
+          </a>
+          <div class="btn-menus__divider"></div>
+          <a href="">
+            <button class="btn-menus__btn-type">Education</button>
+          </a>
+          <div class="btn-menus__divider"></div>
+          <a href="">
+            <button class="btn-menus__btn-type">Internet</button>
+          </a>
+          <div class="btn-menus__divider"></div>
+          <a href="">
+            <button class="btn-menus__btn-type">Tickets</button>
+          </a>
+          <div class="btn-menus__divider"></div>
+          <a href="">
+            <button class="btn-menus__btn-type">Flight Booking</button>
+          </a>
+          <div class="btn-menus__divider"></div>
+          <a href="">
+            <button class="btn-menus__btn-type">Virtual Cards</button>
+          </a>
+        </div>
+        <div class="user-details__details-body">
+          <div class="services-section__service-heading">
+            <div class="services-section__overview-btns">
+              <button class="button button--overview button--overview--active">
+                Overviews
+              </button>
+              <button class="button button--overview">API details</button>
+            </div>
+            <div>
+              <button class="button button--setting-btn">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12.0008 15.5C11.0726 15.5 10.1823 15.1313 9.52594 14.4749C8.86957 13.8185 8.50082 12.9283 8.50082 12C8.50082 11.0717 8.86957 10.1815 9.52594 9.52513C10.1823 8.86875 11.0726 8.5 12.0008 8.5C12.9291 8.5 13.8193 8.86875 14.4757 9.52513C15.1321 10.1815 15.5008 11.0717 15.5008 12C15.5008 12.9283 15.1321 13.8185 14.4757 14.4749C13.8193 15.1313 12.9291 15.5 12.0008 15.5ZM19.4308 12.97C19.4708 12.65 19.5008 12.33 19.5008 12C19.5008 11.67 19.4708 11.34 19.4308 11L21.5408 9.37C21.7308 9.22 21.7808 8.95 21.6608 8.73L19.6608 5.27C19.5408 5.05 19.2708 4.96 19.0508 5.05L16.5608 6.05C16.0408 5.66 15.5008 5.32 14.8708 5.07L14.5008 2.42C14.4805 2.30222 14.4192 2.19543 14.3276 2.11855C14.2361 2.04168 14.1203 1.99968 14.0008 2H10.0008C9.75082 2 9.54082 2.18 9.50082 2.42L9.13082 5.07C8.50082 5.32 7.96082 5.66 7.44082 6.05L4.95082 5.05C4.73082 4.96 4.46082 5.05 4.34082 5.27L2.34082 8.73C2.21082 8.95 2.27082 9.22 2.46082 9.37L4.57082 11C4.53082 11.34 4.50082 11.67 4.50082 12C4.50082 12.33 4.53082 12.65 4.57082 12.97L2.46082 14.63C2.27082 14.78 2.21082 15.05 2.34082 15.27L4.34082 18.73C4.46082 18.95 4.73082 19.03 4.95082 18.95L7.44082 17.94C7.96082 18.34 8.50082 18.68 9.13082 18.93L9.50082 21.58C9.54082 21.82 9.75082 22 10.0008 22H14.0008C14.2508 22 14.4608 21.82 14.5008 21.58L14.8708 18.93C15.5008 18.67 16.0408 18.34 16.5608 17.94L19.0508 18.95C19.2708 19.03 19.5408 18.95 19.6608 18.73L21.6608 15.27C21.7808 15.05 21.7308 14.78 21.5408 14.63L19.4308 12.97Z"
+                    fill="#1F1F1F"
+                  />
+                </svg>
+                Settings
+              </button>
+            </div>
+          </div>
+          <div class="services-section__transactions-view">
+            <div class="services-section__view-details">
+              <a href="./services.html">
+                <div class="services-section__view-heading">
+                  <svg
+                    width="24"
+                    height="25"
+                    viewBox="0 0 24 25"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M21 11.5H6.83L10.41 7.91L9 6.5L3 12.5L9 18.5L10.41 17.08L6.83 13.5H21V11.5Z"
+                      fill="#1F1F1F"
+                    />
+                  </svg>
+                  <p>Auto-renew</p>
+                </div>
+              </a>
+
+              <div>
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th>Username</th>
+                      <th>Phone</th>
+                      <th>Service</th>
+                      <th>Package</th>
+                      <th>Amount (₦)</th>
+                      <th>Frequency</th>
+                      <th>Date created</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="td-user-info">
+                        <p class="td-user-info__user-detail">Mikeben220</p>
+                      </td>
+                      <td><p>08012345678</p></td>
+                      <td><p>Data</p></td>
+                      <td><p>5 GB</p></td>
+                      <td><p>10,000</p></td>
+                      <td><p>30 days</p></td>
+                      <td>
+                        <div class="td-user-info__reg-date">
+                          <p>Jul 24, 2024</p>
+                          <div class="td-user-info__date-divider"></div>
+                          <p>12:45pm</p>
+                        </div>
+                      </td>
+                      <td><p class="td-user-info__cancel">Cancel</p></td>
+                    </tr>
+                    <tr>
+                      <td class="td-user-info">
+                        <p class="td-user-info__user-detail">Mikeben220</p>
+                      </td>
+                      <td><p>08012345678</p></td>
+                      <td><p>Data</p></td>
+                      <td><p>5 GB</p></td>
+                      <td><p>10,000</p></td>
+                      <td><p>30 days</p></td>
+                      <td>
+                        <div class="td-user-info__reg-date">
+                          <p>Jul 24, 2024</p>
+                          <div class="td-user-info__date-divider"></div>
+                          <p>12:45pm</p>
+                        </div>
+                      </td>
+                      <td><p class="td-user-info__cancel">Cancel</p></td>
+                    </tr>
+                    <tr>
+                      <td class="td-user-info">
+                        <p class="td-user-info__user-detail">Mikeben220</p>
+                      </td>
+                      <td><p>08012345678</p></td>
+                      <td><p>Data</p></td>
+                      <td><p>5 GB</p></td>
+                      <td><p>10,000</p></td>
+                      <td><p>30 days</p></td>
+                      <td>
+                        <div class="td-user-info__reg-date">
+                          <p>Jul 24, 2024</p>
+                          <div class="td-user-info__date-divider"></div>
+                          <p>12:45pm</p>
+                        </div>
+                      </td>
+                      <td><p class="td-user-info__cancel">Cancel</p></td>
+                    </tr>
+                    <tr>
+                      <td class="td-user-info">
+                        <p class="td-user-info__user-detail">Mikeben220</p>
+                      </td>
+                      <td><p>08012345678</p></td>
+                      <td><p>Data</p></td>
+                      <td><p>5 GB</p></td>
+                      <td><p>10,000</p></td>
+                      <td><p>30 days</p></td>
+                      <td>
+                        <div class="td-user-info__reg-date">
+                          <p>Jul 24, 2024</p>
+                          <div class="td-user-info__date-divider"></div>
+                          <p>12:45pm</p>
+                        </div>
+                      </td>
+                      <td><p class="td-user-info__cancel">Cancel</p></td>
+                    </tr>
+                    <tr>
+                      <td class="td-user-info">
+                        <p class="td-user-info__user-detail">Mikeben220</p>
+                      </td>
+                      <td><p>08012345678</p></td>
+                      <td><p>Data</p></td>
+                      <td><p>5 GB</p></td>
+                      <td><p>10,000</p></td>
+                      <td><p>30 days</p></td>
+                      <td>
+                        <div class="td-user-info__reg-date">
+                          <p>Jul 24, 2024</p>
+                          <div class="td-user-info__date-divider"></div>
+                          <p>12:45pm</p>
+                        </div>
+                      </td>
+                      <td><p class="td-user-info__cancel">Cancel</p></td>
+                    </tr>
+                    <tr>
+                      <td class="td-user-info">
+                        <p class="td-user-info__user-detail">Mikeben220</p>
+                      </td>
+                      <td><p>08012345678</p></td>
+                      <td><p>Data</p></td>
+                      <td><p>5 GB</p></td>
+                      <td><p>10,000</p></td>
+                      <td><p>30 days</p></td>
+                      <td>
+                        <div class="td-user-info__reg-date">
+                          <p>Jul 24, 2024</p>
+                          <div class="td-user-info__date-divider"></div>
+                          <p>12:45pm</p>
+                        </div>
+                      </td>
+                      <td><p class="td-user-info__cancel">Cancel</p></td>
+                    </tr>
+                    <tr>
+                      <td class="td-user-info">
+                        <p class="td-user-info__user-detail">Mikeben220</p>
+                      </td>
+                      <td><p>08012345678</p></td>
+                      <td><p>Data</p></td>
+                      <td><p>5 GB</p></td>
+                      <td><p>10,000</p></td>
+                      <td><p>30 days</p></td>
+                      <td>
+                        <div class="td-user-info__reg-date">
+                          <p>Jul 24, 2024</p>
+                          <div class="td-user-info__date-divider"></div>
+                          <p>12:45pm</p>
+                        </div>
+                      </td>
+                      <td><p class="td-user-info__cancel">Cancel</p></td>
+                    </tr>
+                    <tr>
+                      <td class="td-user-info">
+                        <p class="td-user-info__user-detail">Mikeben220</p>
+                      </td>
+                      <td><p>08012345678</p></td>
+                      <td><p>Data</p></td>
+                      <td><p>5 GB</p></td>
+                      <td><p>10,000</p></td>
+                      <td><p>30 days</p></td>
+                      <td>
+                        <div class="td-user-info__reg-date">
+                          <p>Jul 24, 2024</p>
+                          <div class="td-user-info__date-divider"></div>
+                          <p>12:45pm</p>
+                        </div>
+                      </td>
+                      <td><p class="td-user-info__cancel">Cancel</p></td>
+                    </tr>
+                    <tr>
+                      <td class="td-user-info">
+                        <p class="td-user-info__user-detail">Mikeben220</p>
+                      </td>
+                      <td><p>08012345678</p></td>
+                      <td><p>Data</p></td>
+                      <td><p>5 GB</p></td>
+                      <td><p>10,000</p></td>
+                      <td><p>30 days</p></td>
+                      <td>
+                        <div class="td-user-info__reg-date">
+                          <p>Jul 24, 2024</p>
+                          <div class="td-user-info__date-divider"></div>
+                          <p>12:45pm</p>
+                        </div>
+                      </td>
+                      <td><p class="td-user-info__cancel">Cancel</p></td>
+                    </tr>
+                    <tr>
+                      <td class="td-user-info">
+                        <p class="td-user-info__user-detail">Mikeben220</p>
+                      </td>
+                      <td><p>08012345678</p></td>
+                      <td><p>Data</p></td>
+                      <td><p>5 GB</p></td>
+                      <td><p>10,000</p></td>
+                      <td><p>30 days</p></td>
+                      <td>
+                        <div class="td-user-info__reg-date">
+                          <p>Jul 24, 2024</p>
+                          <div class="td-user-info__date-divider"></div>
+                          <p>12:45pm</p>
+                        </div>
+                      </td>
+                      <td><p class="td-user-info__cancel">Cancel</p></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="user-details__entries-page">
+                <div class="user-details__show-entries">
+                  <p>Show</p>
+                  <div class="user-details__show-num">
+                    10
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M7.41 8.58008L12 13.1701L16.59 8.58008L18 10.0001L12 16.0001L6 10.0001L7.41 8.58008Z"
+                        fill="#2DCB30"
+                      />
+                    </svg>
+                  </div>
+                  <p>Entries</p>
+                </div>
+                <div class="user-details__show-pages">
+                  <div class="user-details__prev-page">
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M15.41 16.58L10.83 12L15.41 7.41L14 6L8 12L14 18L15.41 16.58Z"
+                        fill="#2DCB30"
+                      />
+                    </svg>
+                    <p>Previous</p>
+                  </div>
+                  <div class="user-details__page-num">
+                    <p>234</p>
+                    <svg
+                      width="6"
+                      height="10"
+                      viewBox="0 0 6 10"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M1.72111 9.126C1.66911 9.266 1.58711 9.37 1.47511 9.438C1.36711 9.506 1.25511 9.54 1.13911 9.54H0.689109L4.29511 0.558C4.34311 0.43 4.41511 0.332 4.51111 0.263999C4.61111 0.196 4.72511 0.162 4.85311 0.162H5.30911L1.72111 9.126Z"
+                        fill="#808080"
+                      />
+                    </svg>
+                    <span>450</span>
+                  </div>
+                  <div class="user-details__prev-page">
+                    <p>Next</p>
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M8.58984 16.58L13.1698 12L8.58984 7.41L9.99984 6L15.9998 12L9.99984 18L8.58984 16.58Z"
+                        fill="#2DCB30"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- popup for deactivate service -->
+    <div class="modal-deactivate">
+      <button class="modal-deactivate__close-btn">
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z"
+            fill="black"
+          />
+        </svg>
+      </button>
+      <div class="modal-deactivate__deactivate-body">
+        <div class="modal-create__modal-details">
+          <p class="modal-create__header-text">Deactivate Airtime Service</p>
+          <div class="modal-deactivate__user-form">
+            <p class="modal-deactivate__text">Enter note for deactivation</p>
+            <div class="form__user-textnote">
+              <textarea name="" id="" placeholder="Enter note"></textarea>
+            </div>
+          </div>
+        </div>
+        <div class="modal-deactivate__create-btn">
+          <button class="button button--cancel-deactivate">Cancel</button>
+          <button class="button button--deactivate">Deactivate</button>
+        </div>
+      </div>
+    </div>
+    <div class="overlayb hidden"></div>
+  </body>
+</html>

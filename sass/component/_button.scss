@@ -73,9 +73,95 @@
   &--log {
     background-color: #d8d8d8;
     color: #a3a3a3;
-    
+
     width: 40rem;
     height: 5.6rem;
+  }
+
+  &--setting-btn {
+    font-weight: 600;
+    color: #1f1f1f;
+    background-color: #e6e6e6;
+    border-radius: 4px;
+    padding: 4px 0.8rem;
+
+    width: 12rem;
+    height: 3.2rem;
+
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+
+    & svg {
+      display: block;
+      width: 2.4rem;
+    }
+  }
+
+  &--overview {
+    background: none;
+    color: #808080;
+    padding: 0rem 0.8rem;
+    border-radius: 0rem;
+
+    height: 2.4rem;
+
+    &--active {
+      border-bottom: 2px solid #2dcb30;
+      color: #1f1f1f;
+    }
+  }
+
+  &--view-transaction {
+    background-color: #ffa800;
+    border-radius: 4px;
+    padding: 0.8rem 2.4rem;
+
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+  }
+
+  &--view-renew-btn {
+    background-color: #ffffff;
+    color: #2dcb30;
+    border-radius: 4px;
+    padding: 0.8rem 2.4rem;
+
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+  }
+
+  &--set-price-btn {
+    color: #25a727;
+    background: none;
+    padding: 1.2rem 1.6rem;
+
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+
+    & svg {
+      display: block;
+      width: 2.4rem;
+    }
+  }
+
+  &--cancel-deactivate {
+    font-weight: 600;
+    color: #1f1f1f;
+    background-color: #ffffff;
+    border-radius: 4px;
+    padding: 1.2rem 0.8rem;
+    width: 27rem;
+  }
+
+  &--deactivate {
+    padding: 1.2rem 0.8rem;
+    background-color: #dd3c3c;
+    border-radius: 4px;
+    width: 27rem;
   }
 }
 
