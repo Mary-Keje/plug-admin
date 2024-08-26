@@ -94,6 +94,11 @@
   &__details-btns {
     display: flex;
     justify-content: space-between;
+
+    @media (max-width: 1075px) {
+      // flex-direction: column;
+      // gap: 2.4rem;
+    }
   }
 
   &__details-btn-cashin {
