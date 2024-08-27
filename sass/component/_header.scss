@@ -78,6 +78,10 @@
   align-items: center;
   justify-content: space-between;
 
+  @media (max-width: 1110px) {
+    align-items: normal;
+  }
+
   &__text {
     font-size: 2.4rem;
     font-family: "Tango Sans";
@@ -91,8 +95,8 @@
     @media (max-width: 1110px) {
       // display: block;
 
-      // flex-direction: column;
-      // align-items: flex-end;
+      flex-direction: column;
+      align-items: flex-end;
     }
 
     & a {

@@ -81,7 +81,36 @@
                 />
               </svg>
             </div>
-            <button class="button button--create" id="myBtn">
+            <div class="header-details__sort">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M18 21L14 17H17V7H14L18 3L22 7H19V17H22M2 19V17H12V19M2 13V11H9V13M2 7V5H6V7H2Z"
+                  fill="#2DCB30"
+                />
+              </svg>
+            </div>
+            <div class="header-details__sort month">
+              <p class="header-details__month-text">This month</p>
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M7.41 8.58008L12 13.1701L16.59 8.58008L18 10.0001L12 16.0001L6 10.0001L7.41 8.58008Z"
+                  fill="#2DCB30"
+                />
+              </svg>
+            </div>
+            <button class="button button--create" id="modal-btn">
               <svg
                 width="24"
                 height="24"
@@ -96,7 +125,7 @@
                   fill="white"
                 />
               </svg>
-              <p>Download Order Report</p>
+              <p >Download Order Report</p>
             </button>
           </div>
         </div>
@@ -188,7 +217,7 @@
       <div class="user-details__details-main">
         <div class="user-details__details-body">
           <div class="user-details__details-btns">
-            <div class="btn-menus">
+            <div class="btn-menus user-details__info-menus">
               <a href="transaction.html">
                 <button class="btn-menus__btn-type btn-menus__btn-type--active">
                   All
@@ -236,7 +265,7 @@
               </a>
             </div>
           </div>
-          <div>
+          <div class="txn-table">
             <table class="table">
               <thead>
                 <tr>
@@ -591,7 +620,7 @@
     </div>
 
     <!-- The Modal -->
-    <div id="myModal" class="modal">
+    <div id="modal" class="modal">
       <!-- Modal content -->
       <div class="modal-content">
         <span class="close">&times;</span>
@@ -609,13 +638,10 @@
                   </p>
                 </div>
               </td>
-
-              <td></td>
               <td class="right">&#x20A6;34,674.00</td>
             </tr>
             <tr>
               <td>Transaction ID</td>
-              <td></td>
               <td class="right">
                 <p class="icon">
                   <svg
@@ -637,7 +663,6 @@
             </tr>
             <tr>
               <td>Status</td>
-              <td></td>
               <td class="right">
                 <svg
                   width="106"
@@ -660,42 +685,36 @@
             </tr>
             <tr>
               <td>Recipient</td>
-              <td></td>
               <td class="right">
                 <p>0123456789</p>
               </td>
             </tr>
             <tr>
               <td>Date</td>
-              <td></td>
               <td class="right">
                 <p>Jul 24, 2024 | 12:45pm</p>
               </td>
             </tr>
             <tr>
               <td>Amount</td>
-              <td></td>
               <td class="right">
                 <p>&#x20A6;34,674.00</p>
               </td>
             </tr>
             <tr>
               <td>Cashback</td>
-              <td></td>
               <td class="right">
                 <p>&#x20A6;100</p>
               </td>
             </tr>
             <tr>
               <td>Coupon</td>
-              <td></td>
               <td class="right">
                 <p><span>ENKR001</span> (10% off - &#x20A6;340)</p>
               </td>
             </tr>
             <tr>
               <td>User</td>
-              <td></td>
               <td class="right">
                 <p class="icon-right">
                   Mrjayy
@@ -722,8 +741,8 @@
 
     <script>
       //  modal
-      var modal = document.getElementById("myModal");
-      var btn = document.getElementById("myBtn");
+      var modal = document.getElementById("modal");
+      var btn = document.getElementById("modal-btn");
       var span = document.getElementsByClassName("close")[0];
       btn.onclick = function () {
         modal.style.display = "block";

@@ -95,15 +95,19 @@
     display: flex;
     justify-content: space-between;
 
-    @media (max-width: 1075px) {
-      // flex-direction: column;
-      // gap: 2.4rem;
+    @media (max-width: 980px) {
+      flex-direction: column;
+      gap: 2.4rem;
     }
   }
 
   &__details-btn-cashin {
     display: flex;
     justify-content: space-between;
+
+    @media (max-width: 980px) {
+      flex-direction: column;
+    }
   }
 
   &__user-infos {
