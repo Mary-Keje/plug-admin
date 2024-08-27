@@ -15,6 +15,12 @@ table {
     padding: 1.4rem 1.8rem 1.4rem 0rem;
   }
 
+  & thead th,
+  & tbody td {
+    white-space: nowrap;
+    padding-right: 2.4rem !important;
+  }
+
   & tbody td:first-child {
     padding-left: 1.8rem;
   }
@@ -28,6 +34,10 @@ th {
   text-align: left;
 
   padding-bottom: 1.6rem;
+
+  @media (max-width: 980px) {
+    font-size: 1.2rem;
+  }
 }
 
 .td-user-info {
@@ -81,6 +91,10 @@ th {
     display: flex;
     align-items: center;
     gap: 4px;
+
+    @media (max-width: 980px) {
+      font-size: 1.2rem;
+    }
   }
 
   &__date-divider {

@@ -8,12 +8,20 @@
   flex-direction: column;
   gap: 2.4rem;
 
+  @media (max-width: 980px) {
+    padding: 2.4rem;
+  }
+
   &__details-main {
     padding: 0rem 4.8rem;
 
     display: flex;
     flex-direction: column;
     gap: 2.4rem;
+
+    @media (max-width: 980px) {
+      padding: 0rem;
+    }
   }
 
   &__info-menus {
@@ -27,6 +35,13 @@
 
     @media (max-width: 1040px) {
       grid-template-columns: repeat(3, 1fr);
+    }
+
+    @media (max-width: 650px) {
+      // display: block;
+      display: flex;
+      flex-direction: column;
+      gap: 0.8rem;
     }
   }
 
@@ -54,7 +69,7 @@
     justify-content: space-between;
 
     @media (max-width: 1040px) {
-      width: 100%;
+      // width: 100%;
     }
 
     & svg {
@@ -91,12 +106,19 @@
     }
   }
 
+  &__table-user {
+    @media (max-width: 900px) {
+      overflow-x: scroll;
+    }
+  }
+
   &__details-btns {
     display: flex;
     justify-content: space-between;
 
     @media (max-width: 980px) {
       flex-direction: column;
+      align-items: center;
       gap: 2.4rem;
     }
   }

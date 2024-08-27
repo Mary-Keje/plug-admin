@@ -23,7 +23,9 @@
       width: 2.4rem;
     }
 
-
+    @media (max-width: 500px) {
+      width: auto;
+    }
   }
 
   &--add-btn {
@@ -177,7 +179,9 @@
   align-items: center;
   gap: 1.6rem;
 
-  
+  @media (max-width: 980px) {
+    order: 1;
+  }
 
   &--block-btn {
     background-color: #dd3c3c;
@@ -216,6 +220,20 @@
   align-items: center;
   gap: 0.8rem;
 
+  &__sm {
+    background-color: #ffffff;
+    border-radius: 0.8rem;
+    padding: 0.8rem;
+
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+
+    @media (max-width: 490px) {
+      overflow-x: scroll;
+    }
+  }
+
   &__btn-type {
     color: #4d4d4d;
     background: none;
@@ -223,6 +241,8 @@
     border: none;
     padding: 0.8rem 2.4rem;
     cursor: pointer;
+
+    white-space: nowrap;
 
     &--active {
       font-weight: 600;

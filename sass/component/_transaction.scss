@@ -108,15 +108,15 @@
   display: none;
 }
 .user-details__details-btns {
-  overflow: auto;
-  white-space: nowrap;
-  background-color: #ffffff;
+  // overflow: auto;
+  // white-space: nowrap;
+  // background-color: #ffffff;
 }
 
 @media screen and (max-width: 52em) {
   html,
   body {
-    overflow-x: hidden;
+    // overflow-x: hidden;
   }
 
   .txn-details {
