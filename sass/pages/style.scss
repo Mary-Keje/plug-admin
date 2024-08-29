@@ -126,7 +126,7 @@
   &__details-body {
     display: flex;
     flex-direction: column;
-    gap: 1.6rem;
+    gap: 2.4rem;
 
     & a {
       text-decoration: none;
@@ -301,10 +301,6 @@
     color: #808080;
   }
 
-  &__user-name-search {
-    // width: 56rem;
-  }
-
   &__user-search {
     background-color: #ffffff;
     border: 1px solid #e6e6e6;
@@ -355,9 +351,17 @@
     align-items: center;
     gap: 1.6rem;
 
+    @media (max-width: 490px) {
+      padding: 4px 1rem;
+    }
+
     & svg {
       display: block;
       gap: 2.4rem;
+
+      @media (max-width: 490px) {
+        width: 2rem;
+      }
     }
   }
 
