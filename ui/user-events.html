@@ -48,8 +48,34 @@
               </svg>
             </div>
           </div>
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M3.6001 5.9998C3.6001 5.33706 4.13736 4.7998 4.8001 4.7998H19.2001C19.8628 4.7998 20.4001 5.33706 20.4001 5.9998C20.4001 6.66255 19.8628 7.1998 19.2001 7.1998H4.8001C4.13736 7.1998 3.6001 6.66255 3.6001 5.9998Z"
+              fill="white"
+            />
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M3.6001 11.9998C3.6001 11.3371 4.13736 10.7998 4.8001 10.7998H19.2001C19.8628 10.7998 20.4001 11.3371 20.4001 11.9998C20.4001 12.6625 19.8628 13.1998 19.2001 13.1998H4.8001C4.13736 13.1998 3.6001 12.6625 3.6001 11.9998Z"
+              fill="white"
+            />
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M3.6001 17.9998C3.6001 17.3371 4.13736 16.7998 4.8001 16.7998H19.2001C19.8628 16.7998 20.4001 17.3371 20.4001 17.9998C20.4001 18.6625 19.8628 19.1998 19.2001 19.1998H4.8001C4.13736 19.1998 3.6001 18.6625 3.6001 17.9998Z"
+              fill="white"
+            />
+          </svg>
         </div>
-        <div class="header-details">
+        <div class="header-details__users-name">
           <p class="header-details__text">User - Mrjayy</p>
         </div>
       </div>
@@ -75,7 +101,7 @@
             <button class="btn-menus__btn-type">Virtual card</button>
           </a>
           <div class="btn-menus__divider"></div>
-          <a href="./user-transaction.html">
+          <a href="./order-history.html">
             <button class="btn-menus__btn-type">Order history</button>
           </a>
           <div class="btn-menus__divider"></div>
@@ -144,7 +170,7 @@
               </button>
             </div>
           </div>
-          <div class="user-details__details-type-txn">
+          <div class="user-details__details-type-event">
             <div class="user-details__details-menus">
               <div class="user-details__details-info">
                 <p>Purchased events</p>
@@ -223,7 +249,7 @@
             </div>
           </div>
           <div class="user-details__user-table">
-            <div class="">
+            <div class="user-details__event-purchases">
               <p
                 class="user-details__event-type user-details__event-type--active"
               >
@@ -233,182 +259,252 @@
                 <div class="user-details__event-type">Created Event</div>
               </a>
             </div>
-            <table class="table">
-              <thead>
-                <tr>
-                  <th>Event name</th>
-                  <th>Amount</th>
-                  <th>Transaction ID</th>
-                  <th>Previous balance</th>
-                  <th>New balance</th>
-                  <th>Date</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td class="td-user-info">
-                    <p class="td-user-info__user-detail">Ibadan Tech Expo</p>
-                  </td>
-                  <td><p>₦8,500.00</p></td>
-                  <td><p>PNG1234567890</p></td>
-                  <td><p>₦8,500.00</p></td>
-                  <td><p>₦8,500.00</p></td>
-                  <td>
-                    <div class="td-user-info__reg-date">
-                      <p>Jul 24, 2024</p>
-                      <div class="td-user-info__date-divider"></div>
-                      <p>12:45pm</p>
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="td-user-info">
-                    <p class="td-user-info__user-detail">Ibadan Tech Expo</p>
-                  </td>
-                  <td><p>₦8,500.00</p></td>
-                  <td><p>PNG1234567890</p></td>
-                  <td><p>₦8,500.00</p></td>
-                  <td><p>₦8,500.00</p></td>
-                  <td>
-                    <div class="td-user-info__reg-date">
-                      <p>Jul 24, 2024</p>
-                      <div class="td-user-info__date-divider"></div>
-                      <p>12:45pm</p>
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="td-user-info">
-                    <p class="td-user-info__user-detail">Ibadan Tech Expo</p>
-                  </td>
-                  <td><p>₦8,500.00</p></td>
-                  <td><p>PNG1234567890</p></td>
-                  <td><p>₦8,500.00</p></td>
-                  <td><p>₦8,500.00</p></td>
-                  <td>
-                    <div class="td-user-info__reg-date">
-                      <p>Jul 24, 2024</p>
-                      <div class="td-user-info__date-divider"></div>
-                      <p>12:45pm</p>
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="td-user-info">
-                    <p class="td-user-info__user-detail">Ibadan Tech Expo</p>
-                  </td>
-                  <td><p>₦8,500.00</p></td>
-                  <td><p>PNG1234567890</p></td>
-                  <td><p>₦8,500.00</p></td>
-                  <td><p>₦8,500.00</p></td>
-                  <td>
-                    <div class="td-user-info__reg-date">
-                      <p>Jul 24, 2024</p>
-                      <div class="td-user-info__date-divider"></div>
-                      <p>12:45pm</p>
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="td-user-info">
-                    <p class="td-user-info__user-detail">Ibadan Tech Expo</p>
-                  </td>
-                  <td><p>₦8,500.00</p></td>
-                  <td><p>PNG1234567890</p></td>
-                  <td><p>₦8,500.00</p></td>
-                  <td><p>₦8,500.00</p></td>
-                  <td>
-                    <div class="td-user-info__reg-date">
-                      <p>Jul 24, 2024</p>
-                      <div class="td-user-info__date-divider"></div>
-                      <p>12:45pm</p>
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="td-user-info">
-                    <p class="td-user-info__user-detail">Ibadan Tech Expo</p>
-                  </td>
-                  <td><p>₦8,500.00</p></td>
-                  <td><p>PNG1234567890</p></td>
-                  <td><p>₦8,500.00</p></td>
-                  <td><p>₦8,500.00</p></td>
-                  <td>
-                    <div class="td-user-info__reg-date">
-                      <p>Jul 24, 2024</p>
-                      <div class="td-user-info__date-divider"></div>
-                      <p>12:45pm</p>
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="td-user-info">
-                    <p class="td-user-info__user-detail">Ibadan Tech Expo</p>
-                  </td>
-                  <td><p>₦8,500.00</p></td>
-                  <td><p>PNG1234567890</p></td>
-                  <td><p>₦8,500.00</p></td>
-                  <td><p>₦8,500.00</p></td>
-                  <td>
-                    <div class="td-user-info__reg-date">
-                      <p>Jul 24, 2024</p>
-                      <div class="td-user-info__date-divider"></div>
-                      <p>12:45pm</p>
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="td-user-info">
-                    <p class="td-user-info__user-detail">Ibadan Tech Expo</p>
-                  </td>
-                  <td><p>₦8,500.00</p></td>
-                  <td><p>PNG1234567890</p></td>
-                  <td><p>₦8,500.00</p></td>
-                  <td><p>₦8,500.00</p></td>
-                  <td>
-                    <div class="td-user-info__reg-date">
-                      <p>Jul 24, 2024</p>
-                      <div class="td-user-info__date-divider"></div>
-                      <p>12:45pm</p>
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="td-user-info">
-                    <p class="td-user-info__user-detail">Ibadan Tech Expo</p>
-                  </td>
-                  <td><p>₦8,500.00</p></td>
-                  <td><p>PNG1234567890</p></td>
-                  <td><p>₦8,500.00</p></td>
-                  <td><p>₦8,500.00</p></td>
-                  <td>
-                    <div class="td-user-info__reg-date">
-                      <p>Jul 24, 2024</p>
-                      <div class="td-user-info__date-divider"></div>
-                      <p>12:45pm</p>
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="td-user-info">
-                    <p class="td-user-info__user-detail">Ibadan Tech Expo</p>
-                  </td>
-                  <td><p>₦8,500.00</p></td>
-                  <td><p>PNG1234567890</p></td>
-                  <td><p>₦8,500.00</p></td>
-                  <td><p>₦8,500.00</p></td>
-                  <td>
-                    <div class="td-user-info__reg-date">
-                      <p>Jul 24, 2024</p>
-                      <div class="td-user-info__date-divider"></div>
-                      <p>12:45pm</p>
-                    </div>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+            <div class="user-details__table-user">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>Event name</th>
+                    <th>Amount</th>
+                    <th>Transaction ID</th>
+                    <th>Previous balance</th>
+                    <th>New balance</th>
+                    <th>Date</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="td-user-info">
+                      <p class="td-user-info__user-detail">Ibadan Tech Expo</p>
+                    </td>
+                    <td><p>₦8,500.00</p></td>
+                    <td><p>PNG1234567890</p></td>
+                    <td><p>₦8,500.00</p></td>
+                    <td><p>₦8,500.00</p></td>
+                    <td>
+                      <div class="td-user-info__reg-date">
+                        <p>Jul 24, 2024</p>
+                        <div class="td-user-info__date-divider"></div>
+                        <p>12:45pm</p>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="td-user-info">
+                      <p class="td-user-info__user-detail">Ibadan Tech Expo</p>
+                    </td>
+                    <td><p>₦8,500.00</p></td>
+                    <td><p>PNG1234567890</p></td>
+                    <td><p>₦8,500.00</p></td>
+                    <td><p>₦8,500.00</p></td>
+                    <td>
+                      <div class="td-user-info__reg-date">
+                        <p>Jul 24, 2024</p>
+                        <div class="td-user-info__date-divider"></div>
+                        <p>12:45pm</p>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="td-user-info">
+                      <p class="td-user-info__user-detail">Ibadan Tech Expo</p>
+                    </td>
+                    <td><p>₦8,500.00</p></td>
+                    <td><p>PNG1234567890</p></td>
+                    <td><p>₦8,500.00</p></td>
+                    <td><p>₦8,500.00</p></td>
+                    <td>
+                      <div class="td-user-info__reg-date">
+                        <p>Jul 24, 2024</p>
+                        <div class="td-user-info__date-divider"></div>
+                        <p>12:45pm</p>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="td-user-info">
+                      <p class="td-user-info__user-detail">Ibadan Tech Expo</p>
+                    </td>
+                    <td><p>₦8,500.00</p></td>
+                    <td><p>PNG1234567890</p></td>
+                    <td><p>₦8,500.00</p></td>
+                    <td><p>₦8,500.00</p></td>
+                    <td>
+                      <div class="td-user-info__reg-date">
+                        <p>Jul 24, 2024</p>
+                        <div class="td-user-info__date-divider"></div>
+                        <p>12:45pm</p>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="td-user-info">
+                      <p class="td-user-info__user-detail">Ibadan Tech Expo</p>
+                    </td>
+                    <td><p>₦8,500.00</p></td>
+                    <td><p>PNG1234567890</p></td>
+                    <td><p>₦8,500.00</p></td>
+                    <td><p>₦8,500.00</p></td>
+                    <td>
+                      <div class="td-user-info__reg-date">
+                        <p>Jul 24, 2024</p>
+                        <div class="td-user-info__date-divider"></div>
+                        <p>12:45pm</p>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="td-user-info">
+                      <p class="td-user-info__user-detail">Ibadan Tech Expo</p>
+                    </td>
+                    <td><p>₦8,500.00</p></td>
+                    <td><p>PNG1234567890</p></td>
+                    <td><p>₦8,500.00</p></td>
+                    <td><p>₦8,500.00</p></td>
+                    <td>
+                      <div class="td-user-info__reg-date">
+                        <p>Jul 24, 2024</p>
+                        <div class="td-user-info__date-divider"></div>
+                        <p>12:45pm</p>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="td-user-info">
+                      <p class="td-user-info__user-detail">Ibadan Tech Expo</p>
+                    </td>
+                    <td><p>₦8,500.00</p></td>
+                    <td><p>PNG1234567890</p></td>
+                    <td><p>₦8,500.00</p></td>
+                    <td><p>₦8,500.00</p></td>
+                    <td>
+                      <div class="td-user-info__reg-date">
+                        <p>Jul 24, 2024</p>
+                        <div class="td-user-info__date-divider"></div>
+                        <p>12:45pm</p>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="td-user-info">
+                      <p class="td-user-info__user-detail">Ibadan Tech Expo</p>
+                    </td>
+                    <td><p>₦8,500.00</p></td>
+                    <td><p>PNG1234567890</p></td>
+                    <td><p>₦8,500.00</p></td>
+                    <td><p>₦8,500.00</p></td>
+                    <td>
+                      <div class="td-user-info__reg-date">
+                        <p>Jul 24, 2024</p>
+                        <div class="td-user-info__date-divider"></div>
+                        <p>12:45pm</p>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="td-user-info">
+                      <p class="td-user-info__user-detail">Ibadan Tech Expo</p>
+                    </td>
+                    <td><p>₦8,500.00</p></td>
+                    <td><p>PNG1234567890</p></td>
+                    <td><p>₦8,500.00</p></td>
+                    <td><p>₦8,500.00</p></td>
+                    <td>
+                      <div class="td-user-info__reg-date">
+                        <p>Jul 24, 2024</p>
+                        <div class="td-user-info__date-divider"></div>
+                        <p>12:45pm</p>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="td-user-info">
+                      <p class="td-user-info__user-detail">Ibadan Tech Expo</p>
+                    </td>
+                    <td><p>₦8,500.00</p></td>
+                    <td><p>PNG1234567890</p></td>
+                    <td><p>₦8,500.00</p></td>
+                    <td><p>₦8,500.00</p></td>
+                    <td>
+                      <div class="td-user-info__reg-date">
+                        <p>Jul 24, 2024</p>
+                        <div class="td-user-info__date-divider"></div>
+                        <p>12:45pm</p>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
-          <div class="user-details__"></div>
+          <div class="user-details__entries-page">
+            <div class="user-details__show-entries">
+              <p>Show</p>
+              <div class="user-details__show-num">
+                10
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M7.41 8.58008L12 13.1701L16.59 8.58008L18 10.0001L12 16.0001L6 10.0001L7.41 8.58008Z"
+                    fill="#2DCB30"
+                  />
+                </svg>
+              </div>
+              <p>Entries</p>
+            </div>
+            <div class="user-details__show-pages">
+              <div class="user-details__prev-page">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M15.41 16.58L10.83 12L15.41 7.41L14 6L8 12L14 18L15.41 16.58Z"
+                    fill="#2DCB30"
+                  />
+                </svg>
+                <p>Previous</p>
+              </div>
+              <div class="user-details__page-num">
+                <p>234</p>
+                <svg
+                  width="6"
+                  height="10"
+                  viewBox="0 0 6 10"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1.72111 9.126C1.66911 9.266 1.58711 9.37 1.47511 9.438C1.36711 9.506 1.25511 9.54 1.13911 9.54H0.689109L4.29511 0.558C4.34311 0.43 4.41511 0.332 4.51111 0.263999C4.61111 0.196 4.72511 0.162 4.85311 0.162H5.30911L1.72111 9.126Z"
+                    fill="#808080"
+                  />
+                </svg>
+                <span>450</span>
+              </div>
+              <div class="user-details__prev-page">
+                <p>Next</p>
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8.58984 16.58L13.1698 12L8.58984 7.41L9.99984 6L15.9998 12L9.99984 18L8.58984 16.58Z"
+                    fill="#2DCB30"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

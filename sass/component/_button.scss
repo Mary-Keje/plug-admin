@@ -37,6 +37,22 @@
     gap: 0.8rem;
 
     width: 16rem;
+
+    @media (max-width: 500px) {
+      flex-direction: column;
+      width: initial;
+    }
+
+    & span {
+      @media (max-width: 500px) {
+        display: none;
+      }
+    }
+
+    & svg {
+      display: block;
+      width: 2.4rem;
+    }
   }
 
   &--create-default {
@@ -179,8 +195,25 @@
   align-items: center;
   gap: 1.6rem;
 
+  white-space: nowrap;
+
   @media (max-width: 980px) {
     order: 1;
+  }
+
+  @media (max-width: 430px) {
+    gap: 0.8rem;
+    font-size: 1.3rem;
+    width: 100%;
+  }
+
+  & svg {
+    display: block;
+    width: 2.4rem;
+
+    @media (max-width: 430px) {
+      width: 2rem;
+    }
   }
 
   &--block-btn {
@@ -190,6 +223,15 @@
     display: flex;
     align-items: center;
     gap: 0.8rem;
+
+    @media (max-width: 430px) {
+      padding: 6px 1rem;
+      justify-content: center;
+    }
+
+    @media (max-width: 335px) {
+      padding: 4px 1rem;
+    }
   }
 
   &--flag-btn {
@@ -198,7 +240,17 @@
 
     display: flex;
     align-items: center;
+
     gap: 0.8rem;
+
+    @media (max-width: 430px) {
+      padding: 6px 1rem;
+      justify-content: center;
+    }
+
+    @media (max-width: 335px) {
+      padding: 4px 1rem;
+    }
   }
 
   &--unverify-btn {
@@ -208,6 +260,15 @@
     display: flex;
     align-items: center;
     gap: 0.8rem;
+
+    @media (max-width: 430px) {
+      padding: 6px 1rem;
+      justify-content: center;
+    }
+
+    @media (max-width: 335px) {
+      padding: 4px 1rem;
+    }
   }
 }
 
@@ -218,7 +279,11 @@
 
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   gap: 0.8rem;
+
+  @media (max-width: 1300px) {
+  }
 
   &__sm {
     background-color: #ffffff;
@@ -226,11 +291,12 @@
     padding: 0.8rem;
 
     display: flex;
-    align-items: center;
+    align-self: flex-start;
     gap: 0.8rem;
+    flex-wrap: wrap;
 
-    @media (max-width: 490px) {
-      overflow-x: scroll;
+    @media (max-width: 500px) {
+      width: auto;
     }
   }
 
@@ -244,10 +310,24 @@
 
     white-space: nowrap;
 
+    @media (max-width: 520px) {
+      // font-size: 1.4rem;
+      padding: 5px 1.5rem;
+    }
+
+    @media (max-width: 430px) {
+      font-size: 1.4rem;
+    }
+
     &--active {
       font-weight: 600;
       color: #ffffff;
       background-color: #2dcb30;
+
+      @media (max-width: 430px) {
+        font-size: 1.4rem;
+        padding: 5px 1.5rem;
+      }
     }
   }
 
@@ -289,6 +369,10 @@
 
   &__filter {
     margin-top: auto;
+
+    @media (max-width: 1090px) {
+      align-self: flex-start;
+    }
   }
 }
 

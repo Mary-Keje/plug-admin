@@ -2,6 +2,10 @@
   &__logo-pl {
     display: block;
     width: 9.8rem;
+
+    @media (max-width: 500px) {
+      // width: 7.2rem;
+    }
   }
 
   &__main {
@@ -23,6 +27,19 @@
     @media (max-width: 1110px) {
       padding: 2.4rem 6rem;
     }
+
+    @media (max-width: 500px) {
+      padding: 2rem 3rem;
+    }
+
+    & svg {
+      display: none;
+
+      @media (max-width: 450px) {
+        display: block;
+        width: 2.4rem;
+      }
+    }
   }
 
   &__info {
@@ -33,6 +50,10 @@
     & svg {
       display: block;
       width: 2.4rem;
+    }
+
+    @media (max-width: 450px) {
+      display: none;
     }
   }
 
@@ -62,6 +83,10 @@
     & img {
       display: block;
       width: 3.2rem;
+
+      @media (max-width: 500px) {
+        width: 2.4rem;
+      }
     }
   }
 
@@ -87,6 +112,20 @@
   @media (max-width: 980px) {
     padding: 0rem 1rem;
     gap: 2rem;
+  }
+
+  &__users-name {
+    padding: 0rem 4.8rem;
+    width: 100%;
+
+    @media (max-width: 980px) {
+      padding: 0rem 1rem;
+      // gap: 2rem;
+    }
+  }
+
+  &__details-name {
+    display: block;
   }
 
   &__mobile-header {
@@ -118,6 +157,10 @@
   &__text {
     font-size: 2.4rem;
     font-family: "Tango Sans";
+
+    @media (max-width: 500px) {
+      font-size: 2rem;
+    }
   }
 
   &__body {
@@ -204,7 +247,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
     gap: 0.8rem;
+
+    @media (max-width: 1090px) {
+      // align-self: flex-start;
+      // justify-content: flex-end;
+    }
 
     & svg {
       display: block;
