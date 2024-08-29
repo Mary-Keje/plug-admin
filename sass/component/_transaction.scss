@@ -104,69 +104,8 @@
   border-bottom: 1px solid #e6e6e6;
   margin: 0rem 0rem 3rem 0rem;
 }
-.txn-details-sort {
-  display: none;
-}
-.user-details__details-btns {
-  // overflow: auto;
-  // white-space: nowrap;
-  // background-color: #ffffff;
-}
 
 @media screen and (max-width: 52em) {
-  html,
-  body {
-    // overflow-x: hidden;
-  }
-
-  .txn-details {
-    padding: 0rem 0.5rem;
-    flex-wrap: wrap;
-
-    &-body {
-      display: grid;
-      grid-template-columns: 24rem 1fr 1fr;
-      gap: 0.8rem;
-      margin-top: 4rem;
-    }
-
-    &-search {
-      width: 24rem;
-      padding: 1.2rem 5rem 1.2rem 0rem;
-      grid-auto-flow: column;
-      grid-auto-columns: 1fr;
-      & svg {
-        position: absolute;
-        margin-left: 20rem;
-      }
-    }
-    &-sort {
-      padding: 0.4rem;
-      display: flex;
-      justify-content: center;
-    }
-  }
-
-  .user-details__details-type-txn {
-    grid-template-columns: 1fr;
-  }
-  .user-details__details-main {
-    padding: 0rem 0.5rem;
-  }
-
-  .txn-table {
-    overflow: scroll;
-  }
-
-  .user-details__entries-page {
-    // display: block;
-    // margin: auto;
-  }
-  .user-details__show-entries {
-    // justify-content: center;
-    // margin-bottom: 1rem;
-  }
-
   .modal-content {
     width: 380px;
     height: 550px;

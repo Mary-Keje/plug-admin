@@ -10,9 +10,8 @@
   <body>
     <div class="user-details">
       <div class="header__main">
-        <!-- banner starts -->
         <div class="header__details">
-          <a href="../index.html">
+          <a href="../ui/login.html">
             <img
               src="../imgs/logo/plug.logoo.svg"
               alt=""
@@ -32,39 +31,164 @@
                 fill="white"
               />
             </svg>
-            <div class="header__details-menu">
-              <div class="header__face-logo">
-                <img src="../imgs/logo/face-icon-header.svg" alt="" class="" />
-                <p class="header__text">Admin</p>
+            <a href="../ui/transaction.html">
+              <div class="header__details-menu">
+                <div class="header__face-logo">
+                  <img src="../imgs/logo/face-icon-header.svg" alt="" class="" />
+                  <p class="header__text">Admin</p>
+                </div>
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M7.41 8.58008L12 13.1701L16.59 8.58008L18 10.0001L12 16.0001L6 10.0001L7.41 8.58008Z"
+                    fill="white"
+                  />
+                </svg>
               </div>
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M7.41 8.58008L12 13.1701L16.59 8.58008L18 10.0001L12 16.0001L6 10.0001L7.41 8.58008Z"
-                  fill="white"
-                />
-              </svg>
-            </div>
+            </a>
           </div>
+          <a href="./ui/transaction.html" class="header__hamburger-icon">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M3.6001 5.9998C3.6001 5.33706 4.13736 4.7998 4.8001 4.7998H19.2001C19.8628 4.7998 20.4001 5.33706 20.4001 5.9998C20.4001 6.66255 19.8628 7.1998 19.2001 7.1998H4.8001C4.13736 7.1998 3.6001 6.66255 3.6001 5.9998Z"
+                fill="white"
+              />
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M3.6001 11.9998C3.6001 11.3371 4.13736 10.7998 4.8001 10.7998H19.2001C19.8628 10.7998 20.4001 11.3371 20.4001 11.9998C20.4001 12.6625 19.8628 13.1998 19.2001 13.1998H4.8001C4.13736 13.1998 3.6001 12.6625 3.6001 11.9998Z"
+                fill="white"
+              />
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M3.6001 17.9998C3.6001 17.3371 4.13736 16.7998 4.8001 16.7998H19.2001C19.8628 16.7998 20.4001 17.3371 20.4001 17.9998C20.4001 18.6625 19.8628 19.1998 19.2001 19.1998H4.8001C4.13736 19.1998 3.6001 18.6625 3.6001 17.9998Z"
+                fill="white"
+              />
+            </svg>
+          </a>
         </div>
-        <!-- banner ends -->
-        <!-- txn starts -->
-        <div class="header-details txn-details">
-          <p class="header-details__text">Transactions</p>
-          <div class="header-details__body txn-details-body">
-            <div class="header-details__search-input txn-details-search">
-              <div>
+        <div class="header-details">
+          <p class="header-details__text">Transaction</p>
+          <div class="header-details__body">
+            <div class="header-details__search-sort">
+              <div class="header-details__search-input">
                 <input
                   type="text"
                   placeholder="Search"
                   class="header-details__search"
                 />
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M21 21L15 15M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10Z"
+                    stroke="#1F1F1F"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
               </div>
+              <div class="header-details__sort">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M18 21L14 17H17V7H14L18 3L22 7H19V17H22M2 19V17H12V19M2 13V11H9V13M2 7V5H6V7H2Z"
+                    fill="#2DCB30"
+                  />
+                </svg>
+                <p class="header-details__sort-text">Sort</p>
+              </div>
+              <div class="header-details__sort">
+                <p class="header-details__month-text">This month</p>
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M7.41 8.58008L12 13.1701L16.59 8.58008L18 10.0001L12 16.0001L6 10.0001L7.41 8.58008Z"
+                    fill="#2DCB30"
+                  />
+                </svg>
+              </div>
+            </div>
+            <a href="./ui/user-information.html">
+              <button class="button button--create" id="modal-btn">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M3.59998 20.3999C3.59998 19.7372 4.13723 19.1999 4.79998 19.1999H19.2C19.8627 19.1999 20.4 19.7372 20.4 20.3999C20.4 21.0626 19.8627 21.5999 19.2 21.5999H4.79998C4.13723 21.5999 3.59998 21.0626 3.59998 20.3999ZM7.55145 11.1514C8.02008 10.6827 8.77987 10.6827 9.2485 11.1514L10.8 12.7028L10.8 3.5999C10.8 2.93716 11.3372 2.3999 12 2.3999C12.6627 2.3999 13.2 2.93716 13.2 3.5999L13.2 12.7028L14.7514 11.1514C15.2201 10.6827 15.9799 10.6827 16.4485 11.1514C16.9171 11.62 16.9171 12.3798 16.4485 12.8484L12.8485 16.4484C12.6235 16.6735 12.3182 16.7999 12 16.7999C11.6817 16.7999 11.3765 16.6735 11.1514 16.4484L7.55145 12.8484C7.08282 12.3798 7.08282 11.62 7.55145 11.1514Z"
+                    fill="white"
+                    />
+                </svg>
+                <p>Download transaction report</p>
+              </button>
+            </a>
+          </div>
+        </div>
+        <div class="header-details__mobile-header">
+          <div class="header-details__mobile-heading">
+            <p class="header-details__text">Transaction</p>
+            <a href="./ui/user-information.html">
+              <button class="button button--create" id="modal-btn">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M3.59998 20.3999C3.59998 19.7372 4.13723 19.1999 4.79998 19.1999H19.2C19.8627 19.1999 20.4 19.7372 20.4 20.3999C20.4 21.0626 19.8627 21.5999 19.2 21.5999H4.79998C4.13723 21.5999 3.59998 21.0626 3.59998 20.3999ZM7.55145 11.1514C8.02008 10.6827 8.77987 10.6827 9.2485 11.1514L10.8 12.7028L10.8 3.5999C10.8 2.93716 11.3372 2.3999 12 2.3999C12.6627 2.3999 13.2 2.93716 13.2 3.5999L13.2 12.7028L14.7514 11.1514C15.2201 10.6827 15.9799 10.6827 16.4485 11.1514C16.9171 11.62 16.9171 12.3798 16.4485 12.8484L12.8485 16.4484C12.6235 16.6735 12.3182 16.7999 12 16.7999C11.6817 16.7999 11.3765 16.6735 11.1514 16.4484L7.55145 12.8484C7.08282 12.3798 7.08282 11.62 7.55145 11.1514Z"
+                    fill="white"
+                    />
+                </svg>
+                <p>Download transaction report</p>
+              </button>
+            </a>
+          </div>
+          <div class="header-details__search-sort">
+            <div class="header-details__search-input">
+              <input
+                type="text"
+                placeholder="Search"
+                class="header-details__search"
+              />
               <svg
                 width="24"
                 height="24"
@@ -81,7 +205,7 @@
                 />
               </svg>
             </div>
-            <div class="header-details__sort txn-details-sort">
+            <div class="header-details__sort">
               <svg
                 width="24"
                 height="24"
@@ -94,6 +218,7 @@
                   fill="#2DCB30"
                 />
               </svg>
+              <p class="header-details__sort-text">Sort</p>
             </div>
             <div class="header-details__sort">
               <p class="header-details__month-text">This month</p>
@@ -110,28 +235,9 @@
                 />
               </svg>
             </div>
-            <button class="button button--create" id="modal-btn">
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M3.60001 20.3999C3.60001 19.7372 4.13726 19.1999 4.80001 19.1999H19.2C19.8627 19.1999 20.4 19.7372 20.4 20.3999C20.4 21.0626 19.8627 21.5999 19.2 21.5999H4.80001C4.13726 21.5999 3.60001 21.0626 3.60001 20.3999ZM7.55148 11.1514C8.02011 10.6827 8.7799 10.6827 9.24853 11.1514L10.8 12.7028L10.8 3.5999C10.8 2.93716 11.3373 2.3999 12 2.3999C12.6627 2.3999 13.2 2.93716 13.2 3.5999L13.2 12.7028L14.7515 11.1514C15.2201 10.6827 15.9799 10.6827 16.4485 11.1514C16.9172 11.62 16.9172 12.3798 16.4485 12.8484L12.8485 16.4484C12.6235 16.6735 12.3183 16.7999 12 16.7999C11.6817 16.7999 11.3765 16.6735 11.1515 16.4484L7.55148 12.8484C7.08285 12.3798 7.08285 11.62 7.55148 11.1514Z"
-                  fill="white"
-                />
-              </svg>
-              <p>Download Order Report</p>
-            </button>
           </div>
         </div>
-        <!-- txn ends -->
       </div>
-      <!-- widget starts -->
       <div class="user-details__details-main">
         <div class="user-details__details-type-txn">
           <div class="user-details__details-menus">
