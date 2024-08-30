@@ -12,6 +12,18 @@
 
     display: flex;
     gap: 0.8rem;
+
+    &--md {
+      display: block;
+    }
+  }
+
+  &__default-input-apply {
+    color: #4d4d4d;
+    background-color: #f2f2f2;
+    border: 1px solid #e6e6e6;
+    border-radius: 0.8rem;
+    padding: 1.2rem 1.6rem;
   }
 
   &__default-white {
@@ -30,6 +42,11 @@
     display: flex;
     align-items: center;
     gap: 1.6rem;
+
+    & svg {
+      display: block;
+      width: 2.4rem;
+    }
   }
 
   &__user-input {

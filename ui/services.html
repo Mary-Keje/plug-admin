@@ -50,18 +50,42 @@
               </svg>
             </div>
           </div>
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M3.6001 5.9998C3.6001 5.33706 4.13736 4.7998 4.8001 4.7998H19.2001C19.8628 4.7998 20.4001 5.33706 20.4001 5.9998C20.4001 6.66255 19.8628 7.1998 19.2001 7.1998H4.8001C4.13736 7.1998 3.6001 6.66255 3.6001 5.9998Z"
+              fill="white"
+            />
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M3.6001 11.9998C3.6001 11.3371 4.13736 10.7998 4.8001 10.7998H19.2001C19.8628 10.7998 20.4001 11.3371 20.4001 11.9998C20.4001 12.6625 19.8628 13.1998 19.2001 13.1998H4.8001C4.13736 13.1998 3.6001 12.6625 3.6001 11.9998Z"
+              fill="white"
+            />
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M3.6001 17.9998C3.6001 17.3371 4.13736 16.7998 4.8001 16.7998H19.2001C19.8628 16.7998 20.4001 17.3371 20.4001 17.9998C20.4001 18.6625 19.8628 19.1998 19.2001 19.1998H4.8001C4.13736 19.1998 3.6001 18.6625 3.6001 17.9998Z"
+              fill="white"
+            />
+          </svg>
         </div>
-        <div class="header-details">
+        <div class="header-details__services-header">
           <p class="header-details__text">Services</p>
-          <div class="header-details__body">
+          <div class="header-details__body-services">
             <div class="header-details__search-input">
-              <div>
-                <input
-                  type="text"
-                  placeholder="Search"
-                  class="header-details__search"
-                />
-              </div>
+              <input
+                type="text"
+                placeholder="Search"
+                class="header-details__search"
+              />
               <svg
                 width="24"
                 height="24"
@@ -95,6 +119,48 @@
                 <p>Add Service</p>
               </button>
             </a>
+          </div>
+        </div>
+        <div class="header-details__mobile-header-services">
+          <div class="header-details__mobile-heading-services">
+            <p class="header-details__text">Services</p>
+            <button class="button button--add-service">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M19 13H13V19H11V13H5V11H11V5H13V11H19V13Z"
+                  fill="white"
+                />
+              </svg>
+              <p>Add Service</p>
+            </button>
+          </div>
+          <div class="header-details__search-input">
+            <input
+              type="text"
+              placeholder="Search"
+              class="header-details__search"
+            />
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M21 21L15 15M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10Z"
+                stroke="#1F1F1F"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
           </div>
         </div>
       </div>
@@ -175,7 +241,7 @@
           <div class="services-section__transactions">
             <div class="services-section__transactions-part">
               <div class="services-section__transactions-heading">
-                <p>Transactions</p>
+                <p class="services-section__text">Transactions</p>
                 <a href="./services-view.html">
                   <button class="button button--view-transaction">
                     View Transactions
@@ -324,7 +390,7 @@
             <div class="services-section__auto-renew">
               <div class="services-section__auto-renew-details">
                 <div class="services-section__transactions-heading">
-                  <p>Auto renew</p>
+                  <p class="services-section__text">Auto renew</p>
                   <button class="button button--view-renew-btn">
                     View auto-renew
                     <svg
@@ -363,7 +429,7 @@
               </div>
               <div class="services-section__auto-renew-details">
                 <div class="services-section__transactions-heading">
-                  <p>Service Status</p>
+                  <p class="services-section__text">Service Status</p>
                 </div>
                 <div class="services-section__details-menus">
                   <div class="services-section__details-info">
