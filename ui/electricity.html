@@ -10,14 +10,12 @@
   <body>
     <div class="user-details">
       <div class="header__main">
-        <div class="header__details">
-          <a href="../ui/login.html">
+        <div class="header__details">        
             <img
               src="../imgs/logo/plug.logoo.svg"
               alt=""
               class="header__logo-pl"
             />
-          </a>
           <div class="header__info">
             <svg
               width="24"
@@ -31,7 +29,6 @@
                 fill="white"
               />
             </svg>
-            <a href="../ui/transaction.html">
               <div class="header__details-menu">
                 <div class="header__face-logo">
                   <img src="../imgs/logo/face-icon-header.svg" alt="" class="" />
@@ -50,9 +47,7 @@
                   />
                 </svg>
               </div>
-            </a>
           </div>
-          <a href="./ui/transaction.html" class="header__hamburger-icon">
             <svg
               width="24"
               height="24"
@@ -79,7 +74,6 @@
                 fill="white"
               />
             </svg>
-          </a>
         </div>
         <div class="header-details">
           <p class="header-details__text">Transaction</p>
@@ -106,22 +100,7 @@
                     stroke-linejoin="round"
                   />
                 </svg>
-              </div>
-              <div class="header-details__sort">
-                <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M18 21L14 17H17V7H14L18 3L22 7H19V17H22M2 19V17H12V19M2 13V11H9V13M2 7V5H6V7H2Z"
-                    fill="#2DCB30"
-                  />
-                </svg>
-                <p class="header-details__sort-text">Sort</p>
-              </div>
+              </div>             
               <div class="header-details__sort">
                 <p class="header-details__month-text">This month</p>
                 <svg
@@ -138,8 +117,7 @@
                 </svg>
               </div>
             </div>
-            <a href="./ui/user-information.html">
-              <button class="button button--create" id="modal-btn">
+              <button class="button button--download-order">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
@@ -156,13 +134,11 @@
                 </svg>
                 <p>Download transaction report</p>
               </button>
-            </a>
           </div>
         </div>
         <div class="header-details__mobile-header">
           <div class="header-details__mobile-heading">
             <p class="header-details__text">Transaction</p>
-            <a href="./ui/user-information.html">
               <button class="button button--create" id="modal-btn">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -180,7 +156,6 @@
                 </svg>
                 <p>Download transaction report</p>
               </button>
-            </a>
           </div>
           <div class="header-details__search-sort">
             <div class="header-details__search-input">
@@ -206,21 +181,6 @@
               </svg>
             </div>
             <div class="header-details__sort">
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M18 21L14 17H17V7H14L18 3L22 7H19V17H22M2 19V17H12V19M2 13V11H9V13M2 7V5H6V7H2Z"
-                  fill="#2DCB30"
-                />
-              </svg>
-              <p class="header-details__sort-text">Sort</p>
-            </div>
-            <div class="header-details__sort">
               <p class="header-details__month-text">This month</p>
               <svg
                 width="24"
@@ -239,7 +199,7 @@
         </div>
       </div>
       <div class="user-details__details-main">
-        <div class="user-details__details-type-txn">
+        <div class="user-details__details-type-event">
           <div class="user-details__details-menus">
             <div class="user-details__details-info">
               <p>Total transactions</p>
@@ -370,7 +330,7 @@
               </a>
             </div>
           </div>
-          <div class="txn-table">
+          <div class="user-details__table-user">
             <table class="table">
               <thead>
                 <tr>
