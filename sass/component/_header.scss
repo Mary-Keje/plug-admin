@@ -43,14 +43,11 @@
   }
 
   &__hamburger-icon {
-    // & svg {
     display: none;
-
     @media (max-width: 450px) {
       display: block;
       width: 2.4rem;
     }
-    // }
   }
 
   &__info {
