@@ -1408,6 +1408,9 @@ body {
       font-weight: 600;
       color: #ffffff;
       background-color: #2dcb30; }
+      .btn-menus__btn-type--active:hover {
+        color: #ffffff;
+        background-color: #2dcb30 !important; }
       @media (max-width: 430px) {
         .btn-menus__btn-type--active {
           font-size: 1.4rem;
