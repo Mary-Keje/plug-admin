@@ -144,9 +144,13 @@ body {
     gap: 2.4rem; }
     .user-details__details-body a {
       text-decoration: none; }
-  @media (max-width: 900px) {
-    .user-details__table-user {
-      overflow-x: scroll; } }
+  .user-details__table-user {
+    display: flex;
+    flex-direction: column;
+    gap: 4px; }
+    @media (max-width: 900px) {
+      .user-details__table-user {
+        overflow-x: scroll; } }
   .user-details__details-btns {
     display: flex;
     justify-content: space-between; }
@@ -1125,6 +1129,9 @@ body {
     color: #2dcb30; }
   .header-details__month-text {
     color: #4d4d4d; }
+  .header-details__cards-btn {
+    display: flex;
+    gap: 2.4rem; }
 
 .button {
   font-weight: 600;
@@ -1673,6 +1680,16 @@ th {
   font-weight: 600;
   color: #dd3c3c;
   cursor: pointer; }
+
+.td-user-info__expiry-date {
+  color: #a6a6a6; }
+
+.td-user-info__user-btns {
+  background-color: #ffffff;
+  padding: 0.8rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.6rem; }
 
 .form {
   width: 100%;
