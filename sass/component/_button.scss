@@ -260,6 +260,13 @@
     border-radius: 4px;
     width: 27rem;
   }
+
+  &--active {
+    font-size: 1.4rem;
+    border-radius: 2.4rem;
+    padding: 6px 1.6rem;
+    height: auto;
+  }
 }
 
 .user-btns {
@@ -299,6 +306,7 @@
 
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 0.8rem;
 
     @media (max-width: 430px) {
@@ -317,7 +325,7 @@
 
     display: flex;
     align-items: center;
-
+    justify-content: center;
     gap: 0.8rem;
 
     @media (max-width: 430px) {
@@ -336,6 +344,7 @@
 
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 0.8rem;
 
     @media (max-width: 430px) {
@@ -346,6 +355,12 @@
     @media (max-width: 335px) {
       padding: 4px 1rem;
     }
+  }
+
+  &__cards {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
   }
 }
 

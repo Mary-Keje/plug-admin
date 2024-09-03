@@ -82,6 +82,17 @@
     }
   }
 
+  &__details-type-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.6rem;
+
+    @media (max-width: 650px) {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
   &__details-menus {
     background-color: #ffffff;
     border-radius: 0.8rem;
@@ -127,6 +138,122 @@
     }
   }
 
+  &__details-card-info {
+    display: flex;
+    gap: 0.8rem;
+
+    & span {
+      font-size: 1.8rem;
+      font-weight: 600;
+      color: #1f1f1f;
+
+      white-space: nowrap;
+
+      @media (max-width: 430px) {
+        font-size: 1.4rem;
+      }
+    }
+  }
+
+  &__details-header-cards {
+    gap: 5.6rem;
+    display: grid;
+    grid-template-columns: 1fr 25rem;
+
+    width: 100%;
+
+    @media (max-width: 1180px) {
+      gap: 4rem;
+    }
+
+    @media (max-width: 870px) {
+      gap: 2.8rem;
+    }
+
+    @media (max-width: 500px) {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &__virtual-card-details {
+    display: grid;
+    grid-template-columns: 50rem 1fr;
+    gap: 1.6rem;
+
+    @media (max-width: 1180px) {
+      grid-template-columns: 40rem 1fr;
+    }
+
+    @media (max-width: 1000px) {
+      grid-template-columns: 30rem 1fr;
+    }
+
+    @media (max-width: 915px) {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &__user-card-details {
+    background-color: #ffffff;
+    border-radius: 0.8rem;
+    padding: 1.6rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  &__user-card-view {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    & p {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: #808080;
+    }
+
+    & svg {
+      display: block;
+      width: 2.4rem;
+    }
+  }
+
+  &__user-card-created {
+    display: flex;
+    align-items: center;
+    gap: 5.6rem;
+  }
+
+  &__user-usd-card {
+    background-color: #f7f8f8;
+    border-radius: 0.8rem;
+
+    padding: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  &__user-card-num {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  &__user-card-text {
+    font-size: 1.2rem;
+    color: #a6a6a6;
+  }
+
+  &__card-number {
+    font-weight: 700;
+    font-size: 1.8rem;
+  }
+
   &__details-body {
     display: flex;
     flex-direction: column;
@@ -141,7 +268,7 @@
     display: flex;
     flex-direction: column;
     gap: 4px;
-    
+
     @media (max-width: 900px) {
       overflow-x: scroll;
     }
@@ -155,6 +282,16 @@
       flex-direction: column;
       // align-items: center;
       gap: 2.4rem;
+    }
+  }
+
+  &__details-btns-list {
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: 470px) {
+      flex-direction: column;
+      gap: 1.6rem;
     }
   }
 
