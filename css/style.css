@@ -146,6 +146,17 @@ body {
       @media (max-width: 430px) {
         .user-details__details-info span {
           font-size: 1.4rem; } }
+  .user-details__details-expiry {
+    display: flex;
+    align-items: center;
+    gap: 4px; }
+    .user-details__details-expiry p {
+      font-size: 1.8rem;
+      font-weight: 600;
+      color: #1f1f1f; }
+      @media (max-width: 430px) {
+        .user-details__details-expiry p {
+          font-size: 1.4rem; } }
   .user-details__details-card-info {
     display: flex;
     gap: 0.8rem; }
@@ -255,11 +266,12 @@ body {
   .user-details__details-btns-colored {
     display: flex;
     justify-content: flex-end; }
-  .user-details__details-btn-cashin {
+  .user-details__details-btns-cashin {
     display: flex;
-    justify-content: space-between; }
+    justify-content: space-between;
+    align-items: center; }
     @media (max-width: 1090px) {
-      .user-details__details-btn-cashin {
+      .user-details__details-btns-cashin {
         flex-direction: column;
         gap: 2.4rem; } }
   .user-details__details-btns-history {
@@ -269,6 +281,10 @@ body {
       .user-details__details-btns-history {
         flex-direction: column;
         gap: 2.4rem; } }
+  .user-details__details-btns-coupon {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
   .user-details__user-infos {
     background-color: #ffffff;
     border-radius: 0.8rem;
@@ -997,6 +1013,20 @@ body {
     display: flex;
     justify-content: center;
     gap: 2.4rem; }
+  .modal-deactivate__create-coupon {
+    padding: 1.2rem 2.4rem 0rem; }
+  .modal-deactivate__coupon-header {
+    border-bottom: 1px solid #e6e6e6;
+    display: flex;
+    justify-content: center;
+    gap: 1.6rem; }
+  .modal-deactivate__header-percent {
+    color: #808080;
+    padding: 0rem 0.8rem; }
+    .modal-deactivate__header-percent--active {
+      font-weight: 600;
+      color: #1f1f1f;
+      border-bottom: 1px solid #2dcb30; }
 
 .header__logo-pl {
   display: block;
@@ -1101,6 +1131,9 @@ body {
     display: flex;
     align-items: center;
     gap: 2.4rem; }
+    @media (max-width: 400px) {
+      .header-details__card-header {
+        gap: 0.8rem; } }
     .header-details__card-header svg {
       display: block;
       width: 2.4rem; }
@@ -1457,6 +1490,15 @@ body {
     border-radius: 2.4rem;
     padding: 6px 1.6rem;
     height: auto; }
+    @media (max-width: 400px) {
+      .button--active {
+        font-size: 1rem;
+        padding: 4px 0.8rem; } }
+  .button--edit {
+    padding: 1.2rem 2.4rem;
+    display: flex;
+    align-items: center;
+    gap: .8rem; }
 
 .user-btns {
   font-weight: 600;
@@ -1490,7 +1532,6 @@ body {
     gap: 0.8rem; }
     @media (max-width: 430px) {
       .user-btns--block-btn {
-        padding: 6px 1rem;
         justify-content: center; } }
     @media (max-width: 335px) {
       .user-btns--block-btn {
@@ -1523,10 +1564,55 @@ body {
     @media (max-width: 335px) {
       .user-btns--unverify-btn {
         padding: 4px 1rem; } }
+  .user-btns--temp-btn {
+    background-color: #2080df;
+    padding: 1.2rem 2.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem; }
+    @media (max-width: 500px) {
+      .user-btns--temp-btn {
+        font-size: 1.4rem;
+        gap: 4px;
+        padding: 0.8rem 2.4rem;
+        flex-direction: column;
+        width: 100%; } }
+  .user-btns--perm-btn {
+    background-color: #ffa800;
+    padding: 1.2rem 2.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem; }
+    @media (max-width: 500px) {
+      .user-btns--perm-btn {
+        font-size: 1.4rem;
+        gap: 4px;
+        padding: 0.8rem 2.4rem;
+        flex-direction: column;
+        width: 100%; } }
+  .user-btns--delete-btn {
+    background-color: #dd3c3c;
+    padding: 1.2rem 2.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem; }
+    @media (max-width: 500px) {
+      .user-btns--delete-btn {
+        font-size: 1.4rem;
+        gap: 4px;
+        padding: 0.8rem 2.4rem;
+        flex-direction: column;
+        width: 100%; } }
   .user-btns__cards {
     display: flex;
     flex-direction: column;
     gap: 1.6rem; }
+    @media (max-width: 500px) {
+      .user-btns__cards {
+        flex-direction: row; } }
 
 .btn-menus {
   border-radius: 0.8rem;
@@ -1639,6 +1725,8 @@ body {
     background-color: #2080df; }
   .event-btn--closed {
     background-color: #a6a6a6; }
+  .event-btn--closed-light {
+    background-color: #bdbdbd; }
 
 .modal {
   display: none;

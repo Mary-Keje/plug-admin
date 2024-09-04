@@ -143,6 +143,10 @@
     align-items: center;
     gap: 2.4rem;
 
+    @media (max-width: 400px) {
+      gap: 0.8rem;
+    }
+
     & svg {
       display: block;
       width: 2.4rem;
