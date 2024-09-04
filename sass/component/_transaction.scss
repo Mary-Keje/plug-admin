@@ -87,6 +87,7 @@
     display: inline-flex;
     align-items: center;
   }
+  
   .icon svg {
     margin-right: 1rem;
   }
@@ -217,4 +218,9 @@
       line-height: 2rem;
     }
   }
+}
+.event-align{
+  display: inline-flex;
+  align-items: center;
+  margin-right: 2rem;
 }

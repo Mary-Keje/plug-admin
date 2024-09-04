@@ -2118,6 +2118,12 @@ body {
     line-height: 2rem;
   }
 }
+.event-align {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 2rem;
+}
+
 table {
   width: 100%;
   border-collapse: collapse;
