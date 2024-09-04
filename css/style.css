@@ -2121,7 +2121,9 @@ body {
 .event-align {
   display: inline-flex;
   align-items: center;
-  margin-right: 2rem;
+}
+.event-align svg {
+  margin-right: 1rem;
 }
 
 table {

@@ -222,5 +222,8 @@
 .event-align{
   display: inline-flex;
   align-items: center;
-  margin-right: 2rem;
+  svg{
+    margin-right: 1rem;
+  }
+  
 }
