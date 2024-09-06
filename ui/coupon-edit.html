@@ -75,7 +75,7 @@
             />
           </svg>
         </div>
-        <div class="header-details__services-header">
+        <div class="header-details__coupon-header">
           <div class="header-details__card-header">
             <a href="./user-coupon.html">
               <svg
@@ -148,9 +148,25 @@
             </div>
           </div>
         </div>
-        <div class="header-details__mobile-header-services">
-          <div class="header-details__mobile-heading-services">
-            <p class="header-details__text">Services</p>
+        <div class="header-details__mobile-header-coupon">
+          <div class="header-details__mobile-coupon-heading">
+            <div class="header-details__card-header">
+              <a href="./user-coupon.html">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M21 11H6.83L10.41 7.41L9 6L3 12L9 18L10.41 16.58L6.83 13H21V11Z"
+                    fill="#1F1F1F"
+                  />
+                </svg>
+              </a>
+              <p class="header-details__text">HAPPY-AUG4</p>
+            </div>
             <button class="button button--edit">
               <svg
                 width="24"
@@ -167,33 +183,50 @@
               Edit
             </button>
           </div>
-          <div class="header-details__search-input">
-            <input
-              type="text"
-              placeholder="Search"
-              class="header-details__search"
-            />
-            <svg
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M21 21L15 15M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10Z"
-                stroke="#1F1F1F"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+          <div class="header-details__body-services">
+            <div class="header-details__search-input">
+              <input
+                type="text"
+                placeholder="Search"
+                class="header-details__search"
               />
-            </svg>
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M21 21L15 15M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10Z"
+                  stroke="#1F1F1F"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <div class="header-details__sort">
+              <p class="header-details__month-text">This month</p>
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M7.41 8.58008L12 13.1701L16.59 8.58008L18 10.0001L12 16.0001L6 10.0001L7.41 8.58008Z"
+                  fill="#2DCB30"
+                />
+              </svg>
+            </div>
           </div>
         </div>
       </div>
       <div class="user-details__details-main">
         <div class="user-details__details-body">
-          <div class="user-details__details-type">
+          <div class="user-details__details-type-coupon">
             <div class="user-details__details-menus">
               <div class="user-details__details-info">
                 <p>Total Usage</p>
@@ -558,9 +591,9 @@
       </div>
     </div>
 
-    <!-- for create user pop-up -->
+    <!-- for enter coupon modal -->
 
-    <div class="modal-deactivate open">
+    <div class="modal-coupon">
       <button class="modal-deactivate__close-btn">
         <svg
           width="24"
@@ -578,26 +611,146 @@
       <div class="modal-deactivate__deactivate-body">
         <div class="modal-create__modal-details">
           <p class="modal-create__header-text">Add Coupon</p>
-          <div class="modal-deactivate__user-form">
-            <div class="modal-deactivate__coupon-header">
-              <p
-                class="modal-deactivate__header-percent modal-deactivate__header-percent--active"
-              >
-                By Percentage
-              </p>
-              <p class="modal-deactivate__header-percent">By Amount</p>
-            </div>
-            <div class="modal-deactivate__user-for">
-              <div class="modal-deactivate__form-input">
-                <p>Enter code</p>
-                <input type="text" placeholder="Email" />
+          <div class="modal-coupon__coupon-body">
+            <div class="modal-coupon__user-form">
+              <div class="modal-coupon__coupon-header">
+                <p
+                  class="modal-deactivate__header-percent modal-deactivate__header-percent--active"
+                >
+                  By Percentage
+                </p>
+                <p class="modal-deactivate__header-percent">By Amount</p>
+              </div>
+              <div class="modal-coupon__user-form">
+                <div class="modal-coupon__form-input">
+                  <p class="modal-coupon__form-text">Enter code</p>
+                  <div class="form__user-input">
+                    <input type="text" placeholder="Email" />
+                  </div>
+                </div>
+                <div class="modal-coupon__form-input">
+                  <p class="modal-coupon__form-text">Service to be applied</p>
+                  <div class="form__user-input">
+                    <p class="modal-coupon__input-select-text">
+                      Select service
+                    </p>
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M7.41 8.58008L12 13.1701L16.59 8.58008L18 10.0001L12 16.0001L6 10.0001L7.41 8.58008Z"
+                        fill="#1F1F1F"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <div class="modal-coupon__discount-percentage">
+                  <div class="modal-coupon__form-input">
+                    <p class="modal-coupon__form-text">
+                      Discount percentage (%)
+                    </p>
+                    <input
+                      type="text"
+                      placeholder="Enter percentage"
+                      class="form__user-input form__user-input--percent-default"
+                    />
+                  </div>
+                </div>
+                <div class="modal-coupon__discount-amount">
+                  <div class="modal-coupon__form-input">
+                    <p class="modal-coupon__form-text">
+                      Minimum amount to be applied
+                    </p>
+                    <div
+                      class="form__user-input form__user-input--percent-default"
+                    >
+                      <input type="text" placeholder="Enter amount" />
+                    </div>
+                  </div>
+                  <div class="modal-coupon__form-input">
+                    <p class="modal-coupon__form-text">
+                      Max Amount to be deducted
+                    </p>
+                    <div
+                      class="form__user-input form__user-input--percent-default"
+                    >
+                      <input type="text" placeholder="Enter amount" />
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-coupon__discount-amount">
+                  <div class="modal-coupon__form-input">
+                    <p class="modal-coupon__form-text">Total usage</p>
+                    <div
+                      class="form__user-input form__user-input--percent-default"
+                    >
+                      <input type="text" placeholder="Enter amount" />
+                    </div>
+                  </div>
+                  <div class="modal-coupon__form-input">
+                    <p class="modal-coupon__form-text">
+                      Number of usage per user
+                    </p>
+                    <div
+                      class="form__user-input form__user-input--percent-default"
+                    >
+                      <input type="text" placeholder="Enter amount" />
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-coupon__discount-amount">
+                  <div class="modal-coupon__form-input">
+                    <p class="modal-coupon__form-text">Date of Expiry</p>
+                    <div
+                      class="form__user-input form__user-input--percent-default"
+                    >
+                      <p>Select date</p>
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M9 10H7V12H9V10ZM13 10H11V12H13V10ZM17 10H15V12H17V10ZM19 3H18V1H16V3H8V1H6V3H5C4.46957 3 3.96086 3.21071 3.58579 3.58579C3.21071 3.96086 3 4.46957 3 5V19C3 19.5304 3.21071 20.0391 3.58579 20.4142C3.96086 20.7893 4.46957 21 5 21H19C19.5304 21 20.0391 20.7893 20.4142 20.4142C20.7893 20.0391 21 19.5304 21 19V5C21 4.46957 20.7893 3.96086 20.4142 3.58579C20.0391 3.21071 19.5304 3 19 3ZM19 19H5V8H19V19Z"
+                          fill="#1F1F1F"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="modal-coupon__form-input">
+                    <p class="modal-coupon__form-text">Time</p>
+                    <div
+                      class="form__user-input form__user-input--percent-default"
+                    >
+                      <p>Select time</p>
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M12 20C14.1217 20 16.1566 19.1571 17.6569 17.6569C19.1571 16.1566 20 14.1217 20 12C20 9.87827 19.1571 7.84344 17.6569 6.34315C16.1566 4.84285 14.1217 4 12 4C9.87827 4 7.84344 4.84285 6.34315 6.34315C4.84285 7.84344 4 9.87827 4 12C4 14.1217 4.84285 16.1566 6.34315 17.6569C7.84344 19.1571 9.87827 20 12 20ZM12 2C13.3132 2 14.6136 2.25866 15.8268 2.7612C17.0401 3.26375 18.1425 4.00035 19.0711 4.92893C19.9997 5.85752 20.7362 6.95991 21.2388 8.17317C21.7413 9.38642 22 10.6868 22 12C22 14.6522 20.9464 17.1957 19.0711 19.0711C17.1957 20.9464 14.6522 22 12 22C6.47 22 2 17.5 2 12C2 9.34784 3.05357 6.8043 4.92893 4.92893C6.8043 3.05357 9.34784 2 12 2ZM12.5 7V12.25L17 14.92L16.25 16.15L11 13V7H12.5Z"
+                          fill="#1F1F1F"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
+            <button class="button">Create Coupon</button>
           </div>
         </div>
-        <button class="button">Create Coupon</button>
       </div>
     </div>
-    <div class="overlay"></div>
+    <div class="overlay hidden"></div>
   </body>
 </html>
