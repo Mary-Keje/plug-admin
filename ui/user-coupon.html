@@ -124,21 +124,23 @@
         <div class="header-details__mobile-header-services">
           <div class="header-details__mobile-heading-services">
             <p class="header-details__text">Services</p>
-            <button class="button button--add-service">
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M19 13H13V19H11V13H5V11H11V5H13V11H19V13Z"
-                  fill="white"
-                />
-              </svg>
-              <p>Add Coupons</p>
-            </button>
+            <a href="./coupon-edit.html">
+              <button class="button button--add-service">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M19 13H13V19H11V13H5V11H11V5H13V11H19V13Z"
+                    fill="white"
+                  />
+                </svg>
+                <p>Add Coupons</p>
+              </button>
+            </a>
           </div>
           <div class="header-details__search-input">
             <input
@@ -790,68 +792,5 @@
         </div>
       </div>
     </div>
-
-    <!-- for create user pop-up -->
-
-    <div class="modal-create">
-      <button class="modal-create__close-btn">
-        <svg
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z"
-            fill="black"
-          />
-        </svg>
-      </button>
-      <div class="modal-create__modal-body">
-        <div class="modal-create__modal-details">
-          <p class="modal-create__header">Create User</p>
-          <div class="modal-create__user-form">
-            <div class="form__user-input">
-              <input type="text" placeholder="Username" />
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M21 6.99984L9 18.9998L3.5 13.4998L4.91 12.0898L9 16.1698L19.59 5.58984L21 6.99984Z"
-                  fill="#1F1F1F"
-                />
-              </svg>
-            </div>
-            <div class="form__user-input">
-              <input type="text" placeholder="Email" />
-            </div>
-            <div class="form__user-input">
-              <p>User</p>
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M7.41 8.58008L12 13.1701L16.59 8.58008L18 10.0001L12 16.0001L6 10.0001L7.41 8.58008Z"
-                  fill="#1F1F1F"
-                />
-              </svg>
-            </div>
-          </div>
-        </div>
-        <div class="modal-create__create-btn">
-          <button class="button button--create-default">Create user</button>
-        </div>
-      </div>
-    </div>
-    <div class="overlay hidden"></div>
   </body>
 </html>
