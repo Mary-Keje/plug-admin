@@ -59,6 +59,12 @@
       width: 35rem;
       max-width: 100%;
     }
+
+    & a {
+      display: flex;
+      // align-items: center;
+      justify-content: center;
+    }
   }
 
   &__img-logo {
