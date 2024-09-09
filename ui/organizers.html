@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Plug :: Admin</title>
+
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <div class="user-details">
+      <div class="header__main">
+        <div class="header__details">
+          <a href="../index.html">
+            <img
+              src="../imgs/logo/plug.logoo.svg"
+              alt=""
+              class="header__logo-pl"
+            />
+          </a>
+          <div class="header__info">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M19 17V11.8C18.5 11.9 18 12 17.5 12H17V18H7V11C7 8.2 9.2 6 12 6C12.1 4.7 12.7 3.6 13.5 2.7C13.2 2.3 12.6 2 12 2C10.9 2 10 2.9 10 4V4.3C7 5.2 5 7.9 5 11V17L3 19V20H21V19L19 17ZM10 21C10 22.1 10.9 23 12 23C13.1 23 14 22.1 14 21H10ZM21 6.5C21 8.4 19.4 10 17.5 10C15.6 10 14 8.4 14 6.5C14 4.6 15.6 3 17.5 3C19.4 3 21 4.6 21 6.5Z"
+                fill="white"
+              />
+            </svg>
+            <a href="../ui/transaction.html">
+              <div class="header__details-menu">
+                <div class="header__face-logo">
+                  <img
+                    src="../imgs/logo/face-icon-header.svg"
+                    alt=""
+                    class=""
+                  />
+                  <p class="header__text">Admin</p>
+                </div>
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M7.41 8.58008L12 13.1701L16.59 8.58008L18 10.0001L12 16.0001L6 10.0001L7.41 8.58008Z"
+                    fill="white"
+                  />
+                </svg>
+              </div>
+            </a>
+          </div>
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M3.6001 5.9998C3.6001 5.33706 4.13736 4.7998 4.8001 4.7998H19.2001C19.8628 4.7998 20.4001 5.33706 20.4001 5.9998C20.4001 6.66255 19.8628 7.1998 19.2001 7.1998H4.8001C4.13736 7.1998 3.6001 6.66255 3.6001 5.9998Z"
+              fill="white"
+            />
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M3.6001 11.9998C3.6001 11.3371 4.13736 10.7998 4.8001 10.7998H19.2001C19.8628 10.7998 20.4001 11.3371 20.4001 11.9998C20.4001 12.6625 19.8628 13.1998 19.2001 13.1998H4.8001C4.13736 13.1998 3.6001 12.6625 3.6001 11.9998Z"
+              fill="white"
+            />
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M3.6001 17.9998C3.6001 17.3371 4.13736 16.7998 4.8001 16.7998H19.2001C19.8628 16.7998 20.4001 17.3371 20.4001 17.9998C20.4001 18.6625 19.8628 19.1998 19.2001 19.1998H4.8001C4.13736 19.1998 3.6001 18.6625 3.6001 17.9998Z"
+              fill="white"
+            />
+          </svg>
+        </div>
+        <div class="header-details">
+          <p class="header-details__text event-align">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+            >
+              <path
+                d="M21 11H6.83L10.41 7.41L9 6L3 12L9 18L10.41 16.58L6.83 13H21V11Z"
+                fill="#1F1F1F"
+              />
+            </svg>
+            Event Organizer
+          </p>
+          <div class="header-details__body">
+            <div class="header-details__search-sort">
+              <div class="header-details__search-input">
+                <input
+                  type="text"
+                  placeholder="Search"
+                  class="header-details__search"
+                />
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M21 21L15 15M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10Z"
+                    stroke="#1F1F1F"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <div class="header-details__sort">
+                <p class="header-details__month-text">This month</p>
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M7.41 8.58008L12 13.1701L16.59 8.58008L18 10.0001L12 16.0001L6 10.0001L7.41 8.58008Z"
+                    fill="#2DCB30"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="header-details__mobile-header">
+          <div class="header-details__mobile-heading">
+            <p class="header-details__text event-align">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  d="M21 11H6.83L10.41 7.41L9 6L3 12L9 18L10.41 16.58L6.83 13H21V11Z"
+                  fill="#1F1F1F"
+                />
+              </svg>
+              Event Organizer
+            </p>
+          </div>
+          <div class="header-details__search-sort">
+            <div class="header-details__search-input">
+              <input
+                type="text"
+                placeholder="Search"
+                class="header-details__search"
+              />
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M21 21L15 15M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10Z"
+                  stroke="#1F1F1F"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <div class="header-details__sort">
+              <p class="header-details__month-text">This month</p>
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M7.41 8.58008L12 13.1701L16.59 8.58008L18 10.0001L12 16.0001L6 10.0001L7.41 8.58008Z"
+                  fill="#2DCB30"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="user-details__details-main">
+        <div class="user-details__details-type-event">
+          <div class="user-details__details-menus">
+            <div class="user-details__details-info">
+              <p>Total Orhganizers</p>
+              <span>12,500</span>
+            </div>
+            <svg
+              width="40"
+              height="40"
+              viewBox="0 0 40 40"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="20" cy="20" r="20" fill="#7448D2" />
+              <path
+                d="M14 9V11H13C11.89 11 11 11.89 11 13V27C11 27.5304 11.2107 28.0391 11.5858 28.4142C11.9609 28.7893 12.4696 29 13 29H27C28.11 29 29 28.11 29 27V13C29 12.4696 28.7893 11.9609 28.4142 11.5858C28.0391 11.2107 27.5304 11 27 11H26V9H24V11H16V9H14ZM13 16H27V27H13V16ZM19 17V22H21V17H19ZM19 24V26H21V24H19Z"
+                fill="white"
+              />
+            </svg>
+          </div>
+        </div>
+        <!-- widget ends -->
+      </div>
+      <!-- tab starts -->
+      <div class="user-details__details-main">
+        <div class="user-details__details-body">
+          <div class="user-details__table-user">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>No of Events</th>
+                  <th>Balance</th>
+                  <th>Phone</th>
+                  <th>Email</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="td-user-info">
+                    <div class="td-user-info__user-details">
+                      <div class="td-user-info__user-img">
+                        <div class="td-user-info__name-mail">
+                          <p>Tech Community</p>
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                  <td><p>400</p></td>
+                  <td><p>&#x20A6;34,6740,200</p></td>
+                  <td><p>Tech community</p></td>
+                  <td><p>400</p></td>
+                </tr>
+                <tr>
+                  <td class="td-user-info">
+                    <div class="td-user-info__user-details">
+                      <div class="td-user-info__user-img">
+                        <div class="td-user-info__name-mail">
+                          <p>Tech Community</p>
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                  <td><p>400</p></td>
+                  <td><p>&#x20A6;34,6740,200</p></td>
+                  <td><p>Tech community</p></td>
+                  <td><p>400</p></td>
+                </tr>
+                <tr>
+                  <td class="td-user-info">
+                    <div class="td-user-info__user-details">
+                      <div class="td-user-info__user-img">
+                        <div class="td-user-info__name-mail">
+                          <p>Tech Community</p>
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                  <td><p>400</p></td>
+                  <td><p>&#x20A6;34,6740,200</p></td>
+                  <td><p>Tech community</p></td>
+                  <td><p>400</p></td>
+                </tr>
+                <tr>
+                  <td class="td-user-info">
+                    <div class="td-user-info__user-details">
+                      <div class="td-user-info__user-img">
+                        <div class="td-user-info__name-mail">
+                          <p>Tech Community</p>
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                  <td><p>400</p></td>
+                  <td><p>&#x20A6;34,6740,200</p></td>
+                  <td><p>Tech community</p></td>
+                  <td><p>400</p></td>
+                </tr>
+                <tr>
+                  <td class="td-user-info">
+                    <div class="td-user-info__user-details">
+                      <div class="td-user-info__user-img">
+                        <div class="td-user-info__name-mail">
+                          <p>Tech Community</p>
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                  <td><p>400</p></td>
+                  <td><p>&#x20A6;34,6740,200</p></td>
+                  <td><p>Tech community</p></td>
+                  <td><p>400</p></td>
+                </tr>
+                <tr>
+                  <td class="td-user-info">
+                    <div class="td-user-info__user-details">
+                      <div class="td-user-info__user-img">
+                        <div class="td-user-info__name-mail">
+                          <p>Tech Community</p>
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                  <td><p>400</p></td>
+                  <td><p>&#x20A6;34,6740,200</p></td>
+                  <td><p>Tech community</p></td>
+                  <td><p>400</p></td>
+                </tr>
+                <tr>
+                  <td class="td-user-info">
+                    <div class="td-user-info__user-details">
+                      <div class="td-user-info__user-img">
+                        <div class="td-user-info__name-mail">
+                          <p>Tech Community</p>
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                  <td><p>400</p></td>
+                  <td><p>&#x20A6;34,6740,200</p></td>
+                  <td><p>Tech community</p></td>
+                  <td><p>400</p></td>
+                </tr>
+                <tr>
+                  <td class="td-user-info">
+                    <div class="td-user-info__user-details">
+                      <div class="td-user-info__user-img">
+                        <div class="td-user-info__name-mail">
+                          <p>Tech Community</p>
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                  <td><p>400</p></td>
+                  <td><p>&#x20A6;34,6740,200</p></td>
+                  <td><p>Tech community</p></td>
+                  <td><p>400</p></td>
+                </tr>
+                <tr>
+                  <td class="td-user-info">
+                    <div class="td-user-info__user-details">
+                      <div class="td-user-info__user-img">
+                        <div class="td-user-info__name-mail">
+                          <p>Tech Community</p>
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                  <td><p>400</p></td>
+                  <td><p>&#x20A6;34,6740,200</p></td>
+                  <td><p>Tech community</p></td>
+                  <td><p>400</p></td>
+                </tr>
+                <tr>
+                  <td class="td-user-info">
+                    <div class="td-user-info__user-details">
+                      <div class="td-user-info__user-img">
+                        <div class="td-user-info__name-mail">
+                          <p>Tech Community</p>
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                  <td><p>400</p></td>
+                  <td><p>&#x20A6;34,6740,200</p></td>
+                  <td><p>Tech community</p></td>
+                  <td><p>400</p></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="user-details__entries-page">
+          <div class="user-details__show-entries">
+            <p>Show</p>
+            <div class="user-details__show-num">
+              10
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M7.41 8.58008L12 13.1701L16.59 8.58008L18 10.0001L12 16.0001L6 10.0001L7.41 8.58008Z"
+                  fill="#2DCB30"
+                />
+              </svg>
+            </div>
+            <p>Entries</p>
+          </div>
+          <div class="user-details__show-pages">
+            <div class="user-details__prev-page">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M15.41 16.58L10.83 12L15.41 7.41L14 6L8 12L14 18L15.41 16.58Z"
+                  fill="#2DCB30"
+                />
+              </svg>
+              <p>Previous</p>
+            </div>
+            <div class="user-details__page-num">
+              <p>234</p>
+              <svg
+                width="6"
+                height="10"
+                viewBox="0 0 6 10"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1.72111 9.126C1.66911 9.266 1.58711 9.37 1.47511 9.438C1.36711 9.506 1.25511 9.54 1.13911 9.54H0.689109L4.29511 0.558C4.34311 0.43 4.41511 0.332 4.51111 0.263999C4.61111 0.196 4.72511 0.162 4.85311 0.162H5.30911L1.72111 9.126Z"
+                  fill="#808080"
+                />
+              </svg>
+              <span>450</span>
+            </div>
+            <div class="user-details__prev-page">
+              <p>Next</p>
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M8.58984 16.58L13.1698 12L8.58984 7.41L9.99984 6L15.9998 12L9.99984 18L8.58984 16.58Z"
+                  fill="#2DCB30"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      //  modal
+      var modal = document.getElementById("modal");
+      var btn = document.getElementById("modal-btn");
+      var span = document.getElementsByClassName("close")[0];
+      btn.onclick = function () {
+        modal.style.display = "block";
+      };
+      span.onclick = function () {
+        modal.style.display = "none";
+      };
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      };
+    </script>
+  </body>
+</html>
