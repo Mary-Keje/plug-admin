@@ -1547,7 +1547,11 @@ body {
     background-color: #d8d8d8;
     color: #a3a3a3;
     width: 40rem;
+    max-width: 100%;
     height: 5.6rem; }
+    @media (max-width: 400px) {
+      .button--log {
+        width: 30rem; } }
   .button--setting-btn {
     font-weight: 600;
     color: #1f1f1f;
@@ -2184,7 +2188,6 @@ th {
       width: 100%;
       background-color: transparent;
       border: none;
-      padding: 1.2rem 0rem;
       font-weight: 300; }
       .form__auth-mail input:focus {
         outline: transparent; }
@@ -2282,6 +2285,9 @@ th {
       .auth__img-logo-mobile {
         display: block;
         width: 100%; } }
+    @media (max-width: 430px) {
+      .auth__img-logo-mobile {
+        width: 70%; } }
   .auth__content {
     display: flex;
     flex-direction: column;
