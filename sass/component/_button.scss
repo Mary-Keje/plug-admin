@@ -91,6 +91,13 @@
     padding: 0.8rem 1.2rem;
 
     width: 30rem;
+
+    @media (max-width: 350px) {
+      font-size: 1.4rem;
+      // padding: .8rem 5px;
+
+      width: 22rem;
+    }
   }
 
   &--apply {
@@ -124,7 +131,12 @@
     color: #a3a3a3;
 
     width: 40rem;
+    max-width: 100%;
     height: 5.6rem;
+
+    @media (max-width: 400px) {
+      width: 30rem;
+    }
   }
 
   &--setting-btn {
@@ -260,6 +272,31 @@
     border-radius: 4px;
     width: 27rem;
   }
+
+  &--active {
+    font-size: 1.4rem;
+    border-radius: 2.4rem;
+    padding: 6px 1.6rem;
+    height: auto;
+
+    @media (max-width: 400px) {
+      font-size: 1rem;
+      padding: 4px 0.8rem;
+    }
+  }
+
+  &--edit {
+    padding: 1.2rem 2.4rem;
+
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+
+    & svg {
+      display: block;
+      width: 2.4rem;
+    }
+  }
 }
 
 .user-btns {
@@ -299,10 +336,11 @@
 
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 0.8rem;
 
     @media (max-width: 430px) {
-      padding: 6px 1rem;
+      // padding: 6px 1rem;
       justify-content: center;
     }
 
@@ -317,7 +355,7 @@
 
     display: flex;
     align-items: center;
-
+    justify-content: center;
     gap: 0.8rem;
 
     @media (max-width: 430px) {
@@ -336,6 +374,7 @@
 
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 0.8rem;
 
     @media (max-width: 430px) {
@@ -345,6 +384,73 @@
 
     @media (max-width: 335px) {
       padding: 4px 1rem;
+    }
+  }
+
+  &--temp-btn {
+    background-color: #2080df;
+    padding: 1.2rem 2.4rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+
+    @media (max-width: 500px) {
+      font-size: 1.4rem;
+      gap: 4px;
+      padding: 0.8rem 2.4rem;
+      flex-direction: column;
+
+      width: 100%;
+    }
+  }
+
+  &--perm-btn {
+    background-color: #ffa800;
+    padding: 1.2rem 2.4rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+
+    @media (max-width: 500px) {
+      font-size: 1.4rem;
+      gap: 4px;
+      padding: 0.8rem 2.4rem;
+      flex-direction: column;
+
+      width: 100%;
+    }
+  }
+
+  &--delete-btn {
+    background-color: #dd3c3c;
+    padding: 1.2rem 2.4rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+
+    @media (max-width: 500px) {
+      font-size: 1.4rem;
+      gap: 4px;
+      padding: 0.8rem 2.4rem;
+      flex-direction: column;
+
+      width: 100%;
+    }
+  }
+
+  &__cards {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+
+    @media (max-width: 500px) {
+      flex-direction: row;
     }
   }
 }
@@ -513,5 +619,9 @@
 
   &--closed {
     background-color: #a6a6a6;
+  }
+
+  &--closed-light {
+    background-color: #bdbdbd;
   }
 }

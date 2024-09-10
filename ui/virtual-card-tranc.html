@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Plug :: Admin</title>
+
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <div class="user-details">
+      <div class="header__main">
+        <div class="header__details">
+          <img
+            src="../imgs/logo/plug.logoo.svg"
+            alt=""
+            class="header__logo-pl"
+          />
+          <div class="header__info">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M19 17V11.8C18.5 11.9 18 12 17.5 12H17V18H7V11C7 8.2 9.2 6 12 6C12.1 4.7 12.7 3.6 13.5 2.7C13.2 2.3 12.6 2 12 2C10.9 2 10 2.9 10 4V4.3C7 5.2 5 7.9 5 11V17L3 19V20H21V19L19 17ZM10 21C10 22.1 10.9 23 12 23C13.1 23 14 22.1 14 21H10ZM21 6.5C21 8.4 19.4 10 17.5 10C15.6 10 14 8.4 14 6.5C14 4.6 15.6 3 17.5 3C19.4 3 21 4.6 21 6.5Z"
+                fill="white"
+              />
+            </svg>
+            <div class="header__details-menu">
+              <div class="header__face-logo">
+                <img src="../imgs/logo/face-icon-header.svg" alt="" class="" />
+                <p class="header__text">Admin</p>
+              </div>
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M7.41 8.58008L12 13.1701L16.59 8.58008L18 10.0001L12 16.0001L6 10.0001L7.41 8.58008Z"
+                  fill="white"
+                />
+              </svg>
+            </div>
+          </div>
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M3.6001 5.9998C3.6001 5.33706 4.13736 4.7998 4.8001 4.7998H19.2001C19.8628 4.7998 20.4001 5.33706 20.4001 5.9998C20.4001 6.66255 19.8628 7.1998 19.2001 7.1998H4.8001C4.13736 7.1998 3.6001 6.66255 3.6001 5.9998Z"
+              fill="white"
+            />
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M3.6001 11.9998C3.6001 11.3371 4.13736 10.7998 4.8001 10.7998H19.2001C19.8628 10.7998 20.4001 11.3371 20.4001 11.9998C20.4001 12.6625 19.8628 13.1998 19.2001 13.1998H4.8001C4.13736 13.1998 3.6001 12.6625 3.6001 11.9998Z"
+              fill="white"
+            />
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M3.6001 17.9998C3.6001 17.3371 4.13736 16.7998 4.8001 16.7998H19.2001C19.8628 16.7998 20.4001 17.3371 20.4001 17.9998C20.4001 18.6625 19.8628 19.1998 19.2001 19.1998H4.8001C4.13736 19.1998 3.6001 18.6625 3.6001 17.9998Z"
+              fill="white"
+            />
+          </svg>
+        </div>
+        <div class="header-details">
+          <p class="header-details__text">Virtual Card</p>
+          <div class="header-details__body">
+            <div class="header-details__search-sort">
+              <div class="header-details__search-input">
+                <input
+                  type="text"
+                  placeholder="Search"
+                  class="header-details__search"
+                />
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M21 21L15 15M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10Z"
+                    stroke="#1F1F1F"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <div class="header-details__sort">
+                <p class="header-details__month-text">This month</p>
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M7.41 8.58008L12 13.1701L16.59 8.58008L18 10.0001L12 16.0001L6 10.0001L7.41 8.58008Z"
+                    fill="#2DCB30"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="header-details__mobile-header-cards">
+          <p class="header-details__text">Transaction</p>
+          <div class="header-details__search-sort-cards">
+            <div class="header-details__search-input">
+              <input
+                type="text"
+                placeholder="Search"
+                class="header-details__search"
+              />
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M21 21L15 15M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10Z"
+                  stroke="#1F1F1F"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <div class="header-details__sort">
+              <p class="header-details__month-text">This month</p>
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M7.41 8.58008L12 13.1701L16.59 8.58008L18 10.0001L12 16.0001L6 10.0001L7.41 8.58008Z"
+                  fill="#2DCB30"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="user-details__details-main">
+        <div class="user-details__details-type-event">
+          <div class="user-details__details-menus">
+            <div class="user-details__details-info">
+              <p>Total Virtual cards</p>
+              <span>25,000</span>
+            </div>
+            <svg
+              width="40"
+              height="40"
+              viewBox="0 0 40 40"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="20" cy="20" r="20" fill="#EE882B" />
+              <path
+                d="M12 17H14V11H16L19.42 17H24V11H26V17H28V19H26V21H28V23H26V29H24L20.57 23H16V29H14V23H12V21H14V19H12V17ZM16 17H17.13L16 15.03V17ZM16 19V21H19.42L18.28 19H16ZM24 25V23H22.85L24 25ZM20.56 19L21.71 21H24V19H20.56Z"
+                fill="white"
+              />
+            </svg>
+          </div>
+          <div class="user-details__details-menus">
+            <div class="user-details__details-info">
+              <p>Total Transactions</p>
+              <span>3,558</span>
+            </div>
+            <svg
+              width="40"
+              height="40"
+              viewBox="0 0 40 40"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="20" cy="20" r="20" fill="#0AC243" />
+              <path
+                d="M20 11C15.58 11 12 12.79 12 15C12 17.21 15.58 19 20 19C24.42 19 28 17.21 28 15C28 12.79 24.42 11 20 11ZM12 17V20C12 22.21 15.58 24 20 24C24.42 24 28 22.21 28 20V17C28 19.21 24.42 21 20 21C15.58 21 12 19.21 12 17ZM12 22V25C12 27.21 15.58 29 20 29C24.42 29 28 27.21 28 25V22C28 24.21 24.42 26 20 26C15.58 26 12 24.21 12 22Z"
+                fill="white"
+              />
+            </svg>
+          </div>
+          <div class="user-details__details-menus">
+            <div class="user-details__details-info">
+              <p>Today Transactions</p>
+              <span>₦34,6740,200</span>
+            </div>
+            <svg
+              width="40"
+              height="40"
+              viewBox="0 0 40 40"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="20" cy="20" r="20" fill="#2080DF" />
+              <path
+                d="M12 17H14V11H16L19.42 17H24V11H26V17H28V19H26V21H28V23H26V29H24L20.57 23H16V29H14V23H12V21H14V19H12V17ZM16 17H17.13L16 15.03V17ZM16 19V21H19.42L18.28 19H16ZM24 25V23H22.85L24 25ZM20.56 19L21.71 21H24V19H20.56Z"
+                fill="white"
+              />
+            </svg>
+          </div>
+          <div class="user-details__details-menus">
+            <div class="user-details__details-info">
+              <p>Last Transaction</p>
+              <span>3,555</span>
+            </div>
+            <svg
+              width="40"
+              height="40"
+              viewBox="0 0 40 40"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="20" cy="20" r="20" fill="#7448D2" />
+              <path
+                d="M20 11C15.58 11 12 12.79 12 15C12 17.21 15.58 19 20 19C24.42 19 28 17.21 28 15C28 12.79 24.42 11 20 11ZM12 17V20C12 22.21 15.58 24 20 24C24.42 24 28 22.21 28 20V17C28 19.21 24.42 21 20 21C15.58 21 12 19.21 12 17ZM12 22V25C12 27.21 15.58 29 20 29C24.42 29 28 27.21 28 25V22C28 24.21 24.42 26 20 26C15.58 26 12 24.21 12 22Z"
+                fill="white"
+              />
+            </svg>
+          </div>
+        </div>
+        <div class="user-details__details-body">
+          <div class="user-details__details-btns">
+            <div class="btn-menus__sm">
+              <a href="./virtual-cards-list.html">
+                <button class="btn-menus__btn-type">Card List</button>
+              </a>
+              <div class="btn-menus__divider"></div>
+              <button class="btn-menus__btn-type btn-menus__btn-type--active">
+                Card Transactions
+              </button>
+            </div>
+            <div class="header-details__cards-btn">
+              <div class="header-details__sort">
+                <p class="header-details__month-text">USD & NGN</p>
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M7.41 8.58008L12 13.1701L16.59 8.58008L18 10.0001L12 16.0001L6 10.0001L7.41 8.58008Z"
+                    fill="#2DCB30"
+                  />
+                </svg>
+              </div>
+              <div class="header-details__sort">
+                <p class="header-details__month-text">All Cards</p>
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M7.41 8.58008L12 13.1701L16.59 8.58008L18 10.0001L12 16.0001L6 10.0001L7.41 8.58008Z"
+                    fill="#2DCB30"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="user-details__table-user">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Transaction ID</th>
+                <th>Username</th>
+                <th>Type</th>
+                <th>Card Number</th>
+                <th>Amount</th>
+                <th>Previous balance</th>
+                <th>New balance</th>
+                <th>Status</th>
+                <th>Date created</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="td-user-info">
+                  <p>PNG1234567890</p>
+                </td>
+                <td><p>Mrjayy</p></td>
+                <td><p>USD</p></td>
+                <td><p>***1234</p></td>
+                <td><p>$250</p></td>
+                <td><p>$250</p></td>
+                <td><p>$250</p></td>
+                <td>
+                  <button class="event-btn event-btn--approved">Active</button>
+                </td>
+                <td>
+                  <div class="td-user-info__reg-date">
+                    <p>Jul 24, 2024</p>
+                    <div class="td-user-info__date-divider"></div>
+                    <p>12:45pm</p>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="td-user-info">
+                  <p>PNG1234567890</p>
+                </td>
+                <td><p>Mrjayy</p></td>
+                <td><p>NGN</p></td>
+                <td><p>***1234</p></td>
+                <td><p>₦30,200</p></td>
+                <td><p>₦3,500,000</p></td>
+                <td><p>₦3,500,000</p></td>
+                <td>
+                  <button class="event-btn event-btn--rejected">Frozen</button>
+                </td>
+                <td>
+                  <div class="td-user-info__reg-date">
+                    <p>Jul 24, 2024</p>
+                    <div class="td-user-info__date-divider"></div>
+                    <p>12:45pm</p>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="td-user-info">
+                  <p>PNG1234567890</p>
+                </td>
+                <td><p>Mrjayy</p></td>
+                <td><p>USD</p></td>
+                <td><p>***1234</p></td>
+                <td><p>$250</p></td>
+                <td><p>$250</p></td>
+                <td><p>$250</p></td>
+                <td>
+                  <button class="event-btn event-btn--rejected">Frozen</button>
+                </td>
+                <td>
+                  <div class="td-user-info__reg-date">
+                    <p>Jul 24, 2024</p>
+                    <div class="td-user-info__date-divider"></div>
+                    <p>12:45pm</p>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="td-user-info">
+                  <p>PNG1234567890</p>
+                </td>
+                <td><p>Mrjayy</p></td>
+                <td><p>USD</p></td>
+                <td><p>***1234</p></td>
+                <td><p>$250</p></td>
+                <td><p>$250</p></td>
+                <td><p>$250</p></td>
+                <td>
+                  <button class="event-btn event-btn--rejected">Frozen</button>
+                </td>
+                <td>
+                  <div class="td-user-info__reg-date">
+                    <p>Jul 24, 2024</p>
+                    <div class="td-user-info__date-divider"></div>
+                    <p>12:45pm</p>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="td-user-info">
+                  <p>PNG1234567890</p>
+                </td>
+                <td><p>Mrjayy</p></td>
+                <td><p>NGN</p></td>
+                <td><p>***1234</p></td>
+                <td><p>₦30,200</p></td>
+                <td><p>₦3,500,000</p></td>
+                <td><p>₦3,500,000</p></td>
+                <td>
+                  <button class="event-btn event-btn--approved">Active</button>
+                </td>
+                <td>
+                  <div class="td-user-info__reg-date">
+                    <p>Jul 24, 2024</p>
+                    <div class="td-user-info__date-divider"></div>
+                    <p>12:45pm</p>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="td-user-info">
+                  <p>PNG1234567890</p>
+                </td>
+                <td><p>Mrjayy</p></td>
+                <td><p>NGN</p></td>
+                <td><p>***1234</p></td>
+                <td><p>₦30,200</p></td>
+                <td><p>₦3,500,000</p></td>
+                <td><p>₦3,500,000</p></td>
+                <td>
+                  <button class="event-btn event-btn--approved">Active</button>
+                </td>
+                <td>
+                  <div class="td-user-info__reg-date">
+                    <p>Jul 24, 2024</p>
+                    <div class="td-user-info__date-divider"></div>
+                    <p>12:45pm</p>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="td-user-info">
+                  <p>PNG1234567890</p>
+                </td>
+                <td><p>Mrjayy</p></td>
+                <td><p>NGN</p></td>
+                <td><p>***1234</p></td>
+                <td><p>₦30,200</p></td>
+                <td><p>₦3,500,000</p></td>
+                <td><p>₦3,500,000</p></td>
+                <td>
+                  <button class="event-btn event-btn--approved">Active</button>
+                </td>
+                <td>
+                  <div class="td-user-info__reg-date">
+                    <p>Jul 24, 2024</p>
+                    <div class="td-user-info__date-divider"></div>
+                    <p>12:45pm</p>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="td-user-info">
+                  <p>PNG1234567890</p>
+                </td>
+                <td><p>Mrjayy</p></td>
+                <td><p>NGN</p></td>
+                <td><p>***1234</p></td>
+                <td><p>₦30,200</p></td>
+                <td><p>₦3,500,000</p></td>
+                <td><p>₦3,500,000</p></td>
+                <td>
+                  <button class="event-btn event-btn--approved">Active</button>
+                </td>
+                <td>
+                  <div class="td-user-info__reg-date">
+                    <p>Jul 24, 2024</p>
+                    <div class="td-user-info__date-divider"></div>
+                    <p>12:45pm</p>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="td-user-info">
+                  <p>PNG1234567890</p>
+                </td>
+                <td><p>Mrjayy</p></td>
+                <td><p>NGN</p></td>
+                <td><p>***1234</p></td>
+                <td><p>₦30,200</p></td>
+                <td><p>₦3,500,000</p></td>
+                <td><p>₦3,500,000</p></td>
+                <td>
+                  <button class="event-btn event-btn--rejected">Frozen</button>
+                </td>
+                <td>
+                  <div class="td-user-info__reg-date">
+                    <p>Jul 24, 2024</p>
+                    <div class="td-user-info__date-divider"></div>
+                    <p>12:45pm</p>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="td-user-info">
+                  <p>PNG1234567890</p>
+                </td>
+                <td><p>Mrjayy</p></td>
+                <td><p>USD</p></td>
+                <td><p>***1234</p></td>
+                <td><p>$250</p></td>
+                <td><p>$250</p></td>
+                <td><p>$250</p></td>
+                <td>
+                  <button class="event-btn event-btn--rejected">Frozen</button>
+                </td>
+                <td>
+                  <div class="td-user-info__reg-date">
+                    <p>Jul 24, 2024</p>
+                    <div class="td-user-info__date-divider"></div>
+                    <p>12:45pm</p>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="td-user-info">
+                  <p>PNG1234567890</p>
+                </td>
+                <td><p>Mrjayy</p></td>
+                <td><p>USD</p></td>
+                <td><p>***1234</p></td>
+                <td><p>$250</p></td>
+                <td><p>$250</p></td>
+                <td><p>$250</p></td>
+                <td>
+                  <button class="event-btn event-btn--rejected">Frozen</button>
+                </td>
+                <td>
+                  <div class="td-user-info__reg-date">
+                    <p>Jul 24, 2024</p>
+                    <div class="td-user-info__date-divider"></div>
+                    <p>12:45pm</p>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="user-details__entries-page">
+          <div class="user-details__show-entries">
+            <p>Show</p>
+            <div class="user-details__show-num">
+              10
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M7.41 8.58008L12 13.1701L16.59 8.58008L18 10.0001L12 16.0001L6 10.0001L7.41 8.58008Z"
+                  fill="#2DCB30"
+                />
+              </svg>
+            </div>
+            <p>Entries</p>
+          </div>
+          <div class="user-details__show-pages">
+            <div class="user-details__prev-page">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M15.41 16.58L10.83 12L15.41 7.41L14 6L8 12L14 18L15.41 16.58Z"
+                  fill="#2DCB30"
+                />
+              </svg>
+              <p>Previous</p>
+            </div>
+            <div class="user-details__page-num">
+              <p>234</p>
+              <svg
+                width="6"
+                height="10"
+                viewBox="0 0 6 10"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1.72111 9.126C1.66911 9.266 1.58711 9.37 1.47511 9.438C1.36711 9.506 1.25511 9.54 1.13911 9.54H0.689109L4.29511 0.558C4.34311 0.43 4.41511 0.332 4.51111 0.263999C4.61111 0.196 4.72511 0.162 4.85311 0.162H5.30911L1.72111 9.126Z"
+                  fill="#808080"
+                />
+              </svg>
+              <span>450</span>
+            </div>
+            <div class="user-details__prev-page">
+              <p>Next</p>
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M8.58984 16.58L13.1698 12L8.58984 7.41L9.99984 6L15.9998 12L9.99984 18L8.58984 16.58Z"
+                  fill="#2DCB30"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

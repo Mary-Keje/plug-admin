@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Plug :: Admin</title>
+
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <div class="user-details">
+      <div class="header__main">
+        <div class="header__details">
+          <img
+            src="../imgs/logo/plug.logoo.svg"
+            alt=""
+            class="header__logo-pl"
+          />
+          <div class="header__info">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M19 17V11.8C18.5 11.9 18 12 17.5 12H17V18H7V11C7 8.2 9.2 6 12 6C12.1 4.7 12.7 3.6 13.5 2.7C13.2 2.3 12.6 2 12 2C10.9 2 10 2.9 10 4V4.3C7 5.2 5 7.9 5 11V17L3 19V20H21V19L19 17ZM10 21C10 22.1 10.9 23 12 23C13.1 23 14 22.1 14 21H10ZM21 6.5C21 8.4 19.4 10 17.5 10C15.6 10 14 8.4 14 6.5C14 4.6 15.6 3 17.5 3C19.4 3 21 4.6 21 6.5Z"
+                fill="white"
+              />
+            </svg>
+            <div class="header__details-menu">
+              <div class="header__face-logo">
+                <img src="../imgs/logo/face-icon-header.svg" alt="" class="" />
+                <p class="header__text">Admin</p>
+              </div>
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M7.41 8.58008L12 13.1701L16.59 8.58008L18 10.0001L12 16.0001L6 10.0001L7.41 8.58008Z"
+                  fill="white"
+                />
+              </svg>
+            </div>
+          </div>
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M3.6001 5.9998C3.6001 5.33706 4.13736 4.7998 4.8001 4.7998H19.2001C19.8628 4.7998 20.4001 5.33706 20.4001 5.9998C20.4001 6.66255 19.8628 7.1998 19.2001 7.1998H4.8001C4.13736 7.1998 3.6001 6.66255 3.6001 5.9998Z"
+              fill="white"
+            />
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M3.6001 11.9998C3.6001 11.3371 4.13736 10.7998 4.8001 10.7998H19.2001C19.8628 10.7998 20.4001 11.3371 20.4001 11.9998C20.4001 12.6625 19.8628 13.1998 19.2001 13.1998H4.8001C4.13736 13.1998 3.6001 12.6625 3.6001 11.9998Z"
+              fill="white"
+            />
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M3.6001 17.9998C3.6001 17.3371 4.13736 16.7998 4.8001 16.7998H19.2001C19.8628 16.7998 20.4001 17.3371 20.4001 17.9998C20.4001 18.6625 19.8628 19.1998 19.2001 19.1998H4.8001C4.13736 19.1998 3.6001 18.6625 3.6001 17.9998Z"
+              fill="white"
+            />
+          </svg>
+        </div>
+        <div class="header-details__coupon-header">
+          <div class="header-details__card-header">
+            <a href="./user-coupon.html">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M21 11H6.83L10.41 7.41L9 6L3 12L9 18L10.41 16.58L6.83 13H21V11Z"
+                  fill="#1F1F1F"
+                />
+              </svg>
+            </a>
+            <p class="header-details__text">HAPPY-AUG4</p>
+          </div>
+          <div class="header-details__body-services">
+            <div class="header-details__search-input">
+              <input
+                type="text"
+                placeholder="Search"
+                class="header-details__search"
+              />
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M21 21L15 15M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10Z"
+                  stroke="#1F1F1F"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <button class="button button--edit">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M5 3C3.89 3 3 3.89 3 5V19C3 19.5304 3.21071 20.0391 3.58579 20.4142C3.96086 20.7893 4.46957 21 5 21H19C19.5304 21 20.0391 20.7893 20.4142 20.4142C20.7893 20.0391 21 19.5304 21 19V12H19V19H5V5H12V3H5ZM17.78 4C17.6003 4.00256 17.4284 4.07417 17.3 4.2L16.08 5.41L18.58 7.91L19.8 6.7C20.06 6.44 20.06 6 19.8 5.75L18.25 4.2C18.12 4.07 17.95 4 17.78 4ZM15.37 6.12L8 13.5V16H10.5L17.87 8.62L15.37 6.12Z"
+                  fill="white"
+                />
+              </svg>
+              Edit
+            </button>
+            <div class="header-details__sort">
+              <p class="header-details__month-text">This month</p>
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M7.41 8.58008L12 13.1701L16.59 8.58008L18 10.0001L12 16.0001L6 10.0001L7.41 8.58008Z"
+                  fill="#2DCB30"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="header-details__mobile-header-coupon">
+          <div class="header-details__mobile-coupon-heading">
+            <div class="header-details__card-header">
+              <a href="./user-coupon.html">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M21 11H6.83L10.41 7.41L9 6L3 12L9 18L10.41 16.58L6.83 13H21V11Z"
+                    fill="#1F1F1F"
+                  />
+                </svg>
+              </a>
+              <p class="header-details__text">HAPPY-AUG4</p>
+            </div>
+            <button class="button button--edit">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M5 3C3.89 3 3 3.89 3 5V19C3 19.5304 3.21071 20.0391 3.58579 20.4142C3.96086 20.7893 4.46957 21 5 21H19C19.5304 21 20.0391 20.7893 20.4142 20.4142C20.7893 20.0391 21 19.5304 21 19V12H19V19H5V5H12V3H5ZM17.78 4C17.6003 4.00256 17.4284 4.07417 17.3 4.2L16.08 5.41L18.58 7.91L19.8 6.7C20.06 6.44 20.06 6 19.8 5.75L18.25 4.2C18.12 4.07 17.95 4 17.78 4ZM15.37 6.12L8 13.5V16H10.5L17.87 8.62L15.37 6.12Z"
+                  fill="white"
+                />
+              </svg>
+              Edit
+            </button>
+          </div>
+          <div class="header-details__body-services">
+            <div class="header-details__search-input">
+              <input
+                type="text"
+                placeholder="Search"
+                class="header-details__search"
+              />
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M21 21L15 15M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10Z"
+                  stroke="#1F1F1F"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <div class="header-details__sort">
+              <p class="header-details__month-text">This month</p>
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M7.41 8.58008L12 13.1701L16.59 8.58008L18 10.0001L12 16.0001L6 10.0001L7.41 8.58008Z"
+                  fill="#2DCB30"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="user-details__details-main">
+        <div class="user-details__details-body">
+          <div class="user-details__details-type-coupon">
+            <div class="user-details__details-menus">
+              <div class="user-details__details-info">
+                <p>Total Usage</p>
+                <span>2,500</span>
+              </div>
+              <svg
+                width="40"
+                height="40"
+                viewBox="0 0 40 40"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="20" cy="20" r="20" fill="#D27448" />
+                <path
+                  d="M11 30V16H15V30H11ZM18 30V10H22V30H18ZM25 30V22H29V30H25Z"
+                  fill="white"
+                />
+              </svg>
+            </div>
+            <div class="user-details__details-menus">
+              <div class="user-details__details-info">
+                <p>Usage remaining</p>
+                <span>240</span>
+              </div>
+              <svg
+                width="40"
+                height="40"
+                viewBox="0 0 40 40"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="20" cy="20" r="20" fill="#4886D2" />
+                <path
+                  d="M11 30V16H15V30H11ZM18 30V10H22V30H18ZM25 30V22H29V30H25Z"
+                  fill="white"
+                />
+              </svg>
+            </div>
+            <div class="user-details__details-menus">
+              <div class="user-details__details-info">
+                <p>Usage per user</p>
+                <span>2</span>
+              </div>
+              <svg
+                width="40"
+                height="40"
+                viewBox="0 0 40 40"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="20" cy="20" r="20" fill="#4EA667" />
+                <path
+                  d="M19 17C19 18.66 17.66 20 16 20C14.34 20 13 18.66 13 17C13 15.34 14.34 14 16 14C17.66 14 19 15.34 19 17ZM22 28H10V26C10 23.79 12.69 22 16 22C19.31 22 22 23.79 22 26M30 20V22H21V20M30 16V18H21V16M30 12V14H21V12H30Z"
+                  fill="white"
+                />
+              </svg>
+            </div>
+            <div class="user-details__details-menus">
+              <div class="user-details__details-info">
+                <p>Expiry</p>
+                <div class="user-details__details-expiry">
+                  <p>Jul 24, 2024</p>
+                  <div class="td-user-info__date-divider"></div>
+                  <p>12:45pm</p>
+                </div>
+              </div>
+              <svg
+                width="40"
+                height="40"
+                viewBox="0 0 40 40"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="20" cy="20" r="20" fill="#C69F28" />
+                <path
+                  d="M17 18H15V20H17V18ZM21 18H19V20H21V18ZM25 18H23V20H25V18ZM27 11H26V9H24V11H16V9H14V11H13C12.4696 11 11.9609 11.2107 11.5858 11.5858C11.2107 11.9609 11 12.4696 11 13V27C11 27.5304 11.2107 28.0391 11.5858 28.4142C11.9609 28.7893 12.4696 29 13 29H27C27.5304 29 28.0391 28.7893 28.4142 28.4142C28.7893 28.0391 29 27.5304 29 27V13C29 12.4696 28.7893 11.9609 28.4142 11.5858C28.0391 11.2107 27.5304 11 27 11ZM27 27H13V16H27V27Z"
+                  fill="white"
+                />
+              </svg>
+            </div>
+            <div class="user-details__details-menus">
+              <div class="user-details__details-info">
+                <p>Date Created</p>
+                <div class="user-details__details-expiry">
+                  <p>Jul 24, 2024</p>
+                  <div class="td-user-info__date-divider"></div>
+                  <p>12:45pm</p>
+                </div>
+              </div>
+              <svg
+                width="40"
+                height="40"
+                viewBox="0 0 40 40"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="20" cy="20" r="20" fill="#768D91" />
+                <path
+                  d="M17 18H15V20H17V18ZM21 18H19V20H21V18ZM25 18H23V20H25V18ZM27 11H26V9H24V11H16V9H14V11H13C12.4696 11 11.9609 11.2107 11.5858 11.5858C11.2107 11.9609 11 12.4696 11 13V27C11 27.5304 11.2107 28.0391 11.5858 28.4142C11.9609 28.7893 12.4696 29 13 29H27C27.5304 29 28.0391 28.7893 28.4142 28.4142C28.7893 28.0391 29 27.5304 29 27V13C29 12.4696 28.7893 11.9609 28.4142 11.5858C28.0391 11.2107 27.5304 11 27 11ZM27 27H13V16H27V27Z"
+                  fill="white"
+                />
+              </svg>
+            </div>
+          </div>
+          <div class="user-details__table-user">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Transaction ID</th>
+                  <th>Username</th>
+                  <th>Service</th>
+                  <th>Original amount</th>
+                  <th>Discount</th>
+                  <th>Amount paid</th>
+                  <th>Date</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="td-user-info">
+                    <p class="td-user-info__user-detail">PNG1234567890</p>
+                  </td>
+                  <td><p>Mrjayy</p></td>
+                  <td><p>Bulk SMS</p></td>
+                  <td><p>₦34,6740,200</p></td>
+                  <td><p>₦8,500.00</p></td>
+                  <td><p>₦34,6740,200</p></td>
+                  <td>
+                    <div class="td-user-info__reg-date">
+                      <p>Jul 24, 2024</p>
+                      <div class="td-user-info__date-divider"></div>
+                      <p>12:45pm</p>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="td-user-info">
+                    <p class="td-user-info__user-detail">PNG1234567890</p>
+                  </td>
+                  <td><p>Mrjayy</p></td>
+                  <td><p>Airtime</p></td>
+                  <td><p>₦34,6740,200</p></td>
+                  <td><p>5%</p></td>
+                  <td><p>₦34,6740,200</p></td>
+                  <td>
+                    <div class="td-user-info__reg-date">
+                      <p>Jul 24, 2024</p>
+                      <div class="td-user-info__date-divider"></div>
+                      <p>12:45pm</p>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="td-user-info">
+                    <p class="td-user-info__user-detail">PNG1234567890</p>
+                  </td>
+                  <td><p>Mrjayy</p></td>
+                  <td><p>Bulk SMS</p></td>
+                  <td><p>₦34,6740,200</p></td>
+                  <td><p>₦8,500.00</p></td>
+                  <td><p>₦34,6740,200</p></td>
+                  <td>
+                    <div class="td-user-info__reg-date">
+                      <p>Jul 24, 2024</p>
+                      <div class="td-user-info__date-divider"></div>
+                      <p>12:45pm</p>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="td-user-info">
+                    <p class="td-user-info__user-detail">PNG1234567890</p>
+                  </td>
+                  <td><p>Mrjayy</p></td>
+                  <td><p>Bulk SMS</p></td>
+                  <td><p>₦34,6740,200</p></td>
+                  <td><p>₦8,500.00</p></td>
+                  <td><p>₦34,6740,200</p></td>
+                  <td>
+                    <div class="td-user-info__reg-date">
+                      <p>Jul 24, 2024</p>
+                      <div class="td-user-info__date-divider"></div>
+                      <p>12:45pm</p>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="td-user-info">
+                    <p class="td-user-info__user-detail">PNG1234567890</p>
+                  </td>
+                  <td><p>Mrjayy</p></td>
+                  <td><p>Data</p></td>
+                  <td><p>₦34,6740,200</p></td>
+                  <td><p>5%</p></td>
+                  <td><p>₦34,6740,200</p></td>
+                  <td>
+                    <div class="td-user-info__reg-date">
+                      <p>Jul 24, 2024</p>
+                      <div class="td-user-info__date-divider"></div>
+                      <p>12:45pm</p>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="td-user-info">
+                    <p class="td-user-info__user-detail">PNG1234567890</p>
+                  </td>
+                  <td><p>Mrjayy</p></td>
+                  <td><p>Bulk SMS</p></td>
+                  <td><p>₦34,6740,200</p></td>
+                  <td><p>5%</p></td>
+                  <td><p>₦34,6740,200</p></td>
+                  <td>
+                    <div class="td-user-info__reg-date">
+                      <p>Jul 24, 2024</p>
+                      <div class="td-user-info__date-divider"></div>
+                      <p>12:45pm</p>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="td-user-info">
+                    <p class="td-user-info__user-detail">PNG1234567890</p>
+                  </td>
+                  <td><p>Mrjayy</p></td>
+                  <td><p>Bulk SMS</p></td>
+                  <td><p>₦34,6740,200</p></td>
+                  <td><p>₦8,500.00</p></td>
+                  <td><p>₦34,6740,200</p></td>
+                  <td>
+                    <div class="td-user-info__reg-date">
+                      <p>Jul 24, 2024</p>
+                      <div class="td-user-info__date-divider"></div>
+                      <p>12:45pm</p>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="td-user-info">
+                    <p class="td-user-info__user-detail">PNG1234567890</p>
+                  </td>
+                  <td><p>Mrjayy</p></td>
+                  <td><p>Bulk SMS</p></td>
+                  <td><p>₦34,6740,200</p></td>
+                  <td><p>5%</p></td>
+                  <td><p>₦34,6740,200</p></td>
+                  <td>
+                    <div class="td-user-info__reg-date">
+                      <p>Jul 24, 2024</p>
+                      <div class="td-user-info__date-divider"></div>
+                      <p>12:45pm</p>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="td-user-info">
+                    <p class="td-user-info__user-detail">PNG1234567890</p>
+                  </td>
+                  <td><p>Mrjayy</p></td>
+                  <td><p>Bulk SMS</p></td>
+                  <td><p>₦34,6740,200</p></td>
+                  <td><p>₦8,500.00</p></td>
+                  <td><p>₦34,6740,200</p></td>
+                  <td>
+                    <div class="td-user-info__reg-date">
+                      <p>Jul 24, 2024</p>
+                      <div class="td-user-info__date-divider"></div>
+                      <p>12:45pm</p>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="td-user-info">
+                    <p class="td-user-info__user-detail">PNG1234567890</p>
+                  </td>
+                  <td><p>Mrjayy</p></td>
+                  <td><p>Bulk SMS</p></td>
+                  <td><p>₦34,6740,200</p></td>
+                  <td><p>5%</p></td>
+                  <td><p>₦34,6740,200</p></td>
+                  <td>
+                    <div class="td-user-info__reg-date">
+                      <p>Jul 24, 2024</p>
+                      <div class="td-user-info__date-divider"></div>
+                      <p>12:45pm</p>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="user-details__entries-page">
+          <div class="user-details__show-entries">
+            <p>Show</p>
+            <div class="user-details__show-num">
+              10
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M7.41 8.58008L12 13.1701L16.59 8.58008L18 10.0001L12 16.0001L6 10.0001L7.41 8.58008Z"
+                  fill="#2DCB30"
+                />
+              </svg>
+            </div>
+            <p>Entries</p>
+          </div>
+          <div class="user-details__show-pages">
+            <div class="user-details__prev-page">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M15.41 16.58L10.83 12L15.41 7.41L14 6L8 12L14 18L15.41 16.58Z"
+                  fill="#2DCB30"
+                />
+              </svg>
+              <p>Previous</p>
+            </div>
+            <div class="user-details__page-num">
+              <p>234</p>
+              <svg
+                width="6"
+                height="10"
+                viewBox="0 0 6 10"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1.72111 9.126C1.66911 9.266 1.58711 9.37 1.47511 9.438C1.36711 9.506 1.25511 9.54 1.13911 9.54H0.689109L4.29511 0.558C4.34311 0.43 4.41511 0.332 4.51111 0.263999C4.61111 0.196 4.72511 0.162 4.85311 0.162H5.30911L1.72111 9.126Z"
+                  fill="#808080"
+                />
+              </svg>
+              <span>450</span>
+            </div>
+            <div class="user-details__prev-page">
+              <p>Next</p>
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M8.58984 16.58L13.1698 12L8.58984 7.41L9.99984 6L15.9998 12L9.99984 18L8.58984 16.58Z"
+                  fill="#2DCB30"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- for enter coupon modal -->
+
+    <div class="modal-coupon">
+      <button class="modal-deactivate__close-btn">
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z"
+            fill="black"
+          />
+        </svg>
+      </button>
+      <div class="modal-deactivate__deactivate-body">
+        <div class="modal-create__modal-details">
+          <p class="modal-create__header-text">Add Coupon</p>
+          <div class="modal-coupon__coupon-body">
+            <div class="modal-coupon__user-form">
+              <div class="modal-coupon__coupon-header">
+                <p
+                  class="modal-deactivate__header-percent modal-deactivate__header-percent--active"
+                >
+                  By Percentage
+                </p>
+                <p class="modal-deactivate__header-percent">By Amount</p>
+              </div>
+              <div class="modal-coupon__user-form">
+                <div class="modal-coupon__form-input">
+                  <p class="modal-coupon__form-text">Enter code</p>
+                  <div class="form__user-input">
+                    <input type="text" placeholder="Email" />
+                  </div>
+                </div>
+                <div class="modal-coupon__form-input">
+                  <p class="modal-coupon__form-text">Service to be applied</p>
+                  <div class="form__user-input">
+                    <p class="modal-coupon__input-select-text">
+                      Select service
+                    </p>
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M7.41 8.58008L12 13.1701L16.59 8.58008L18 10.0001L12 16.0001L6 10.0001L7.41 8.58008Z"
+                        fill="#1F1F1F"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <div class="modal-coupon__discount-percentage">
+                  <div class="modal-coupon__form-input">
+                    <p class="modal-coupon__form-text">
+                      Discount percentage (%)
+                    </p>
+                    <input
+                      type="text"
+                      placeholder="Enter percentage"
+                      class="form__user-input form__user-input--percent-default"
+                    />
+                  </div>
+                </div>
+                <div class="modal-coupon__discount-amount">
+                  <div class="modal-coupon__form-input">
+                    <p class="modal-coupon__form-text">
+                      Minimum amount to be applied
+                    </p>
+                    <div
+                      class="form__user-input form__user-input--percent-default"
+                    >
+                      <input type="text" placeholder="Enter amount" />
+                    </div>
+                  </div>
+                  <div class="modal-coupon__form-input">
+                    <p class="modal-coupon__form-text">
+                      Max Amount to be deducted
+                    </p>
+                    <div
+                      class="form__user-input form__user-input--percent-default"
+                    >
+                      <input type="text" placeholder="Enter amount" />
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-coupon__discount-amount">
+                  <div class="modal-coupon__form-input">
+                    <p class="modal-coupon__form-text">Total usage</p>
+                    <div
+                      class="form__user-input form__user-input--percent-default"
+                    >
+                      <input type="text" placeholder="Enter amount" />
+                    </div>
+                  </div>
+                  <div class="modal-coupon__form-input">
+                    <p class="modal-coupon__form-text">
+                      Number of usage per user
+                    </p>
+                    <div
+                      class="form__user-input form__user-input--percent-default"
+                    >
+                      <input type="text" placeholder="Enter amount" />
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-coupon__discount-amount">
+                  <div class="modal-coupon__form-input">
+                    <p class="modal-coupon__form-text">Date of Expiry</p>
+                    <div
+                      class="form__user-input form__user-input--percent-default"
+                    >
+                      <p>Select date</p>
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M9 10H7V12H9V10ZM13 10H11V12H13V10ZM17 10H15V12H17V10ZM19 3H18V1H16V3H8V1H6V3H5C4.46957 3 3.96086 3.21071 3.58579 3.58579C3.21071 3.96086 3 4.46957 3 5V19C3 19.5304 3.21071 20.0391 3.58579 20.4142C3.96086 20.7893 4.46957 21 5 21H19C19.5304 21 20.0391 20.7893 20.4142 20.4142C20.7893 20.0391 21 19.5304 21 19V5C21 4.46957 20.7893 3.96086 20.4142 3.58579C20.0391 3.21071 19.5304 3 19 3ZM19 19H5V8H19V19Z"
+                          fill="#1F1F1F"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="modal-coupon__form-input">
+                    <p class="modal-coupon__form-text">Time</p>
+                    <div
+                      class="form__user-input form__user-input--percent-default"
+                    >
+                      <p>Select time</p>
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M12 20C14.1217 20 16.1566 19.1571 17.6569 17.6569C19.1571 16.1566 20 14.1217 20 12C20 9.87827 19.1571 7.84344 17.6569 6.34315C16.1566 4.84285 14.1217 4 12 4C9.87827 4 7.84344 4.84285 6.34315 6.34315C4.84285 7.84344 4 9.87827 4 12C4 14.1217 4.84285 16.1566 6.34315 17.6569C7.84344 19.1571 9.87827 20 12 20ZM12 2C13.3132 2 14.6136 2.25866 15.8268 2.7612C17.0401 3.26375 18.1425 4.00035 19.0711 4.92893C19.9997 5.85752 20.7362 6.95991 21.2388 8.17317C21.7413 9.38642 22 10.6868 22 12C22 14.6522 20.9464 17.1957 19.0711 19.0711C17.1957 20.9464 14.6522 22 12 22C6.47 22 2 17.5 2 12C2 9.34784 3.05357 6.8043 4.92893 4.92893C6.8043 3.05357 9.34784 2 12 2ZM12.5 7V12.25L17 14.92L16.25 16.15L11 13V7H12.5Z"
+                          fill="#1F1F1F"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="button">Create Coupon</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="overlay hidden"></div>
+  </body>
+</html>
