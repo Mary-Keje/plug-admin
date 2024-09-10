@@ -97,7 +97,7 @@
                 fill="#1F1F1F"
               />
             </svg>
-            Event Organizer
+            Event Organizers
           </p>
           <div class="header-details__body">
             <div class="header-details__search-sort">
@@ -156,7 +156,7 @@
                   fill="#1F1F1F"
                 />
               </svg>
-              Event Organizer
+              Event Organizers
             </p>
           </div>
           <div class="header-details__search-sort">
@@ -181,6 +181,21 @@
                   stroke-linejoin="round"
                 />
               </svg>
+            </div>
+            <div class="header-details__sort">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M18 21L14 17H17V7H14L18 3L22 7H19V17H22M2 19V17H12V19M2 13V11H9V13M2 7V5H6V7H2Z"
+                  fill="#2DCB30"
+                />
+              </svg>
+              <p class="header-details__sort-text">Sort</p>
             </div>
             <div class="header-details__sort">
               <p class="header-details__month-text">This month</p>
@@ -464,23 +479,5 @@
         </div>
       </div>
     </div>
-
-    <script>
-      //  modal
-      var modal = document.getElementById("modal");
-      var btn = document.getElementById("modal-btn");
-      var span = document.getElementsByClassName("close")[0];
-      btn.onclick = function () {
-        modal.style.display = "block";
-      };
-      span.onclick = function () {
-        modal.style.display = "none";
-      };
-      window.onclick = function (event) {
-        if (event.target == modal) {
-          modal.style.display = "none";
-        }
-      };
-    </script>
   </body>
 </html>
