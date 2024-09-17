@@ -504,69 +504,61 @@
       line-height: 2.3rem;
       white-space: nowrap;
     }
-    
-  }
-  
-  .organizer-btn-approve {
-    width: 100%;
-  }
-  .organizer-btn-decline {
-    width: 100%;
-  }
-  
-  .layout {
-    
-    &__transactions {
-      grid-template-columns: 1fr;
-      margin-top: 0;
-      
-      & .side-1 {
-        order: 2;
-      } 
-      & .side-2 {
-        order: 1;
-      } 
-    }
-    &__auto-renew {
-      padding: 10px;      
-    }
-    &__auto-renew-details {
-      & span {
-        font-size: 12px;
-      }
-    }
-  }
-  .organizers-txn-details {
-    width: 200px;
-    font-size: 10px;
-  }
-  
-  .head {
-    margin-top: 34px;
-  }
-  .tix-details-bg {
-    padding: 9px;
-  }
-  .tix-details {
-    & p {
-      font-size: 12px;
-    }
-    & span {
-      font-size: 10px;
-    }
   }
 
-  .link-box {
-    border-radius:8px;
-    padding-left: 1rem;
-    &-copy {
-      padding: 4px 8px;
-    }
-    & svg {
-      width: 40px;
-    }
+  & table .header {
+    line-height: 2rem;
   }
-  
 }
 
+.organizer-btn-approve {
+  width: 100%;
+}
+.organizer-btn-decline {
+  width: 100%;
+}
 
+.layout {
+  display: table;
+}
+.head {
+  margin-top: 34px;
+}
+
+.side-1 {
+  display: table-footer-group;
+}
+.side-2 {
+  display: table-header-group;
+}
+.link-box {
+  display: flex;
+  align-items: center;
+  width: 30rem;
+  border-radius: 8px 8px 8px 8px;
+  border: 1px solid #f0f0f0;
+  font-size: 16px;
+  background: #f0f0f0;
+  margin-top: 3px;
+
+  & svg {
+    margin-left: auto;
+    display: inline-block;
+    padding: 8px 8px;
+    border-radius: 0px 8px 8px 0px;
+    background: #2dcb30;
+  }
+
+  & p {
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 2px;
+  }
+}
+
+@media screen and (min-width: 1110px) {
+  .layout {
+    gap: 174px;
+    margin-top: 47px;
+  }
+}
