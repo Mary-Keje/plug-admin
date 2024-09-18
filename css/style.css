@@ -2184,17 +2184,14 @@ body {
 .organizers-txn-price {
   display: flex;
   width: 250px;
-  width: 100%;
   padding: 12px;
   justify-content: center;
   align-items: flex-start;
   gap: 8px; }
 
 .organizers-txn-details {
-  display: flex;
-  width: 250px;
-  padding: 12px;
-  justify-content: center;
+  width: auto;
+  color: #2DCB30;
   background: none;
   cursor: pointer; }
   .organizers-txn-details p {
@@ -2215,9 +2212,10 @@ body {
 
 .link-box {
   display: flex;
+  background: #F0F0F0;
   width: 100%;
-  padding: 16px 12px;
   align-items: center;
+  align-content: center;
   gap: 6.495px;
   border-radius: 8px 0px 0px 8px;
   border-top: 1px solid #e9e9e9;
