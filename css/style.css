@@ -931,7 +931,7 @@ body {
   border-radius: 0.8rem;
   padding: 3rem 3rem 6.6rem;
   position: fixed;
-  top: 30%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(0);
   pointer-events: none;
@@ -1062,7 +1062,8 @@ body {
     padding: 1.2rem 2.4rem 0rem; }
   .modal-deactivate__header-percent {
     color: #808080;
-    padding: 0rem 0.8rem; }
+    padding: 0rem 0.8rem;
+    cursor: pointer; }
     .modal-deactivate__header-percent--active {
       font-weight: 600;
       color: #1f1f1f;
@@ -1122,26 +1123,6 @@ body {
     display: flex;
     flex-direction: column;
     gap: 0.8rem; }
-  .modal-coupon__form-text {
-    color: #808080;
-    white-space: nowrap; }
-  .modal-coupon__input-select-text {
-    color: #a3a3a3; }
-  .modal-coupon__discount-percentage {
-    background-color: #ffffff;
-    border-radius: 0.8rem;
-    padding: 1.6rem; }
-  .modal-coupon__discount-amount {
-    background-color: #ffffff;
-    border-radius: 0.8rem;
-    padding: 1.6rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1.6rem; }
-    @media (max-width: 430px) {
-      .modal-coupon__discount-amount {
-        display: flex;
-        flex-direction: column; } }
 
 .header__logo-pl {
   display: block;
@@ -2407,8 +2388,7 @@ th {
   gap: 1.6rem; }
 
 .form {
-  width: 100%;
-  height: 4.8rem; }
+  width: 100%; }
   .form__default-input {
     color: #4d4d4d;
     background-color: #f2f2f2;
@@ -2507,6 +2487,19 @@ th {
         outline: transparent; }
       .form__auth-mail input ::placeholder {
         color: #a3a3a3; }
+  .form__user-info-bg {
+    background-color: #ffffff;
+    border-radius: 0.8rem;
+    padding: 1.6rem; }
+  .form__user-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem; }
+  .form__input-select-text {
+    color: #a3a3a3; }
+  .form__text-input {
+    color: #808080;
+    white-space: nowrap; }
   .form__user-textnote {
     background-color: #ffffff;
     border-radius: 0.8rem;
@@ -2521,6 +2514,29 @@ th {
       .form__user-textnote textarea::placeholder {
         color: #a3a3a3;
         font-size: 1.8rem; }
+  .form__form-input {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem; }
+  .form__grid-form-bg {
+    background-color: #ffffff;
+    border-radius: 0.8rem;
+    padding: 1.6rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.6rem; }
+    @media (max-width: 430px) {
+      .form__grid-form-bg {
+        display: flex;
+        flex-direction: column; } }
+  .form__grid-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.6rem; }
+    @media (max-width: 430px) {
+      .form__grid-form {
+        display: flex;
+        flex-direction: column; } }
 
 .switch {
   appearance: none;
