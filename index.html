@@ -140,23 +140,23 @@
                 </svg>
               </div>
             </div>
-            <a href="./ui/user-information.html">
-              <button class="button button--create">
-                <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M19 13H13V19H11V13H5V11H11V5H13V11H19V13Z"
-                    fill="white"
-                  />
-                </svg>
-                <p>Create User</p>
-              </button>
-            </a>
+            <!-- <a href="./ui/user-information.html"> -->
+            <button class="button button--create" id="open-modal">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M19 13H13V19H11V13H5V11H11V5H13V11H19V13Z"
+                  fill="white"
+                />
+              </svg>
+              <p>Create User</p>
+            </button>
+            <!-- </a> -->
           </div>
         </div>
         <div class="header-details__mobile-header">
@@ -1212,8 +1212,8 @@
 
     <!-- for create user pop-up -->
 
-    <div class="modal-create">
-      <button class="modal-create__close-btn">
+    <div class="modal-create" id="modal">
+      <button class="modal-create__close-btn" id="close-modal">
         <svg
           width="24"
           height="24"
@@ -1271,7 +1271,7 @@
         </div>
       </div>
     </div>
-    <div class="overlay hidden"></div>
+    <div class="overlay hidden" id="overlay"></div>
 
     <!-- for sort pop up -->
 
@@ -1356,12 +1356,26 @@
     <div class="overlay hidden"></div>
 
     <script>
-      const modal = document.querySelector(".modal-create");
-      const closeModal = document.querySelector(".modal-create__close-btn");
-      const overlay = document.querySelector("overlay");
-      const btnsOpenModal = document.querySelectorAll(".show-modal");
+      const modal = document.querySelector("#modal");
+      const btnCloseModal = document.querySelector("#close-modal");
+      const overlay = document.querySelector("#overlay");
+      const btnOpenModal = document.querySelector("#open-modal");
 
-      
+
+      const openModal = function () {
+        console.log("Button clicked");
+        modal.classList.add("open");
+        overlay.classList.remove("hidden");
+      };
+
+      const closeModal = function () {
+        modal.classList.remove("open");
+        overlay.classList.add("hidden");
+      };
+
+      btnCloseModal.addEventListener("click", closeModal);
+      btnOpenModal.addEventListener("click", openModal);
+      overlay.addEventListener("click", closeModal);
     </script>
   </body>
 </html>

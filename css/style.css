@@ -926,6 +926,10 @@ body {
   .overlay.hidden {
     display: none; }
 
+#open {
+  transform: translate(-50%, -50%);
+  pointer-events: all; }
+
 .modal-create {
   background-color: #f7f8f8;
   border-radius: 0.8rem;
@@ -2570,6 +2574,11 @@ th {
       .form__grid-form {
         display: flex;
         flex-direction: column; } }
+  .form__select {
+    border: none;
+    width: 100%;
+    outline: none;
+    cursor: pointer; }
 
 .switch {
   appearance: none;
