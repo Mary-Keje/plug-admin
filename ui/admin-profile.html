@@ -11,11 +11,13 @@
     <div class="user-details">
       <div class="header__main">
         <div class="header__details">
-          <img
-            src="../imgs/logo/plug.logoo.svg"
-            alt=""
-            class="header__logo-pl"
-          />
+          <a href="../index.html">
+            <img
+              src="../imgs/logo/plug.logoo.svg"
+              alt=""
+              class="header__logo-pl"
+            />
+          </a>
           <div class="header__info">
             <svg
               width="24"
@@ -358,7 +360,7 @@
 
     <!-- for change avatar modal -->
 
-    <div class="modal-coupon open">
+    <div class="modal-coupon">
       <button class="modal-deactivate__close-btn">
         <svg
           width="24"
@@ -378,10 +380,12 @@
           <p class="modal-create__header-text">Change avatar</p>
           <div class="modal-coupon__coupon-body">
             <div class="modal-coupon__profile-avatar">
-              <p>Select the avatar that best describes you!</p>
+              <p class="modal-coupon__avatar-text">
+                Select the avatar that best describes you!
+              </p>
               <div class="modal-coupon__avatar-img">
                 <div>
-                 <img src="../imgs/icons/avatar-1.svg" alt="">
+                  <img src="../imgs/icons/avatar-1.svg" alt="" />
                 </div>
                 <div>
                   <img src="../imgs/icons/avatar-2.svg" alt="" />
@@ -392,11 +396,13 @@
                 <img src="../imgs/icons/avatar-6.svg" alt="" />
               </div>
             </div>
-            <button class="button">Save</button>
+            <div class="modal-create__create-btn">
+              <button class="button button--save">Save</button>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="overlay"></div>
+    <div class="overlay hidden"></div>
   </body>
 </html>

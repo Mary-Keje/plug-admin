@@ -1232,13 +1232,16 @@ body {
     align-items: center;
     justify-content: center;
     gap: 2.4rem; }
+  .modal-coupon__avatar-text {
+    color: #808080; }
   .modal-coupon__avatar-img {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1.6rem; }
     .modal-coupon__avatar-img img {
       display: block;
-      width: 16rem; }
+      width: 16rem;
+      cursor: pointer; }
 
 .header__logo-pl {
   display: block;
@@ -1761,6 +1764,9 @@ body {
     .button--edit svg {
       display: block;
       width: 2.4rem; }
+  .button--save {
+    padding: .8rem 1.6rem;
+    width: 29rem; }
 
 .user-btns {
   font-weight: 600;

@@ -1713,6 +1713,10 @@
     gap: 2.4rem;
   }
 
+  &__avatar-text {
+    color: #808080;
+  }
+
   &__avatar-img {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -1721,6 +1725,7 @@
     & img {
       display: block;
       width: 16rem;
+      cursor: pointer;
     }
   }
 }
