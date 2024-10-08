@@ -168,6 +168,7 @@
   }
 
   &__text-input {
+    font-size: 1.6rem;
     color: #808080;
     white-space: nowrap;
   }
@@ -231,6 +232,28 @@
     width: 100%;
     outline: none;
     cursor: pointer;
+  }
+
+  &__characters {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+  }
+
+  &__min-characters {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+
+    & p {
+      font-size: 1.2rem;
+      color: #444444;
+    }
+
+    & svg {
+      display: block;
+      width: 1.6rem;
+    }
   }
 }
 

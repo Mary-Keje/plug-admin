@@ -533,6 +533,21 @@
     }
   }
 
+  &__profile-form-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 4rem;
+
+    @media (max-width: 1150px) {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @media (max-width: 680px) {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
   &__user-form {
     display: flex;
     flex-direction: column;
@@ -745,6 +760,111 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
     }
+  }
+}
+
+.user-profile {
+  &__profile-heading {
+    background-color: #ffffff;
+    border-radius: 0.8rem;
+    padding: 2.4rem 4rem;
+
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__profile-users {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+
+    & img {
+      width: 12rem;
+    }
+  }
+
+  &__profile-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  &__profile-name {
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: #176819;
+  }
+
+  &__profile-mail {
+    font-size: 1.8rem;
+    color: #808080;
+  }
+
+  &__avater-btn {
+    font-weight: 600;
+    color: #2dcb30;
+    background: none;
+    padding: 0.8rem;
+    border-radius: 0.8rem;
+    border: 1.5px solid #f2f2f2;
+    cursor: pointer;
+  }
+
+  &__profile-details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__profile-form {
+    background-color: #ffffff;
+    border-radius: 0.8rem;
+    padding: 2.4rem 4rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+  }
+
+  &__profile-form-heading {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #176819;
+  }
+
+  &__profile-edit {
+    font-weight: 600;
+    color: #2dcb30;
+    background: none;
+    border-radius: 0.8rem;
+    border: 1.5px solid #f2f2f2;
+    padding: 0.8rem;
+    width: 12rem;
+    cursor: pointer;
+  }
+
+  &__change-password {
+    background-color: #ffffff;
+    border-radius: 0.8rem;
+    padding: 2.4rem 4rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+
+  &__change-btn {
+    font-weight: 600;
+    color: #ffa800;
+    padding-bottom: 1.6rem;
+    border-bottom: 2px solid #f2f2f2;
+    cursor: pointer;
+  }
+
+  &__sign-out-btn {
+    font-weight: 600;
+    color: #808080;
+    cursor: pointer;
   }
 }
 
@@ -1506,7 +1626,7 @@
 .modal-coupon {
   background-color: #f7f8f8;
   border-radius: 0.8rem;
-  padding: 3rem 0rem 3rem;
+  padding: 3rem 0rem 5rem;
 
   position: fixed;
   top: 50%;
@@ -1579,5 +1699,28 @@
     display: flex;
     flex-direction: column;
     gap: 0.8rem;
+  }
+
+  &__profile-avatar {
+    background-color: #ffffff;
+    border-radius: 0.8rem;
+    padding: 2.4rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2.4rem;
+  }
+
+  &__avatar-img {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.6rem;
+
+    & img {
+      display: block;
+      width: 16rem;
+    }
   }
 }

@@ -416,6 +416,17 @@ body {
       .user-details__user-form-details {
         display: flex;
         flex-direction: column; } }
+  .user-details__profile-form-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 4rem; }
+    @media (max-width: 1150px) {
+      .user-details__profile-form-details {
+        grid-template-columns: 1fr 1fr; } }
+    @media (max-width: 680px) {
+      .user-details__profile-form-details {
+        display: flex;
+        flex-direction: column; } }
   .user-details__user-form {
     display: flex;
     flex-direction: column;
@@ -560,6 +571,91 @@ body {
     .user-details__event-purchases {
       display: grid;
       grid-template-columns: 1fr 1fr; } }
+
+.user-profile__profile-heading {
+  background-color: #ffffff;
+  border-radius: 0.8rem;
+  padding: 2.4rem 4rem;
+  display: flex;
+  justify-content: space-between; }
+
+.user-profile__profile-users {
+  display: flex;
+  align-items: center;
+  gap: 4rem; }
+  .user-profile__profile-users img {
+    width: 12rem; }
+
+.user-profile__profile-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem; }
+
+.user-profile__profile-name {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #176819; }
+
+.user-profile__profile-mail {
+  font-size: 1.8rem;
+  color: #808080; }
+
+.user-profile__avater-btn {
+  font-weight: 600;
+  color: #2dcb30;
+  background: none;
+  padding: 0.8rem;
+  border-radius: 0.8rem;
+  border: 1.5px solid #f2f2f2;
+  cursor: pointer; }
+
+.user-profile__profile-details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+
+.user-profile__profile-form {
+  background-color: #ffffff;
+  border-radius: 0.8rem;
+  padding: 2.4rem 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem; }
+
+.user-profile__profile-form-heading {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #176819; }
+
+.user-profile__profile-edit {
+  font-weight: 600;
+  color: #2dcb30;
+  background: none;
+  border-radius: 0.8rem;
+  border: 1.5px solid #f2f2f2;
+  padding: 0.8rem;
+  width: 12rem;
+  cursor: pointer; }
+
+.user-profile__change-password {
+  background-color: #ffffff;
+  border-radius: 0.8rem;
+  padding: 2.4rem 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem; }
+
+.user-profile__change-btn {
+  font-weight: 600;
+  color: #ffa800;
+  padding-bottom: 1.6rem;
+  border-bottom: 2px solid #f2f2f2;
+  cursor: pointer; }
+
+.user-profile__sign-out-btn {
+  font-weight: 600;
+  color: #808080;
+  cursor: pointer; }
 
 .user-services {
   gap: 1.6rem;
@@ -1076,7 +1172,7 @@ body {
 .modal-coupon {
   background-color: #f7f8f8;
   border-radius: 0.8rem;
-  padding: 3rem 0rem 3rem;
+  padding: 3rem 0rem 5rem;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -1127,6 +1223,22 @@ body {
     display: flex;
     flex-direction: column;
     gap: 0.8rem; }
+  .modal-coupon__profile-avatar {
+    background-color: #ffffff;
+    border-radius: 0.8rem;
+    padding: 2.4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2.4rem; }
+  .modal-coupon__avatar-img {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.6rem; }
+    .modal-coupon__avatar-img img {
+      display: block;
+      width: 16rem; }
 
 .header__logo-pl {
   display: block;
@@ -2535,6 +2647,7 @@ th {
   .form__input-select-text {
     color: #a3a3a3; }
   .form__text-input {
+    font-size: 1.6rem;
     color: #808080;
     white-space: nowrap; }
   .form__user-textnote {
@@ -2579,6 +2692,20 @@ th {
     width: 100%;
     outline: none;
     cursor: pointer; }
+  .form__characters {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem; }
+  .form__min-characters {
+    display: flex;
+    align-items: center;
+    gap: 4px; }
+    .form__min-characters p {
+      font-size: 1.2rem;
+      color: #444444; }
+    .form__min-characters svg {
+      display: block;
+      width: 1.6rem; }
 
 .switch {
   appearance: none;
