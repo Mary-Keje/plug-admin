@@ -124,21 +124,23 @@
                   <p class="header-details__sort-text">Sort</p>
                 </div>
               </a>
-              <div class="header-details__sort">
-                <p class="header-details__month-text">This month</p>
-                <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M7.41 8.58008L12 13.1701L16.59 8.58008L18 10.0001L12 16.0001L6 10.0001L7.41 8.58008Z"
-                    fill="#2DCB30"
-                  />
-                </svg>
-              </div>
+              <a href="./ui/agent-user.html">
+                <div class="header-details__sort">
+                  <p class="header-details__month-text">This month</p>
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7.41 8.58008L12 13.1701L16.59 8.58008L18 10.0001L12 16.0001L6 10.0001L7.41 8.58008Z"
+                      fill="#2DCB30"
+                    />
+                  </svg>
+                </div>
+              </a>
             </div>
             <a href="./ui/user-information.html">
               <button class="button button--create" id="open-modal">
@@ -1376,7 +1378,7 @@
 
       btnCloseModal.addEventListener("click", closeModal);
       btnOpenModal.addEventListener("click", openModal);
-      overlay.addEventListener("click", closeModal);
+      overlay.addEventListener("click", closeModal); 
     </script> -->
   </body>
 </html>

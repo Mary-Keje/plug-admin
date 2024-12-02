@@ -264,7 +264,7 @@ body {
   .user-details__details-body {
     display: flex;
     flex-direction: column;
-    gap: 2.4rem; }
+    gap: 1.6rem; }
     .user-details__details-body a {
       text-decoration: none; }
   .user-details__table-user {
@@ -416,6 +416,17 @@ body {
       .user-details__user-form-details {
         display: flex;
         flex-direction: column; } }
+  .user-details__agent-form-details {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4rem; }
+    @media (max-width: 1150px) {
+      .user-details__agent-form-details {
+        grid-template-columns: 1fr 1fr; } }
+    @media (max-width: 680px) {
+      .user-details__agent-form-details {
+        display: flex;
+        flex-direction: column; } }
   .user-details__profile-form-details {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -468,6 +479,14 @@ body {
     gap: 2.4rem; }
     @media (max-width: 410px) {
       .user-details__user-search-type {
+        grid-template-columns: 30fr 30fr;
+        gap: 1.8rem; } }
+  .user-details__agent-search-type {
+    display: grid;
+    grid-template-columns: 60fr 40fr;
+    gap: 2.4rem; }
+    @media (max-width: 410px) {
+      .user-details__agent-search-type {
         grid-template-columns: 30fr 30fr;
         gap: 1.8rem; } }
   .user-details__entries-page {
@@ -571,6 +590,25 @@ body {
     .user-details__event-purchases {
       display: grid;
       grid-template-columns: 1fr 1fr; } }
+  .user-details__referral {
+    background-color: #ffffff;
+    padding: 1.6rem 2.4rem;
+    border-radius: 0.8rem; }
+  .user-details__referred-by {
+    display: flex;
+    gap: 2.4rem; }
+  .user-details__referral-name {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem; }
+    .user-details__referral-name span {
+      color: #2dcb30; }
+    .user-details__referral-name p {
+      font-size: 1.2rem;
+      color: #808080;
+      background-color: #f2f2f2;
+      padding: 4px 8px;
+      border-radius: 4px; }
 
 .user-profile__profile-heading {
   background-color: #ffffff;
@@ -845,6 +883,25 @@ body {
     gap: 0.8rem; }
     .user-note__add-btn svg {
       width: 2.4rem; }
+
+.agent-note {
+  background-color: #f7f8f8;
+  border-radius: 0.8rem;
+  padding: 2.4rem;
+  height: 60rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+  .agent-note__text-area {
+    background-color: #ffffff;
+    border-radius: 0.8rem;
+    padding: 1.6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem; }
+    @media (max-width: 500px) {
+      .agent-note__text-area {
+        gap: 2.4rem; } }
 
 .user-side-table {
   display: flex;

@@ -307,7 +307,7 @@
   &__details-body {
     display: flex;
     flex-direction: column;
-    gap: 2.4rem;
+    gap: 1.6rem;
 
     & a {
       text-decoration: none;
@@ -533,6 +533,21 @@
     }
   }
 
+  &__agent-form-details {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4rem;
+
+    @media (max-width: 1150px) {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @media (max-width: 680px) {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
   &__profile-form-details {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -603,6 +618,17 @@
   &__user-search-type {
     display: grid;
     grid-template-columns: 70fr 30fr;
+    gap: 2.4rem;
+
+    @media (max-width: 410px) {
+      grid-template-columns: 30fr 30fr;
+      gap: 1.8rem;
+    }
+  }
+
+  &__agent-search-type {
+    display: grid;
+    grid-template-columns: 60fr 40fr;
     gap: 2.4rem;
 
     @media (max-width: 410px) {
@@ -759,6 +785,35 @@
     @media (max-width: 1155px) {
       display: grid;
       grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  &__referral {
+    background-color: #ffffff;
+    padding: 1.6rem 2.4rem;
+    border-radius: 0.8rem;
+  }
+
+  &__referred-by {
+    display: flex;
+    gap: 2.4rem;
+  }
+
+  &__referral-name {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+
+    & span {
+      color: #2dcb30;
+    }
+
+    & p {
+      font-size: 1.2rem;
+      color: #808080;
+      background-color: #f2f2f2;
+      padding: 4px 8px;
+      border-radius: 4px;
     }
   }
 }
@@ -1150,6 +1205,33 @@
 
     & svg {
       width: 2.4rem;
+    }
+  }
+}
+
+.agent-note {
+  background-color: #f7f8f8;
+  border-radius: 0.8rem;
+  padding: 2.4rem;
+
+  height: 60rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  // align-items: flex-start;
+
+  &__text-area {
+    background-color: #ffffff;
+    border-radius: 0.8rem;
+    padding: 1.6rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+
+    @media (max-width: 500px) {
+      gap: 2.4rem;
     }
   }
 }
