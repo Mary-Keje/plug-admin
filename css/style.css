@@ -892,7 +892,7 @@ body {
   background-color: #f7f8f8;
   border-radius: 0.8rem;
   padding: 2.4rem;
-  height: 60rem;
+  height: 80rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between; }
@@ -906,6 +906,14 @@ body {
     @media (max-width: 500px) {
       .agent-note__text-area {
         gap: 2.4rem; } }
+  .agent-note textarea {
+    width: 100%;
+    height: 50px;
+    border: none; }
+    .agent-note textarea:focus {
+      outline: none; }
+    .agent-note textarea::placeholder {
+      color: #bdbdbd; }
 
 .user-side-table {
   display: flex;

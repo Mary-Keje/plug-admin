@@ -1220,12 +1220,12 @@
   border-radius: 0.8rem;
   padding: 2.4rem;
 
-  height: 60rem;
+  height: 80rem;
 
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  // align-items: flex-start;
+  
 
   &__text-area {
     background-color: #ffffff;
@@ -1238,6 +1238,20 @@
 
     @media (max-width: 500px) {
       gap: 2.4rem;
+    }
+  }
+
+  textarea {
+    width: 100%;
+    height: 50px;
+    border: none;
+
+    &:focus {
+      outline: none;
+    }
+
+    &::placeholder {
+      color: #bdbdbd;
     }
   }
 }
