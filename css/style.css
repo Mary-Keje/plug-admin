@@ -597,6 +597,9 @@ body {
   .user-details__referred-by {
     display: flex;
     gap: 2.4rem; }
+    .user-details__referred-by p {
+      font-weight: 500;
+      color: #808080; }
   .user-details__referral-name {
     display: flex;
     align-items: center;
@@ -728,6 +731,7 @@ body {
   .user-services__heading-text {
     font-size: 2rem;
     font-family: "Tango Sans";
+    font-weight: normal;
     color: #176819; }
   .user-services__service-type {
     display: flex;
@@ -947,6 +951,15 @@ body {
   gap: 1.6rem; }
   @media (max-width: 330px) {
     .services-section__overview-btns {
+      gap: 0.8rem; } }
+
+.services-section__agent-overview-btns {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  margin-top: auto; }
+  @media (max-width: 330px) {
+    .services-section__agent-overview-btns {
       gap: 0.8rem; } }
 
 .services-section__transactions {
@@ -2886,5 +2899,165 @@ th {
     display: flex;
     flex-direction: column;
     align-items: center; }
+
+.user-card {
+  background-color: #ffffff;
+  padding: 2.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem; }
+  .user-card__levels {
+    background-color: #fff6e4;
+    border-radius: 0.8rem;
+    padding: 1.2rem 1.6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px; }
+  .user-card__level-text {
+    font-size: 1.2rem;
+    color: #a6a6a6; }
+  .user-card__level-name {
+    font-size: 1.8rem;
+    font-family: "Tango Sans";
+    color: #1f1f1f; }
+  .user-card__levels-infos {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem; }
+  .user-card__levels-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.6rem; }
+  .user-card__level-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem; }
+    .user-card__level-info p {
+      font-size: 1.4rem;
+      font-weight: 600; }
+    .user-card__level-info span {
+      font-size: 1.2rem;
+      color: #808080; }
+    .user-card__level-info h5 {
+      font-size: 1.4rem;
+      font-weight: 600;
+      color: #2dc830; }
+    .user-card__level-info h4 {
+      color: #bdbdbd; }
+
+.balance-card {
+  background-color: #ffffff;
+  padding: 2.4rem;
+  border-radius: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem; }
+  .balance-card__balance-actions {
+    background-color: #eafaea;
+    padding: 0.8rem 1.6rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.8rem; }
+  .balance-card__balance-block {
+    display: flex;
+    align-items: center; }
+  .balance-card__balance-label {
+    font-size: 1.2rem;
+    color: #25a727;
+    line-height: 1.8rem; }
+  .balance-card__balance {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 3rem; }
+  .balance-card__actions {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem; }
+    .balance-card__actions > * {
+      height: 3.4rem;
+      padding: 0 1.2rem;
+      font-size: 1.2rem; }
+  .balance-card__pools {
+    display: flex;
+    flex-direction: column;
+    gap: 4px; }
+  .balance-card__pools-heading {
+    font-size: 1.2rem;
+    color: #a6a6a6;
+    line-height: 1.8rem; }
+  .balance-card__pool {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.6rem;
+    padding: 1.2rem 0;
+    border-bottom: 1px solid #f2f2f2;
+    font-size: 1.4rem;
+    line-height: 2.1rem; }
+
+.overview__top {
+  gap: 1.6rem;
+  display: grid;
+  grid-template-columns: 28.8rem 1fr 36rem; }
+
+.overview__infos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.6rem; }
+
+.overview__info {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  padding: 1.6rem 2.4rem;
+  background-color: #ffffff;
+  border-radius: 0.8rem; }
+
+.overview-reports {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.4rem;
+  line-height: 2.1rem; }
+  .overview-reports__report {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.2rem;
+    padding: 1.4rem 0; }
+    .overview-reports__report:not(:last-child) {
+      border-bottom: 1px solid #f2f2f2; }
+  .overview-reports__report-key {
+    color: #808080; }
+
+.user-role {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 1.4rem;
+  line-height: 1.4rem; }
+  .user-role span {
+    height: 2.2rem;
+    padding: 0 0.8rem;
+    border: 1px solid #e6e6e6;
+    border-radius: 4px;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  .user-role--us span {
+    color: #5997e2; }
+  .user-role--cm span {
+    color: #0ac243; }
+  .user-role--lm span {
+    color: #eaae22; }
+  .user-role--sm span {
+    color: #dd3c3c; }
+  .user-role--gm span {
+    color: #ec6c2c; }
 
 /*# sourceMappingURL=style.css.map */

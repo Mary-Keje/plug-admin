@@ -1,0 +1,240 @@
+.user-card {
+  background-color: #ffffff;
+  padding: 2.4rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+
+  &__levels {
+    background-color: #fff6e4;
+    border-radius: 0.8rem;
+    padding: 1.2rem 1.6rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+  }
+
+  &__level-text {
+    font-size: 1.2rem;
+    color: #a6a6a6;
+  }
+
+  &__level-name {
+    font-size: 1.8rem;
+    font-family: "Tango Sans";
+    color: #1f1f1f;
+  }
+
+  &__levels-infos {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+  }
+
+  &__levels-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.6rem;
+  }
+
+  &__level-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+
+    & p {
+      font-size: 1.4rem;
+      font-weight: 600;
+    }
+
+    & span {
+      font-size: 1.2rem;
+      color: #808080;
+    }
+
+    & h5 {
+      font-size: 1.4rem;
+      font-weight: 600;
+      color: #2dc830;
+    }
+
+    & h4 {
+      color: #bdbdbd;
+    }
+  }
+}
+
+.balance-card {
+  background-color: #ffffff;
+  padding: 2.4rem;
+  border-radius: 0.8rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+
+  &__balance-actions {
+    background-color: #eafaea;
+    padding: 0.8rem 1.6rem;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    gap: 0.8rem;
+    // gap: 1.6rem;
+  }
+
+  &__balance-block {
+    display: flex;
+    align-items: center;
+  }
+
+  &__balance-label {
+    font-size: 1.2rem;
+    color: #25a727;
+    line-height: 1.8rem;
+  }
+
+  &__balance {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 3rem;
+  }
+
+  &__actions {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+
+    & > * {
+      height: 3.4rem;
+      padding: 0 1.2rem;
+      font-size: 1.2rem;
+    }
+  }
+
+  &__pools {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  &__pools-heading {
+    font-size: 1.2rem;
+    color: #a6a6a6;
+    line-height: 1.8rem;
+  }
+
+  &__pool {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.6rem;
+
+    padding: 1.2rem 0;
+    border-bottom: 1px solid #f2f2f2;
+
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+  }
+}
+
+.overview {
+  &__top {
+    // min-height: 37.8rem;
+    gap: 1.6rem;
+
+    display: grid;
+    grid-template-columns: 28.8rem 1fr 36rem;
+  }
+
+  &__infos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.6rem;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+
+    padding: 1.6rem 2.4rem;
+    background-color: #ffffff;
+    border-radius: 0.8rem;
+  }
+}
+
+.overview-reports {
+  display: flex;
+  flex-direction: column;
+
+  font-size: 1.4rem;
+  line-height: 2.1rem;
+
+  &__report {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.2rem;
+
+    padding: 1.4rem 0;
+
+    &:not(:last-child) {
+      border-bottom: 1px solid #f2f2f2;
+    }
+  }
+
+  &__report-key {
+    color: #808080;
+  }
+}
+
+.user-role {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+
+  font-size: 1.4rem;
+  line-height: 1.4rem;
+
+  & span {
+    height: 2.2rem;
+    padding: 0 0.8rem;
+    border: 1px solid #e6e6e6;
+    border-radius: 4px;
+
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 700;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &--us span {
+    color: #5997e2;
+  }
+
+  &--cm span {
+    color: #0ac243;
+  }
+
+  &--lm span {
+    color: #eaae22;
+  }
+
+  &--sm span {
+    color: #dd3c3c;
+  }
+
+  &--gm span {
+    color: #ec6c2c;
+  }
+}

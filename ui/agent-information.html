@@ -126,64 +126,314 @@
           </a>
         </div>
         <div class="user-details__details-body">
-          <div class="user-details__details-btns-colored">
-            <div class="services-section__overview-btns">
+          <div class="user-details__details-btns">
+            <div class="services-section__agent-overview-btns">
               <button class="button button--overview button--overview--active">
                 Overviews
               </button>
               <button class="button button--overview">API details</button>
             </div>
-            <div class="user-btns">
-              <button class="user-btns user-btns--block-btn">
-                <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M12 2C17.5 2 22 6.5 22 12C22 17.5 17.5 22 12 22C6.5 22 2 17.5 2 12C2 6.5 6.5 2 12 2ZM12 4C10.1 4 8.4 4.6 7.1 5.7L18.3 16.9C19.3 15.5 20 13.8 20 12C20 7.6 16.4 4 12 4ZM16.9 18.3L5.7 7.1C4.6 8.4 4 10.1 4 12C4 16.4 7.6 20 12 20C13.9 20 15.6 19.4 16.9 18.3Z"
-                    fill="white"
-                  />
-                </svg>
-                Block (6)
-              </button>
-              <button class="user-btns user-btns--flag-btn">
-                <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M6 3C6.26522 3 6.51957 3.10536 6.70711 3.29289C6.89464 3.48043 7 3.73478 7 4V4.88C8.06 4.44 9.5 4 11 4C14 4 14 6 16 6C19 6 20 4 20 4V12C20 12 19 14 16 14C13 14 13 12 11 12C8 12 7 14 7 14V21H5V4C5 3.73478 5.10536 3.48043 5.29289 3.29289C5.48043 3.10536 5.73478 3 6 3Z"
-                    fill="white"
-                  />
-                </svg>
-                Flag (2)
-              </button>
-              <button class="user-btns user-btns--unverify-btn">
-                <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M19.43 19L21.5 21.11L20.12 22.5L18.03 20.41L15.91 22.53L14.5 21.11L16.61 19L14.5 16.86L15.88 15.47L18 17.59L20.12 15.47L21.55 16.9L19.43 19ZM12 1L21 5V11C21 11.9 20.9 12.78 20.71 13.65C19.8729 13.2163 18.9427 12.9932 18 13C16.4087 13 14.8826 13.6321 13.7574 14.7574C12.6321 15.8826 12 17.4087 12 19C12 20.36 12.45 21.62 13.22 22.62L12 23C6.84 21.74 3 16.55 3 11V5L12 1Z"
-                    fill="white"
-                  />
-                </svg>
-                Unverify
-              </button>
+            <div class="user-details__details-btns-colored">
+              <div class="user-btns">
+                <button class="user-btns user-btns--block-btn">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12 2C17.5 2 22 6.5 22 12C22 17.5 17.5 22 12 22C6.5 22 2 17.5 2 12C2 6.5 6.5 2 12 2ZM12 4C10.1 4 8.4 4.6 7.1 5.7L18.3 16.9C19.3 15.5 20 13.8 20 12C20 7.6 16.4 4 12 4ZM16.9 18.3L5.7 7.1C4.6 8.4 4 10.1 4 12C4 16.4 7.6 20 12 20C13.9 20 15.6 19.4 16.9 18.3Z"
+                      fill="white"
+                    />
+                  </svg>
+                  Block (6)
+                </button>
+                <button class="user-btns user-btns--flag-btn">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M6 3C6.26522 3 6.51957 3.10536 6.70711 3.29289C6.89464 3.48043 7 3.73478 7 4V4.88C8.06 4.44 9.5 4 11 4C14 4 14 6 16 6C19 6 20 4 20 4V12C20 12 19 14 16 14C13 14 13 12 11 12C8 12 7 14 7 14V21H5V4C5 3.73478 5.10536 3.48043 5.29289 3.29289C5.48043 3.10536 5.73478 3 6 3Z"
+                      fill="white"
+                    />
+                  </svg>
+                  Flag (2)
+                </button>
+                <button class="user-btns user-btns--unverify-btn">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M19.43 19L21.5 21.11L20.12 22.5L18.03 20.41L15.91 22.53L14.5 21.11L16.61 19L14.5 16.86L15.88 15.47L18 17.59L20.12 15.47L21.55 16.9L19.43 19ZM12 1L21 5V11C21 11.9 20.9 12.78 20.71 13.65C19.8729 13.2163 18.9427 12.9932 18 13C16.4087 13 14.8826 13.6321 13.7574 14.7574C12.6321 15.8826 12 17.4087 12 19C12 20.36 12.45 21.62 13.22 22.62L12 23C6.84 21.74 3 16.55 3 11V5L12 1Z"
+                      fill="white"
+                    />
+                  </svg>
+                  Unverify
+                </button>
+              </div>
             </div>
           </div>
-          <div class="user-details__user-infos"></div>
-
-          <div class="user-services"></div>
+          <div class="user-details__user-info">
+            <div class="overview__top">
+              <div class="user-card">
+                <div class="user-card__levels">
+                  <p class="user-card__level-text">Current level</p>
+                  <p class="user-card__level-name">State manager (SM)</p>
+                </div>
+                <div class="user-card__levels-infos">
+                  <div class="user-card__levels-details">
+                    <div class="user-card__level-info">
+                      <p>Client Manager</p>
+                      <span>Since 25th Jan 2024</span>
+                    </div>
+                    <svg
+                      width="16"
+                      height="17"
+                      viewBox="0 0 16 17"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M7.06732 11.5667L11.7673 6.86671L10.834 5.93337L7.06732 9.70004L5.16732 7.80004L4.23399 8.73337L7.06732 11.5667ZM8.00065 15.1667C7.07843 15.1667 6.21176 14.9916 5.40065 14.6414C4.58954 14.2912 3.88399 13.8163 3.28399 13.2167C2.68399 12.6172 2.2091 11.9116 1.85932 11.1C1.50954 10.2885 1.33443 9.42182 1.33399 8.50004C1.33354 7.57826 1.50865 6.7116 1.85932 5.90004C2.20999 5.08849 2.68487 4.38293 3.28399 3.78337C3.8831 3.18382 4.58865 2.70893 5.40065 2.35871C6.21265 2.00849 7.07932 1.83337 8.00065 1.83337C8.92199 1.83337 9.78865 2.00849 10.6007 2.35871C11.4127 2.70893 12.1182 3.18382 12.7173 3.78337C13.3164 4.38293 13.7915 5.08849 14.1427 5.90004C14.4938 6.7116 14.6687 7.57826 14.6673 8.50004C14.666 9.42182 14.4909 10.2885 14.142 11.1C13.7931 11.9116 13.3182 12.6172 12.7173 13.2167C12.1164 13.8163 11.4109 14.2914 10.6007 14.642C9.79043 14.9927 8.92376 15.1676 8.00065 15.1667Z"
+                        fill="#E6E6E6"
+                      />
+                    </svg>
+                  </div>
+                  <div class="user-card__levels-details">
+                    <div class="user-card__level-info">
+                      <p>Local Manager</p>
+                      <span>Since 25th Jan 2024</span>
+                    </div>
+                    <svg
+                      width="16"
+                      height="17"
+                      viewBox="0 0 16 17"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M7.06732 11.5667L11.7673 6.86671L10.834 5.93337L7.06732 9.70004L5.16732 7.80004L4.23399 8.73337L7.06732 11.5667ZM8.00065 15.1667C7.07843 15.1667 6.21176 14.9916 5.40065 14.6414C4.58954 14.2912 3.88399 13.8163 3.28399 13.2167C2.68399 12.6172 2.2091 11.9116 1.85932 11.1C1.50954 10.2885 1.33443 9.42182 1.33399 8.50004C1.33354 7.57826 1.50865 6.7116 1.85932 5.90004C2.20999 5.08849 2.68487 4.38293 3.28399 3.78337C3.8831 3.18382 4.58865 2.70893 5.40065 2.35871C6.21265 2.00849 7.07932 1.83337 8.00065 1.83337C8.92199 1.83337 9.78865 2.00849 10.6007 2.35871C11.4127 2.70893 12.1182 3.18382 12.7173 3.78337C13.3164 4.38293 13.7915 5.08849 14.1427 5.90004C14.4938 6.7116 14.6687 7.57826 14.6673 8.50004C14.666 9.42182 14.4909 10.2885 14.142 11.1C13.7931 11.9116 13.3182 12.6172 12.7173 13.2167C12.1164 13.8163 11.4109 14.2914 10.6007 14.642C9.79043 14.9927 8.92376 15.1676 8.00065 15.1667Z"
+                        fill="#E6E6E6"
+                      />
+                    </svg>
+                  </div>
+                  <div class="user-card__levels-details">
+                    <div class="user-card__level-info">
+                      <h5>State Manager</h5>
+                      <span>Since 25th Jan 2024</span>
+                    </div>
+                    <svg
+                      width="16"
+                      height="17"
+                      viewBox="0 0 16 17"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M7.06732 11.5667L11.7673 6.86671L10.834 5.93337L7.06732 9.70004L5.16732 7.80004L4.23399 8.73337L7.06732 11.5667ZM8.00065 15.1667C7.07843 15.1667 6.21176 14.9916 5.40065 14.6414C4.58954 14.2912 3.88399 13.8163 3.28399 13.2167C2.68399 12.6172 2.2091 11.9116 1.85932 11.1C1.50954 10.2885 1.33443 9.42182 1.33399 8.50004C1.33354 7.57826 1.50865 6.7116 1.85932 5.90004C2.20999 5.08849 2.68487 4.38293 3.28399 3.78337C3.8831 3.18382 4.58865 2.70893 5.40065 2.35871C6.21265 2.00849 7.07932 1.83337 8.00065 1.83337C8.92199 1.83337 9.78865 2.00849 10.6007 2.35871C11.4127 2.70893 12.1182 3.18382 12.7173 3.78337C13.3164 4.38293 13.7915 5.08849 14.1427 5.90004C14.4938 6.7116 14.6687 7.57826 14.6673 8.50004C14.666 9.42182 14.4909 10.2885 14.142 11.1C13.7931 11.9116 13.3182 12.6172 12.7173 13.2167C12.1164 13.8163 11.4109 14.2914 10.6007 14.642C9.79043 14.9927 8.92376 15.1676 8.00065 15.1667Z"
+                        fill="#2DCB30"
+                      />
+                    </svg>
+                  </div>
+                  <div class="user-card__levels-details">
+                    <div class="user-card__level-info">
+                      <h4>Global Manager</h4>
+                      <span>-</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="analytics">
+                <div></div>
+                <div></div>
+              </div>
+              <div class="balance-card">
+                <h3 class="user-services__heading-text">Balance</h3>
+                <div class="balance-card__balance-actions">
+                  <p class="balance-card__balance-label">Wallet balance</p>
+                  <p class="balance-card__balance">₦ 754,000.00</p>
+                </div>
+                <div class="balance-card__pools">
+                  <p class="balance-card__pools-heading">Pool balance</p>
+                  <div class="balance-card__pool">
+                    <p>MTN</p>
+                    <p>1,440 GB</p>
+                  </div>
+                  <div class="balance-card__pool">
+                    <p>GLO</p>
+                    <p>0 GB</p>
+                  </div>
+                  <div class="balance-card__pool">
+                    <p>AIRTEL</p>
+                    <p>850 GB</p>
+                  </div>
+                  <div class="balance-card__pool">
+                    <p>9MOBILE</p>
+                    <p>200 GB</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="overview__infos">
+            <div class="overview__info">
+              <div class="user-services__heading-text">Recent earnings</div>
+              <table class="recent-earnings">
+                <tbody>
+                  <tr>
+                    <td>
+                      <div class="user-role user-role--us">
+                        Mrjayy <span>U-S</span>
+                      </div>
+                    </td>
+                    <td>₦500.00</td>
+                    <td>
+                      <div class="date-time">
+                        <p>Jul 24, 2024</p>
+                        <p>12:45pm</p>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="user-role user-role--cm">
+                        Mrjayy <span>C-M</span>
+                      </div>
+                    </td>
+                    <td>₦500.00</td>
+                    <td>
+                      <div class="date-time">
+                        <p>Jul 24, 2024</p>
+                        <p>12:45pm</p>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="user-role user-role--lm">
+                        Mrjayy <span>L-M</span>
+                      </div>
+                    </td>
+                    <td>₦500.00</td>
+                    <td>
+                      <div class="date-time">
+                        <p>Jul 24, 2024</p>
+                        <p>12:45pm</p>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="user-role user-role--sm">
+                        Mrjayy <span>S-M</span>
+                      </div>
+                    </td>
+                    <td>₦500.00</td>
+                    <td>
+                      <div class="date-time">
+                        <p>Jul 24, 2024</p>
+                        <p>12:45pm</p>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="user-role user-role--gm">
+                        Mrjayy <span>G-M</span>
+                      </div>
+                    </td>
+                    <td>₦500.00</td>
+                    <td>
+                      <div class="date-time">
+                        <p>Jul 24, 2024</p>
+                        <p>12:45pm</p>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="overview__info">
+              <div class="user-services__heading-text">Reports</div>
+              <div class="overview-reports">
+                <div class="overview-reports__report">
+                  <p class="overview-reports__report-key">
+                    Most performing manager
+                  </p>
+                  <div class="user-role user-role--lm">
+                    Mrjayy <span>L-M</span>
+                  </div>
+                </div>
+                <div class="overview-reports__report">
+                  <p class="overview-reports__report-key">
+                    Most performing user
+                  </p>
+                  <p>Juskaycee</p>
+                </div>
+                <div class="overview-reports__report">
+                  <p class="overview-reports__report-key">Most used service</p>
+                  <p>Data</p>
+                </div>
+                <div class="overview-reports__report">
+                  <p class="overview-reports__report-key">
+                    Most profited service
+                  </p>
+                  <p>Flights</p>
+                </div>
+                <div class="overview-reports__report">
+                  <p class="overview-reports__report-key">
+                    Most profited month
+                  </p>
+                  <p>December</p>
+                </div>
+                <div class="overview-reports__report">
+                  <p class="overview-reports__report-key">State managers</p>
+                  <p>30</p>
+                </div>
+              </div>
+            </div>
+            <div class="overview__info">
+              <div class="user-services__heading-text">Active count</div>
+              <div class="overview-reports">
+                <div class="overview-reports__report">
+                  <p class="overview-reports__report-key">
+                    Total downline count
+                  </p>
+                  <p>7,680</p>
+                </div>
+                <div class="overview-reports__report">
+                  <p class="overview-reports__report-key">Users</p>
+                  <p>2,534</p>
+                </div>
+                <div class="overview-reports__report">
+                  <p class="overview-reports__report-key">Client managers</p>
+                  <p>160</p>
+                </div>
+                <div class="overview-reports__report">
+                  <p class="overview-reports__report-key">Local managers</p>
+                  <p>120</p>
+                </div>
+                <div class="overview-reports__report">
+                  <p class="overview-reports__report-key">State managers</p>
+                  <p>30</p>
+                </div>
+                <div class="overview-reports__report">
+                  <p class="overview-reports__report-key">Global managers</p>
+                  <p>12</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
