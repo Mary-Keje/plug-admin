@@ -1,3 +1,62 @@
+.agent-user {
+  &__profile-img {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  &__profile-info {
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+
+    & p {
+      // font-size: 1.4rem;
+      color: #4d4d4d;
+    }
+  }
+}
+
+.agent-note {
+  background-color: #f7f8f8;
+  border-radius: 0.8rem;
+  padding: 2.4rem;
+
+  height: 80rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &__text-area {
+    background-color: #ffffff;
+    border-radius: 0.8rem;
+    padding: 1.6rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+
+    @media (max-width: 500px) {
+      gap: 2.4rem;
+    }
+  }
+
+  textarea {
+    width: 100%;
+    height: 50px;
+    border: none;
+
+    &:focus {
+      outline: none;
+    }
+
+    &::placeholder {
+      color: #bdbdbd;
+    }
+  }
+}
+
 .user-card {
   background-color: #ffffff;
   padding: 2.4rem;
@@ -236,5 +295,84 @@
 
   &--gm span {
     color: #ec6c2c;
+  }
+}
+
+.analytics {
+  background-color: #ffffff;
+  padding: 2.4rem;
+  border-radius: 0.8rem;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.6rem;
+
+  &__info {
+    background-color: #f7f8f8;
+    border-radius: 0.8rem;
+    padding: 1.6rem 2.4rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4rem;
+  }
+
+  &__info-header {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  &__info-heading {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #176819;
+    line-height: 2.4rem;
+  }
+
+  &__info-sub-heading {
+    font-size: 1.2rem;
+    color: #808080;
+    line-height: 1.8rem;
+  }
+}
+
+.single-analytics {
+  align-self: center;
+
+  position: relative;
+
+  & .circular-progress {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  &__main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    width: 160px;
+    height: 160px;
+  }
+
+  &__used {
+    border-bottom: 1px solid #a6a6a6;
+
+    font-size: 2rem;
+    line-height: 3rem;
+    color: #2dcb30;
+    font-weight: 700;
+  }
+
+  &__total {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    color: #808080;
   }
 }

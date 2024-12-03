@@ -455,6 +455,22 @@
     }
   }
 
+  &__agent-user-login {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+
+    width: 30rem;
+
+    @media (max-width: 1400px) {
+      align-items: center;
+    }
+
+    @media (max-width: 1150px) {
+      display: none;
+    }
+  }
+
   &__user-login-mobile {
     display: flex;
     flex-direction: column;
@@ -473,6 +489,25 @@
     justify-content: center;
     gap: 0.8rem;
     color: #808080;
+  }
+
+  &__agent-login-details {
+    background-color: #fff6e4;
+    border-radius: 4px;
+    padding: 1.2rem 1.6rem;
+
+    // height: 7.5rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    color: #808080;
+
+    & span {
+      color: #4d4d4d;
+      font-weight: 500;
+    }
   }
 
   &__login-text {
@@ -1211,47 +1246,6 @@
 
     & svg {
       width: 2.4rem;
-    }
-  }
-}
-
-.agent-note {
-  background-color: #f7f8f8;
-  border-radius: 0.8rem;
-  padding: 2.4rem;
-
-  height: 80rem;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  
-
-  &__text-area {
-    background-color: #ffffff;
-    border-radius: 0.8rem;
-    padding: 1.6rem;
-
-    display: flex;
-    flex-direction: column;
-    gap: 4rem;
-
-    @media (max-width: 500px) {
-      gap: 2.4rem;
-    }
-  }
-
-  textarea {
-    width: 100%;
-    height: 50px;
-    border: none;
-
-    &:focus {
-      outline: none;
-    }
-
-    &::placeholder {
-      color: #bdbdbd;
     }
   }
 }
