@@ -1,0 +1,39 @@
+.circular-progress {
+  --box: 160px;
+  --container: 160;
+  --stroke-width: 16;
+  --radius: 72;
+
+  &--sm {
+    --box: 96px;
+    --container: 96;
+    --stroke-width: 9.6;
+    --radius: 43.2;
+  }
+
+  width: var(--box);
+  height: var(--box);
+
+  &__background,
+  &__circle {
+    cx: calc(var(--container) / 2);
+    cy: calc(var(--container) / 2);
+    r: var(--radius);
+    stroke-width: var(--stroke-width);
+
+    fill: transparent;
+  }
+
+  &__circle {
+    stroke-dasharray: calc(
+      2 * 3.143 * var(--radius)
+    ); /* Circumference of the circle (2 * PI * radius) */
+    // stroke-dashoffset: calc(
+    //   2 * 3.143 * var(--radius)
+    // ); /* Initial dash offset */
+    stroke-linecap: round; /* Rounded end */
+    transform: rotate(-90deg); /* Start from 12 o'clock */
+    transform-origin: 50% 50%; /* Rotate around the center */
+    transition: stroke-dashoffset 0.5s ease;
+  }
+}

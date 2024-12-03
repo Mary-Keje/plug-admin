@@ -2616,6 +2616,14 @@ th {
   justify-content: center;
   gap: 1.6rem; }
 
+.date-time {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  color: #a6a6a6; }
+
 .form {
   width: 100%; }
   .form__default-input {
@@ -3157,5 +3165,34 @@ th {
     font-size: 1.2rem;
     line-height: 1.8rem;
     color: #808080; }
+
+.circular-progress {
+  --box: 160px;
+  --container: 160;
+  --stroke-width: 16;
+  --radius: 72;
+  width: var(--box);
+  height: var(--box); }
+  .circular-progress--sm {
+    --box: 96px;
+    --container: 96;
+    --stroke-width: 9.6;
+    --radius: 43.2; }
+  .circular-progress__background, .circular-progress__circle {
+    cx: calc(var(--container) / 2);
+    cy: calc(var(--container) / 2);
+    r: var(--radius);
+    stroke-width: var(--stroke-width);
+    fill: transparent; }
+  .circular-progress__circle {
+    stroke-dasharray: calc( 2 * 3.143 * var(--radius));
+    /* Circumference of the circle (2 * PI * radius) */
+    stroke-linecap: round;
+    /* Rounded end */
+    transform: rotate(-90deg);
+    /* Start from 12 o'clock */
+    transform-origin: 50% 50%;
+    /* Rotate around the center */
+    transition: stroke-dashoffset 0.5s ease; }
 
 /*# sourceMappingURL=style.css.map */

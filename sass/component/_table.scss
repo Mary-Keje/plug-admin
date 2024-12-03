@@ -132,10 +132,20 @@ th {
   &__user-btns {
     background-color: #ffffff;
     padding: 0.8rem;
-    
+
     display: flex;
     justify-content: center;
     gap: 1.6rem;
     // width: 100%;
   }
+}
+
+.date-time {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  color: #a6a6a6;
 }
