@@ -299,8 +299,25 @@
   }
 
   &--save {
-    padding: .8rem 1.6rem;
+    padding: 0.8rem 1.6rem;
     width: 29rem;
+  }
+
+  &--renew {
+    font-size: 1.3rem;
+    padding: 0.8rem 2.4rem;
+    width: 20rem;
+    height: 4rem;
+  }
+
+  &--end-contract {
+    font-size: 1.3rem;
+    background-color: #ffffff !important;
+    color: #dd3c3c !important;
+    padding: 0.8rem 2.4rem;
+
+    width: 20rem;
+    height: 4rem;
   }
 }
 
@@ -315,6 +332,7 @@
   gap: 1.6rem;
 
   white-space: nowrap;
+  cursor: pointer;
 
   @media (max-width: 980px) {
     order: 1;

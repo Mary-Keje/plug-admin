@@ -214,7 +214,13 @@
 
   &__infos {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.6rem;
+  }
+
+  &__infos-influencer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: 1.6rem;
   }
 
@@ -226,6 +232,17 @@
     padding: 1.6rem 2.4rem;
     background-color: #ffffff;
     border-radius: 0.8rem;
+  }
+
+  &__heading {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+
+    & p {
+      font-size: 1.2rem;
+      color: #808080;
+    }
   }
 }
 
@@ -374,5 +391,99 @@
     font-size: 1.2rem;
     line-height: 1.8rem;
     color: #808080;
+  }
+}
+
+.influencer-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+
+  &__report-info {
+    padding: 1.2rem 1.6rem;
+    background-color: #eafaea;
+    border-radius: 0.8rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__date {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+
+    & p {
+      font-size: 1.2rem;
+      color: #25a727;
+    }
+
+    & span {
+      font-size: 2rem;
+      font-weight: 600;
+    }
+  }
+
+  &__renew-btn {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  &__referrals-details {
+    border-bottom: 1px solid #f2f2f2;
+    padding: 2.4rem 0rem;
+
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__referrals-details-link {
+    padding: 2.4rem 0rem;
+
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__renew-texts {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+
+    & p {
+      font-size: 1.2rem;
+      color: #a6a6a6;
+    }
+
+    & span {
+      font-size: 1.4rem;
+    }
+  }
+
+  &__copy-btn {
+    border: 1px solid #f2f2f2;
+    border-radius: 4px;
+    padding: 0.8rem 2.4rem;
+
+    display: flex;
+    align-items: center;
+    gap: 4px;
+
+    cursor: pointer;
+
+    & p {
+      font-weight: 500;
+    }
+
+    & svg {
+      display: block;
+      width: 2.4rem;
+    }
+  }
+
+  &__referral-btns {
+    display: flex;
+    gap: 0.8rem;
   }
 }

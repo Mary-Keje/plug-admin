@@ -303,7 +303,7 @@
   &__body {
     display: flex;
     align-items: center;
-    gap: 2.4rem;
+    gap: 2rem;
 
     @media (max-width: 1110px) {
       flex-direction: column;
@@ -340,7 +340,7 @@
   &__search-sort {
     display: flex;
     align-items: center;
-    gap: 2.4rem;
+    gap: 2rem;
 
     @media (max-width: 1110px) {
       order: 1;

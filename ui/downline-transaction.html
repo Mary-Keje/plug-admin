@@ -132,14 +132,12 @@
                 <button class="button button--overview">Overviews</button>
               </a>
               <a href="./agent-downline.html">
+                <button class="button button--overview">Downlines</button>
+              </a>
+              <a href="./downline-transaction.html">
                 <button
                   class="button button--overview button--overview--active"
                 >
-                  Downlines
-                </button>
-              </a>
-              <a href="./downline-transaction.html">
-                <button class="button button--overview">
                   Downline transactions
                 </button>
               </a>
@@ -277,21 +275,6 @@
             </div>
           </div>
           <div class="user-details__details-btns-history">
-            <div class="btn-menus__sm">
-              <button class="btn-menus__btn-type btn-menus__btn-type--active">
-                All (740,200)
-              </button>
-              <div class="btn-menus__divider"></div>
-              <button class="btn-menus__btn-type">US</button>
-              <div class="btn-menus__divider"></div>
-              <button class="btn-menus__btn-type">CM</button>
-              <div class="btn-menus__divider"></div>
-              <button class="btn-menus__btn-type">LM</button>
-              <div class="btn-menus__divider"></div>
-              <button class="btn-menus__btn-type">SM</button>
-              <div class="btn-menus__divider"></div>
-              <button class="btn-menus__btn-type">GM</button>
-            </div>
             <div class="user-btns">
               <div class="header-details__sort">
                 <svg
@@ -324,51 +307,95 @@
                 </svg>
               </div>
             </div>
+            <div class="header-details__body">
+              <div class="header-details__search-sort">
+                <div class="header-details__search-input">
+                  <input
+                    type="text"
+                    placeholder="Search"
+                    class="header-details__search"
+                  />
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M21 21L15 15M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10Z"
+                      stroke="#1F1F1F"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+                <a href="">
+                  <div class="header-details__sort">
+                    <p class="header-details__month-text">This month</p>
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M7.41 8.58008L12 13.1701L16.59 8.58008L18 10.0001L12 16.0001L6 10.0001L7.41 8.58008Z"
+                        fill="#2DCB30"
+                      />
+                    </svg>
+                  </div>
+                </a>
+              </div>
+              <a href="">
+                <button class="button button--create" id="open-modal">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M19 13H13V19H11V13H5V11H11V5H13V11H19V13Z"
+                      fill="white"
+                    />
+                  </svg>
+                  <p>Download Downline Report</p>
+                </button>
+              </a>
+            </div>
           </div>
           <div class="user-details__table-user">
             <table class="table">
               <thead>
                 <tr>
-                  <th>Username</th>
+                  <th>User name</th>
                   <th>Type</th>
-                  <th>Total profit</th>
-                  <th>Transactions</th>
+                  <th>Transaction ID</th>
+                  <th>Service</th>
+                  <th>Amount</th>
+                  <th>Profit</th>
                   <th>Status</th>
-                  <th>Registration date</th>
-                  <th>Verification</th>
-                  <th>Referred</th>
+                  <th>Date</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
+                  <td><p>Mrjayy</p></td>
+                  <td><p>User</p></td>
                   <td class="td-user-info">
-                    <div class="td-user-info__user-details">
-                      <input type="checkbox" name="" id="" />
-                      <div class="td-user-info__user-img">
-                        <img src="../imgs/user-img.svg" alt="" />
-                        <div class="td-user-info__name-mail">
-                          <p>Mrjayy</p>
-                          <span>mikejayjay@gmail.com</span>
-                        </div>
-                      </div>
-                    </div>
+                    <p class="td-user-info__user-detail">PNG1234567890</p>
                   </td>
-                  <td>CM</td>
-                  <td>₦640,200</td>
-                  <td>260</td>
+                  <td><p>Airtime</p></td>
+                  <td><p>₦8,500.00</p></td>
+                  <td><p>₦500.00</p></td>
                   <td>
-                    <div class="td-user-info__user-status">
-                      <svg
-                        width="12"
-                        height="12"
-                        viewBox="0 0 12 12"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <circle cx="6" cy="6" r="6" fill="#0AC243" />
-                      </svg>
-                      <p>Active</p>
-                    </div>
+                    <button class="transaction-btn transaction-btn--success">
+                      Successful
+                    </button>
                   </td>
                   <td>
                     <div class="td-user-info__reg-date">
@@ -377,42 +404,20 @@
                       <p>12:45pm</p>
                     </div>
                   </td>
-                  <td>
-                    <button class="user-btn user-btn--verified">
-                      Verified
-                    </button>
-                  </td>
-                  <td>6</td>
                 </tr>
                 <tr>
+                  <td><p>Mrjayy</p></td>
+                  <td><p>CM</p></td>
                   <td class="td-user-info">
-                    <div class="td-user-info__user-details">
-                      <input type="checkbox" name="" id="" />
-                      <div class="td-user-info__user-img">
-                        <img src="../imgs/user-img.svg" alt="" />
-                        <div class="td-user-info__name-mail">
-                          <p>Mrjayy</p>
-                          <span>mikejayjay@gmail.com</span>
-                        </div>
-                      </div>
-                    </div>
+                    <p class="td-user-info__user-detail">PNG1234567890</p>
                   </td>
-                  <td>US</td>
-                  <td>₦640,200</td>
-                  <td>260</td>
+                  <td><p>Airtime</p></td>
+                  <td><p>₦8,500.00</p></td>
+                  <td><p>₦500.00</p></td>
                   <td>
-                    <div class="td-user-info__user-status">
-                      <svg
-                        width="12"
-                        height="12"
-                        viewBox="0 0 12 12"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <circle cx="6" cy="6" r="6" fill="#0AC243" />
-                      </svg>
-                      <p>Active</p>
-                    </div>
+                    <button class="transaction-btn transaction-btn--success">
+                      Successful
+                    </button>
                   </td>
                   <td>
                     <div class="td-user-info__reg-date">
@@ -421,12 +426,50 @@
                       <p>12:45pm</p>
                     </div>
                   </td>
+                </tr>
+                <tr>
+                  <td><p>Mrjayy</p></td>
+                  <td><p>User</p></td>
+                  <td class="td-user-info">
+                    <p class="td-user-info__user-detail">PNG1234567890</p>
+                  </td>
+                  <td><p>Airtime</p></td>
+                  <td><p>₦8,500.00</p></td>
+                  <td><p>₦500.00</p></td>
                   <td>
-                    <button class="user-btn user-btn--unverified">
-                      Verified
+                    <button class="transaction-btn transaction-btn--success">
+                      Successful
                     </button>
                   </td>
-                  <td>6</td>
+                  <td>
+                    <div class="td-user-info__reg-date">
+                      <p>Jul 24, 2024</p>
+                      <div class="td-user-info__date-divider"></div>
+                      <p>12:45pm</p>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td><p>Mrjayy</p></td>
+                  <td><p>GM</p></td>
+                  <td class="td-user-info">
+                    <p class="td-user-info__user-detail">PNG1234567890</p>
+                  </td>
+                  <td><p>Airtime</p></td>
+                  <td><p>₦8,500.00</p></td>
+                  <td><p>₦500.00</p></td>
+                  <td>
+                    <button class="transaction-btn transaction-btn--success">
+                      Successful
+                    </button>
+                  </td>
+                  <td>
+                    <div class="td-user-info__reg-date">
+                      <p>Jul 24, 2024</p>
+                      <div class="td-user-info__date-divider"></div>
+                      <p>12:45pm</p>
+                    </div>
+                  </td>
                 </tr>
               </tbody>
             </table>
