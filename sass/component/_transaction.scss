@@ -188,6 +188,16 @@
     padding: 1.4rem;
     margin-bottom: 0.8rem;
   }
+
+  &__view-chat {
+    a {
+      display: flex;
+      color: #25a727;
+      justify-content: center;
+
+      text-decoration: none;
+    }
+  }
 }
 
 .close {
@@ -325,20 +335,19 @@
 }
 
 .layout {
-
   &__transactions {
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin-top: 40px;
     gap: 5rem;
-    
+
     & .side-1 {
-        grid-area: 1 / 1;
-      }
-  
+      grid-area: 1 / 1;
+    }
+
     & .side-2 {
-        grid-area: 1 / 2;
-      }
+      grid-area: 1 / 2;
+    }
 
     @media (max-width: 980px) {
       display: flex;
@@ -355,27 +364,22 @@
       padding: 0;
     }
   }
-
-
   &__transactions-heading {
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 2.4rem;
   }
-
   &__auto-renew {
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     height: min-content;
     display: flex;
     padding: 40px;
     flex-direction: column;
     gap: 4rem;
-    
   }
-
   &__auto-renew-details {
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     border-radius: 0.8rem;
     padding: 1.6rem;
 
@@ -390,7 +394,6 @@
       line-height: 150%;
     }
   }
-
 }
 
 .tix-bg {
@@ -422,7 +425,6 @@
   align-items: flex-start;
   margin-bottom: 8px;
   border-radius: 8px;
-  
 }
 
 .tix-details {
@@ -463,31 +465,30 @@
 }
 .organizers-txn-details {
   width: auto;
-  color: #2DCB30;
+  color: #2dcb30;
   background: none;
   font-size: 14px;
-  }
-
+}
 
 .link-box {
   display: flex;
-  background: #F0F0F0;
+  background: #f0f0f0;
   width: 100%;
   align-items: center;
   align-content: center;
   gap: 6.495px;
   padding: 0;
   border-radius: 8px;
-  border: 1px solid #E9E9E9;
+  border: 1px solid #e9e9e9;
   &-copy {
     margin-left: auto;
     display: inline-block;
     padding: 16px 20px;
     gap: 8px;
     border-radius: 0px 8px 8px 0px;
-    background: #2DCB30;
+    background: #2dcb30;
   }
-  & p{
+  & p {
     flex-grow: 1;
     overflow: hidden;
     text-align: center;
@@ -503,6 +504,12 @@
     & table {
       line-height: 2.3rem;
       white-space: nowrap;
+    }
+
+    &__table-content {
+      display: flex;
+      flex-direction: column;
+      gap: 3rem;
     }
   }
 
@@ -560,5 +567,137 @@
   .layout {
     gap: 174px;
     margin-top: 47px;
+  }
+}
+
+.chat-modal {
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 99999;
+
+  width: 95rem;
+  max-width: 90dvw;
+  height: 100dvh;
+  transform: translateX(100%);
+
+  background-color: #f7f8f8;
+
+  transition: all 0.3s ease-out;
+
+  display: flex;
+  flex-direction: column;
+
+  &.open {
+    transform: translate(0);
+  }
+
+  &__close-btn {
+    background: none;
+    border: none;
+    // padding: 1rem 2.4rem 0rem;
+
+    position: absolute;
+    top: 1.2rem;
+    right: 1.2rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & svg {
+      display: block;
+      width: 2.4rem;
+      height: 2.4rem;
+      cursor: pointer;
+    }
+  }
+
+  &__header-text {
+    font-size: 2.4rem;
+    font-family: "Tango Sans";
+    border-bottom: 1px solid #e6e6e6;
+    padding: 4.8rem 2.4rem 1rem;
+
+    @media (max-width: 500px) {
+      font-size: 2rem;
+    }
+  }
+
+  &__chat-body {
+    padding: 2rem 2.4rem 4rem;
+
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+
+  &__chat-details {
+    background-color: #ffffff;
+    border-radius: 0.8rem;
+    padding: 2.4rem 4rem 4rem;
+
+    display: flex;
+    flex-direction: column;
+
+    flex: 1;
+  }
+
+  &__chat-type {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #e6e6e6;
+  }
+
+  &__chat-users {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+
+    & svg {
+      display: block;
+      width: 3.2rem;
+    }
+  }
+
+  &__chat-posts {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    gap: 2.4rem;
+
+    flex: 1;
+  }
+
+  &__chat-chat {
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+
+    margin-left: auto;
+
+    background-color: #c0f1c1;
+    border-top-left-radius: 0.8rem;
+    border-top-right-radius: 0.8rem;
+    border-bottom-right-radius: 0.8rem;
+
+    padding: 1.2rem 1.6rem;
+  }
+
+  &__chat-chats {
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+
+    background-color: #f2f2f2;
+    border-top-left-radius: 0.8rem;
+    border-top-right-radius: 0.8rem;
+    border-bottom-right-radius: 0.8rem;
+
+    padding: 1.2rem 1.6rem;
   }
 }
