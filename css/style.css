@@ -2223,8 +2223,9 @@ body {
     padding: 1.4rem;
     margin-bottom: 0.8rem; }
   .modal-content__view-chat a {
-    display: flex;
+    font-weight: 600;
     color: #25a727;
+    display: flex;
     justify-content: center;
     text-decoration: none; }
 

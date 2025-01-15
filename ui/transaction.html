@@ -693,9 +693,8 @@
       </div>
     </div>
 
-    <!-- The Modal -->
+    <!-- The Modal for transaction details -->
     <div id="modal" class="modal">
-      <!-- Modal content -->
       <div class="modal-content">
         <span class="close">&times;</span>
         <p class="header-details__text mt-1">Transaction details</p>
@@ -829,13 +828,14 @@
       span.onclick = function () {
         modal.style.display = "none";
       };
-      // window.onclick = function (event) {
-      //   if (event.target == modal) {
-      //     modal.style.display = "none";
-      //   }
-      // };
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      };
     </script>
 
+    <!-- View chat modal -->
     <div class="chat-modal">
       <button class="chat-modal__close-btn">
         <svg
@@ -851,8 +851,6 @@
           />
         </svg>
       </button>
-      <!-- <div class="chat-modal__coupon-bod"> -->
-      <!-- <div class="modal-create__modal-details"> -->
       <p class="chat-modal__header-text">Order chat</p>
       <div class="chat-modal__chat-body">
         <div class="chat-modal__chat-details">
@@ -948,8 +946,6 @@
           </div>
         </div>
       </div>
-      <!-- </div> -->
-      <!-- </div> -->
     </div>
     <div class="overlay hidden"></div>
   </body>
