@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Plug :: Admin</title>
+
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <div class="user-details">
+      <div class="header__main">
+        <div class="header__details">
+          <a href="./dashboard.html">
+            <img
+              src="../imgs/logo/plug.logoo.svg"
+              alt=""
+              class="header__logo-pl"
+            />
+          </a>
+          <div class="header__info">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M19 17V11.8C18.5 11.9 18 12 17.5 12H17V18H7V11C7 8.2 9.2 6 12 6C12.1 4.7 12.7 3.6 13.5 2.7C13.2 2.3 12.6 2 12 2C10.9 2 10 2.9 10 4V4.3C7 5.2 5 7.9 5 11V17L3 19V20H21V19L19 17ZM10 21C10 22.1 10.9 23 12 23C13.1 23 14 22.1 14 21H10ZM21 6.5C21 8.4 19.4 10 17.5 10C15.6 10 14 8.4 14 6.5C14 4.6 15.6 3 17.5 3C19.4 3 21 4.6 21 6.5Z"
+                fill="white"
+              />
+            </svg>
+            <a href="">
+              <div class="header__details-menu">
+                <div class="header__face-logo">
+                  <img
+                    src="../imgs/logo/face-icon-header.svg"
+                    alt=""
+                    class=""
+                  />
+                  <p class="header__text">Admin</p>
+                </div>
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M7.41 8.58008L12 13.1701L16.59 8.58008L18 10.0001L12 16.0001L6 10.0001L7.41 8.58008Z"
+                    fill="white"
+                  />
+                </svg>
+              </div>
+            </a>
+          </div>
+          <a href="" class="header__hamburger-icon">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M3.6001 5.9998C3.6001 5.33706 4.13736 4.7998 4.8001 4.7998H19.2001C19.8628 4.7998 20.4001 5.33706 20.4001 5.9998C20.4001 6.66255 19.8628 7.1998 19.2001 7.1998H4.8001C4.13736 7.1998 3.6001 6.66255 3.6001 5.9998Z"
+                fill="white"
+              />
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M3.6001 11.9998C3.6001 11.3371 4.13736 10.7998 4.8001 10.7998H19.2001C19.8628 10.7998 20.4001 11.3371 20.4001 11.9998C20.4001 12.6625 19.8628 13.1998 19.2001 13.1998H4.8001C4.13736 13.1998 3.6001 12.6625 3.6001 11.9998Z"
+                fill="white"
+              />
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M3.6001 17.9998C3.6001 17.3371 4.13736 16.7998 4.8001 16.7998H19.2001C19.8628 16.7998 20.4001 17.3371 20.4001 17.9998C20.4001 18.6625 19.8628 19.1998 19.2001 19.1998H4.8001C4.13736 19.1998 3.6001 18.6625 3.6001 17.9998Z"
+                fill="white"
+              />
+            </svg>
+          </a>
+        </div>
+        <div class="header-details">
+          <p class="header-details__text">Business Cordinator</p>
+        </div>
+        <div class="header-details__mobile-header">
+          <div class="header-details__mobile-heading">
+            <p class="header-details__text">User</p>
+            <a href="./ui/user-information.html">
+              <button class="button button--create">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M19 13H13V19H11V13H5V11H11V5H13V11H19V13Z"
+                    fill="white"
+                  />
+                </svg>
+                <p>Create User</p>
+              </button>
+            </a>
+          </div>
+          <div class="header-details__search-sort">
+            <div class="header-details__search-input">
+              <input
+                type="text"
+                placeholder="Search"
+                class="header-details__search"
+              />
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M21 21L15 15M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10Z"
+                  stroke="#1F1F1F"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <div class="header-details__sort">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M18 21L14 17H17V7H14L18 3L22 7H19V17H22M2 19V17H12V19M2 13V11H9V13M2 7V5H6V7H2Z"
+                  fill="#2DCB30"
+                />
+              </svg>
+              <p class="header-details__sort-text">Sort</p>
+            </div>
+            <div class="header-details__sort">
+              <p class="header-details__month-text">This month</p>
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M7.41 8.58008L12 13.1701L16.59 8.58008L18 10.0001L12 16.0001L6 10.0001L7.41 8.58008Z"
+                  fill="#2DCB30"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="business-cord__main">
+        <div class="user-details__details-main">
+          <div class="business-cord">
+            <div class="user-services__heading-text">Role Management</div>
+            <div class="business-cord__role-manage">
+              <div class="business-cord__btn-tab">
+                <div class="business-cord__btn-select">
+                  <span class="business-cord__text-sm">Button</span>
+                  <div class="business-cord__select-drop-dwn">
+                    <p>Select buttons</p>
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M7.41 8.58002L12 13.17L16.59 8.58002L18 10L12 16L6 10L7.41 8.58002Z"
+                        fill="#1F1F1F"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <div class="business-cord__role-details">
+                  <div class="business-cord__role-info">
+                    <p>Orders</p>
+                    <svg
+                      width="25"
+                      height="24"
+                      viewBox="0 0 25 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M12.668 2C18.198 2 22.668 6.47 22.668 12C22.668 17.53 18.198 22 12.668 22C7.13797 22 2.66797 17.53 2.66797 12C2.66797 6.47 7.13797 2 12.668 2ZM16.258 7L12.668 10.59L9.07797 7L7.66797 8.41L11.258 12L7.66797 15.59L9.07797 17L12.668 13.41L16.258 17L17.668 15.59L14.078 12L17.668 8.41L16.258 7Z"
+                        fill="#1F1F1F"
+                      />
+                    </svg>
+                  </div>
+                  <div class="business-cord__role-info">
+                    <p>Payments</p>
+                    <svg
+                      width="25"
+                      height="24"
+                      viewBox="0 0 25 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M12.668 2C18.198 2 22.668 6.47 22.668 12C22.668 17.53 18.198 22 12.668 22C7.13797 22 2.66797 17.53 2.66797 12C2.66797 6.47 7.13797 2 12.668 2ZM16.258 7L12.668 10.59L9.07797 7L7.66797 8.41L11.258 12L7.66797 15.59L9.07797 17L12.668 13.41L16.258 17L17.668 15.59L14.078 12L17.668 8.41L16.258 7Z"
+                        fill="#1F1F1F"
+                      />
+                    </svg>
+                  </div>
+                  <div class="business-cord__role-info">
+                    <p>Orders</p>
+                    <svg
+                      width="25"
+                      height="24"
+                      viewBox="0 0 25 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M12.668 2C18.198 2 22.668 6.47 22.668 12C22.668 17.53 18.198 22 12.668 22C7.13797 22 2.66797 17.53 2.66797 12C2.66797 6.47 7.13797 2 12.668 2ZM16.258 7L12.668 10.59L9.07797 7L7.66797 8.41L11.258 12L7.66797 15.59L9.07797 17L12.668 13.41L16.258 17L17.668 15.59L14.078 12L17.668 8.41L16.258 7Z"
+                        fill="#1F1F1F"
+                      />
+                    </svg>
+                  </div>
+                  <div class="business-cord__role-info">
+                    <p>Payments</p>
+                    <svg
+                      width="25"
+                      height="24"
+                      viewBox="0 0 25 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M12.668 2C18.198 2 22.668 6.47 22.668 12C22.668 17.53 18.198 22 12.668 22C7.13797 22 2.66797 17.53 2.66797 12C2.66797 6.47 7.13797 2 12.668 2ZM16.258 7L12.668 10.59L9.07797 7L7.66797 8.41L11.258 12L7.66797 15.59L9.07797 17L12.668 13.41L16.258 17L17.668 15.59L14.078 12L17.668 8.41L16.258 7Z"
+                        fill="#1F1F1F"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="business-cord__">
+                <div class="business-cord__btn-select">
+                  <span class="business-cord__text-sm">Search bars</span>
+                  <div class="business-cord__select-drop-dwn">
+                    <p>Select search bars</p>
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M7.41 8.58002L12 13.17L16.59 8.58002L18 10L12 16L6 10L7.41 8.58002Z"
+                        fill="#1F1F1F"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="business-cord__btn-tab">
+                <div class="business-cord__btn-select">
+                  <span class="business-cord__text-sm">Reports</span>
+                  <div class="business-cord__select-drop-dwn">
+                    <p>Select reports</p>
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M7.41 8.58002L12 13.17L16.59 8.58002L18 10L12 16L6 10L7.41 8.58002Z"
+                        fill="#1F1F1F"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <div class="business-cord__role-details">
+                  <div class="business-cord__role-info">
+                    <p>Orders</p>
+                    <svg
+                      width="25"
+                      height="24"
+                      viewBox="0 0 25 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M12.668 2C18.198 2 22.668 6.47 22.668 12C22.668 17.53 18.198 22 12.668 22C7.13797 22 2.66797 17.53 2.66797 12C2.66797 6.47 7.13797 2 12.668 2ZM16.258 7L12.668 10.59L9.07797 7L7.66797 8.41L11.258 12L7.66797 15.59L9.07797 17L12.668 13.41L16.258 17L17.668 15.59L14.078 12L17.668 8.41L16.258 7Z"
+                        fill="#1F1F1F"
+                      />
+                    </svg>
+                  </div>
+                  <div class="business-cord__role-info">
+                    <p>Payments</p>
+                    <svg
+                      width="25"
+                      height="24"
+                      viewBox="0 0 25 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M12.668 2C18.198 2 22.668 6.47 22.668 12C22.668 17.53 18.198 22 12.668 22C7.13797 22 2.66797 17.53 2.66797 12C2.66797 6.47 7.13797 2 12.668 2ZM16.258 7L12.668 10.59L9.07797 7L7.66797 8.41L11.258 12L7.66797 15.59L9.07797 17L12.668 13.41L16.258 17L17.668 15.59L14.078 12L17.668 8.41L16.258 7Z"
+                        fill="#1F1F1F"
+                      />
+                    </svg>
+                  </div>
+                  <div class="business-cord__role-info">
+                    <p>Orders</p>
+                    <svg
+                      width="25"
+                      height="24"
+                      viewBox="0 0 25 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M12.668 2C18.198 2 22.668 6.47 22.668 12C22.668 17.53 18.198 22 12.668 22C7.13797 22 2.66797 17.53 2.66797 12C2.66797 6.47 7.13797 2 12.668 2ZM16.258 7L12.668 10.59L9.07797 7L7.66797 8.41L11.258 12L7.66797 15.59L9.07797 17L12.668 13.41L16.258 17L17.668 15.59L14.078 12L17.668 8.41L16.258 7Z"
+                        fill="#1F1F1F"
+                      />
+                    </svg>
+                  </div>
+                  <div class="business-cord__role-info">
+                    <p>Payments</p>
+                    <svg
+                      width="25"
+                      height="24"
+                      viewBox="0 0 25 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M12.668 2C18.198 2 22.668 6.47 22.668 12C22.668 17.53 18.198 22 12.668 22C7.13797 22 2.66797 17.53 2.66797 12C2.66797 6.47 7.13797 2 12.668 2ZM16.258 7L12.668 10.59L9.07797 7L7.66797 8.41L11.258 12L7.66797 15.59L9.07797 17L12.668 13.41L16.258 17L17.668 15.59L14.078 12L17.668 8.41L16.258 7Z"
+                        fill="#1F1F1F"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="overview__info">
+            <div class="user-services__heading-text">
+              Drag & drop to arrange dashboard
+            </div>
+            <div class="business-cord__drag-drop">
+              <div class="business-cord__drag-drop-info">
+                <div class="business-cord__drag-detail">
+                  <svg
+                    width="25"
+                    height="24"
+                    viewBox="0 0 25 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M9.39844 3H11.3984V5H9.39844V3ZM13.3984 3H15.3984V5H13.3984V3ZM9.39844 7H11.3984V9H9.39844V7ZM13.3984 7H15.3984V9H13.3984V7ZM9.39844 11H11.3984V13H9.39844V11ZM13.3984 11H15.3984V13H13.3984V11ZM9.39844 15H11.3984V17H9.39844V15ZM13.3984 15H15.3984V17H13.3984V15ZM9.39844 19H11.3984V21H9.39844V19ZM13.3984 19H15.3984V21H13.3984V19Z"
+                      fill="#1F1F1F"
+                    />
+                  </svg>
+                  <p>Orders</p>
+                </div>
+                <div class="business-cord__drag-detail">
+                  <svg
+                    width="25"
+                    height="24"
+                    viewBox="0 0 25 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M9.39844 3H11.3984V5H9.39844V3ZM13.3984 3H15.3984V5H13.3984V3ZM9.39844 7H11.3984V9H9.39844V7ZM13.3984 7H15.3984V9H13.3984V7ZM9.39844 11H11.3984V13H9.39844V11ZM13.3984 11H15.3984V13H13.3984V11ZM9.39844 15H11.3984V17H9.39844V15ZM13.3984 15H15.3984V17H13.3984V15ZM9.39844 19H11.3984V21H9.39844V19ZM13.3984 19H15.3984V21H13.3984V19Z"
+                      fill="#1F1F1F"
+                    />
+                  </svg>
+                  <p>Payments</p>
+                </div>
+                <div class="business-cord__drag-detail">
+                  <svg
+                    width="25"
+                    height="24"
+                    viewBox="0 0 25 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M9.39844 3H11.3984V5H9.39844V3ZM13.3984 3H15.3984V5H13.3984V3ZM9.39844 7H11.3984V9H9.39844V7ZM13.3984 7H15.3984V9H13.3984V7ZM9.39844 11H11.3984V13H9.39844V11ZM13.3984 11H15.3984V13H13.3984V11ZM9.39844 15H11.3984V17H9.39844V15ZM13.3984 15H15.3984V17H13.3984V15ZM9.39844 19H11.3984V21H9.39844V19ZM13.3984 19H15.3984V21H13.3984V19Z"
+                      fill="#1F1F1F"
+                    />
+                  </svg>
+                  <p>Payments</p>
+                </div>
+                <div class="business-cord__drag-detail">
+                  <svg
+                    width="25"
+                    height="24"
+                    viewBox="0 0 25 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M9.39844 3H11.3984V5H9.39844V3ZM13.3984 3H15.3984V5H13.3984V3ZM9.39844 7H11.3984V9H9.39844V7ZM13.3984 7H15.3984V9H13.3984V7ZM9.39844 11H11.3984V13H9.39844V11ZM13.3984 11H15.3984V13H13.3984V11ZM9.39844 15H11.3984V17H9.39844V15ZM13.3984 15H15.3984V17H13.3984V15ZM9.39844 19H11.3984V21H9.39844V19ZM13.3984 19H15.3984V21H13.3984V19Z"
+                      fill="#1F1F1F"
+                    />
+                  </svg>
+                  <p>Payments</p>
+                </div>
+                <div class="business-cord__drag-detail">
+                  <svg
+                    width="25"
+                    height="24"
+                    viewBox="0 0 25 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M9.39844 3H11.3984V5H9.39844V3ZM13.3984 3H15.3984V5H13.3984V3ZM9.39844 7H11.3984V9H9.39844V7ZM13.3984 7H15.3984V9H13.3984V7ZM9.39844 11H11.3984V13H9.39844V11ZM13.3984 11H15.3984V13H13.3984V11ZM9.39844 15H11.3984V17H9.39844V15ZM13.3984 15H15.3984V17H13.3984V15ZM9.39844 19H11.3984V21H9.39844V19ZM13.3984 19H15.3984V21H13.3984V19Z"
+                      fill="#1F1F1F"
+                    />
+                  </svg>
+                  <p>Orders</p>
+                </div>
+                <div class="business-cord__drag-detail">
+                  <svg
+                    width="25"
+                    height="24"
+                    viewBox="0 0 25 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M9.39844 3H11.3984V5H9.39844V3ZM13.3984 3H15.3984V5H13.3984V3ZM9.39844 7H11.3984V9H9.39844V7ZM13.3984 7H15.3984V9H13.3984V7ZM9.39844 11H11.3984V13H9.39844V11ZM13.3984 11H15.3984V13H13.3984V11ZM9.39844 15H11.3984V17H9.39844V15ZM13.3984 15H15.3984V17H13.3984V15ZM9.39844 19H11.3984V21H9.39844V19ZM13.3984 19H15.3984V21H13.3984V19Z"
+                      fill="#1F1F1F"
+                    />
+                  </svg>
+                  <p>Orders</p>
+                </div>
+                <div class="business-cord__drag-detail">
+                  <svg
+                    width="25"
+                    height="24"
+                    viewBox="0 0 25 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M9.39844 3H11.3984V5H9.39844V3ZM13.3984 3H15.3984V5H13.3984V3ZM9.39844 7H11.3984V9H9.39844V7ZM13.3984 7H15.3984V9H13.3984V7ZM9.39844 11H11.3984V13H9.39844V11ZM13.3984 11H15.3984V13H13.3984V11ZM9.39844 15H11.3984V17H9.39844V15ZM13.3984 15H15.3984V17H13.3984V15ZM9.39844 19H11.3984V21H9.39844V19ZM13.3984 19H15.3984V21H13.3984V19Z"
+                      fill="#1F1F1F"
+                    />
+                  </svg>
+                  <p>Orders</p>
+                </div>
+                <div class="business-cord__drag-detail">
+                  <svg
+                    width="25"
+                    height="24"
+                    viewBox="0 0 25 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M9.39844 3H11.3984V5H9.39844V3ZM13.3984 3H15.3984V5H13.3984V3ZM9.39844 7H11.3984V9H9.39844V7ZM13.3984 7H15.3984V9H13.3984V7ZM9.39844 11H11.3984V13H9.39844V11ZM13.3984 11H15.3984V13H13.3984V11ZM9.39844 15H11.3984V17H9.39844V15ZM13.3984 15H15.3984V17H13.3984V15ZM9.39844 19H11.3984V21H9.39844V19ZM13.3984 19H15.3984V21H13.3984V19Z"
+                      fill="#1F1F1F"
+                    />
+                  </svg>
+                  <p>Payments</p>
+                </div>
+              </div>
+              <div class="business-cord__drop-section">
+                <div class="business-cord__drop-info"></div>
+                <div class="business-cord__drop-info"></div>
+                <div class="business-cord__drop-info"></div>
+                <div class="business-cord__drop-info"></div>
+                <div class="business-cord__drop-info"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="business-cord__create-role">
+          <button class="business-cord__create-btn">Create role</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
