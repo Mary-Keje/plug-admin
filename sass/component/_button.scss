@@ -648,3 +648,59 @@
     background-color: #bdbdbd;
   }
 }
+
+.dash-btn {
+  font-size: 1.2rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 4px;
+
+  padding: 4px 1.2rem;
+  width: 9rem;
+
+  align-items: center;
+
+  &--pending {
+    color: #ffa800;
+    background-color: #fff6e4;
+  }
+
+  &--process {
+    color: #2080df;
+    background-color: #e0edfb;
+  }
+
+  &--processing {
+    color: #ffa800;
+    background-color: #fff6e4;
+  }
+
+  &--completed {
+    color: #25a727;
+    background-color: #eafaea;
+  }
+
+  &--canceled {
+    color: #808080;
+    background-color: #f2f2f2;
+  }
+}
+
+.profit-btn {
+  border-radius: 4px;
+  border: none;
+  padding: 1.4rem 0.8rem;
+
+  height: 4.8rem;
+  width: 17rem;
+
+  &--apply-btn {
+    color: #ffffff;
+    background-color: #2dcb30;
+  }
+
+  &--reset-btn {
+    border: 1px solid #e6e6e6;
+    background-color: #ffffff;
+  }
+}
