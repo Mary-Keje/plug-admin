@@ -2222,10 +2222,12 @@ body {
     border-radius: 0.8rem;
     padding: 1.4rem;
     margin-bottom: 0.8rem; }
-  .modal-content__view-chat a {
+    
+  .modal-content__view-chat p {
     font-weight: 600;
     color: #25a727;
     display: flex;
+    cursor: pointer;
     justify-content: center;
     text-decoration: none; }
 
@@ -3370,7 +3372,8 @@ th {
     stroke-width: var(--stroke-width);
     fill: transparent; }
   .circular-progress__circle {
-    stroke-dasharray: calc( 2 * 3.143 * var(--radius));
+    stroke-dasharray: calc(
+ 2 * 3.143 * var(--radius));
     /* Circumference of the circle (2 * PI * radius) */
     stroke-linecap: round;
     /* Rounded end */
@@ -3381,3 +3384,13 @@ th {
     transition: stroke-dashoffset 0.5s ease; }
 
 /*# sourceMappingURL=style.css.map */
+
+th {
+    cursor: pointer;
+    position: relative;
+}
+
+th span {
+    font-size: 0.8rem;
+    color: gray;
+}
