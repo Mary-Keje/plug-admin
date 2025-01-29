@@ -1706,11 +1706,17 @@ body {
   @media (max-width: 1110px) {
     .header-details {
       align-items: normal;
-      display: none; } }
+      display: grid;
+      grid-template-columns: 25fr 75fr;
+      gap: 1.6rem; } }
   @media (max-width: 980px) {
     .header-details {
       padding: 0rem 1rem;
       gap: 2rem; } }
+  @media (max-width: 499px) {
+    .header-details {
+      grid-template-columns: 10fr 80fr;
+      gap: 1rem; } }
   .header-details__services-header {
     padding: 0rem 4.8rem;
     display: flex;
@@ -1753,78 +1759,8 @@ body {
     display: block; }
   .header-details__mobile-header {
     display: none; }
-    @media (max-width: 1110px) {
-      .header-details__mobile-header {
-        padding: 0rem 4.8rem;
-        display: flex;
-        flex-direction: column;
-        gap: 1.6rem; } }
-    @media (max-width: 980px) {
-      .header-details__mobile-header {
-        padding: 0rem; } }
-  .header-details__mobile-header-services {
-    display: none; }
-    @media (max-width: 680px) {
-      .header-details__mobile-header-services {
-        display: flex;
-        flex-direction: column;
-        gap: 1.6rem; }
-        .header-details__mobile-header-services a {
-          text-decoration: none; } }
-  .header-details__mobile-heading {
-    display: flex;
-    align-items: center;
-    justify-content: space-between; }
-    .header-details__mobile-heading a {
-      text-decoration: none; }
-  .header-details__mobile-heading-services {
-    display: flex;
-    align-items: center;
-    justify-content: space-between; }
   .header-details__mobile-header-cards {
     display: none; }
-    @media (max-width: 1110px) {
-      .header-details__mobile-header-cards {
-        padding: 0rem 4.8rem;
-        display: flex;
-        align-items: center;
-        justify-content: space-between; } }
-    @media (max-width: 980px) {
-      .header-details__mobile-header-cards {
-        padding: 0rem; } }
-    @media (max-width: 670px) {
-      .header-details__mobile-header-cards {
-        flex-direction: column;
-        align-items: normal;
-        gap: 1.6rem; } }
-  .header-details__mobile-header-usd {
-    display: none; }
-    @media (max-width: 1110px) {
-      .header-details__mobile-header-usd {
-        padding: 0rem 4.8rem;
-        display: flex;
-        align-items: center;
-        justify-content: space-between; } }
-    @media (max-width: 980px) {
-      .header-details__mobile-header-usd {
-        padding: 0rem; } }
-    @media (max-width: 940px) {
-      .header-details__mobile-header-usd {
-        flex-direction: column;
-        align-items: normal;
-        gap: 2.4rem; } }
-  .header-details__mobile-header-coupon {
-    display: none; }
-    @media (max-width: 820px) {
-      .header-details__mobile-header-coupon {
-        padding: 0rem;
-        display: flex;
-        flex-direction: column;
-        gap: 1.6rem; } }
-  .header-details__mobile-coupon-heading {
-    display: flex;
-    align-items: center;
-    justify-content: space-between; }
   .header-details__text {
     font-size: 2.4rem;
     font-family: "Tango Sans"; }
@@ -1837,9 +1773,9 @@ body {
     gap: 2rem; }
     @media (max-width: 1110px) {
       .header-details__body {
-        flex-direction: column;
-        align-items: flex-end;
-        gap: 1.6rem; } }
+        width: 100%;
+        display: grid;
+        grid-template-rows: auto auto; } }
     .header-details__body a {
       text-decoration: none; }
   .header-details__body-services {
@@ -1864,7 +1800,10 @@ body {
     @media (max-width: 1110px) {
       .header-details__search-sort {
         order: 1;
-        justify-content: flex-end; } }
+        justify-content: flex-end;
+        width: 100%;
+        grid-column: -2/-3;
+        grid-row: 2/3; } }
     @media (max-width: 602px) {
       .header-details__search-sort {
         gap: 1.8rem; } }
@@ -1872,7 +1811,11 @@ body {
       .header-details__search-sort {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 1.6rem; } }
+        gap: 1.6rem;
+        justify-content: flex-end; } }
+  .header-details__create-btn {
+    display: flex;
+    justify-content: flex-end; }
   .header-details__search-sort-cards {
     display: flex;
     align-items: center;
