@@ -1011,6 +1011,10 @@
     font-family: "Tango Sans";
     font-weight: normal;
     color: #176819;
+
+    @media (max-width: 500px) {
+      font-size: 1.8rem;
+    }
   }
 
   &__service-type {
