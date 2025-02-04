@@ -3740,3 +3740,26 @@ th span {
     font-size: 0.8rem;
     color: gray;
 }
+
+/* notification.css */
+.notification-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.notification-card {
+    flex: 1;
+    background: white;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    min-height: 250px; /* Adjust as needed */
+    max-width: 400px; /* Prevents overflow */
+}
+
+.push-notification {
+    order: -1; /* Makes it appear first */
+}
