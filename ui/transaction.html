@@ -85,46 +85,47 @@
         </div>
         <div class="header-details">
           <p class="header-details__text">Transaction</p>
-          <div class="header-details__body">
-            <div class="header-details__search-sort">
-              <div class="header-details__search-input">
-                <input
-                  type="text"
-                  placeholder="Search"
-                  class="header-details__search"
+          <!-- <div class="header-details__body"> -->
+          <div class="header-details__search-sort">
+            <div class="header-details__search-input">
+              <input
+                type="text"
+                placeholder="Search"
+                class="header-details__search"
+              />
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M21 21L15 15M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10Z"
+                  stroke="#1F1F1F"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
                 />
-                <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M21 21L15 15M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10Z"
-                    stroke="#1F1F1F"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </div>
-              <div class="header-details__sort">
-                <p class="header-details__month-text">This month</p>
-                <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M7.41 8.58008L12 13.1701L16.59 8.58008L18 10.0001L12 16.0001L6 10.0001L7.41 8.58008Z"
-                    fill="#2DCB30"
-                  />
-                </svg>
-              </div>
+              </svg>
             </div>
+            <div class="header-details__sort">
+              <p class="header-details__month-text">This month</p>
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M7.41 8.58008L12 13.1701L16.59 8.58008L18 10.0001L12 16.0001L6 10.0001L7.41 8.58008Z"
+                  fill="#2DCB30"
+                />
+              </svg>
+            </div>
+          </div>
+          <div class="header-details__header-btns">
             <button class="button button--download-order" id="modal-btn">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -143,8 +144,9 @@
               <p>Download transaction report</p>
             </button>
           </div>
+          <!-- </div> -->
         </div>
-        <div class="header-details__mobile-header">
+        <!-- <div class="header-details__mobile-header">
           <div class="header-details__mobile-heading">
             <p class="header-details__text">Transaction</p>
             <button class="button button--download-order" id="modal-btn">
@@ -204,7 +206,7 @@
               </svg>
             </div>
           </div>
-        </div>
+        </div> -->
       </div>
       <div class="user-details__details-main">
         <div class="user-details__details-type-event">
@@ -947,6 +949,6 @@
         </div>
       </div>
     </div>
-    <div class="overlay hidden "></div>
+    <div class="overlay hidden"></div>
   </body>
 </html>
