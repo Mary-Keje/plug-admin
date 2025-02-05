@@ -319,6 +319,14 @@
     width: 20rem;
     height: 4rem;
   }
+
+  &--push-btn {
+    font-weight: 500;
+    padding: 1.8rem 2.5rem;
+
+    display: flex;
+    align-items: center;
+  }
 }
 
 .user-btns {
