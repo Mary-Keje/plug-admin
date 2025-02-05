@@ -1476,19 +1476,6 @@ body {
   border: 1.5px solid #f2f2f2;
   padding: 4px 1.6rem; }
 
-.dashboard__push-notice {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2rem; }
-  @media (max-width: 550px) {
-    .dashboard__push-notice {
-      grid-template-columns: auto; } }
-
-.dashboard__notice-details {
-  display: flex;
-  flex-direction: column;
-  gap: 1.6rem; }
-
 .crime-tab {
   display: flex;
   flex-direction: column;
@@ -1574,6 +1561,17 @@ body {
   display: flex;
   flex-direction: column;
   gap: 1.6rem; }
+  .notification-tab__push-notice {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem; }
+    @media (max-width: 550px) {
+      .notification-tab__push-notice {
+        grid-template-columns: auto; } }
+  .notification-tab__notice-infos {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem; }
   .notification-tab__notice-text {
     font-size: 1.8rem;
     font-weight: 600; }
@@ -2262,7 +2260,7 @@ body {
     height: 4rem; }
   .button--push-btn {
     font-weight: 500;
-    padding: 2rem 2.5rem;
+    padding: 1.8rem 2.5rem;
     display: flex;
     align-items: center; }
 
