@@ -1,0 +1,1222 @@
+body {
+  @media (max-width: 980px) {
+    font-size: 1.4rem;
+  }
+
+  @media (max-width: 350px) {
+    font-size: 1.2rem;
+  }
+}
+
+// dashboard file responsive styles
+.dashboard {
+  &__info-tab-grid-4 {
+    @media (max-width: 1304px) {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @media (max-width: 680px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__info-tab-grid-3 {
+    @media (max-width: 1280px) {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @media (max-width: 798px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__info-tab-grid-2 {
+    @media (max-width: 1054px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__info-tab-gridd-3 {
+    @media (max-width: 1280px) {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @media (max-width: 798px) {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+.notification-tab {
+  &__push-notice {
+    @media (max-width: 550px) {
+      grid-template-columns: auto;
+    }
+  }
+}
+
+.business-cord {
+  @media (max-width: 460px) {
+    padding: 1rem 2rem;
+  }
+
+  &__role-manage {
+    @media (max-width: 670px) {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @media (max-width: 500px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__btn-tab {
+    @media (max-width: 500px) {
+      padding-right: 0;
+      border-right: none;
+    }
+  }
+
+  &__role-details {
+    @media (max-width: 875px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__role-info {
+    & svg {
+      @media (max-width: 500px) {
+        width: 2.3rem;
+      }
+    }
+  }
+
+  &__drop-section {
+    @media (max-width: 670px) {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    @media (max-width: 500px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__create-role {
+    @media (max-width: 980px) {
+      padding: 0;
+    }
+  }
+}
+
+// header file responsive styles
+.header {
+  &__details {
+    @media (max-width: 1110px) {
+      padding: 2.4rem 6rem;
+    }
+
+    @media (max-width: 500px) {
+      padding: 2rem 3rem;
+    }
+
+    & svg {
+      @media (max-width: 450px) {
+        display: block;
+        width: 2.4rem;
+      }
+    }
+  }
+
+  &__hamburger-icon {
+    @media (max-width: 450px) {
+      display: block;
+      width: 2.4rem;
+    }
+  }
+
+  &__info {
+    @media (max-width: 450px) {
+      display: none;
+    }
+  }
+
+  &__face-logo {
+    & img {
+      @media (max-width: 500px) {
+        width: 2.4rem;
+      }
+    }
+  }
+}
+
+.header-details {
+  @media (max-width: 1110px) {
+    display: grid;
+  }
+
+  @media (max-width: 980px) {
+    padding: 0rem 1rem;
+    gap: 2rem;
+  }
+
+  &__services-header {
+    @media (max-width: 980px) {
+      padding: 0rem 1rem;
+    }
+  }
+
+  &__card-header {
+    @media (max-width: 400px) {
+      gap: 0.8rem;
+    }
+  }
+
+  &__coupon-header {
+    @media (max-width: 980px) {
+      padding: 0rem 1rem;
+    }
+  }
+
+  &__users-name {
+    @media (max-width: 980px) {
+      padding: 0rem 1rem;
+    }
+  }
+
+  &__text {
+    @media (max-width: 500px) {
+      font-size: 2rem;
+    }
+  }
+
+  &__body-services {
+    @media (max-width: 820px) {
+      order: 1;
+      justify-content: flex-end;
+    }
+
+    @media (max-width: 550px) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.6rem;
+    }
+  }
+
+  &__search-sort {
+    @media (max-width: 1110px) {
+      // order: 1;
+      justify-content: flex-end;
+      width: 100%;
+
+      display: grid;
+      grid-template-columns: auto auto auto;
+
+      grid-column: -1/3;
+      grid-row: 2/2;
+    }
+
+    @media (max-width: 602px) {
+      gap: 1.8rem;
+    }
+
+    @media (max-width: 500px) {
+      grid-template-columns: 1fr 18rem;
+      width: 100%;
+    }
+
+    @media (max-width: 380px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__search-input {
+    @media (max-width: 1110px) {
+      justify-content: flex-end;
+      margin-left: auto;
+    }
+
+    @media (max-width: 500px) {
+      width: initial;
+      width: 100%;
+    }
+  }
+
+  &__search {
+    @media (max-width: 500px) {
+      padding: 1rem;
+    }
+  }
+
+  &__sort {
+    @media (max-width: 602px) {
+      padding: 1rem 1rem;
+    }
+  }
+
+  &__cards-btn-coupon {
+    @media (max-width: 1190px) {
+      align-self: flex-end;
+    }
+  }
+
+  &__order-search {
+    @media (max-width: 1080px) {
+      justify-content: flex-end;
+
+      display: grid;
+      grid-template-columns: auto auto;
+
+      grid-column: -1/3;
+      grid-row: 2/2;
+    }
+
+    @media (max-width: 400px) {
+      grid-template-columns: auto;
+      gap: 1rem;
+      grid-column: 3/-1;
+    }
+  }
+
+  &__search-input-order {
+    @media (max-width: 500px) {
+      width: 30rem;
+    }
+
+    @media (max-width: 400px) {
+      border-top-left-radius: 0.8rem;
+      border-bottom-left-radius: 0.8rem;
+    }
+  }
+
+  &__dashboard-order {
+    @media (max-width: 602px) {
+      padding: 1rem 1rem;
+    }
+
+    @media (max-width: 500px) {
+      margin-left: auto;
+    }
+
+    @media (max-width: 400px) {
+      border-top-right-radius: 0.8rem;
+      border-bottom-right-radius: 0.8rem;
+    }
+  }
+
+  &__panel-search-input {
+    @media (max-width: 1080px) {
+      margin-left: auto;
+    }
+
+    @media (max-width: 500px) {
+      width: 20rem;
+      padding: 1rem 1.2rem;
+    }
+  }
+}
+
+// button file
+.button {
+  &--create {
+    @media (max-width: 500px) {
+      font-size: 1.4rem;
+      padding: 1rem 2rem;
+      width: auto;
+    }
+  }
+
+  &--download-order {
+    @media (max-width: 500px) {
+      font-size: 1.3rem;
+      padding: 1rem 1rem;
+      width: auto;
+      gap: 0.8rem;
+    }
+    & svg {
+      @media (max-width: 500px) {
+        width: 2rem;
+      }
+    }
+  }
+
+  &--add-btn {
+    @media (max-width: 500px) {
+      flex-direction: column;
+      width: initial;
+    }
+
+    & span {
+      @media (max-width: 500px) {
+        display: none;
+      }
+    }
+  }
+
+  &--create-default {
+    @media (max-width: 350px) {
+      font-size: 1.4rem;
+      width: 22rem;
+    }
+  }
+
+  &--log {
+    @media (max-width: 400px) {
+      width: 30rem;
+    }
+  }
+
+  &--setting-btn {
+    @media (max-width: 490px) {
+      font-size: 1.4rem;
+    }
+
+    & svg {
+      @media (max-width: 490px) {
+        width: 2rem;
+      }
+    }
+  }
+
+  &--overview {
+    @media (max-width: 490px) {
+      font-size: 1.4rem;
+    }
+  }
+
+  &--view-transaction {
+    @media (max-width: 500px) {
+      padding: 5px 2rem;
+      font-size: 1.4rem;
+    }
+
+    @media (max-width: 375px) {
+      padding: 0px 1.5rem;
+    }
+
+    & svg {
+      @media (max-width: 375px) {
+        width: 2rem;
+      }
+    }
+  }
+
+  &--view-renew-btn {
+    @media (max-width: 500px) {
+      padding: 0.8rem;
+      font-size: 1.4rem;
+    }
+    @media (max-width: 375px) {
+      padding: 0px 1.5rem;
+    }
+    & svg {
+      @media (max-width: 375px) {
+        width: 2rem;
+      }
+    }
+  }
+
+  &--active {
+    @media (max-width: 400px) {
+      font-size: 1rem;
+      padding: 4px 0.8rem;
+    }
+  }
+}
+
+.user-btns {
+  @media (max-width: 980px) {
+    order: 1;
+  }
+  @media (max-width: 430px) {
+    gap: 0.8rem;
+    font-size: 1.3rem;
+    width: 100%;
+  }
+  & svg {
+    @media (max-width: 430px) {
+      width: 2rem;
+    }
+  }
+
+  &--block-btn {
+    @media (max-width: 430px) {
+      justify-content: center;
+    }
+    @media (max-width: 335px) {
+      padding: 4px 1rem;
+    }
+  }
+
+  &--flag-btn {
+    @media (max-width: 430px) {
+      padding: 6px 1rem;
+      justify-content: center;
+    }
+    @media (max-width: 335px) {
+      padding: 4px 1rem;
+    }
+  }
+
+  &--unverify-btn {
+    @media (max-width: 430px) {
+      padding: 6px 1rem;
+      justify-content: center;
+    }
+    @media (max-width: 335px) {
+      padding: 4px 1rem;
+    }
+  }
+
+  &--temp-btn {
+    @media (max-width: 500px) {
+      font-size: 1.4rem;
+      gap: 4px;
+      padding: 0.8rem 2.4rem;
+      flex-direction: column;
+
+      width: 100%;
+    }
+  }
+
+  &--perm-btn {
+    @media (max-width: 500px) {
+      font-size: 1.4rem;
+      gap: 4px;
+      padding: 0.8rem 2.4rem;
+      flex-direction: column;
+
+      width: 100%;
+    }
+  }
+
+  &--delete-btn {
+    @media (max-width: 500px) {
+      font-size: 1.4rem;
+      gap: 4px;
+      padding: 0.8rem 2.4rem;
+      flex-direction: column;
+
+      width: 100%;
+    }
+  }
+
+  &__cards {
+    @media (max-width: 500px) {
+      flex-direction: row;
+    }
+  }
+}
+
+.btn-menus {
+  &__sm {
+    @media (max-width: 500px) {
+      width: auto;
+    }
+  }
+
+  &__btn-type {
+    @media (max-width: 520px) {
+      font-size: 1.4rem;
+      padding: 5px 1.5rem;
+    }
+    &--active {
+      @media (max-width: 430px) {
+        font-size: 1.4rem;
+        padding: 5px 1.5rem;
+      }
+    }
+  }
+}
+
+.user-btn {
+  &__filter {
+    @media (max-width: 1090px) {
+      align-self: flex-start;
+    }
+  }
+}
+
+// responsive style for auth file
+.auth {
+  @media (max-width: 1080px) {
+    grid-template-columns: 1fr;
+  }
+
+  &__left {
+    @media (max-width: 1080px) {
+      display: none;
+    }
+  }
+
+  &__body {
+    @media (max-width: 1080px) {
+      gap: 8rem;
+    }
+    @media (max-width: 430px) {
+      justify-content: center;
+      padding-top: 0rem;
+    }
+  }
+
+  &__logo-form {
+    @media (max-height: 1080px) {
+      width: 35rem;
+      max-width: 100%;
+    }
+  }
+
+  &__img-logo {
+    @media (max-width: 1080px) {
+      display: none;
+    }
+  }
+
+  &__img-logo-mobile {
+    @media (max-width: 1080px) {
+      display: block;
+      width: 100%;
+    }
+    @media (max-width: 430px) {
+      width: 70%;
+    }
+  }
+
+  &__header {
+    & p {
+      @media (max-width: 500px) {
+        font-size: 2.4rem;
+      }
+    }
+  }
+}
+
+// form file responsive style
+.form {
+  &__grid-form-bg {
+    @media (max-width: 430px) {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &__grid-form {
+    @media (max-width: 430px) {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
+
+// table file responsive styles
+table {
+}
+
+thead,
+th {
+  @media (max-width: 980px) {
+    font-size: 1.2rem;
+  }
+}
+
+.td-user-info {
+  &__user-img {
+    & img {
+      @media (max-width: 435px) {
+        width: 3.2rem;
+      }
+    }
+  }
+
+  &__reg-date {
+    @media (max-width: 980px) {
+      font-size: 1.2rem;
+    }
+  }
+}
+
+// transaction file responsive styles
+.modal-btn {
+  &-green {
+    @media (max-width: 500px) {
+      width: 100%;
+      margin-bottom: 1em;
+    }
+  }
+  & .confirm {
+    @media (max-width: 500px) {
+      display: block;
+    }
+  }
+
+  &-red {
+    @media (max-width: 500px) {
+      width: 100%;
+    }
+  }
+}
+
+// transaction file responsive style
+.organizer-btn {
+  &-decline {
+    @media (max-width: 500px) {
+      font-size: 1.3rem;
+      padding: 1rem 1rem;
+      width: auto;
+      gap: 0.8rem;
+    }
+  }
+}
+
+.layout {
+  @media screen and (min-width: 1110px) {
+    gap: 174px;
+    margin-top: 47px;
+  }
+  &__transactions {
+    @media (max-width: 980px) {
+      display: flex;
+      flex-direction: column;
+
+      padding: 2.4rem;
+    }
+    @media (min-width: 1100px) {
+      gap: 174px;
+    }
+    @media (max-width: 500px) {
+      gap: 2.4rem;
+      padding: 0;
+    }
+  }
+}
+
+.tix-bg {
+  @media (max-width: 410px) {
+    padding: 1.6rem;
+  }
+}
+
+@media screen and (max-width: 52em) {
+  .modal-content {
+    width: 380px;
+    height: 550px;
+    padding: 12px;
+
+    & table {
+      line-height: 2.3rem;
+      white-space: nowrap;
+    }
+
+    &__table-content {
+      display: flex;
+      flex-direction: column;
+      gap: 3rem;
+    }
+  }
+
+  & table .header {
+    line-height: 2rem;
+  }
+}
+
+.chat-modal {
+  &__header-text {
+    @media (max-width: 500px) {
+      font-size: 2rem;
+    }
+  }
+}
+
+// styles file responsive styles
+.user-details {
+  @media (max-width: 980px) {
+    padding: 2.4rem;
+  }
+
+  @media (max-width: 500px) {
+    padding: 1.6rem;
+  }
+
+  &__details-main {
+    @media (max-width: 980px) {
+      padding: 0rem;
+    }
+  }
+
+  &__details-type {
+    @media (max-width: 1040px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    @media (max-width: 650px) {
+      display: flex;
+      flex-direction: column;
+      gap: 0.8rem;
+    }
+  }
+
+  &__details-type-cashin {
+    @media (max-width: 1090px) {
+      width: 100%;
+    }
+
+    @media (max-width: 650px) {
+      display: flex;
+      flex-direction: column;
+      gap: 0.8rem;
+    }
+  }
+
+  &__details-type-cards {
+    @media (max-width: 650px) {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &__details-type-coupon {
+    @media (max-width: 1105px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    @media (max-width: 650px) {
+      display: flex;
+      flex-direction: column;
+      gap: 0.8rem;
+    }
+  }
+
+  &__details-coupon-type {
+    @media (max-width: 1190px) {
+      width: 100%;
+    }
+
+    @media (max-width: 430px) {
+      display: flex;
+      flex-direction: column;
+      gap: 1.6rem;
+    }
+  }
+
+  &__details-menus {
+    & svg {
+      @media (max-width: 430px) {
+        width: 3.2rem;
+      }
+    }
+  }
+
+  &__details-info {
+    & span {
+      @media (max-width: 430px) {
+        font-size: 1.4rem;
+      }
+    }
+  }
+
+  &__details-expiry {
+    & p {
+      @media (max-width: 430px) {
+        font-size: 1.4rem;
+      }
+    }
+  }
+
+  &__details-card-info {
+    & span {
+      @media (max-width: 430px) {
+        font-size: 1.4rem;
+      }
+    }
+  }
+
+  &__details-header-cards {
+    @media (max-width: 1180px) {
+      gap: 4rem;
+    }
+    @media (max-width: 870px) {
+      gap: 2.8rem;
+    }
+    @media (max-width: 500px) {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &__virtual-card-details {
+    @media (max-width: 1180px) {
+      grid-template-columns: 40rem 1fr;
+    }
+    @media (max-width: 1000px) {
+      grid-template-columns: 30rem 1fr;
+    }
+    @media (max-width: 915px) {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &__table-user {
+    @media (max-width: 900px) {
+      overflow-x: scroll;
+    }
+  }
+
+  &__details-btns {
+    @media (max-width: 980px) {
+      flex-direction: column;
+      gap: 2.4rem;
+    }
+  }
+
+  &__details-btns-list {
+    @media (max-width: 470px) {
+      flex-direction: column;
+      gap: 1.6rem;
+    }
+  }
+
+  &__details-btns-cashin {
+    @media (max-width: 1090px) {
+      flex-direction: column;
+      gap: 2.4rem;
+    }
+  }
+
+  &__details-btns-coupon {
+    @media (max-width: 1190px) {
+      flex-direction: column;
+      gap: 2.4rem;
+    }
+  }
+
+  &__details-btns-history {
+    @media (max-width: 1020px) {
+      flex-direction: column;
+      gap: 2.4rem;
+    }
+  }
+
+  &__user-infos {
+    @media (max-width: 1400px) {
+      flex-direction: column;
+    }
+  }
+
+  &__user-infos-bank {
+    @media (max-width: 925px) {
+      flex-direction: column;
+    }
+  }
+
+  &__user-bank-logo {
+    @media (max-width: 925px) {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  &__user-infos-mobile {
+    @media (max-width: 1150px) {
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      gap: 0.8rem;
+    }
+  }
+
+  &__user-img {
+    @media (max-width: 500px) {
+      width: 15rem;
+    }
+  }
+
+  &__user-login {
+    @media (max-width: 1400px) {
+      align-items: center;
+    }
+    @media (max-width: 1150px) {
+      display: none;
+    }
+  }
+
+  &__agent-user-login {
+    @media (max-width: 1400px) {
+      align-items: center;
+    }
+    @media (max-width: 1150px) {
+      display: none;
+    }
+  }
+
+  &__infos-details {
+    @media (max-width: 1150px) {
+      display: block;
+    }
+  }
+
+  &__infos-details-bank {
+    @media (max-width: 665px) {
+      flex-direction: column;
+      gap: 3.2rem;
+    }
+  }
+
+  &__user-form-details {
+    @media (max-width: 1150px) {
+      grid-template-columns: 1fr 1fr;
+    }
+    @media (max-width: 680px) {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &__agent-form-details {
+    @media (max-width: 1150px) {
+      grid-template-columns: 1fr 1fr;
+    }
+    @media (max-width: 680px) {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &__profile-form-details {
+    @media (max-width: 1150px) {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @media (max-width: 680px) {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &__user-form-bank {
+    @media (max-width: 665px) {
+      max-width: 100%;
+    }
+  }
+
+  &__user-search {
+    & svg {
+      @media (max-width: 410px) {
+        width: 2rem;
+      }
+    }
+  }
+
+  &__user-search-type {
+    @media (max-width: 410px) {
+      grid-template-columns: 30fr 30fr;
+      gap: 1.8rem;
+    }
+  }
+
+  &__agent-search-type {
+    @media (max-width: 410px) {
+      grid-template-columns: 30fr 30fr;
+      gap: 1.8rem;
+    }
+  }
+
+  &__entries-page {
+    @media (max-width: 490px) {
+      flex-direction: column;
+      align-items: center;
+      gap: 1.6rem;
+    }
+  }
+
+  &__show-num {
+    @media (max-width: 490px) {
+      padding: 2px 1rem;
+      gap: 1rem;
+    }
+    & svg {
+      @media (max-width: 490px) {
+        width: 2rem;
+      }
+    }
+  }
+
+  &__edit-btn {
+    @media (max-width: 1150px) {
+      display: none;
+    }
+  }
+
+  &__edit-btn-mobile {
+    @media (max-width: 1150px) {
+      font-weight: 600;
+      color: #2dcb30;
+      cursor: pointer;
+
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+
+      & svg {
+        display: block;
+        width: 2.4rem;
+      }
+    }
+  }
+
+  &__user-table {
+    @media (max-width: 1155px) {
+      display: flex;
+      flex-direction: column;
+      gap: 2.4rem;
+    }
+  }
+
+  &__event-type {
+    @media (max-width: 430px) {
+      padding: 1.2rem;
+    }
+  }
+
+  &__event-purchases {
+    @media (max-width: 1155px) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}
+
+.user-services {
+  @media (max-width: 1220px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media (max-width: 760px) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__services-info {
+    @media (max-width: 410px) {
+      padding: 1.6rem;
+    }
+  }
+
+  &__heading-text {
+    @media (max-width: 500px) {
+      font-size: 1.8rem;
+    }
+  }
+
+  &__service-name {
+    @media (max-width: 410px) {
+      grid-template-columns: 0.6fr 1fr;
+    }
+  }
+
+  &__service-span {
+    @media (max-width: 410px) {
+      font-size: 1.2rem;
+      padding: 5px 0.8rem;
+    }
+  }
+
+  &__referal-copy-btn {
+    @media (max-width: 410px) {
+      padding: 5px 1rem;
+      width: 8rem;
+    }
+    & svg {
+      @media (max-width: 410px) {
+        width: 2rem;
+      }
+    }
+  }
+}
+
+.user-note {
+  &__text-area {
+    @media (max-width: 500px) {
+      gap: 2.4rem;
+    }
+  }
+}
+
+.services-section {
+  &__btns {
+    @media (max-width: 330px) {
+      gap: 0.8rem;
+    }
+  }
+
+  &__agent-overview-btns {
+    @media (max-width: 330px) {
+      gap: 0.8rem;
+    }
+  }
+
+  &__transactions {
+    @media (max-width: 980px) {
+      display: flex;
+      flex-direction: column;
+
+      padding: 2.4rem;
+    }
+    @media (max-width: 500px) {
+      gap: 2.4rem;
+      padding: 1.2rem;
+    }
+  }
+
+  &__details-menus {
+    @media (max-width: 500px) {
+      padding: 1.8rem;
+    }
+  }
+
+  &__view-details {
+    @media (max-width: 490px) {
+      gap: 2rem;
+    }
+  }
+
+  &__view-heading {
+    @media (max-width: 490px) {
+      gap: 1.4rem;
+    }
+  }
+}
+
+.modal-create {
+  &__modal-body {
+    @media (max-width: 500px) {
+      padding: 0rem 1.6rem;
+    }
+    @media (max-width: 350px) {
+      padding: 0rem;
+    }
+  }
+
+  &__header-text {
+    @media (max-width: 500px) {
+      font-size: 2rem;
+    }
+  }
+
+  &__user-form {
+    @media (max-width: 500px) {
+      width: 100%;
+    }
+  }
+}
+
+.modal-coupon {
+  @media (max-width: 430px) {
+    height: 100rem;
+    max-height: 100%;
+    overflow-y: auto;
+  }
+
+  &.open {
+    @media (max-width: 430px) {
+      overflow-y: scroll;
+    }
+  }
+}
