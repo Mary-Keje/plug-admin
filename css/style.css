@@ -326,7 +326,9 @@ body {
     gap: 5.6rem; }
     @media (max-width: 1400px) {
       .user-details__user-infos {
-        flex-direction: column; } }
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; } }
   .user-details__user-infos-bank {
     background-color: #ffffff;
     border-radius: 0.8rem;
@@ -371,10 +373,8 @@ body {
     width: 30rem; }
     @media (max-width: 1400px) {
       .user-details__agent-user-login {
-        align-items: center; } }
-    @media (max-width: 1150px) {
-      .user-details__agent-user-login {
-        display: none; } }
+        align-items: center;
+        justify-content: center; } }
   .user-details__user-login-mobile {
     display: flex;
     flex-direction: column;
@@ -951,6 +951,10 @@ body {
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid #e6e6e6; }
+  @media (max-width: 300px) {
+    .services-section__service-heading {
+      flex-direction: column;
+      gap: 1rem; } }
 
 .services-section__btns {
   display: flex;
@@ -1000,6 +1004,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between; }
+  @media (max-width: 350px) {
+    .services-section__transactions-heading {
+      flex-direction: column;
+      gap: 1.5rem; } }
 
 .services-section__transactions-details {
   display: flex;
@@ -1803,7 +1811,15 @@ body {
     padding: 0rem 4.8rem;
     display: flex;
     align-items: center;
-    justify-content: space-between; }
+    justify-content: space-between;
+    gap: 2rem; }
+    .header-details__services-header a {
+      text-decoration: none; }
+    @media (max-width: 700px) {
+      .header-details__services-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2rem; } }
     @media (max-width: 980px) {
       .header-details__services-header {
         padding: 0rem 1rem; } }
@@ -1825,6 +1841,12 @@ body {
     @media (max-width: 980px) {
       .header-details__coupon-header {
         padding: 0rem 1rem; } }
+    @media (max-width: 850px) {
+      .header-details__coupon-header {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        gap: 2rem; } }
   .header-details__users-name {
     padding: 0rem 4.8rem;
     width: 100%; }
@@ -1839,22 +1861,24 @@ body {
     margin-right: auto; }
     @media (max-width: 500px) {
       .header-details__text {
-        font-size: 2rem; } }
+        font-size: 1.8rem; } }
   .header-details__body-services {
     display: flex;
     align-items: center;
-    gap: 1.6rem; }
+    gap: 1.6rem;
+    position: relative; }
     .header-details__body-services a {
       text-decoration: none; }
-    @media (max-width: 820px) {
+    @media (max-width: 850px) {
       .header-details__body-services {
-        order: 1;
-        justify-content: flex-end; } }
-    @media (max-width: 550px) {
+        width: 100%; } }
+    @media (max-width: 700px) {
       .header-details__body-services {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 1.6rem; } }
+        justify-content: space-between;
+        width: 100%;
+        gap: 0; }
+        .header-details__body-services--edit {
+          gap: 2rem; } }
   .header-details__search-sort {
     display: flex;
     align-items: center;
@@ -1894,10 +1918,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between; }
-    @media (max-width: 1110px) {
-      .header-details__search-input {
-        justify-content: flex-end;
-        margin-left: auto; } }
     @media (max-width: 500px) {
       .header-details__search-input {
         width: initial;
@@ -1918,7 +1938,8 @@ body {
       color: #bdbdbd; }
     @media (max-width: 500px) {
       .header-details__search {
-        padding: 1rem; } }
+        padding: 1rem;
+        width: 100%; } }
   .header-details__sort {
     font-weight: 600;
     background-color: #ffffff;
@@ -1940,6 +1961,9 @@ body {
     color: #2dcb30; }
   .header-details__month-text {
     color: #4d4d4d; }
+    @media (max-width: 500px) {
+      .header-details__month-text {
+        font-size: 1.2rem; } }
   .header-details__cards-btn {
     display: flex;
     gap: 2.4rem; }
@@ -2124,9 +2148,25 @@ body {
     align-items: center;
     justify-content: center;
     gap: 0.8rem; }
+    @media (max-width: 500px) {
+      .button--add-service {
+        gap: 3px; } }
+    @media (max-width: 700px) {
+      .button--add-service {
+        position: absolute;
+        right: 0;
+        top: -6rem; } }
+    @media (max-width: 500px) {
+      .button--add-service {
+        font-size: 1.4rem;
+        padding: 5px 1rem;
+        width: auto; } }
     .button--add-service svg {
       display: block;
       width: 2.4rem; }
+      @media (max-width: 500px) {
+        .button--add-service svg {
+          width: 2rem; } }
   .button--log {
     background-color: #d8d8d8;
     color: #a3a3a3;
@@ -2245,9 +2285,21 @@ body {
     display: flex;
     align-items: center;
     gap: 0.8rem; }
+    @media (max-width: 850px) {
+      .button--edit {
+        position: absolute;
+        right: -1rem;
+        top: -6rem; } }
+    @media (max-width: 500px) {
+      .button--edit {
+        padding: 0.8rem 2rem;
+        font-size: 1.4rem; } }
     .button--edit svg {
       display: block;
       width: 2.4rem; }
+      @media (max-width: 500px) {
+        .button--edit svg {
+          width: 1.8rem; } }
   .button--save {
     padding: 0.8rem 1.6rem;
     width: 29rem; }
@@ -3957,6 +4009,12 @@ th {
     padding: 0rem 1rem;
     gap: 2rem; } }
 
+@media (max-width: 700px) {
+  .header-details__services-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem; } }
+
 @media (max-width: 980px) {
   .header-details__services-header {
     padding: 0rem 1rem; } }
@@ -3969,24 +4027,32 @@ th {
   .header-details__coupon-header {
     padding: 0rem 1rem; } }
 
+@media (max-width: 850px) {
+  .header-details__coupon-header {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    gap: 2rem; } }
+
 @media (max-width: 980px) {
   .header-details__users-name {
     padding: 0rem 1rem; } }
 
 @media (max-width: 500px) {
   .header-details__text {
-    font-size: 2rem; } }
+    font-size: 1.8rem; } }
+
+@media (max-width: 850px) {
+  .header-details__body-services {
+    width: 100%; } }
 
 @media (max-width: 820px) {
   .header-details__body-services {
-    order: 1;
-    justify-content: flex-end; } }
-
-@media (max-width: 550px) {
-  .header-details__body-services {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.6rem; } }
+    justify-content: space-between;
+    width: 100%;
+    gap: 0; }
+    .header-details__body-services--edit {
+      gap: 2rem; } }
 
 @media (max-width: 1110px) {
   .header-details__search-sort {
@@ -4022,7 +4088,8 @@ th {
 
 @media (max-width: 500px) {
   .header-details__search {
-    padding: 1rem; } }
+    padding: 1rem;
+    width: 100%; } }
 
 @media (max-width: 602px) {
   .header-details__sort {
@@ -4108,6 +4175,26 @@ th {
     font-size: 1.4rem;
     width: 22rem; } }
 
+@media (max-width: 500px) {
+  .button--add-service {
+    gap: 3px; } }
+
+@media (max-width: 700px) {
+  .button--add-service {
+    position: absolute;
+    right: 0;
+    top: -6rem; } }
+
+@media (max-width: 500px) {
+  .button--add-service {
+    font-size: 1.4rem;
+    padding: 5px 1rem;
+    width: auto; } }
+
+@media (max-width: 500px) {
+  .button--add-service svg {
+    width: 2rem; } }
+
 @media (max-width: 400px) {
   .button--log {
     width: 30rem; } }
@@ -4155,6 +4242,21 @@ th {
     font-size: 1rem;
     padding: 4px 0.8rem; } }
 
+@media (max-width: 850px) {
+  .button--edit {
+    position: absolute;
+    right: -1rem;
+    top: -6rem; } }
+
+@media (max-width: 500px) {
+  .button--edit {
+    padding: 0.8rem 2rem;
+    font-size: 1.4rem; } }
+
+@media (max-width: 500px) {
+  .button--edit svg {
+    width: 1.8rem; } }
+
 @media (max-width: 980px) {
   .user-btns {
     order: 1; } }
@@ -4162,7 +4264,7 @@ th {
 @media (max-width: 430px) {
   .user-btns {
     gap: 0.8rem;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     width: 100%; } }
 
 @media (max-width: 430px) {
@@ -4175,7 +4277,7 @@ th {
 
 @media (max-width: 335px) {
   .user-btns--block-btn {
-    padding: 4px 1rem; } }
+    padding: 4px 0.8rem; } }
 
 @media (max-width: 430px) {
   .user-btns--flag-btn {
@@ -4184,7 +4286,7 @@ th {
 
 @media (max-width: 335px) {
   .user-btns--flag-btn {
-    padding: 4px 1rem; } }
+    padding: 4px 0.8rem; } }
 
 @media (max-width: 430px) {
   .user-btns--unverify-btn {
@@ -4193,7 +4295,7 @@ th {
 
 @media (max-width: 335px) {
   .user-btns--unverify-btn {
-    padding: 4px 1rem; } }
+    padding: 4px 0.8rem; } }
 
 @media (max-width: 500px) {
   .user-btns--temp-btn {
@@ -4378,10 +4480,6 @@ th {
   .user-details__details-main {
     padding: 0rem; } }
 
-@media (max-width: 1040px) {
-  .user-details__details-type {
-    grid-template-columns: repeat(3, 1fr); } }
-
 @media (max-width: 650px) {
   .user-details__details-type {
     display: flex;
@@ -4496,7 +4594,9 @@ th {
 
 @media (max-width: 1400px) {
   .user-details__user-infos {
-    flex-direction: column; } }
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; } }
 
 @media (max-width: 925px) {
   .user-details__user-infos-bank {
@@ -4506,13 +4606,6 @@ th {
   .user-details__user-bank-logo {
     display: flex;
     justify-content: center; } }
-
-@media (max-width: 1150px) {
-  .user-details__user-infos-mobile {
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    gap: 0.8rem; } }
 
 @media (max-width: 500px) {
   .user-details__user-img {
@@ -4524,14 +4617,6 @@ th {
 
 @media (max-width: 1150px) {
   .user-details__user-login {
-    display: none; } }
-
-@media (max-width: 1400px) {
-  .user-details__agent-user-login {
-    align-items: center; } }
-
-@media (max-width: 1150px) {
-  .user-details__agent-user-login {
     display: none; } }
 
 @media (max-width: 1150px) {
@@ -4674,6 +4759,11 @@ th {
   .user-note__text-area {
     gap: 2.4rem; } }
 
+@media (max-width: 300px) {
+  .services-section__service-heading {
+    flex-direction: column;
+    gap: 1rem; } }
+
 @media (max-width: 330px) {
   .services-section__btns {
     gap: 0.8rem; } }
@@ -4692,6 +4782,11 @@ th {
   .services-section__transactions {
     gap: 2.4rem;
     padding: 1.2rem; } }
+
+@media (max-width: 350px) {
+  .services-section__transactions-heading {
+    flex-direction: column;
+    gap: 1.5rem; } }
 
 @media (max-width: 500px) {
   .services-section__details-menus {
