@@ -375,10 +375,6 @@ body {
       .user-details__agent-user-login {
         align-items: center;
         justify-content: center; } }
-  .user-details__user-login-mobile {
-    display: flex;
-    flex-direction: column;
-    gap: 2.4rem; }
   .user-details__login-details {
     background-color: #fff6e4;
     border-radius: 4px;
@@ -4813,5 +4809,59 @@ th {
 @media (max-width: 430px) {
   .modal-coupon.open {
     overflow-y: scroll; } }
+
+@media (max-width: 1400px) {
+  .user-details__user-infos {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; } }
+
+@media (max-width: 1400px) {
+  .user-details__agent-user-login {
+    align-items: center;
+    justify-content: center; } }
+
+@media (max-width: 700px) {
+  .header-details__services-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem; } }
+
+@media (max-width: 980px) {
+  .header-details__services-header {
+    padding: 0rem 1rem; } }
+
+@media (max-width: 850px) {
+  .header-details__body-services {
+    width: 100%; } }
+
+@media (max-width: 700px) {
+  .header-details__body-services {
+    justify-content: space-between;
+    width: 100%;
+    gap: 0; }
+    .header-details__body-services--edit {
+      gap: 2rem; } }
+
+@media (max-width: 500px) {
+  .button--create {
+    font-size: 1.4rem;
+    padding: 1rem 2rem;
+    width: auto; } }
+
+@media (max-width: 850px) {
+  .button--edit {
+    position: absolute;
+    right: -1rem;
+    top: -6rem; } }
+
+@media (max-width: 500px) {
+  .button--edit {
+    padding: 0.8rem 2rem;
+    font-size: 1.4rem; } }
+
+@media (max-width: 500px) {
+  .button svg {
+    width: 1.8rem; } }
 
 /*# sourceMappingURL=style.css.map */
