@@ -4,15 +4,20 @@
   --stroke-width: 16;
   --radius: 72;
 
+  width: var(--box);
+  height: var(--box);
+
+  @media (max-width: 500px) {
+    --stroke-width: 12;
+    --radius: 50;
+  }
+
   &--sm {
     --box: 96px;
     --container: 96;
     --stroke-width: 9.6;
     --radius: 43.2;
   }
-
-  width: var(--box);
-  height: var(--box);
 
   &__background,
   &__circle {

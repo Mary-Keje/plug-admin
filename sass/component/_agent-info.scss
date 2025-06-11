@@ -65,6 +65,10 @@
   flex-direction: column;
   gap: 2.4rem;
 
+  @media (max-width: 480px) {
+    padding: 1.6rem;
+  }
+
   &__levels {
     background-color: #fff6e4;
     border-radius: 0.8rem;
@@ -210,12 +214,28 @@
 
     display: grid;
     grid-template-columns: 28.8rem 1fr 36rem;
+
+    @media (max-width: 1300px) {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @media (max-width: 710px) {
+      grid-template-columns: 1fr;
+    }
   }
 
   &__infos {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 1.6rem;
+
+    @media (max-width: 1300px) {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @media (max-width: 710px) {
+      grid-template-columns: 1fr;
+    }
   }
 
   &__infos-influencer {
@@ -229,9 +249,14 @@
     flex-direction: column;
     gap: 1.6rem;
 
-    padding: 1.6rem 2.4rem;
+    padding: 2.4rem;
     background-color: #ffffff;
     border-radius: 0.8rem;
+
+    @media (max-width: 480px) {
+      padding: 1.6rem;
+      gap: 1rem;
+    }
   }
 
   &__heading {
@@ -324,6 +349,23 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 1.6rem;
 
+  @media (max-width: 1200px) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (max-width: 710px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @media (max-width: 700px) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (max-width: 480px) {
+    grid-template-columns: 1fr;
+    padding: 1.6rem;
+  }
+
   &__info {
     background-color: #f7f8f8;
     border-radius: 0.8rem;
@@ -333,6 +375,10 @@
     flex-direction: column;
     justify-content: center;
     gap: 4rem;
+
+    @media (max-width: 500px) {
+      gap: 2rem;
+    }
   }
 
   &__info-header {
@@ -360,6 +406,11 @@
 
   position: relative;
 
+  & svg {
+    display: block;
+    // width: 15rem;
+  }
+
   & .circular-progress {
     position: absolute;
     top: 0;
@@ -385,6 +436,10 @@
     line-height: 3rem;
     color: #2dcb30;
     font-weight: 700;
+
+    @media (max-width: 500px) {
+      font-size: 1.7rem;
+    }
   }
 
   &__total {

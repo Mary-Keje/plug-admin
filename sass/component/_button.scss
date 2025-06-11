@@ -199,9 +199,18 @@
       font-size: 1.4rem;
     }
 
+    @media (max-width: 310px) {
+      padding-bottom: 4rem;
+      padding: 0rem 4px;
+    }
+
     &--active {
       border-bottom: 2px solid #2dcb30;
       color: #1f1f1f;
+
+      // @media (max-width: 310px) {
+      //   padding-bottom: 2rem;
+      // }
     }
   }
 
@@ -371,6 +380,7 @@
   color: #ffffff;
 
   display: flex;
+  // flex-wrap: wrap;
   align-items: center;
   gap: 1.6rem;
 
@@ -385,6 +395,8 @@
     gap: 0.8rem;
     font-size: 1.3rem;
     width: 100%;
+
+    // flex-wrap: wrap;
   }
 
   & svg {
