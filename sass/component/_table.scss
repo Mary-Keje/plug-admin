@@ -163,3 +163,60 @@ th {
   line-height: 1.5rem;
   color: #a6a6a6;
 }
+
+// style for the image on the event table
+.tb-event {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+
+  align-self: flex-start;
+
+  & img {
+    display: block;
+    width: 20rem;
+    height: 12rem;
+  }
+
+  &__event-details {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  &__event-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+
+    & p {
+      font-size: 1.8rem;
+      font-weight: 600;
+      color: #1e1e1e;
+    }
+
+    & span {
+      color: #7d7d7d;
+    }
+  }
+
+  &__venue-date {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  &__location {
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+
+    color: #7d7d7d;
+
+    & svg {
+      display: block;
+      width: 2.4rem;
+      color: #7d7d7d;
+    }
+  }
+}

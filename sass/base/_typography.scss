@@ -63,3 +63,17 @@ body {
     font-size: 1.2rem;
   }
 }
+
+// style for the food $ Drink tag
+.event-tag {
+  font-size: 1.2rem;
+  background-color: #fcf2ec;
+  color: #e57d43;
+  border-radius: 4rem;
+
+  padding: 4px 1.6rem;
+
+  width: fit-content;
+
+  justify-self: flex-start;
+}

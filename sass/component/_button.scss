@@ -758,3 +758,55 @@
     background-color: #ffffff;
   }
 }
+
+
+// style for event table status
+.status {
+  // font-size: 1.2rem;
+  font-weight: 600;
+  border-radius: 1.6rem;
+  padding: 4px 1.2rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 4rem;
+  justify-self: flex-start;
+
+  &--successful {
+    background-color: #eafaea;
+    color: #25a727;
+    border: 1px solid #b8edbf;
+  }
+
+  &--active {
+    background-color: #eafaea;
+    color: #25a727;
+    border: 1px solid #b8edbf;
+  }
+
+  &--inactive {
+    background-color: #ffeff0;
+    color: #dc2b2b;
+    border: 1px solid #ffbec2;
+  }
+
+  &--closed {
+    background-color: #e9e9e9;
+    color: #7d7d7d;
+    border: 1px solid #a3a3a3;
+  }
+
+  &--approved {
+    background-color: #e6f5ff;
+    color: #1aa2fd;
+    border: 1px solid #b3e0ff;
+  }
+
+  &--pending {
+    background-color: #fff6e4;
+    color: #ffa800;
+    border: 1px solid #ffe39b;
+  }
+}
