@@ -57,6 +57,20 @@ body {
   }
 }
 
+.sub-heading {
+  font-size: 2.4rem;
+  font-family: "Tango Sans";
+  font-weight: normal;
+}
+@media (max-width: 480px) {
+  .sub-heading {
+    font-size: 2rem;
+  }
+}
+.sub-heading--green {
+  color: #399445;
+}
+
 .event-tag {
   font-size: 1.2rem;
   background-color: #fcf2ec;
@@ -2237,6 +2251,16 @@ body {
   font-size: 1.8rem;
   font-family: "Tango Sans";
   font-weight: normal;
+}
+
+.event-detail__heading {
+  background-color: #ffffff;
+  border-radius: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  justify-self: flex-start;
+  padding: 1.6rem;
 }
 
 .header-tabs {

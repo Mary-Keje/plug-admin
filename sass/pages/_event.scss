@@ -63,6 +63,20 @@
   }
 }
 
+.event-detail {
+  &__heading {
+    background-color: #ffffff;
+    border-radius: 0.8rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    justify-self: flex-start;
+
+    padding: 1.6rem;
+  }
+}
+
 // styles for header tabs
 .header-tabs {
   display: flex;

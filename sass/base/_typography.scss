@@ -64,6 +64,20 @@ body {
   }
 }
 
+.sub-heading {
+  font-size: 2.4rem;
+  font-family: "Tango Sans";
+  font-weight: normal;
+
+  @media (max-width: 480px) {
+    font-size: 2rem;
+  }
+
+  &--green {
+    color: #399445;
+  }
+}
+
 // style for the food $ Drink tag
 .event-tag {
   font-size: 1.2rem;
