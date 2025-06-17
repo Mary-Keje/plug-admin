@@ -152,6 +152,16 @@ th {
     flex-direction: column;
     gap: 0.8rem;
   }
+
+  &__de-activate {
+    color: #e87d7d;
+    font-weight: 600;
+  }
+
+  &__activate {
+    color: #2dcb30;
+    font-weight: 600;
+  }
 }
 
 .date-time {

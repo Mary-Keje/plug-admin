@@ -103,6 +103,13 @@
               <p class="event-tag">Food & Drink</p>
               <h4 class="sub-heading">Tech Connect Lagos</h4>
             </div>
+            <div class="event-type__heading-btns">
+              <button class="type-btns type-btns--scan">Scan ticket</button>
+              <button class="type-btns type-btns--green-btn">
+                Gift ticket
+              </button>
+              <button class="type-btns type-btns--close">Close event</button>
+            </div>
           </div>
           <div class="boost-event">
             <div class="boost-event__boost-details">
@@ -181,12 +188,14 @@
           </div>
           <div class="header-tabs">
             <a
-              href="#"
-              class="header-tabs__tab-text header-tabs__tab-text--active"
+              href="./organiser-event-details.html"
+              class="header-tabs__tab-text"
               >Event details</a
             >
-            <a href="./team-member.html" class="header-tabs__tab-text"
-              >Team member</a
+            <a
+              href="#"
+              class="header-tabs__tab-text header-tabs__tab-text--active"
+              >Team members</a
             >
             <a href="./attendee.html" class="header-tabs__tab-text"
               >Attendees</a
@@ -195,98 +204,100 @@
               >Financials</a
             >
           </div>
-          <div class="event-status">
-            <div class="event-status__live-btns-container">
-              <div class="event-status__live-status">
-                Event Status:
-                <div class="event-status__live">
-                  <span class="event-status__live__dot"></span>
-                  <span class="event-status__live__text">Live</span>
-                </div>
-              </div>
-              <div class="event-type__heading-btns">
-                <button class="type-btns type-btns--close-btn">
-                  Close event
-                </button>
-                <button class="type-btns type-btns--scan">Scan ticket</button>
-                <button class="type-btns type-btns--green-btn">
-                  Gift ticket
-                </button>
-              </div>
-            </div>
-            <div
-              class="event-status__live-btns-container event-status__live-btns-container--2"
-            >
-              <div class="event-status__live-status">Event link</div>
-              <div class="event-status__live-link">
-                <div class="event-status__live-link-text">
-                  https://events.plug.ng/events/tech/ibadantechexpo2025
-                </div>
-                <div class="event-status__live-link-copy">
-                  <svg
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <g id="mdi:content-copy">
-                      <path
-                        id="Vector"
-                        d="M19 21H8V7H19M19 5H8C7.46957 5 6.96086 5.21071 6.58579 5.58579C6.21071 5.96086 6 6.46957 6 7V21C6 21.5304 6.21071 22.0391 6.58579 22.4142C6.96086 22.7893 7.46957 23 8 23H19C19.5304 23 20.0391 22.7893 20.4142 22.4142C20.7893 22.0391 21 21.5304 21 21V7C21 6.46957 20.7893 5.96086 20.4142 5.58579C20.0391 5.21071 19.5304 5 19 5ZM16 1H4C3.46957 1 2.96086 1.21071 2.58579 1.58579C2.21071 1.96086 2 2.46957 2 3V17H4V3H16V1Z"
-                        fill="white"
-                      />
-                    </g>
-                  </svg>
-                  Copy
-                </div>
-              </div>
-            </div>
+          <div class="user-details__table-user">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Username</th>
+                  <th>Roles</th>
+                  <th>Status</th>
+                  <th>Date</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="">Withdrawal</td>
+                  <td><p>Scanner, Financials</p></td>
+                  <td><p class="status status--successful">Active</p></td>
+                  <td>
+                    <div class="td-user-info__reg-date">
+                      <p>Jul 24, 2024</p>
+                      <div class="td-user-info__date-divider"></div>
+                      <p>12:45pm</p>
+                    </div>
+                  </td>
+                  <td class="">
+                    <a href="" class="td-user-info__de-activate">Deactivate</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="">Withdrawal</td>
+                  <td><p>Scanner, Financials</p></td>
+                  <td><p class="status status--successful">Active</p></td>
+                  <td>
+                    <div class="td-user-info__reg-date">
+                      <p>Jul 24, 2024</p>
+                      <div class="td-user-info__date-divider"></div>
+                      <p>12:45pm</p>
+                    </div>
+                  </td>
+                  <td class="">
+                    <a href="" class="td-user-info__de-activate">Deactivate</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="">Withdrawal</td>
+                  <td><p>Scanner, Financials</p></td>
+                  <td><p class="status status--inactive">Inactive</p></td>
+                  <td>
+                    <div class="td-user-info__reg-date">
+                      <p>Jul 24, 2024</p>
+                      <div class="td-user-info__date-divider"></div>
+                      <p>12:45pm</p>
+                    </div>
+                  </td>
+                  <td class="">
+                    <a href="" class="td-user-info__activate">Activate</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="">Withdrawal</td>
+                  <td><p>Scanner, Financials</p></td>
+                  <td><p class="status status--inactive">Inactive</p></td>
+                  <td>
+                    <div class="td-user-info__reg-date">
+                      <p>Jul 24, 2024</p>
+                      <div class="td-user-info__date-divider"></div>
+                      <p>12:45pm</p>
+                    </div>
+                  </td>
+                  <td class="">
+                    <a href="" class="td-user-info__activate">Activate</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="">Withdrawal</td>
+                  <td><p>Scanner, Financials</p></td>
+                  <td><p class="status status--successful">Active</p></td>
+                  <td>
+                    <div class="td-user-info__reg-date">
+                      <p>Jul 24, 2024</p>
+                      <div class="td-user-info__date-divider"></div>
+                      <p>12:45pm</p>
+                    </div>
+                  </td>
+                  <td class="">
+                    <a href="" class="td-user-info__de-activate">Deactivate</a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
           </div>
-          <div class="event-details">
-            <div class="event-details__organizer-container">
-              <h3>Organizer Information</h3>
-              <div class="event-details__organizer-info">
-                <div
-                  class="event-details__info-container event__information-contact"
-                >
-                  <p class="event-details__heading-text">Name</p>
-                  <span class="event__sub-heading-text"
-                    >Wiseki Technologies</span
-                  >
-                </div>
-                <div
-                  class="event-details__info-container event__information-contact"
-                >
-                  <p class="event-details__heading-text">Contact Information</p>
-                  <div class="event-details__organizer-contact">
-                    <p class="event__sub-heading-text">08012345678</p>
-                    <p class="event__sub-heading-text">admin@wiseki.com</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="event-details__organizer-container">
-              <div class="event-details__team-heading">
-                <h3>Team members</h3>
-                <a href="">View team</a>
-              </div>
-              <div class="event-details__organizer-info">
-                <div class="event-details__info-container">
-                  <p class="event-details__">12</p>
-                  <p class="event__text-italic">members</p>
-                </div>
-                <div class="event__information-container event__add-to-team">
-                  <button class="type-btns type-btns--add-team">
-                    Add to team
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="event-details-img">
-            <div class="event-details__event-info">
-              <div class="event-details__event-heading-2">
+          <div class="user-details__entries-page">
+            <div class="user-details__show-entries">
+              <p>Show</p>
+              <div class="user-details__show-num">
+                10
                 <svg
                   width="24"
                   height="24"
@@ -294,186 +305,60 @@
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
                 >
-                  <g id="mdi:image">
-                    <path
-                      id="Vector"
-                      d="M8.5 13.5L11 16.5L14.5 12L19 18H5M21 19V5C21 4.46957 20.7893 3.96086 20.4142 3.58579C20.0391 3.21071 19.5304 3 19 3H5C4.46957 3 3.96086 3.21071 3.58579 3.58579C3.21071 3.96086 3 4.46957 3 5V19C3 19.5304 3.21071 20.0391 3.58579 20.4142C3.96086 20.7893 4.46957 21 5 21H19C19.5304 21 20.0391 20.7893 20.4142 20.4142C20.7893 20.0391 21 19.5304 21 19Z"
-                      fill="#E57D43"
-                    />
-                  </g>
+                  <path
+                    d="M7.41 8.58008L12 13.1701L16.59 8.58008L18 10.0001L12 16.0001L6 10.0001L7.41 8.58008Z"
+                    fill="#2DCB30"
+                  />
                 </svg>
-                <p class="event-details__heading-text">Image</p>
               </div>
-              <img
-                src="../imgs/event-4.png"
-                alt="event-image"
-                class="event-details__event-img"
-              />
-              <div class="event-details__event-option-btns">
-                <button class="type-btns type-btns--change">
-                  Change image
-                </button>
-                <button class="type-btns type-btns--remove">Remove</button>
-              </div>
+              <p>Entries</p>
             </div>
-            <div class="event-details__event-info">
-              <div class="event-details__event-heading">
-                <div class="event-details__event-heading-2">
-                  <svg
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M13 9H11V7H13M13 17H11V11H13M12 2C10.6868 2 9.38642 2.25866 8.17317 2.7612C6.95991 3.26375 5.85752 4.00035 4.92893 4.92893C3.05357 6.8043 2 9.34784 2 12C2 14.6522 3.05357 17.1957 4.92893 19.0711C5.85752 19.9997 6.95991 20.7362 8.17317 21.2388C9.38642 21.7413 10.6868 22 12 22C14.6522 22 17.1957 20.9464 19.0711 19.0711C20.9464 17.1957 22 14.6522 22 12C22 10.6868 21.7413 9.38642 21.2388 8.17317C20.7362 6.95991 19.9997 5.85752 19.0711 4.92893C18.1425 4.00035 17.0401 3.26375 15.8268 2.7612C14.6136 2.25866 13.3132 2 12 2Z"
-                      fill="#E57D43"
-                    />
-                  </svg>
-                  <p class="event-details__heading-text">About Event</p>
-                </div>
-                <a href="">Edit</a>
-              </div>
-              <div class="event-details__info-container">
-                <p class="event-details__heading-text">Event Title</p>
-                <p class="event-details__sub-heading-tex">Ibadan Tech Expo</p>
-              </div>
-              <div class="event-details__info-container">
-                <p class="event-details__heading-text">Event Brief</p>
-                <p class="event-details__sub-text">
-                  Introducing Trench Fest Ibadan. Get ready to experience the
-                  ultimate music extravaganza as Trench Fest takes over Ibadan!
-                  Join us for an electrifying night filled with chart-topping
-                  hits and unforgettable performances from Nigeria's finest
-                  superstars.
-                </p>
-              </div>
-              <div class="event-details__info-container">
-                <p class="event-details__heading-text">Event type</p>
-                <p class="event-details__sub-text">Private Event</p>
-              </div>
-            </div>
-          </div>
-          <div class="event-details">
-            <div class="event-details__event-info">
-              <div class="event-details__event-heading">
-                <div class="event-details__event-heading-2">
-                  <svg
-                    width="24"
-                    height="25"
-                    viewBox="0 0 24 25"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <g id="mdi:ticket-confirmation">
-                      <path
-                        id="Vector"
-                        d="M13 9.40039H11V7.40039H13V9.40039ZM13 13.9004H11V11.9004H13V13.9004ZM13 18.4004H11V16.4004H13V18.4004ZM22 10.9004V6.90039C22 6.36996 21.7893 5.86125 21.4142 5.48618C21.0391 5.1111 20.5304 4.90039 20 4.90039H4C3.46957 4.90039 2.96086 5.1111 2.58579 5.48618C2.21071 5.86125 2 6.36996 2 6.90039V10.9004C2.53043 10.9004 3.03914 11.1111 3.41421 11.4862C3.78929 11.8613 4 12.37 4 12.9004C4 13.4308 3.78929 13.9395 3.41421 14.3146C3.03914 14.6897 2.53043 14.9004 2 14.9004V18.9004C2 19.4308 2.21071 19.9395 2.58579 20.3146C2.96086 20.6897 3.46957 20.9004 4 20.9004H20C20.5304 20.9004 21.0391 20.6897 21.4142 20.3146C21.7893 19.9395 22 19.4308 22 18.9004V14.9004C21.4696 14.9004 20.9609 14.6897 20.5858 14.3146C20.2107 13.9395 20 13.4308 20 12.9004C20 12.37 20.2107 11.8613 20.5858 11.4862C20.9609 11.1111 21.4696 10.9004 22 10.9004Z"
-                        fill="#E57D43"
-                      />
-                    </g>
-                  </svg>
-                  <p class="event-details__heading-text">Tickets</p>
-                </div>
-                <a href="">Edit</a>
-              </div>
-              <div class="event-details__event-tickets">
-                <div
-                  class="event-details__organizer-info event-details__ticket"
+            <div class="user-details__show-pages">
+              <div class="user-details__prev-page">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
                 >
-                  <div class="event-details__info-container">
-                    <p class="event-details__ticket-title">Regular</p>
-                    <p class="event-details__ticket-sub-title">
-                      <span>500/</span>600
-                    </p>
-                  </div>
-                  <button class="type-btns type-btns--close-ticket">
-                    Close ticket
-                  </button>
-                </div>
-                <div
-                  class="event-details__organizer-info event-details__ticket"
-                >
-                  <div class="event-details__info-container">
-                    <p class="event-details__ticket-title">VIP</p>
-                    <p class="event-details__ticket-sub-title">
-                      <span>500/</span>600
-                    </p>
-                  </div>
-                  <button class="type-btns type-btns--green-btn">
-                    Re-open ticket
-                  </button>
-                </div>
-                <div
-                  class="event-details__organizer-info event-details__ticket"
-                >
-                  <div class="event-details__info-container">
-                    <p class="event-details__ticket-title">VVIP</p>
-                    <p class="event-details__ticket-sub-title">
-                      <span>25/</span>25
-                    </p>
-                  </div>
-                  <button class="type-btns type-btns--sold-out">
-                    Sold out
-                  </button>
-                </div>
-                <div
-                  class="event-details__organizer-info event-details__ticket"
-                >
-                  <div class="event-details__info-container">
-                    <p class="event-details__ticket-title">Table</p>
-                    <p class="event-details__ticket-sub-title">
-                      <span>500/</span>600
-                    </p>
-                  </div>
-                  <button class="type-btns type-btns--close-ticket">
-                    Close ticket
-                  </button>
-                </div>
+                  <path
+                    d="M15.41 16.58L10.83 12L15.41 7.41L14 6L8 12L14 18L15.41 16.58Z"
+                    fill="#2DCB30"
+                  />
+                </svg>
+                <p>Previous</p>
               </div>
-            </div>
-            <div class="event-details__event-info">
-              <div class="event-details__event-heading">
-                <div class="event-details__event-heading-2">
-                  <svg
-                    width="25"
-                    height="25"
-                    viewBox="0 0 25 25"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <g id="mdi:location">
-                      <path
-                        id="Vector"
-                        d="M12.5 12.4004C11.837 12.4004 11.2011 12.137 10.7322 11.6682C10.2634 11.1993 10 10.5634 10 9.90039C10 9.23735 10.2634 8.60146 10.7322 8.13262C11.2011 7.66378 11.837 7.40039 12.5 7.40039C13.163 7.40039 13.7989 7.66378 14.2678 8.13262C14.7366 8.60146 15 9.23735 15 9.90039C15 10.2287 14.9353 10.5538 14.8097 10.8571C14.6841 11.1604 14.4999 11.436 14.2678 11.6682C14.0356 11.9003 13.76 12.0845 13.4567 12.2101C13.1534 12.3357 12.8283 12.4004 12.5 12.4004ZM12.5 2.90039C10.6435 2.90039 8.86301 3.63789 7.55025 4.95064C6.2375 6.2634 5.5 8.04388 5.5 9.90039C5.5 15.1504 12.5 22.9004 12.5 22.9004C12.5 22.9004 19.5 15.1504 19.5 9.90039C19.5 8.04388 18.7625 6.2634 17.4497 4.95064C16.137 3.63789 14.3565 2.90039 12.5 2.90039Z"
-                        fill="#E57D43"
-                      />
-                    </g>
-                  </svg>
-                  <p class="event__heading-text">Venue & Time</p>
-                </div>
-                <a href="">Edit</a>
+              <div class="user-details__page-num">
+                <p>234</p>
+                <svg
+                  width="6"
+                  height="10"
+                  viewBox="0 0 6 10"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1.72111 9.126C1.66911 9.266 1.58711 9.37 1.47511 9.438C1.36711 9.506 1.25511 9.54 1.13911 9.54H0.689109L4.29511 0.558C4.34311 0.43 4.41511 0.332 4.51111 0.263999C4.61111 0.196 4.72511 0.162 4.85311 0.162H5.30911L1.72111 9.126Z"
+                    fill="#808080"
+                  />
+                </svg>
+                <span>450</span>
               </div>
-              <div class="event-details__info-container">
-                <p class="event-details__heading-text">Venue</p>
-                <p class="event-details__sub-text">Physical event</p>
-                <p class="event-details__sub-text">
-                  Oyo, Trans Amusement Park, Ibadan
-                </p>
-                <p class="event-details__sub-text">
-                  Coming from ojoo, when you get to University of Ibadan, take a
-                  walk to Bodija market, immediately after conoil filling
-                  station, the next junction by your right is the venue.
-                </p>
-                <p class="event-details__sub-text">
-                  https://maps.app.goo.gl/S8LYAVM6BgHNdkdp9
-                </p>
-              </div>
-              <div class="event-details__info-container">
-                <p class="event-details__heading-text">Time & date</p>
-                <p class="event-details__sub-text">11:00 AM</p>
-                <p class="event-details__sub-heading-text">12/04/2024</p>
+              <div class="user-details__prev-page">
+                <p>Next</p>
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8.58984 16.58L13.1698 12L8.58984 7.41L9.99984 6L15.9998 12L9.99984 18L8.58984 16.58Z"
+                    fill="#2DCB30"
+                  />
+                </svg>
               </div>
             </div>
           </div>
