@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Plug :: Admin</title>
+
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <div class="user-details">
+      <div class="header__main">
+        <div class="header__details">
+          <img
+            src="../imgs/logo/plug.logoo.svg"
+            alt=""
+            class="header__logo-pl"
+          />
+          <div class="header__info">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M19 17V11.8C18.5 11.9 18 12 17.5 12H17V18H7V11C7 8.2 9.2 6 12 6C12.1 4.7 12.7 3.6 13.5 2.7C13.2 2.3 12.6 2 12 2C10.9 2 10 2.9 10 4V4.3C7 5.2 5 7.9 5 11V17L3 19V20H21V19L19 17ZM10 21C10 22.1 10.9 23 12 23C13.1 23 14 22.1 14 21H10ZM21 6.5C21 8.4 19.4 10 17.5 10C15.6 10 14 8.4 14 6.5C14 4.6 15.6 3 17.5 3C19.4 3 21 4.6 21 6.5Z"
+                fill="white"
+              />
+            </svg>
+            <div class="header__details-menu">
+              <div class="header__face-logo">
+                <img src="../imgs/logo/face-icon-header.svg" alt="" class="" />
+                <p class="header__text">Admin</p>
+              </div>
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M7.41 8.58008L12 13.1701L16.59 8.58008L18 10.0001L12 16.0001L6 10.0001L7.41 8.58008Z"
+                  fill="white"
+                />
+              </svg>
+            </div>
+          </div>
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M3.6001 5.9998C3.6001 5.33706 4.13736 4.7998 4.8001 4.7998H19.2001C19.8628 4.7998 20.4001 5.33706 20.4001 5.9998C20.4001 6.66255 19.8628 7.1998 19.2001 7.1998H4.8001C4.13736 7.1998 3.6001 6.66255 3.6001 5.9998Z"
+              fill="white"
+            />
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M3.6001 11.9998C3.6001 11.3371 4.13736 10.7998 4.8001 10.7998H19.2001C19.8628 10.7998 20.4001 11.3371 20.4001 11.9998C20.4001 12.6625 19.8628 13.1998 19.2001 13.1998H4.8001C4.13736 13.1998 3.6001 12.6625 3.6001 11.9998Z"
+              fill="white"
+            />
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M3.6001 17.9998C3.6001 17.3371 4.13736 16.7998 4.8001 16.7998H19.2001C19.8628 16.7998 20.4001 17.3371 20.4001 17.9998C20.4001 18.6625 19.8628 19.1998 19.2001 19.1998H4.8001C4.13736 19.1998 3.6001 18.6625 3.6001 17.9998Z"
+              fill="white"
+            />
+          </svg>
+        </div>
+        <div class="header-details">
+          <p class="header-details__text">User - Mrjayy</p>
+          <div class="user-details__details-btns-colored">
+            <div class="user-btns">
+              <button class="user-btns user-btns--block-btn">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12 2C17.5 2 22 6.5 22 12C22 17.5 17.5 22 12 22C6.5 22 2 17.5 2 12C2 6.5 6.5 2 12 2ZM12 4C10.1 4 8.4 4.6 7.1 5.7L18.3 16.9C19.3 15.5 20 13.8 20 12C20 7.6 16.4 4 12 4ZM16.9 18.3L5.7 7.1C4.6 8.4 4 10.1 4 12C4 16.4 7.6 20 12 20C13.9 20 15.6 19.4 16.9 18.3Z"
+                    fill="white"
+                  />
+                </svg>
+                Block (6)
+              </button>
+              <button class="user-btns user-btns--flag-btn">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M6 3C6.26522 3 6.51957 3.10536 6.70711 3.29289C6.89464 3.48043 7 3.73478 7 4V4.88C8.06 4.44 9.5 4 11 4C14 4 14 6 16 6C19 6 20 4 20 4V12C20 12 19 14 16 14C13 14 13 12 11 12C8 12 7 14 7 14V21H5V4C5 3.73478 5.10536 3.48043 5.29289 3.29289C5.48043 3.10536 5.73478 3 6 3Z"
+                    fill="white"
+                  />
+                </svg>
+                Flag (2)
+              </button>
+              <button class="user-btns user-btns--unverify-btn">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M19.43 19L21.5 21.11L20.12 22.5L18.03 20.41L15.91 22.53L14.5 21.11L16.61 19L14.5 16.86L15.88 15.47L18 17.59L20.12 15.47L21.55 16.9L19.43 19ZM12 1L21 5V11C21 11.9 20.9 12.78 20.71 13.65C19.8729 13.2163 18.9427 12.9932 18 13C16.4087 13 14.8826 13.6321 13.7574 14.7574C12.6321 15.8826 12 17.4087 12 19C12 20.36 12.45 21.62 13.22 22.62L12 23C6.84 21.74 3 16.55 3 11V5L12 1Z"
+                    fill="white"
+                  />
+                </svg>
+                Unverify
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="user-details__details-main">
+        <div class="btn-menus user-details__info-menus">
+          <a href="../index.html">
+            <button class="btn-menus__btn-type">Personal information</button>
+          </a>
+          <div class="btn-menus__divider"></div>
+          <a href="./busines-info.html">
+            <button class="btn-menus__btn-type btn-menus__btn-type--active">
+              Business Information
+            </button>
+          </a>
+          <div class="btn-menus__divider"></div>
+          <a href="./user-transaction.html">
+            <button class="btn-menus__btn-type">User transactions</button>
+          </a>
+          <div class="btn-menus__divider"></div>
+          <a href="./bank-information.html">
+            <button class="btn-menus__btn-type">Bank information</button>
+          </a>
+          <div class="btn-menus__divider"></div>
+          <a href="./navigation.html">
+            <button class="btn-menus__btn-type">Navigation</button>
+          </a>
+          <div class="btn-menus__divider"></div>
+          <a href="./user-virtual-cards.html">
+            <button class="btn-menus__btn-type">Virtual card</button>
+          </a>
+          <div class="btn-menus__divider"></div>
+          <a href="./order-history.html">
+            <button class="btn-menus__btn-type">Order history</button>
+          </a>
+          <div class="btn-menus__divider"></div>
+          <a href="./cash-inout.html">
+            <button class="btn-menus__btn-type">Cash in & out</button>
+          </a>
+          <div class="btn-menus__divider"></div>
+          <a href="./user-events.html">
+            <button class="btn-menus__btn-type">Events</button>
+          </a>
+          <div class="btn-menus__divider"></div>
+          <a href="">
+            <button class="btn-menus__btn-type">Document</button>
+          </a>
+          <div class="btn-menus__divider"></div>
+          <a href="./user-notes.html">
+            <button class="btn-menus__btn-type">User notes</button>
+          </a>
+        </div>
+        <div class="user-details__details-body">
+          <div class="header-tabs">
+            <a
+              href="#"
+              class="header-tabs__tab-text header-tabs__tab-text--active"
+              >Overview</a
+            >
+            <a href="./info-services.html" class="header-tabs__tab-text"
+              >Services</a
+            >
+            <a href="./info-transaction.html" class="header-tabs__tab-text"
+              >Transactions</a
+            >
+            <a href="./info-statement.html" class="header-tabs__tab-text"
+              >Statement</a
+            >
+            <a href="./info-teams.html" class="header-tabs__tab-text"
+              >Teams</a
+            >
+            <a href="./info-webhook.html" class="header-tabs__tab-text"
+              >Webhooks</a
+            >
+            <a href="./info-settings.html" class="header-tabs__tab-text"
+              >Settings</a
+            >
+          </div>
+        </div>
+        <div class="balances">
+          <div class="balances__balance-tab">
+            <div class="balances__tab-heading">
+              <p class="sub-text">Provider balance</p>
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12 9C11.2044 9 10.4413 9.31607 9.87868 9.87868C9.31607 10.4413 9 11.2044 9 12C9 12.7956 9.31607 13.5587 9.87868 14.1213C10.4413 14.6839 11.2044 15 12 15C12.7956 15 13.5587 14.6839 14.1213 14.1213C14.6839 13.5587 15 12.7956 15 12C15 11.2044 14.6839 10.4413 14.1213 9.87868C13.5587 9.31607 12.7956 9 12 9ZM12 17C10.6739 17 9.40215 16.4732 8.46447 15.5355C7.52678 14.5979 7 13.3261 7 12C7 10.6739 7.52678 9.40215 8.46447 8.46447C9.40215 7.52678 10.6739 7 12 7C13.3261 7 14.5979 7.52678 15.5355 8.46447C16.4732 9.40215 17 10.6739 17 12C17 13.3261 16.4732 14.5979 15.5355 15.5355C14.5979 16.4732 13.3261 17 12 17ZM12 4.5C7 4.5 2.73 7.61 1 12C2.73 16.39 7 19.5 12 19.5C17 19.5 21.27 16.39 23 12C21.27 7.61 17 4.5 12 4.5Z"
+                  fill="currentColor"
+                />
+              </svg>
+            </div>
+            <div class="balances__bal-info">
+              <div class="balances__bal-amount">
+                <p class="balances__amount">₦754,000.00</p>
+                <div class="balances__locked-bal">
+                  <span>Locked balance:</span>
+                  <p class="">₦754,000.00</p>
+                </div>
+              </div>
+              <div class="balances__bank-info">
+                <div class="balances__bank-name">
+                  <svg
+                    width="18"
+                    height="18"
+                    viewBox="0 0 18 18"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g clip-path="url(#clip0_7003_661)">
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M9.50348 1.66254L15.8785 5.22504C16.0656 5.31846 16.223 5.46221 16.333 5.64014C16.4429 5.81807 16.5011 6.02313 16.501 6.23229V7.31229C16.501 7.82979 16.081 8.24979 15.5635 8.24979H15.001V14.2498H15.751C15.9499 14.2498 16.1407 14.3288 16.2813 14.4695C16.422 14.6101 16.501 14.8009 16.501 14.9998C16.501 15.1987 16.422 15.3895 16.2813 15.5301C16.1407 15.6708 15.9499 15.7498 15.751 15.7498H2.25098C2.05206 15.7498 1.8613 15.6708 1.72065 15.5301C1.57999 15.3895 1.50098 15.1987 1.50098 14.9998C1.50098 14.8009 1.57999 14.6101 1.72065 14.4695C1.8613 14.3288 2.05206 14.2498 2.25098 14.2498H3.00098V8.24979H2.43848C1.92098 8.24979 1.50098 7.82979 1.50098 7.31229V6.23229C1.50098 5.84079 1.70348 5.48079 2.03048 5.27679L8.49773 1.66254C8.65397 1.58439 8.82627 1.5437 9.00098 1.5437C9.17568 1.5437 9.34723 1.58439 9.50348 1.66254ZM12.751 8.24979H5.25098V14.2498H6.75098V9.74979H8.25098V14.2498H9.75098V9.74979H11.251V14.2498H12.751V8.24979ZM9.00098 4.49979C8.80206 4.49979 8.6113 4.57881 8.47065 4.71946C8.32999 4.86011 8.25098 5.05088 8.25098 5.24979C8.25098 5.4487 8.32999 5.63947 8.47065 5.78012C8.6113 5.92077 8.80206 5.99979 9.00098 5.99979C9.19989 5.99979 9.39065 5.92077 9.53131 5.78012C9.67196 5.63947 9.75098 5.4487 9.75098 5.24979C9.75098 5.05088 9.67196 4.86011 9.53131 4.71946C9.39065 4.57881 9.19989 4.49979 9.00098 4.49979Z"
+                        fill="currentColor"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_7003_661">
+                        <rect width="18" height="18" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  <span class="balances__text-sm">GT bank</span>
+                </div>
+                <div class="balances__acct-details">
+                  <div class="balances__acct-num">
+                    <p>02226559082</p>
+                    <svg
+                      width="20"
+                      height="21"
+                      viewBox="0 0 20 21"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M15.8337 18H6.66699V6.33337H15.8337M15.8337 4.66671H6.66699C6.22497 4.66671 5.80104 4.8423 5.48848 5.15486C5.17592 5.46742 5.00033 5.89135 5.00033 6.33337V18C5.00033 18.4421 5.17592 18.866 5.48848 19.1786C5.80104 19.4911 6.22497 19.6667 6.66699 19.6667H15.8337C16.2757 19.6667 16.6996 19.4911 17.0122 19.1786C17.3247 18.866 17.5003 18.4421 17.5003 18V6.33337C17.5003 5.89135 17.3247 5.46742 17.0122 5.15486C16.6996 4.8423 16.2757 4.66671 15.8337 4.66671ZM13.3337 1.33337H3.33366C2.89163 1.33337 2.46771 1.50897 2.15515 1.82153C1.84259 2.13409 1.66699 2.55801 1.66699 3.00004V14.6667H3.33366V3.00004H13.3337V1.33337Z"
+                        fill="#2DCB30"
+                      />
+                    </svg>
+                  </div>
+                  <p class="balances__text-sm">(Anchor Digital)</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="balances__balance-tab">
+            <div class="recent-trans__heading">
+              <p class="recent-trans__heading-text">Account manager</p>
+              <a href="" class="recent-trans__view-all">Change</a>
+            </div>
+            <div class="balances__acct-info">
+              <p class="balances__manager-name">Oluwatomisin Agboolajesu</p>
+              <div class="balances__acct-manager">
+                <div class="balances__manager-info">
+                  <svg
+                    width="18"
+                    height="18"
+                    viewBox="0 0 18 18"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M4.965 8.0925C6.045 10.215 7.785 11.955 9.9075 13.035L11.5575 11.385C11.7675 11.175 12.06 11.115 12.3225 11.1975C13.1625 11.475 14.0625 11.625 15 11.625C15.1989 11.625 15.3897 11.704 15.5303 11.8447C15.671 11.9853 15.75 12.1761 15.75 12.375V15C15.75 15.1989 15.671 15.3897 15.5303 15.5303C15.3897 15.671 15.1989 15.75 15 15.75C11.6185 15.75 8.37548 14.4067 5.98439 12.0156C3.5933 9.62452 2.25 6.38151 2.25 3C2.25 2.80109 2.32902 2.61032 2.46967 2.46967C2.61032 2.32902 2.80109 2.25 3 2.25H5.625C5.82391 2.25 6.01468 2.32902 6.15533 2.46967C6.29598 2.61032 6.375 2.80109 6.375 3C6.375 3.9375 6.525 4.8375 6.8025 5.6775C6.885 5.94 6.825 6.2325 6.615 6.4425L4.965 8.0925Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                  <span>(+234) 8033452345</span>
+                </div>
+                <div class="balances__manager-info">
+                  <svg
+                    width="18"
+                    height="18"
+                    viewBox="0 0 18 18"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M15 6L9 9.75L3 6V4.5L9 8.25L15 4.5M15 3H3C2.1675 3 1.5 3.6675 1.5 4.5V13.5C1.5 13.8978 1.65804 14.2794 1.93934 14.5607C2.22064 14.842 2.60218 15 3 15H15C15.3978 15 15.7794 14.842 16.0607 14.5607C16.342 14.2794 16.5 13.8978 16.5 13.5V4.5C16.5 4.10218 16.342 3.72064 16.0607 3.43934C15.7794 3.15804 15.3978 3 15 3Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                  <span>janedoe11@plug.ng</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="stats-tab">
+          <div class="stats-tab__event-chart table-details">
+            <div class="stats-tab__stats-info">
+              <p class="sub-text">Weekly stats</p>
+              <div class="stats-tab__event-stat">
+                <div class="stats-tab__status">
+                  <div class="status-mark status-mark--complete"></div>
+                  <p>Completed</p>
+                </div>
+                <div class="stats-tab__status">
+                  <div class="status-mark status-mark--pending"></div>
+                  <p>Pending</p>
+                </div>
+                <div class="stats-tab__status">
+                  <div class="status-mark status-mark--failed"></div>
+                  <p>Failed</p>
+                </div>
+              </div>
+            </div>
+            <img src="../imgs/stat-img.png" alt="stats img" />
+          </div>
+          <div class="recent-trans">
+            <div class="recent-trans__heading">
+              <p class="recent-trans__heading-text">Top 5 Services</p>
+              <a href="" class="recent-trans__view-all">View all</a>
+            </div>
+            <div class="top-services table-details">
+              <div class="top-services__service-type">
+                <p class="">Airtime</p>
+                <span>122,674</span>
+              </div>
+              <div class="top-services__service-type">
+                <p class="">Gift Card</p>
+                <span>101,674</span>
+              </div>
+              <div class="top-services__service-type">
+                <p class="">Data</p>
+                <span>82,674</span>
+              </div>
+              <div class="top-services__service-type">
+                <p class="">Electricity</p>
+                <span>59,674</span>
+              </div>
+              <div class="top-services__service-type">
+                <p class="">Betting</p>
+                <span>44,674</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="user-details__table-user">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Transaction ID</th>
+                <th>Service</th>
+                <th>Amount</th>
+                <th>Status</th>
+                <th>Previous balance</th>
+                <th>New balance</th>
+                <th>Date</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="td-user-info">
+                  <p class="td-user-info__user-detail">PNG1234567890</p>
+                </td>
+                <td><p>Airtime</p></td>
+                <td><p>₦8,500.00</p></td>
+                <td>
+                  <button class="transaction-btn transaction-btn--success">
+                    Successful
+                  </button>
+                </td>
+                <td><p>₦34,6740,200</p></td>
+                <td>
+                  <p>₦34,6740,200</p>
+                </td>
+                <td>
+                  <div class="td-user-info__reg-date">
+                    <p>Jul 24, 2024</p>
+                    <div class="td-user-info__date-divider"></div>
+                    <p>12:45pm</p>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="td-user-info">
+                  <p class="td-user-info__user-detail">PNG1234567890</p>
+                </td>
+                <td><p>Airtime</p></td>
+                <td><p>₦8,500.00</p></td>
+                <td>
+                  <button class="transaction-btn transaction-btn--success">
+                    Successful
+                  </button>
+                </td>
+                <td><p>₦34,6740,200</p></td>
+                <td>
+                  <p>₦34,6740,200</p>
+                </td>
+                <td>
+                  <div class="td-user-info__reg-date">
+                    <p>Jul 24, 2024</p>
+                    <div class="td-user-info__date-divider"></div>
+                    <p>12:45pm</p>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="td-user-info">
+                  <p class="td-user-info__user-detail">PNG1234567890</p>
+                </td>
+                <td><p>Airtime</p></td>
+                <td><p>₦8,500.00</p></td>
+                <td>
+                  <button class="transaction-btn transaction-btn--success">
+                    Successful
+                  </button>
+                </td>
+                <td><p>₦34,6740,200</p></td>
+                <td>
+                  <p>₦34,6740,200</p>
+                </td>
+                <td>
+                  <div class="td-user-info__reg-date">
+                    <p>Jul 24, 2024</p>
+                    <div class="td-user-info__date-divider"></div>
+                    <p>12:45pm</p>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="td-user-info">
+                  <p class="td-user-info__user-detail">PNG1234567890</p>
+                </td>
+                <td><p>Data</p></td>
+                <td><p>₦11,500.00</p></td>
+                <td>
+                  <button class="transaction-btn transaction-btn--success">
+                    Successful
+                  </button>
+                </td>
+                <td><p>₦34,6740,200</p></td>
+                <td>
+                  <p>₦34,6740,200</p>
+                </td>
+                <td>
+                  <div class="td-user-info__reg-date">
+                    <p>Jul 24, 2024</p>
+                    <div class="td-user-info__date-divider"></div>
+                    <p>12:45pm</p>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="td-user-info">
+                  <p class="td-user-info__user-detail">PNG1234567890</p>
+                </td>
+                <td><p>Data</p></td>
+                <td><p>₦11,500.00</p></td>
+                <td>
+                  <button class="transaction-btn transaction-btn--success">
+                    Successful
+                  </button>
+                </td>
+                <td><p>₦34,6740,200</p></td>
+                <td>
+                  <p>₦34,6740,200</p>
+                </td>
+                <td>
+                  <div class="td-user-info__reg-date">
+                    <p>Jul 24, 2024</p>
+                    <div class="td-user-info__date-divider"></div>
+                    <p>12:45pm</p>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="td-user-info">
+                  <p class="td-user-info__user-detail">PNG1234567890</p>
+                </td>
+                <td><p>Data</p></td>
+                <td><p>₦11,500.00</p></td>
+                <td>
+                  <button class="transaction-btn transaction-btn--success">
+                    Successful
+                  </button>
+                </td>
+                <td><p>₦34,6740,200</p></td>
+                <td>
+                  <p>₦34,6740,200</p>
+                </td>
+                <td>
+                  <div class="td-user-info__reg-date">
+                    <p>Jul 24, 2024</p>
+                    <div class="td-user-info__date-divider"></div>
+                    <p>12:45pm</p>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="td-user-info">
+                  <p class="td-user-info__user-detail">PNG1234567890</p>
+                </td>
+                <td><p>CableTV</p></td>
+                <td><p>₦35,000.00</p></td>
+                <td>
+                  <button class="transaction-btn transaction-btn--success">
+                    Successful
+                  </button>
+                </td>
+                <td><p>₦34,6740,200</p></td>
+                <td>
+                  <p>₦34,6740,200</p>
+                </td>
+                <td>
+                  <div class="td-user-info__reg-date">
+                    <p>Jul 24, 2024</p>
+                    <div class="td-user-info__date-divider"></div>
+                    <p>12:45pm</p>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="td-user-info">
+                  <p class="td-user-info__user-detail">PNG1234567890</p>
+                </td>
+                <td><p>Cable TV</p></td>
+                <td><p>₦35,000.00</p></td>
+                <td>
+                  <button class="transaction-btn transaction-btn--success">
+                    Successful
+                  </button>
+                </td>
+                <td><p>₦34,6740,200</p></td>
+                <td>
+                  <p>₦34,6740,200</p>
+                </td>
+                <td>
+                  <div class="td-user-info__reg-date">
+                    <p>Jul 24, 2024</p>
+                    <div class="td-user-info__date-divider"></div>
+                    <p>12:45pm</p>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="td-user-info">
+                  <p class="td-user-info__user-detail">PNG1234567890</p>
+                </td>
+                <td><p>Cable TV</p></td>
+                <td><p>₦35,000.00</p></td>
+                <td>
+                  <button class="transaction-btn transaction-btn--success">
+                    Successful
+                  </button>
+                </td>
+                <td><p>₦34,6740,200</p></td>
+                <td>
+                  <p>₦34,6740,200</p>
+                </td>
+                <td>
+                  <div class="td-user-info__reg-date">
+                    <p>Jul 24, 2024</p>
+                    <div class="td-user-info__date-divider"></div>
+                    <p>12:45pm</p>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="td-user-info">
+                  <p class="td-user-info__user-detail">PNG1234567890</p>
+                </td>
+                <td><p>Cable TV</p></td>
+                <td><p>₦35,000.00</p></td>
+                <td>
+                  <button class="transaction-btn transaction-btn--success">
+                    Successful
+                  </button>
+                </td>
+                <td><p>₦34,6740,200</p></td>
+                <td>
+                  <p>₦34,6740,200</p>
+                </td>
+                <td>
+                  <div class="td-user-info__reg-date">
+                    <p>Jul 24, 2024</p>
+                    <div class="td-user-info__date-divider"></div>
+                    <p>12:45pm</p>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
