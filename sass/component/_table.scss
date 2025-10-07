@@ -31,9 +31,11 @@ th {
   font-size: 1.4rem;
   font-weight: 700;
   color: #808080;
+  background-color: #f7f8f8;
   text-align: left;
 
-  padding-bottom: 1.6rem;
+  padding: 1.2rem 0.8rem 1.6rem;
+  // padding-bottom: 1.6rem;
 
   @media (max-width: 980px) {
     font-size: 1.2rem;
@@ -111,7 +113,7 @@ th {
     }
 
     &--no {
-      background-color: #E87D7D;
+      background-color: #e87d7d;
     }
   }
 
@@ -187,6 +189,11 @@ th {
     align-items: center;
     gap: 2.4rem;
   }
+
+  &__view {
+    color: #2dcb30;
+    text-decoration: none;
+  }
 }
 
 .date-time {
@@ -256,6 +263,13 @@ th {
   }
 }
 
-.td-funding {
-  color: #25a727;
+// style for business info table
+.td-text {
+  &--true {
+    color: #25a727;
+  }
+
+  &--false {
+    color: #dd3c3c;
+  }
 }

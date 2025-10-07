@@ -3067,7 +3067,7 @@ body {
   padding: 1.6rem;
   display: flex;
   flex-direction: column;
-  gap: 1.2rem;
+  gap: 2.4rem;
 }
 .recent-trans__heading {
   display: flex;
@@ -3130,6 +3130,56 @@ body {
   .select-type__dropdowns {
     flex-wrap: wrap;
   }
+}
+
+.setting {
+  background-color: #ffffff;
+  border-radius: 0.8rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+@media (max-width: 650px) {
+  .setting {
+    overflow-x: scroll;
+  }
+}
+.setting__set-details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+  padding-bottom: 1.6rem;
+  border-bottom: 1px solid #f2f2f2;
+}
+.setting__set-type {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  font-size: 1.5rem;
+}
+.setting__set-type span {
+  color: #7d7d7d;
+}
+.setting__set-name {
+  font-weight: 600;
+}
+.setting__set-mail {
+  color: #808080;
+}
+.setting__set-site {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.setting__transact-details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.6rem;
+  border-radius: 0.8rem;
+  border: 1px solid #f2f2f2;
 }
 
 .header__logo-pl {
@@ -3924,7 +3974,7 @@ body {
   display: flex;
   align-items: center;
 }
-.button--export {
+.button--resend {
   width: 14rem;
   font-size: 1.4rem;
 }
@@ -4387,9 +4437,10 @@ body {
 }
 
 .info-status {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-weight: 600;
   border-radius: 1.6rem;
+  border: none;
   padding: 4px 1.6rem;
   display: flex;
   align-items: center;
@@ -4424,7 +4475,7 @@ body {
 
 .info-btns {
   width: 14rem;
-  height: 4rem;
+  height: 4.8rem;
   padding: 1.2rem 0.8rem;
   color: #ffffff;
   font-size: 1.4rem;
@@ -4440,6 +4491,35 @@ body {
 }
 .info-btns--log {
   background-color: #1f1f1f;
+}
+.info-btns--send {
+  width: 14rem;
+  padding: 0.8rem 1.2rem;
+  background-color: #2dcb30;
+  font-size: 1.4rem;
+}
+
+.set-btn {
+  padding: 1.2rem 0.8rem;
+  height: 4.8rem;
+  background: none;
+  color: #1f1f1f;
+  border: 2px solid #f2f2f2;
+  border-radius: 0.8rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+.set-btn--edit {
+  width: 12rem;
+}
+.set-btn--change-pw {
+  width: 18rem;
+}
+.set-btn--lock {
+  width: 16rem;
+  background-color: #fdf2f2;
+  color: #dd3c3c;
+  border: none;
 }
 
 .modal {
@@ -5101,8 +5181,9 @@ th {
   font-size: 1.4rem;
   font-weight: 700;
   color: #808080;
+  background-color: #f7f8f8;
   text-align: left;
-  padding-bottom: 1.6rem;
+  padding: 1.2rem 0.8rem 1.6rem;
 }
 @media (max-width: 980px) {
   thead,
@@ -5169,7 +5250,7 @@ th {
   background-color: #bdbdbd;
 }
 .td-user-info__info-status--no {
-  background-color: #E87D7D;
+  background-color: #e87d7d;
 }
 .td-user-info__reg-date {
   font-size: 1.4rem;
@@ -5231,6 +5312,10 @@ th {
   align-items: center;
   gap: 2.4rem;
 }
+.td-user-info__view {
+  color: #2dcb30;
+  text-decoration: none;
+}
 
 .date-time {
   display: flex;
@@ -5287,8 +5372,11 @@ th {
   color: #7d7d7d;
 }
 
-.td-funding {
+.td-text--true {
   color: #25a727;
+}
+.td-text--false {
+  color: #dd3c3c;
 }
 
 .form {

@@ -372,7 +372,7 @@
     align-items: center;
   }
 
-  &--export {
+  &--resend {
     width: 14rem;
     font-size: 1.4rem;
   }
@@ -909,9 +909,10 @@
 
 // style for buiness info table status
 .info-status {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-weight: 600;
   border-radius: 1.6rem;
+  border: none;
   padding: 4px 1.6rem;
 
   display: flex;
@@ -954,7 +955,7 @@
 
 .info-btns {
   width: 14rem;
-  height: 4rem;
+  height: 4.8rem;
   padding: 1.2rem 0.8rem;
 
   color: #ffffff;
@@ -973,5 +974,41 @@
 
   &--log {
     background-color: #1f1f1f;
+  }
+
+  &--send {
+    width: 14rem;
+    padding: 0.8rem 1.2rem;
+
+    background-color: #2dcb30;
+    font-size: 1.4rem;
+  }
+}
+
+.set-btn {
+  padding: 1.2rem 0.8rem;
+  height: 4.8rem;
+
+  background: none;
+  color: #1f1f1f;
+  border: 2px solid #f2f2f2;
+  border-radius: 0.8rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+
+  &--edit {
+    width: 12rem;
+  }
+
+  &--change-pw {
+    width: 18rem;
+  }
+
+  &--lock {
+    width: 16rem;
+
+    background-color: #fdf2f2;
+    color: #dd3c3c;
+    border: none;
   }
 }

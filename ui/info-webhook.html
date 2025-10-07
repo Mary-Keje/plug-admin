@@ -249,128 +249,86 @@
               </svg>
             </div>
           </div>
-          <div class="select-type__dropdowns">
-            <div class="search-input">
-              <input
-                type="text"
-                placeholder="Search"
-                class="header-details__search"
-              />
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M21 21L15 15M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10Z"
-                  stroke="#1F1F1F"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-            </div>
-          </div>
         </div>
         <div class="user-details__table-user">
           <table class="table">
             <thead>
               <tr>
-                <th>Transaction ID</th>
-                <th>Type</th>
-                <th>Amount</th>
-                <th>Prev balance</th>
-                <th>New balance</th>
-                <th>Status</th>
                 <th>Date</th>
+                <th>Service</th>
+                <th>Event</th>
+                <th>Endpoint</th>
+                <th>Delivered</th>
+                <th>Response</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td><p>PLG0123456789</p></td>
+                <td>
+                  <div class="td-user-info__reg-date">
+                    <p>03 Apr 2025</p>
+                    <div class="td-user-info__date-divider"></div>
+                    <p>02:45:40 pm</p>
+                  </div>
+                </td>
                 <td><p>Airtime</p></td>
-                <td><p>₦20,000</p></td>
-                <td><p>₦1,220,000</p></td>
-                <td><p>₦1,220,000</p></td>
+                <td><p>/transaction_update</p></td>
+                <td><p>Active</p></td>
+                <td><p>False</p></td>
+                <td><p class="td-text td-text--false">500</p></td>
                 <td>
-                  <p class="info-status info-status--active">Completed</p>
-                </td>
-                <td class="td-text">
-                  <div class="td-user-info__reg-date">
-                    <p>Jul 24, 2024</p>
-                    <div class="td-user-info__date-divider"></div>
-                    <p>12:45pm</p>
-                  </div>
+                  <button class="button button--resend">Resend</button>
                 </td>
               </tr>
               <tr>
-                <td><p>PLG0123456789</p></td>
-                <td><p class="td-funding">Funding</p></td>
-                <td><p class="td-funding">₦200,000</p></td>
-                <td><p>₦1,220,000</p></td>
-                <td><p>₦1,220,000</p></td>
                 <td>
-                  <p class="info-status info-status--active">Completed</p>
-                </td>
-                <td class="td-text">
                   <div class="td-user-info__reg-date">
-                    <p>Jul 24, 2024</p>
+                    <p>03 Apr 2025</p>
                     <div class="td-user-info__date-divider"></div>
-                    <p>12:45pm</p>
+                    <p>02:45:40 pm</p>
                   </div>
                 </td>
-              </tr>
-              <tr>
-                <td><p>PLG0123456789</p></td>
-                <td><p>Electricity</p></td>
-                <td><p>₦200,000</p></td>
-                <td><p>₦1,220,000</p></td>
-                <td><p>₦1,220,000</p></td>
-                <td>
-                  <p class="info-status info-status--pending">Pending</p>
-                </td>
-                <td class="td-text">
-                  <div class="td-user-info__reg-date">
-                    <p>Jul 24, 2024</p>
-                    <div class="td-user-info__date-divider"></div>
-                    <p>12:45pm</p>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td><p>PLG0123456789</p></td>
                 <td><p>Airtime</p></td>
-                <td><p>₦200,000</p></td>
-                <td><p>₦1,220,000</p></td>
-                <td><p>₦1,220,000</p></td>
+                <td><p>/transaction_update</p></td>
+                <td><p>Active</p></td>
+                <td><p>True</p></td>
+                <td><p class="td-text td-text--true">500</p></td>
                 <td>
-                  <p class="info-status info-status--failed">Failed</p>
-                </td>
-                <td class="td-text">
-                  <div class="td-user-info__reg-date">
-                    <p>Jul 24, 2024</p>
-                    <div class="td-user-info__date-divider"></div>
-                    <p>12:45pm</p>
-                  </div>
+                  <!-- <button class="button button--resend">Resend</button> -->
                 </td>
               </tr>
               <tr>
-                <td><p>PLG0123456789</p></td>
-                <td><p>Airtime</p></td>
-                <td><p>₦20,000</p></td>
-                <td><p>₦1,220,000</p></td>
-                <td><p>₦1,220,000</p></td>
                 <td>
-                  <p class="info-status info-status--active">Completed</p>
-                </td>
-                <td class="td-text">
                   <div class="td-user-info__reg-date">
-                    <p>Jul 24, 2024</p>
+                    <p>03 Apr 2025</p>
                     <div class="td-user-info__date-divider"></div>
-                    <p>12:45pm</p>
+                    <p>02:45:40 pm</p>
                   </div>
+                </td>
+                <td><p>Airtime</p></td>
+                <td><p>/transaction_update</p></td>
+                <td><p>Active</p></td>
+                <td><p>True</p></td>
+                <td><p class="td-text td-text--true">500</p></td>
+                <td>
+                  <!-- <button class="button button--resend">Resend</button> -->
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="td-user-info__reg-date">
+                    <p>03 Apr 2025</p>
+                    <div class="td-user-info__date-divider"></div>
+                    <p>02:45:40 pm</p>
+                  </div>
+                </td>
+                <td><p>Airtime</p></td>
+                <td><p>/transaction_update</p></td>
+                <td><p class="td-text td-text--false">Inactive</p></td>
+                <td><p>False</p></td>
+                <td><p class="td-text td-text--false">500</p></td>
+                <td>
+                  <button class="button button--resend">Resend</button>
                 </td>
               </tr>
             </tbody>
